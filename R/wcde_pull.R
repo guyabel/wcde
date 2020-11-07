@@ -53,13 +53,14 @@ wcde_pull <- function(measure = NULL, scenario = 2, country_code = NULL){
         }
       }
       pb$tick()
-      d <- paste0("https://github.com/guyabel/wcde/raw/master/df",
-                  ss, "/", mm, "/", cc, ".RData") %>%
+      u <- paste0("https://github.com/guyabel/wcde/raw/master/df",
+                  ss, "/", mm, "/", cc, ".RData")
+      d <- u %>%
         url() %>%
         loading() %>%
         as.list() %>%
         tibble::as_tibble()
-      closeAllConnections()
+      close(con = url(u))
       return(d)
     })
   pb$terminate()

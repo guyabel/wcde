@@ -46,17 +46,18 @@ library(wcder)
 
 # Not Run
 # SSP2 tfr for Austria and Bulgaria
-# wcde(measure = "tfr", country_code = c(40, 100))
+wcde(measure = "tfr", country_code = c(40, 100))
 
 # SSP2 tfr for Austria and United Kingdom (guessing the country codes)
-# wcde(measure = "tfr", country_name = c("Austria", "UK"))
+wcde(measure = "tfr", country_name = c("Austria", "UK"))
 
-# SSP1 and SSP3 population by education for all countries
+# SSP1 population by education for all countries
 # library(dplyr)
 # wic_locations %>%
 #   filter(dim == "country") %>%
 #   pull(isono) %>%
-#   wcde(scenario = c(1, 3), measure = "epop", country_code = .)
+#   wcde(scenario = 1, measure = "epop", country_code = .,
+#        include_scenario_names = TRUE)
 ```
 
 <!-- What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so: -->
