@@ -1,0 +1,25 @@
+Package: wcder
+Title: Download Data from the Wittgenstein Human Capital Data Explorer
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = c("Guy", "J."),
+           family = "Abel",
+           role = c("aut", "cre"),
+           email = "g.j.abel@gmail.com",
+           comment = c(ORCID = "0000-0002-4893-5687"))
+Description: Download data from the Wittgenstein Data Explorer <http://dataexplorer.wittgensteincentre.org>.
+License: CC BY 4.0 + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    dplyr,
+    magrittr,
+    tidyr,
+    progress,
+    countrycode,
+    tibble,
+    purrr
+Depends: 
+    R (>= 2.10)

@@ -1,27 +1,33 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # wcder
 
 <!-- badges: start -->
-
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/wcder)](https://CRAN.R-project.org/package=wcder)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/wcder)](https://CRAN.R-project.org/package=wcder)
 <!-- badges: end -->
 
-Download data from the [Wittgenstein Human Capital Data
-Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
+Download data from the [Wittgenstein Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
 ## Installation
 
 <!-- You can install the released version of wcder from [CRAN](https://CRAN.R-project.org) with: -->
 
 <!-- ``` r -->
-
 <!-- install.packages("wcder") -->
-
 <!-- ``` -->
 
 Install the developmental version with:
@@ -35,7 +41,7 @@ install_github("guyabel/wcder")
 
 Download data based on a measure, scenario and country code:
 
-``` r
+```{r example}
 library(wcder)
 
 # Not Run
@@ -56,9 +62,7 @@ library(wcder)
 <!-- What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so: -->
 
 <!-- ```{r cars} -->
-
 <!-- summary(cars) -->
-
 <!-- ``` -->
 
 <!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. -->
@@ -66,9 +70,7 @@ library(wcder)
 <!-- You can also embed plots, for example: -->
 
 <!-- ```{r pressure, echo = FALSE} -->
-
 <!-- plot(pressure) -->
-
 <!-- ``` -->
 
 <!-- In that case, don't forget to commit and push the resulting figure files, so they display on GitHub! -->
