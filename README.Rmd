@@ -56,8 +56,7 @@ wcde(scenario = 1, measure = "tfr", country_name = c("Austria", "UK"))
 # wic_locations %>%
 #   filter(dim == "country") %>%
 #   pull(isono) %>%
-#   wcde(scenario = 1, measure = "epop", country_code = .,
-#        include_scenario_names = TRUE)
+#   wcde(scenario = 1, measure = "epop", country_code = ., include_scenario_names = TRUE)
 ```
 
 <!-- What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so: -->
