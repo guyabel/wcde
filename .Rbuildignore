@@ -1,6 +1,8 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
+^data-ssp$
+^data_ssp.R
 ^LICENSE\.md$
 ^wcder\.Rproj$
 ^README\.Rmd$
