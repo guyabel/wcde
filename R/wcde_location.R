@@ -20,7 +20,7 @@ wcde_location <- function(country_code){
   x <- sum(!country_code %in% v) == 0
   if(!x){
     ok <- which(country_code %in% v)
-    message(paste0("country code ", country_code[-ok], " not in Wittgenstein Data Explorer"))
+    message(paste0("country code ", country_code[-ok], " not in Wittgenstein Human Capital Data Explorer"))
   }
   return(x)
 }

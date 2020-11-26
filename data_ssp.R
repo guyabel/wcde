@@ -8,6 +8,7 @@ d <- dir_ls(path = "../wcde/", recurse = 2) %>%
          str_detect(string = file, pattern = "wcde/df")) %>%
   mutate(dest = str_replace(string = file, pattern = "../wcde/df", replacement = "./data-ssp/ssp"),
          dest = str_replace(string = dest, pattern = ".RData", replacement = ".csv"),
+         # on github ssp2 takes folder df1, ssp1 takes folder df2 because of samir's coding system
          dest = ifelse(test = str_detect(string = file, pattern = "df1"),
                        yes = str_replace(string = dest, pattern = "ssp1", replacement = "ssp2"),
                        no = dest),
@@ -21,6 +22,13 @@ x <- d %>%
   distinct(dest_dir)
 for(i in 1:nrow(x))
   dir_create(path = x$dest_dir[i])
+
+loading <- function(rdata_file){
+  # rdata_file = d
+  e <- new.env()
+  load(rdata_file, envir = e)
+  e
+}
 
 for(i in 1:nrow(d)){
   d$file[i] %>%

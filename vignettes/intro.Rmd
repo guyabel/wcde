@@ -1,0 +1,103 @@
+---
+title: "Overview of the `wcder` package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Overview of wcder}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+### Introduction
+
+The `wcder` package allows for R users to easily download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of summary data sets and helpful functions for working with education specific demographic data. 
+
+### Download data from the Wittgenstein Centre Human Capital Data Explorer Data Explorer
+
+The `wcde()` function can be used to download summary measures. It requires three user inputs; `indicator`, `scenario` and `country_code` (or `country_name`).... 
+
+```{r}
+library(wcder)
+find_indicator(x = "tfr")
+```
+
+Country names are guessed using the [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) package
+
+```{r, messages = FALSE, message=FALSE}
+# download education specific tfr data
+wcde(indicator = "etfr", country_name = c("Niger", "Korea"))
+
+# download educational attainment distribution 
+wcde(indicator = "prop", country_name = c("Brazil", "Albania"), scenario = 1)
+```
+
+### Population totals based on range of detailled educational categorisations.
+
+Download global data
+```{r}
+d <- wcde(indicator = "epop", country_code = 900)
+d
+```
+
+The `edu_grou_sum()` function can be used to sum education specific population data to 4, 6 or 8 education groups.
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+d %>% 
+  edu_group_sum(n = 4) %>%
+  filter(year == 2020)
+
+d %>% 
+  edu_group_sum(n = 6) %>%
+  filter(year == 2020,
+         age == "30--34")
+```
+
+### Population Pyramids
+
+Create population pyramids by setting male population values to negative equivalent to allow for divergent bars from the y axis.
+
+```{r}
+w <- d %>% 
+  edu_group_sum(n = 4) %>%
+  filter(year == 2020) %>%
+  mutate(pop = ifelse(test = sex == "Male", yes = -epop, no = epop),
+         pop = pop/1e6) 
+w
+```
+
+Use standard ggplot code to create population pyramid with
+
+  - `scale_x_symmetric()` from the [lemon](https://cran.r-project.org/web/packages/lemon/index.html) package to allow for equal male and female x-axis
+  - fill colours set to the `wic_col4` object in the wcder package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer. 
+    
+Note `wic_col6` and `wic_col8` objects also exist for equivalent plots of population data objects with corresponding numbers of categories of education.
+
+```{r, message=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+library(lemon)
+ggplot(data = w, 
+       mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
+  geom_col() +
+  scale_x_symmetric(labels = abs) +
+  scale_fill_manual(values = wic_col4, name = "Education") +
+  theme_bw()
+```
+
+Add male and female labels on the x-axis using the `annotate()` function,  hard setting the `ylim` and turning off plot clipping 
+
+```{r, fig.width=6, fig.height=6}
+g <- last_plot()
+
+g +
+  coord_cartesian(clip = 'off', ylim = c(1, nlevels(w$age))) +
+  annotate(geom = "text", x = -Inf, y = -1, label = "Male", hjust = 0) + 
+  annotate(geom = "text", x = Inf, y = -1, label = "Female", hjust = 1) +
+  labs(x = "")
+```

@@ -2,10 +2,10 @@
 % Please edit documentation in R/wcde.R
 \name{wcde}
 \alias{wcde}
-\title{Download data from the Wittgenstein Data Explorer}
+\title{Download data from the Wittgenstein Centre Human Capital Data Explorer Data Explorer}
 \usage{
 wcde(
-  measure = "pop",
+  indicator = "pop",
   scenario = 2,
   country_code = NULL,
   country_name = NULL,
@@ -13,7 +13,7 @@ wcde(
 )
 }
 \arguments{
-\item{measure}{One character string based on the \code{name} column in the \code{wic_indicators} data frame, representing the variable to be interested.}
+\item{indicator}{One character string based on the \code{name} column in the \code{wic_indicators} data frame, representing the variable to be interested.}
 
 \item{scenario}{Vector of length one or more with numbers corresponding the scenarios. See details for more information. Defaults to 2 for the SSP2 Medium scenario.}
 
@@ -27,11 +27,11 @@ wcde(
 A tibble with the data selected.
 }
 \description{
-Downloads data from the Wittgenstein Data Explorer. Requires a working internet connection.
+Downloads data from the Wittgenstein Centre Human Capital Data Explorer. Requires a working internet connection.
 }
 \details{
-\code{measure} must be set to a value in the first column in the table below of available demographic indicators:\tabular{ll}{
-   \code{measure} \tab Indicator description \cr
+\code{indicator} must be set to a value in the first column in the table below of available demographic indicators:\tabular{ll}{
+   \code{indicator} \tab Indicator Description \cr
    \code{pop} \tab Population Size (000's) \cr
    \code{bpop} \tab Population Size by Broad Age (000's) \cr
    \code{epop} \tab Population Size by Education (000's) \cr
@@ -77,10 +77,10 @@ Downloads data from the Wittgenstein Data Explorer. Requires a working internet 
 }
 \examples{
 # SSP2 tfr for Austria and Bulgaria
-wcde(measure = "tfr", country_code = c(40, 100))
+wcde(indicator = "etfr", country_code = c(40, 100))
 
-# SSP2 tfr for Austria and United Kingdom (guessing the country codes)
-wcde(measure = "tfr", country_name = c("Austria", "UK"))
+# SSP1 and SSP2 tfr for Austria and United Kingdom (guessing the country codes)
+wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
 
 # Not Run
 # SSP1 and SSP3 population by education for all countries
@@ -88,5 +88,5 @@ wcde(measure = "tfr", country_name = c("Austria", "UK"))
 # wic_locations \%>\%
 #   filter(dim == "country") \%>\%
 #   pull(isono) \%>\%
-#   wcde(scenario = c(1, 3), measure = "epop", country_code = .)
+#   wcde(scenario = c(1, 3), indicator = "epop", country_code = .)
 }

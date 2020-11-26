@@ -28,7 +28,7 @@ Install the developmental version with:
 
 ``` r
 library(devtools)
-install_github("guyabel/wcder")
+install_github("guyabel/wcder", ref = "main")
 ```
 
 ## Example
@@ -38,39 +38,39 @@ Download data based on a measure, scenario and country code:
 ``` r
 library(wcder)
 
-# SSP2 tfr for Austria and Bulgaria
-wcde(measure = "tfr", country_code = c(40, 100))
-#> # A tibble: 60 x 5
-#>    scenario name     country_code period      tfr
-#>       <dbl> <chr>           <dbl> <chr>     <dbl>
-#>  1        2 Austria            40 1950-1955  2.1 
-#>  2        2 Bulgaria          100 1950-1955  2.53
-#>  3        2 Austria            40 1955-1960  2.57
-#>  4        2 Bulgaria          100 1955-1960  2.3 
-#>  5        2 Austria            40 1960-1965  2.78
-#>  6        2 Bulgaria          100 1960-1965  2.22
-#>  7        2 Austria            40 1965-1970  2.57
-#>  8        2 Bulgaria          100 1965-1970  2.13
-#>  9        2 Austria            40 1970-1975  2.04
-#> 10        2 Bulgaria          100 1970-1975  2.16
-#> # ... with 50 more rows
+# SSP2 education specific tfr for Austria and Bulgaria
+wcde(indicator = "etfr", country_code = c(40, 100))
+#> # A tibble: 204 x 6
+#>    scenario name     country_code education          period     etfr
+#>       <dbl> <chr>           <dbl> <chr>              <chr>     <dbl>
+#>  1        2 Austria            40 No Education       2015-2020  1.64
+#>  2        2 Bulgaria          100 No Education       2015-2020  1.72
+#>  3        2 Austria            40 Incomplete Primary 2015-2020  1.64
+#>  4        2 Bulgaria          100 Incomplete Primary 2015-2020  1.72
+#>  5        2 Austria            40 Primary            2015-2020  1.64
+#>  6        2 Bulgaria          100 Primary            2015-2020  1.72
+#>  7        2 Austria            40 Lower Secondary    2015-2020  1.66
+#>  8        2 Bulgaria          100 Lower Secondary    2015-2020  1.73
+#>  9        2 Austria            40 Upper Secondary    2015-2020  1.46
+#> 10        2 Bulgaria          100 Upper Secondary    2015-2020  1.44
+#> # ... with 194 more rows
 
-# SSP1 tfr for Austria and United Kingdom (guessing the country codes)
-wcde(scenario = 1, measure = "tfr", country_name = c("Austria", "UK"))
-#> # A tibble: 60 x 5
-#>    scenario name                                     country_code period     tfr
-#>       <dbl> <chr>                                           <dbl> <chr>    <dbl>
-#>  1        1 Austria                                            40 1950-19~  2.1 
-#>  2        1 United Kingdom of Great Britain and Nor~          826 1950-19~  2.18
-#>  3        1 Austria                                            40 1955-19~  2.57
-#>  4        1 United Kingdom of Great Britain and Nor~          826 1955-19~  2.49
-#>  5        1 Austria                                            40 1960-19~  2.78
-#>  6        1 United Kingdom of Great Britain and Nor~          826 1960-19~  2.81
-#>  7        1 Austria                                            40 1965-19~  2.57
-#>  8        1 United Kingdom of Great Britain and Nor~          826 1965-19~  2.57
-#>  9        1 Austria                                            40 1970-19~  2.04
-#> 10        1 United Kingdom of Great Britain and Nor~          826 1970-19~  2.01
-#> # ... with 50 more rows
+# SSP1 and SSP2 education specific tfr for Austria and United Kingdom (guessing the country codes)
+wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
+#> # A tibble: 408 x 6
+#>    scenario name                        country_code education     period   etfr
+#>       <dbl> <chr>                              <dbl> <chr>         <chr>   <dbl>
+#>  1        1 Austria                               40 No Education  2015-2~  1.53
+#>  2        1 United Kingdom of Great Br~          826 No Education  2015-2~  1.98
+#>  3        1 Austria                               40 Incomplete P~ 2015-2~  1.53
+#>  4        1 United Kingdom of Great Br~          826 Incomplete P~ 2015-2~  1.98
+#>  5        1 Austria                               40 Primary       2015-2~  1.53
+#>  6        1 United Kingdom of Great Br~          826 Primary       2015-2~  1.98
+#>  7        1 Austria                               40 Lower Second~ 2015-2~  1.54
+#>  8        1 United Kingdom of Great Br~          826 Lower Second~ 2015-2~  2   
+#>  9        1 Austria                               40 Upper Second~ 2015-2~  1.35
+#> 10        1 United Kingdom of Great Br~          826 Upper Second~ 2015-2~  1.76
+#> # ... with 398 more rows
 
 # Not Run
 # SSP1 population by education for all countries

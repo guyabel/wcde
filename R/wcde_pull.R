@@ -1,8 +1,8 @@
-#' Pull multiple vectors for a given measure, scenarios and .Rdata file names
+#' Pull multiple vectors for a given indicator, scenarios and .Rdata file names
 #'
 #' @description Requires a working internet connection. Intended for internal use.
-#' @param measure One character string based on the `name` column in the `wic_indicators` data frame, representing the variable to be interested.
-#' @param scenario Vector of length one with a number corresponding the scenarios. See details for more information.
+#' @param indicator One character string based on the `name` column in the `wic_indicators` data frame, representing the variable to be interested.
+#' @param scenario Vector with a numbers corresponding the scenarios. See details in `wcde` for more information.
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
 #'
 #' @return A tibble with multiple columns.
@@ -10,62 +10,54 @@
 #' @keywords internal
 #'
 #' @examples
-#' wcde_pull(measure = "tfr", country_code = "900")
-#'
-#' # Not Run
-#' # library(dplyr)
-#' # wcder::wic_locations %>%
-#' #   filter(dim == "country") %>%
-#' #   pull(isono) %>%
-#' #   wcde_pull(measure = "tfr", country_code = .)
-wcde_pull <- function(measure = NULL, scenario = 2, country_code = NULL){
-  # scenario = c(1, 3); measure = "tfr"; country_code = c(40, 100)
-  if(length(measure) > 1){
-    message("can only get data on one measure at a time, taking first measure given")
-    measure <- measure[1]
+#' wcde_pull(indicator = "tfr", country_code = "900")
+wcde_pull <- function(indicator = NULL, scenario = 2, country_code = NULL){
+  # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
+  if(length(indicator) > 1){
+    message("can only get data on one indicator at a time, taking first indicator given")
+    indicator <- indicator[1]
   }
-  if(length(scenario) > 1){
-    message("can only get data on one scenario at a time, taking first scenario given")
-    scenario <- scenario[1]
+  if(!wcde_location(country_code = country_code)){
+    stop("data for one of the country codes not available")
   }
-  # on github ssp2 takes folder df1, ssp1 takes folder df2 because of samir's coding system
-  s <- dplyr::case_when(scenario == 1 ~ "2",
-                        scenario == 2 ~ "1",
-                        TRUE ~ as.character(scenario))
+  # if(length(scenario) > 1){
+  #   message("can only get data on one scenario at a time, taking first scenario given")
+  #   scenario <- scenario[1]
+  # }
+  if(!all(scenario %in% 1:5)){
+    message("scenario must be an integer between 1 and 5")
+  }
 
-  v0 <- c("period", "year", "age", "sex", "edu")
+  v0 <- wcder::wic_indicators %>%
+    dplyr::filter(indicator == {{indicator}}) %>%
+    dplyr::select_if(is.numeric) %>%
+    tidyr::pivot_longer(cols = dplyr::everything(), names_to = "v", values_to = "avail") %>%
+    dplyr::filter(avail == 1) %>%
+    dplyr::pull(v)
+  if(!any(v0 == "period"))
+    v0 <- c(v0, "year")
   v1 <- c(v0, country_code)
 
-  d0 <- tibble::tibble(measure, scenario = s, v1) %>%
+  d0 <- tidyr::expand_grid(scenario, indicator, v1) %>%
     dplyr::rename(country_code = 3)
 
-  # d0$n <- 1:nrow(d0)
+  read_with_progress <- function(f){
+    pb$tick()
+    readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5)
+  }
   pb <- progress::progress_bar$new(total = nrow(d0))
   pb$tick(0)
-  d0$d <- purrr::pmap(
-    .l = list(mm = d0$measure, ss = d0$scenario, cc = d0$country_code),
-    # in order to get progress bar, need to define .f here not call from another function
-    .f = function(mm, ss, cc){
-      v0 <- c("period", "year", "age", "sex", "edu")
-      if(!cc %in% v0){
-        if(!wcde_location(country_code = cc)){
-          stop()
-        }
-      }
-      pb$tick()
-      u <- paste0("https://github.com/guyabel/wcde/raw/master/df",
-                  ss, "/", mm, "/", cc, ".RData")
-      d <- u %>%
-        url() %>%
-        loading() %>%
-        as.list() %>%
-        tibble::as_tibble()
-      close(con = url(u))
-      return(d)
-    })
+  d0 <- d0 %>%
+    dplyr::mutate(u = paste0("https://raw.githubusercontent.com/guyabel/wcder/main/data-ssp/ssp",
+                             scenario, "/", indicator, "/", country_code, ".csv"),
+                  d = purrr::map(.x = u, .f = ~read_with_progress(f = .x))) %>%
+    dplyr::group_by(scenario) %>%
+    dplyr::summarise(dplyr::bind_cols(d), .groups = "drop_last") %>%
+    dplyr::ungroup()
   pb$terminate()
 
-  # use scenario not s - s is just to match samir coding
-  d1 <- dplyr::bind_cols(scenario = scenario, d0$d)
+  cc <- which(names(d0) %in% country_code)
+  d1 <- tidyr::pivot_longer(data = d0, cols = dplyr::all_of(cc),
+                            names_to = "isono", values_to = {{indicator}})
   return(d1)
 }

@@ -34,7 +34,7 @@ Install the developmental version with:
 
 ``` r
 library(devtools)
-install_github("guyabel/wcder")
+install_github("guyabel/wcder", ref = "main")
 ```
 
 ## Example
@@ -44,11 +44,11 @@ Download data based on a measure, scenario and country code:
 ```{r example}
 library(wcder)
 
-# SSP2 tfr for Austria and Bulgaria
-wcde(measure = "tfr", country_code = c(40, 100))
+# SSP2 education specific tfr for Austria and Bulgaria
+wcde(indicator = "etfr", country_code = c(40, 100))
 
-# SSP1 tfr for Austria and United Kingdom (guessing the country codes)
-wcde(scenario = 1, measure = "tfr", country_name = c("Austria", "UK"))
+# SSP1 and SSP2 education specific tfr for Austria and United Kingdom (guessing the country codes)
+wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
 
 # Not Run
 # SSP1 population by education for all countries

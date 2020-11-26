@@ -1,16 +1,16 @@
-#' Download data from the Wittgenstein Data Explorer
+#' Download data from the Wittgenstein Centre Human Capital Data Explorer Data Explorer
 #'
-#' @description Downloads data from the Wittgenstein Data Explorer. Requires a working internet connection.
+#' @description Downloads data from the Wittgenstein Centre Human Capital Data Explorer. Requires a working internet connection.
 #'
-#' @param measure One character string based on the `name` column in the `wic_indicators` data frame, representing the variable to be interested.
+#' @param indicator One character string based on the `name` column in the `wic_indicators` data frame, representing the variable to be interested.
 #' @param scenario Vector of length one or more with numbers corresponding the scenarios. See details for more information. Defaults to 2 for the SSP2 Medium scenario.
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
 #' @param country_name Vector of length one or more of country names. The corresponding country code will be guessed using the countrycodes package.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
 #'
-#' @details `measure` must be set to a value in the first column in the table below of available demographic indicators:
+#' @details `indicator` must be set to a value in the first column in the table below of available demographic indicators:
 #'
-#' | `measure`   | Indicator description                                                                |
+#' | `indicator`   | Indicator Description                                                                |
 #' |-----------|----------------------------------------------------------------------------|
 #' | `pop`       | Population Size (000's)                                                    |
 #' | `bpop`      | Population Size by Broad Age (000's)                                       |
@@ -60,10 +60,10 @@
 #'
 #' @examples
 #' # SSP2 tfr for Austria and Bulgaria
-#' wcde(measure = "tfr", country_code = c(40, 100))
+#' wcde(indicator = "etfr", country_code = c(40, 100))
 #'
-#' # SSP2 tfr for Austria and United Kingdom (guessing the country codes)
-#' wcde(measure = "tfr", country_name = c("Austria", "UK"))
+#' # SSP1 and SSP2 tfr for Austria and United Kingdom (guessing the country codes)
+#' wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
 #'
 #' # Not Run
 #' # SSP1 and SSP3 population by education for all countries
@@ -71,8 +71,9 @@
 #' # wic_locations %>%
 #' #   filter(dim == "country") %>%
 #' #   pull(isono) %>%
-#' #   wcde(scenario = c(1, 3), measure = "epop", country_code = .)
-wcde <- function(measure = "pop", scenario = 2,
+#' #   wcde(scenario = c(1, 3), indicator = "epop", country_code = .)
+# scenario = 2; indicator = "epop"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
+wcde <- function(indicator = "pop", scenario = 2,
                  country_code = NULL, country_name = NULL,
                  include_scenario_names = FALSE){
   # guess country codes from name
@@ -84,25 +85,26 @@ wcde <- function(measure = "pop", scenario = 2,
   country_code <- c(country_code, guessed_code)
 
   d1 <- wcder::wic_indicators %>%
-    dplyr::filter(name == measure)
+    dplyr::filter(indicator == {{indicator}})
+
   if(nrow(d1) < 1){
-    stop(paste(measure, "not an indicator code in wic_indicators, please select an indicator code in the name column of widc_indicators"))
+    stop(paste(indicator, "not an indicator code in wic_indicators, please select an indicator code in the name column of widc_indicators"))
   }
 
   d2a <- wcder::wic_locations %>%
     dplyr::select(isono, name)
 
-  d2 <- wcde_pull(measure = measure, scenario = scenario, country_code = country_code) %>%
-    tidyr::pivot_longer(cols = -(1:6), names_to = "isono", values_to = {{measure}}) %>%
+  d2 <- wcde_pull(indicator = indicator, scenario = scenario, country_code = country_code) %>%
     dplyr::mutate(isono = as.numeric(isono)) %>%
     dplyr::left_join(d2a, by = "isono") %>%
     {if(include_scenario_names) dplyr::left_join(. , wcder::wic_scenarios, by = "scenario") else .}
 
   d2 %>%
-    {if(d1$period == 0) dplyr::select(., -period) else dplyr::select(., -year)} %>%
-    {if(sum(d1$age, d1$bage, d1$sage) == 0) dplyr::select(., -age) else .} %>%
-    {if(d1$sex == 0) dplyr::select(., -sex) else .} %>%
-    {if(d1$edu == 0) dplyr::select(., -edu) else dplyr::rename(., education=edu)} %>%
+    # {if(d1$period == 0) dplyr::select(., -period) else dplyr::select(., -year)} %>%
+    # {if(sum(d1$age, d1$bage, d1$sage) == 0) dplyr::select(., -age) else .} %>%
+    # {if(d1$sex == 0) dplyr::select(., -sex) else .} %>%
+    # {if(d1$edu == 0) dplyr::select(., -edu) else dplyr::rename(., education=edu)} %>%
+    {if(d1$edu == 0) . else dplyr::rename(., education=edu)} %>%
     tidyr::drop_na(.) %>%
     dplyr::relocate(dplyr::contains("scenario"), name, isono) %>%
     dplyr::rename(country_code = isono)

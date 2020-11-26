@@ -7,14 +7,15 @@
 \format{
 A data frame with 31 rows and 8 variables, including:
 \describe{
-\item{fullname}{Full name of indicator}
-\item{name}{Short name of indicator to be used in the \code{measure} argument of the \code{wcde()} function}
-\item{age}{Indicator variable for the inclsion of breakdowns by five-year age groups in the measure}
-\item{bage}{Indicator variable for the inclsion of breakdowns by broad age groups in the measure}
-\item{sage}{Indicator variable for the inclsion of breakdowns by new born as a age group in the measure}
-\item{sex}{Indicator variable for the inclsion of breakdowns by sex in the measure}
-\item{edu}{Indicator variable for the inclsion of breakdowns by education in the measure}
-\item{period}{Indicator variable a period (flow) measure}
+\item{indicator}{Short name of indicator to be used in the \code{indicator} argument of the \code{wcde()} function}
+\item{description}{Brief descripition of indicator}
+\item{age}{Indicator variable for the inclsion of breakdowns by five-year age groups in the indicator}
+\item{bage}{Indicator variable for the inclsion of breakdowns by broad age groups in the indicator}
+\item{sage}{Indicator variable for the inclsion of breakdowns by new born as a age group in the indicator}
+\item{sex}{Indicator variable for the inclsion of breakdowns by sex in the indicator}
+\item{edu}{Indicator variable for the inclsion of breakdowns by education in the indicator}
+\item{period}{Indicator variable a period (flow) indicator}
+\item{definition}{Full definition for indicator}
 }
 }
 \source{

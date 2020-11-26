@@ -2,14 +2,14 @@
 % Please edit documentation in R/wcde_pull.R
 \name{wcde_pull}
 \alias{wcde_pull}
-\title{Pull multiple vectors for a given measure, scenarios and .Rdata file names}
+\title{Pull multiple vectors for a given indicator, scenarios and .Rdata file names}
 \usage{
-wcde_pull(measure = NULL, scenario = 2, country_code = NULL)
+wcde_pull(indicator = NULL, scenario = 2, country_code = NULL)
 }
 \arguments{
-\item{measure}{One character string based on the \code{name} column in the \code{wic_indicators} data frame, representing the variable to be interested.}
+\item{indicator}{One character string based on the \code{name} column in the \code{wic_indicators} data frame, representing the variable to be interested.}
 
-\item{scenario}{Vector of length one with a number corresponding the scenarios. See details for more information.}
+\item{scenario}{Vector with a numbers corresponding the scenarios. See details in \code{wcde} for more information.}
 
 \item{country_code}{Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.}
 }
@@ -20,13 +20,6 @@ A tibble with multiple columns.
 Requires a working internet connection. Intended for internal use.
 }
 \examples{
-wcde_pull(measure = "tfr", country_code = "900")
-
-# Not Run
-# library(dplyr)
-# wcder::wic_locations \%>\%
-#   filter(dim == "country") \%>\%
-#   pull(isono) \%>\%
-#   wcde_pull(measure = "tfr", country_code = .)
+wcde_pull(indicator = "tfr", country_code = "900")
 }
 \keyword{internal}
