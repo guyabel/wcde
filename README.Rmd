@@ -13,28 +13,28 @@ knitr::opts_chunk$set(
 )
 ```
 
-# wcder
+# wcde
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/wcder)](https://CRAN.R-project.org/package=wcder)
+[![CRAN status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/package=wcde)
 <!-- badges: end -->
 
 Download data from the [Wittgenstein Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
 ## Installation
 
-<!-- You can install the released version of wcder from [CRAN](https://CRAN.R-project.org) with: -->
+<!-- You can install the released version of wcde from [CRAN](https://CRAN.R-project.org) with: -->
 
 <!-- ``` r -->
-<!-- install.packages("wcder") -->
+<!-- install.packages("wcde") -->
 <!-- ``` -->
 
 Install the developmental version with:
 
 ``` r
 library(devtools)
-install_github("guyabel/wcder", ref = "main")
+install_github("guyabel/wcde", ref = "main")
 ```
 
 ## Example
@@ -42,7 +42,7 @@ install_github("guyabel/wcder", ref = "main")
 Download data based on a measure, scenario and country code:
 
 ```{r example}
-library(wcder)
+library(wcde)
 
 # SSP2 education specific tfr for Austria and Bulgaria
 wcde(indicator = "etfr", country_code = c(40, 100))

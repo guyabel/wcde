@@ -14,7 +14,7 @@
 #' wcde_location(country_code = c(100, 44))
 #' wcde_location(country_code = 3)
 wcde_location <- function(country_code){
-  v <- wcder::wic_locations %>%
+  v <- wcde::wic_locations %>%
     tidyr::drop_na(isono) %>%
     dplyr::pull(isono)
   x <- sum(!country_code %in% v) == 0

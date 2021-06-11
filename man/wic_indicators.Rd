@@ -9,12 +9,13 @@ A data frame with 31 rows and 8 variables, including:
 \describe{
 \item{indicator}{Short name of indicator to be used in the \code{indicator} argument of the \code{wcde()} function}
 \item{description}{Brief descripition of indicator}
-\item{age}{Indicator variable for the inclsion of breakdowns by five-year age groups in the indicator}
-\item{bage}{Indicator variable for the inclsion of breakdowns by broad age groups in the indicator}
-\item{sage}{Indicator variable for the inclsion of breakdowns by new born as a age group in the indicator}
-\item{sex}{Indicator variable for the inclsion of breakdowns by sex in the indicator}
-\item{edu}{Indicator variable for the inclsion of breakdowns by education in the indicator}
-\item{period}{Indicator variable a period (flow) indicator}
+\item{age}{Availability of indicator by five-year age groups}
+\item{bage}{Availability of indicator by broad age groups}
+\item{sage}{Availability of indicator with a new born age group}
+\item{sex}{Availability of indicator by sex}
+\item{edu}{Availability of indicator by education}
+\item{period}{Indicator is a period (flow)}
+\item{past}{Availability of past data for indicator}
 \item{definition}{Full definition for indicator}
 }
 }
@@ -25,6 +26,6 @@ A data frame with 31 rows and 8 variables, including:
 wic_indicators
 }
 \description{
-A dataset containing the indicator codes, names and further details used in the Wittgenstein Data Explorer
+A data set containing the indicator codes, names and further details used in the Wittgenstein Data Explorer
 }
 \keyword{datasets}

@@ -13,6 +13,7 @@
 #' wcde_pull(indicator = "tfr", country_code = "900")
 wcde_pull <- function(indicator = NULL, scenario = 2, country_code = NULL){
   # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
+  # scenario = 2; indicator = "e0"; country_code = "900"
   if(length(indicator) > 1){
     message("can only get data on one indicator at a time, taking first indicator given")
     indicator <- indicator[1]
@@ -27,15 +28,20 @@ wcde_pull <- function(indicator = NULL, scenario = 2, country_code = NULL){
   if(!all(scenario %in% 1:5)){
     message("scenario must be an integer between 1 and 5")
   }
-
-  v0 <- wcder::wic_indicators %>%
+  v0 <- wcde::wic_indicators %>%
     dplyr::filter(indicator == {{indicator}}) %>%
-    dplyr::select_if(is.numeric) %>%
+    dplyr::select(-past) %>%
+    dplyr::select_if(is.logical) %>%
     tidyr::pivot_longer(cols = dplyr::everything(), names_to = "v", values_to = "avail") %>%
     dplyr::filter(avail == 1) %>%
     dplyr::pull(v)
   if(!any(v0 == "period"))
     v0 <- c(v0, "year")
+  if(any(stringr::str_detect(string = v0, pattern = "bage")))
+    v0 <- stringr::str_replace(string = v0, pattern = "bage", "age")
+  if(any(stringr::str_detect(string = v0, pattern = "sage")))
+    v0 <- stringr::str_replace(string = v0, pattern = "sage", "age")
+
   v1 <- c(v0, country_code)
 
   d0 <- tidyr::expand_grid(scenario, indicator, v1) %>%

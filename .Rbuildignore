@@ -4,7 +4,9 @@
 ^data-ssp$
 ^data_ssp.R
 ^LICENSE\.md$
-^wcder\.Rproj$
+^wcde\.Rproj$
 ^README\.Rmd$
 ^cran-comments\.md$
 ^\.github$
+^doc$
+^Meta$

@@ -2,8 +2,9 @@
 
 export("%>%")
 export(edu_group_sum)
+export(every_other)
 export(find_indicator)
-export(wcde)
+export(get_wcde)
 export(wcde_location)
 export(wcde_pull)
 importFrom(magrittr,"%>%")

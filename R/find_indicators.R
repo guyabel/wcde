@@ -10,7 +10,7 @@
 #' find_indicator("migr")
 #' find_indicator("fert")
 find_indicator <- function(x){
-  wcder::wic_indicators %>%
+  wcde::wic_indicators %>%
     dplyr::select_if(is.character) %>%
     # across and filter any row not directly possible
     dplyr::filter_all(dplyr::any_vars(

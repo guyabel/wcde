@@ -1,8 +1,15 @@
 ---
-title: "Overview of the `wcder` package"
-output: rmarkdown::html_vignette
+title: "Overview of the `wcde` package"
+output:
+  html_document:
+    fig_caption: false
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 2
 vignette: >
-  %\VignetteIndexEntry{Overview of wcder}
+  %\VignetteIndexEntry{Overview of wcde}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,42 +21,161 @@ knitr::opts_chunk$set(
 )
 ```
 
+The `wcde` package allows for R users to easily download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of summary data sets and helpful functions for working with education specific demographic data.
 
-### Introduction
+# Getting data into R
 
-The `wcder` package allows for R users to easily download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of summary data sets and helpful functions for working with education specific demographic data. 
+The `get_wcde()` function can be used to download data from the Wittgenstein Centre Human Capital Data Explorer. It requires three user inputs
 
-### Download data from the Wittgenstein Centre Human Capital Data Explorer Data Explorer
+- `indicator`: a short code for the indicator of interest
+- `scenario`: a number referring to a SSP narrative, by default 2 is used (for SSP2) 
+- `country_code` (or `country_name`): corresponding to the country of interest 
 
-The `wcde()` function can be used to download summary measures. It requires three user inputs; `indicator`, `scenario` and `country_code` (or `country_name`).... 
+```{r, messages = FALSE, message=FALSE}
+library(wcde)
+# download education specific tfr data
+get_wcde(indicator = "etfr", 
+         country_name = c("Brazil", "Albania"))
+
+# download education specific survivorship rates
+get_wcde(indicator = "eassr", 
+         country_name = c("Niger", "Korea"))
+```
+
+## Indicator codes
+
+The indicator input must match the short code from the indicator table. The `find_indicator()` function can be used to look up short codes (given in the first column) from the `wic_indicators` data frame:
 
 ```{r}
-library(wcder)
 find_indicator(x = "tfr")
 ```
 
-Country names are guessed using the [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) package
+## Temporal coverage 
 
-```{r, messages = FALSE, message=FALSE}
-# download education specific tfr data
-wcde(indicator = "etfr", country_name = c("Niger", "Korea"))
+By default, `get_wdce()` returns data for all years or available periods or years. The `filter()` function in dplyr can be used to filter data for specific years or periods, for example:
 
-# download educational attainment distribution 
-wcde(indicator = "prop", country_name = c("Brazil", "Albania"), scenario = 1)
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+get_wcde(indicator = "e0", 
+         country_name = c("Japan", "Australia")) %>%
+  filter(period == "2015-2020")
+
+get_wcde(indicator = "sexratio", 
+         country_name = c("China", "South Korea")) %>%
+  filter(year == 2020)
 ```
 
-### Population totals based on range of detailled educational categorisations.
+Past data is only available for selected indicators. These can be viewed using the `past` indicator column: 
 
-Download global data
 ```{r}
-d <- wcde(indicator = "epop", country_code = 900)
+wic_indicators %>%
+  filter(past) %>%
+  select(1:2)
+```
+
+The filter function can also be used to filter specific indicators to specific age, sex or education groups
+
+```{r, messages = FALSE, message=FALSE}
+get_wcde(indicator = "sexratio", 
+         country_name = c("China", "South Korea")) %>%
+  filter(year == 2020, 
+         age == "All")
+```
+
+
+## Country names and codes
+
+Country names are guessed using the [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) package. 
+
+The `get_wcde()` accepts ISO alpha_numeric codes for countries:
+
+```{r, messages = FALSE, message=FALSE}
+get_wcde(indicator = "tfr", 
+         country_name = c("U.A.E", "Espania", "Österreich"))
+
+get_wcde(indicator = "etfr", country_code = c(44, 100))
+```
+A full list of available countries and region aggregates can be found in the `wic_locations` data frame. 
+
+```{r}
+wic_locations
+```
+
+
+## Scenarios
+
+By default `get_data()` returns data for Medium (SSP2) scenario. Results for different SSP scenarios can be returned by passing a different (or multiple) scenario values to the `scenario` argument in `get_data()`. 
+
+```{r, messages = FALSE, message=FALSE}
+get_wcde(indicator = "growth", 
+         country_name = c("India", "China"), 
+         scenario = 1:5) %>%
+  filter(period == "2095-2100")
+```
+
+Set `include_scenario_names = TRUE` to include a columns with the full names of the scenarios
+
+```{r, messages = FALSE, message=FALSE}
+get_wcde(indicator = "tfr", 
+         country_name = c("Kenya", "Nigeria", "Algeria"), scenario = c(2, 1, 5), 
+         include_scenario_names = TRUE) %>%
+  filter(period == "2045-2050")
+```
+
+Additional details of the pathways for each scenario numeric code can be found in the `wic_scenarios` object. Further background and links to the corresponding literature are provided in the [Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) 
+
+```{r}
+wic_scenarios
+```
+
+
+
+## All countries data 
+
+Data for all countries can be obtained by not setting `country_name` or `country_code`
+
+```{r, messages = FALSE, message=FALSE}
+get_wcde(indicator = "mage")
+```
+
+## Multiple indicators
+
+The `get_wdce()` function needs to be called multiple times to download multiple indicators. This can be done using the `map()` function in [`purrr`](https://cran.r-project.org/web/packages/purrr/index.html)
+
+```{r, messages = FALSE, message=FALSE}
+mi <- tibble(ind = c("odr", "nirate", "ggapedu25")) %>%
+  mutate(d = map(.x = ind, .f = ~get_wcde(indicator = .x)))
+mi
+
+mi %>%
+  filter(ind == "odr") %>%
+  select(-ind) %>%
+  unnest(cols = d)
+
+mi %>%
+  filter(ind == "nirate") %>%
+  select(-ind) %>%
+  unnest(cols = d)
+
+mi %>%
+  filter(ind == "ggapedu25") %>%
+  select(-ind) %>%
+  unnest(cols = d)
+```
+
+
+# Working with population data
+
+The education population data in the data explorer, obtained by setting `indicator = "epop"` in `get_wcde()`, provide results by up to three different education categorizations (4, 6 and 8 education groups). 
+
+```{r, messages = FALSE, message=FALSE}
+d <- get_wcde(indicator = "epop", country_code = 900)
 d
 ```
 
-The `edu_grou_sum()` function can be used to sum education specific population data to 4, 6 or 8 education groups.
+As the data frame contains multiple groupings, the `edu_group_sum()` function can be used to provide education specific population data. Users can specify the education groupings by setting the `n` argument to 4, 6 or 8.
 
 ```{r, warning=FALSE, message=FALSE}
-library(tidyverse)
 d %>% 
   edu_group_sum(n = 4) %>%
   filter(year == 2020)
@@ -60,44 +186,58 @@ d %>%
          age == "30--34")
 ```
 
-### Population Pyramids
+# Population pyramids
 
-Create population pyramids by setting male population values to negative equivalent to allow for divergent bars from the y axis.
+Create population pyramids by setting male population values to negative equivalent to allow for divergent columns from the y axis.
 
 ```{r}
 w <- d %>% 
   edu_group_sum(n = 4) %>%
   filter(year == 2020) %>%
   mutate(pop = ifelse(test = sex == "Male", yes = -epop, no = epop),
-         pop = pop/1e6) 
+         pop = pop/1e3) 
 w
 ```
 
 Use standard ggplot code to create population pyramid with
 
-  - `scale_x_symmetric()` from the [lemon](https://cran.r-project.org/web/packages/lemon/index.html) package to allow for equal male and female x-axis
-  - fill colours set to the `wic_col4` object in the wcder package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer. 
-    
+-   `scale_x_symmetric()` from the [lemon](https://cran.r-project.org/web/packages/lemon/index.html) package to allow for equal male and female x-axis
+-   fill colours set to the `wic_col4` object in the wcde package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer.
+
 Note `wic_col6` and `wic_col8` objects also exist for equivalent plots of population data objects with corresponding numbers of categories of education.
 
 ```{r, message=FALSE, warning=FALSE, fig.width=6, fig.height=6}
 library(lemon)
+
 ggplot(data = w, 
        mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
   geom_col() +
+  geom_vline(xintercept = 0, colour = "black") + 
   scale_x_symmetric(labels = abs) +
   scale_fill_manual(values = wic_col4, name = "Education") +
   theme_bw()
 ```
 
-Add male and female labels on the x-axis using the `annotate()` function,  hard setting the `ylim` and turning off plot clipping 
+Add male and female labels on the x-axis by 
+
+- Creating a facet plot with the strips on the bottom with transparent backgrounds and no space between.
+- Set the x axis to have zero expansion beyond the values in the data allowing the two sides of the pyramids to meet.
+- Add a `geom_blank()` to allow for equal x-axis and additional space at the end of largest columns.
 
 ```{r, fig.width=6, fig.height=6}
-g <- last_plot()
+w <- w %>%
+  mutate(pop_max = ifelse(sex == "Male", -max(pop), max(pop)))
 
-g +
-  coord_cartesian(clip = 'off', ylim = c(1, nlevels(w$age))) +
-  annotate(geom = "text", x = -Inf, y = -1, label = "Male", hjust = 0) + 
-  annotate(geom = "text", x = Inf, y = -1, label = "Female", hjust = 1) +
-  labs(x = "")
+ggplot(data = w, 
+       mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
+  geom_col() +
+  geom_vline(xintercept = 0, colour = "black") +
+  geom_blank(mapping = aes(x = pop_max * 1.05)) +
+  scale_x_continuous(labels = abs, expand = c(0, 0)) +
+  facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
+  scale_fill_manual(values = wic_col4, name = "Education") +
+  theme(panel.spacing.x = unit(0, "pt"),
+        strip.placement = "outside",
+        strip.background = element_rect(fill = "transparent"),
+        strip.text.x = element_text(margin = margin( b = 0, t = 0)))
 ```

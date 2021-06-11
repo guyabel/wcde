@@ -26,7 +26,7 @@ edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert =
     {if(strip_totals & n != 8) dplyr::filter(., education != "Total") else . }
   if(n == 4){
     d1 <- d0 %>%
-      dplyr::filter(!education %in% names(wcder::wic_col8)[7:9]) %>%
+      dplyr::filter(!education %in% names(wcde::wic_col8)[7:9]) %>%
       dplyr::mutate(education = stringr::str_remove(string = education, pattern = "Incomplete |Lower |Upper ")) %>%
       {if(factor_convert) dplyr::mutate_if(., is.character, forcats::fct_inorder) else . } %>%
       dplyr::group_by(scenario, name, country_code, year, age, sex, education) %>%
@@ -35,7 +35,7 @@ edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert =
   }
   if(n == 6){
     d1 <- d0 %>%
-      dplyr::filter(!education %in% names(wcder::wic_col8)[7:9]) %>%
+      dplyr::filter(!education %in% names(wcde::wic_col8)[7:9]) %>%
       {if(factor_convert) dplyr::mutate_if(., is.character, forcats::fct_inorder) else . } %>%
       dplyr::group_by(scenario, name, country_code, year, age, sex, education) %>%
       dplyr::summarise(epop = sum(epop)) %>%
