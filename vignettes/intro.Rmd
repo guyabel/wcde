@@ -21,7 +21,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-The `wcde` package allows for R users to easily download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of summary data sets and helpful functions for working with education specific demographic data.
+<img src='../man/figures/logo.png' align="right" height="180" />
+
+The `wcde` package allows for R users to easily download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of helpful functions for working with education specific demographic data.
+
+# Installation
+
+You can install the released version of `wcde` from [CRAN](https://CRAN.R-project.org) with:
+
+```{r eval=FALSE}
+install.packages("wcde")
+```
+
+Install the developmental version with:
+
+```{r eval=FALSE}
+library(devtools)
+install_github("guyabel/wcde", ref = "main")
+```
+
 
 # Getting data into R
 
@@ -104,7 +122,7 @@ wic_locations
 
 ## Scenarios
 
-By default `get_data()` returns data for Medium (SSP2) scenario. Results for different SSP scenarios can be returned by passing a different (or multiple) scenario values to the `scenario` argument in `get_data()`. 
+By default `get_wcde()` returns data for Medium (SSP2) scenario. Results for different SSP scenarios can be returned by passing a different (or multiple) scenario values to the `scenario` argument in `get_data()`. 
 
 ```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "growth", 
@@ -226,15 +244,16 @@ Add male and female labels on the x-axis by
 
 ```{r, fig.width=6, fig.height=6}
 w <- w %>%
+  # group_by(sex) ^>^
   mutate(pop_max = ifelse(sex == "Male", -max(pop), max(pop)))
 
 ggplot(data = w, 
        mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
   geom_col() +
   geom_vline(xintercept = 0, colour = "black") +
-  geom_blank(mapping = aes(x = pop_max * 1.05)) +
-  scale_x_continuous(labels = abs, expand = c(0, 0)) +
   facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
+  geom_blank(mapping = aes(x = pop_max * 1.1)) +
+  scale_x_continuous(labels = abs, expand = c(0, 0)) +
   scale_fill_manual(values = wic_col4, name = "Education") +
   theme(panel.spacing.x = unit(0, "pt"),
         strip.placement = "outside",

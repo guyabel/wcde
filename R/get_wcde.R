@@ -61,20 +61,18 @@
 #'
 #' @examples
 #' # SSP2 tfr for Austria and Bulgaria
-#' get_wcde(indicator = "etfr", country_code = c(40, 100))
+#' get_wcde(indicator = "tfr", country_code = c(40, 100))
 #'
-#' # SSP1 and SSP2 tfr for Austria and United Kingdom (guessing the country codes)
-#' get_wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
+#' # SSP1 and SSP2 life expectancy for Vietnam and United Kingdom (guessing the country codes)
+#' get_wcde(scenario = c(1, 2), indicator = "e0", country_name = c("Vietnam", "UK"))
 #'
 #' # Not Run
 #' # SSP1 and SSP3 population by education for all countries
-#' get_wcde(scenario = c(1, 3), indicator = "tfr")
-# scenario = 2; indicator = "epop"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
-# scenario = 2; indicator = "tfr"; country_code = NULL; country_name = NULL; include_scenario_names = FALSE
-# indicator = "e0"; country_name = c("China", "South Korea")
+#' # get_wcde(scenario = c(1, 3), indicator = "tfr")
 get_wcde <- function(indicator = "pop", scenario = 2,
                  country_code = NULL, country_name = NULL,
                  include_scenario_names = FALSE){
+  # scenario = 2; indicator = "epop"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
   # guess country codes from name
   guessed_code <- NULL
   if(!is.null(country_name)){
@@ -93,7 +91,7 @@ get_wcde <- function(indicator = "pop", scenario = 2,
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
       dplyr::mutate(
-        u = paste0("https://raw.githubusercontent.com/guyabel/wcde-data/main/data-batch/ssp",
+        u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-batch/ssp",
                    scenario, "/", indicator, ".csv"),
         d = purrr::map(
           .x = u,

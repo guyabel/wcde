@@ -2,7 +2,7 @@
 % Please edit documentation in R/every_other.R
 \name{every_other}
 \alias{every_other}
-\title{Select Every Other (nth) Element}
+\title{Select every other (nth) element from a vector}
 \usage{
 every_other(x, n = 2, start = 1, fill = NULL)
 }
@@ -16,10 +16,10 @@ every_other(x, n = 2, start = 1, fill = NULL)
 \item{fill}{Character string to be used in place of skipped element. By default is \code{NULL} and hence skipped elements are removed rather than replaced.}
 }
 \value{
-
+Vector with elements removed
 }
 \description{
-Select Every Other (nth) Element
+Select every other (nth) element from a vector
 }
 \examples{
 every_other(x = letters)

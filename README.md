@@ -1,102 +1,104 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wcder
+# wcde
 
 <!-- badges: start -->
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/wcder)](https://CRAN.R-project.org/package=wcder)
+status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/package=wcde)
+<!-- [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) -->
 <!-- badges: end -->
 
-Download data from the [Wittgenstein Human Capital Data
+<img src='./man/figures/logo.png' align="right" height="150" />
+
+Download data from the [Wittgenstein Centre Human Capital Data
 Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
 ## Installation
 
-<!-- You can install the released version of wcder from [CRAN](https://CRAN.R-project.org) with: -->
-
-<!-- ``` r -->
-
-<!-- install.packages("wcder") -->
-
+<!-- You can install the released version of `wcde` from [CRAN](https://CRAN.R-project.org) with: -->
+<!-- ```{r eval=FALSE} -->
+<!-- install.packages("wcde") -->
 <!-- ``` -->
 
 Install the developmental version with:
 
 ``` r
 library(devtools)
-install_github("guyabel/wcder", ref = "main")
+install_github("guyabel/wcde", ref = "main")
 ```
 
 ## Example
 
-Download data based on a measure, scenario and country code:
+Download data based on a indicator, scenario and country code:
 
 ``` r
-library(wcder)
+library(wcde)
 
-# SSP2 education specific tfr for Austria and Bulgaria
-wcde(indicator = "etfr", country_code = c(40, 100))
-#> # A tibble: 204 x 6
-#>    scenario name     country_code education          period     etfr
-#>       <dbl> <chr>           <dbl> <chr>              <chr>     <dbl>
-#>  1        2 Austria            40 No Education       2015-2020  1.64
-#>  2        2 Bulgaria          100 No Education       2015-2020  1.72
-#>  3        2 Austria            40 Incomplete Primary 2015-2020  1.64
-#>  4        2 Bulgaria          100 Incomplete Primary 2015-2020  1.72
-#>  5        2 Austria            40 Primary            2015-2020  1.64
-#>  6        2 Bulgaria          100 Primary            2015-2020  1.72
-#>  7        2 Austria            40 Lower Secondary    2015-2020  1.66
-#>  8        2 Bulgaria          100 Lower Secondary    2015-2020  1.73
-#>  9        2 Austria            40 Upper Secondary    2015-2020  1.46
-#> 10        2 Bulgaria          100 Upper Secondary    2015-2020  1.44
-#> # ... with 194 more rows
+# SSP2 education specific tfr for Austria
+get_wcde(indicator = "etfr", country_name = "Austria")
+#> [==============================================>------------------------] 67%
+#> [=======================================================================] 100%
+#> # A tibble: 102 x 6
+#>    scenario name    country_code education          period     etfr
+#>       <dbl> <chr>          <dbl> <chr>              <chr>     <dbl>
+#>  1        2 Austria           40 No Education       2015-2020  1.64
+#>  2        2 Austria           40 Incomplete Primary 2015-2020  1.64
+#>  3        2 Austria           40 Primary            2015-2020  1.64
+#>  4        2 Austria           40 Lower Secondary    2015-2020  1.66
+#>  5        2 Austria           40 Upper Secondary    2015-2020  1.46
+#>  6        2 Austria           40 Post Secondary     2015-2020  1.36
+#>  7        2 Austria           40 No Education       2020-2025  1.68
+#>  8        2 Austria           40 Incomplete Primary 2020-2025  1.68
+#>  9        2 Austria           40 Primary            2020-2025  1.68
+#> 10        2 Austria           40 Lower Secondary    2020-2025  1.67
+#> # ... with 92 more rows
 
-# SSP1 and SSP2 education specific tfr for Austria and United Kingdom (guessing the country codes)
-wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
-#> # A tibble: 408 x 6
-#>    scenario name                        country_code education     period   etfr
-#>       <dbl> <chr>                              <dbl> <chr>         <chr>   <dbl>
-#>  1        1 Austria                               40 No Education  2015-2~  1.53
-#>  2        1 United Kingdom of Great Br~          826 No Education  2015-2~  1.98
-#>  3        1 Austria                               40 Incomplete P~ 2015-2~  1.53
-#>  4        1 United Kingdom of Great Br~          826 Incomplete P~ 2015-2~  1.98
-#>  5        1 Austria                               40 Primary       2015-2~  1.53
-#>  6        1 United Kingdom of Great Br~          826 Primary       2015-2~  1.98
-#>  7        1 Austria                               40 Lower Second~ 2015-2~  1.54
-#>  8        1 United Kingdom of Great Br~          826 Lower Second~ 2015-2~  2   
-#>  9        1 Austria                               40 Upper Second~ 2015-2~  1.35
-#> 10        1 United Kingdom of Great Br~          826 Upper Second~ 2015-2~  1.76
-#> # ... with 398 more rows
+# SSP2 education specific population sizes for Iran and Kenya
+get_wcde(indicator = "epop", country_code = c(364, 404))
+#> [=======================>-----------------------------------------------] 33%
+#> [===================================>-----------------------------------] 50%
+#> [==============================================>------------------------] 67%
+#> [==========================================================>------------] 83%
+#> [=======================================================================] 100%
+#> # A tibble: 36,300 x 8
+#>    scenario name             country_code age   sex   education      year   epop
+#>       <dbl> <chr>                   <dbl> <chr> <chr> <chr>         <dbl>  <dbl>
+#>  1        2 Iran (Islamic R~          364 All   Both  Total          1950 17119.
+#>  2        2 Kenya                     404 All   Both  Total          1950  6077.
+#>  3        2 Iran (Islamic R~          364 All   Both  Under 15       1950  6210 
+#>  4        2 Kenya                     404 All   Both  Under 15       1950  2417.
+#>  5        2 Iran (Islamic R~          364 All   Both  No Education   1950  9648.
+#>  6        2 Kenya                     404 All   Both  No Education   1950  2867.
+#>  7        2 Iran (Islamic R~          364 All   Both  Incomplete P~  1950   378 
+#>  8        2 Kenya                     404 All   Both  Incomplete P~  1950   555.
+#>  9        2 Iran (Islamic R~          364 All   Both  Primary        1950   631.
+#> 10        2 Kenya                     404 All   Both  Primary        1950   139.
+#> # ... with 36,290 more rows
 
-# Not Run
-# SSP1 population by education for all countries
-# library(dplyr)
-# wic_locations %>%
-#   filter(dim == "country") %>%
-#   pull(isono) %>%
-#   wcde(scenario = 1, measure = "epop", country_code = ., include_scenario_names = TRUE)
+# SSP1, 2 and 3 4 gender gaps in educational attainment (15+) for all countries
+get_wcde(indicator = "ggapedu15", scenario = 1:3)
+#> # A tibble: 124,038 x 6
+#>    scenario name                     country_code  year education    ggapedu15
+#>       <int> <chr>                           <dbl> <dbl> <chr>            <dbl>
+#>  1        1 Bulgaria                          100  1950 No Education       -16
+#>  2        1 Myanmar                           104  1950 No Education       -13
+#>  3        1 Burundi                           108  1950 No Education       -11
+#>  4        1 Belarus                           112  1950 No Education       -10
+#>  5        1 Cambodia                          116  1950 No Education       -28
+#>  6        1 Algeria                            12  1950 No Education        -6
+#>  7        1 Cameroon                          120  1950 No Education       -16
+#>  8        1 Canada                            124  1950 No Education        -1
+#>  9        1 Cape Verde                        132  1950 No Education       -14
+#> 10        1 Central African Republic          140  1950 No Education        -4
+#> # ... with 124,028 more rows
 ```
 
-<!-- What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so: -->
+## Vignette
 
-<!-- ```{r cars} -->
-
-<!-- summary(cars) -->
-
-<!-- ``` -->
-
-<!-- You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. -->
-
-<!-- You can also embed plots, for example: -->
-
-<!-- ```{r pressure, echo = FALSE} -->
-
-<!-- plot(pressure) -->
-
-<!-- ``` -->
-
-<!-- In that case, don't forget to commit and push the resulting figure files, so they display on GitHub! -->
+The
+[vignette](https://cran.r-project.org/web/packages/wcde/vignettes/intro.html)
+provides many more examples on how to use the package.

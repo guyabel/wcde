@@ -78,12 +78,12 @@ If not \code{country_name} or \code{country_code} is provided data for all count
 }
 \examples{
 # SSP2 tfr for Austria and Bulgaria
-get_wcde(indicator = "etfr", country_code = c(40, 100))
+get_wcde(indicator = "tfr", country_code = c(40, 100))
 
-# SSP1 and SSP2 tfr for Austria and United Kingdom (guessing the country codes)
-get_wcde(scenario = c(1, 2), indicator = "etfr", country_name = c("Austria", "UK"))
+# SSP1 and SSP2 life expectancy for Vietnam and United Kingdom (guessing the country codes)
+get_wcde(scenario = c(1, 2), indicator = "e0", country_name = c("Vietnam", "UK"))
 
 # Not Run
 # SSP1 and SSP3 population by education for all countries
-get_wcde(scenario = c(1, 3), indicator = "tfr")
+# get_wcde(scenario = c(1, 3), indicator = "tfr")
 }

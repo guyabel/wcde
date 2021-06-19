@@ -5,7 +5,7 @@
 #' @param start Numeric value to indicate which element of the vector to commence from.
 #' @param fill Character string to be used in place of skipped element. By default is `NULL` and hence skipped elements are removed rather than replaced.
 #'
-#' @return
+#' @return Vector with elements removed
 #' @export
 #'
 #' @examples

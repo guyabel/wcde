@@ -10,10 +10,8 @@
 #' @export
 #'
 #' @examples
-#' d <- wcde(indicator = "epop", country_name = c("South Korea"))
-#'
 #' library(tidyverse)
-#' d %>%
+#' epop_ssp2 %>%
 #'   filter(year == 2020) %>%
 #'   edu_group_sum()
 edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE){

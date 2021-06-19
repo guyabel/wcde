@@ -26,7 +26,7 @@ d1 <- d %>%
 
 epop_ssp2 <- d0 %>%
   filter(s == 2,
-         # country_code < 900,
+         country_code < 900,
          age != "All",
          education != "Total",
          sex != "Both"

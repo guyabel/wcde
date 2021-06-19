@@ -1,12 +1,24 @@
 Package: wcde
 Title: Download Data from the Wittgenstein Human Capital Data Explorer
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: 
-    person(given = c("Guy", "J."),
-           family = "Abel",
-           role = c("aut", "cre"),
-           email = "g.j.abel@gmail.com",
-           comment = c(ORCID = "0000-0002-4893-5687"))
+    c(person(given = c("Guy", "J."),
+             family = "Abel",
+             role = c("aut", "cre"),
+             email = "g.j.abel@gmail.com",
+             comment = c(ORCID = "0000-0002-4893-5687")),
+      person(given = "Reiter",
+             family = "Claudia",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-1485-3851")),
+      person(given = "Yildiz",
+             family = "Dilek",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-6192-0634")),
+      person(given = "Samir",
+             family = "K.C.",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-5213-9181")))
 Description: Download data from the Wittgenstein Human Capital Data Explorer <http://dataexplorer.wittgensteincentre.org>.
 License: CC BY 4.0 + file LICENSE
 Encoding: UTF-8

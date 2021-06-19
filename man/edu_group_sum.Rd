@@ -22,10 +22,8 @@ Education Group Sums
 Cleans \code{epop} data downloaded using the \code{wcde()} function for summations of population by 4, 6 or 8 education groups.
 }
 \examples{
-d <- wcde(indicator = "epop", country_name = c("South Korea"))
-
 library(tidyverse)
-d \%>\%
+epop_ssp2 \%>\%
   filter(year == 2020) \%>\%
   edu_group_sum()
 }
