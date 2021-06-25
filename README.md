@@ -19,10 +19,12 @@ Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
 ## Installation
 
-<!-- You can install the released version of `wcde` from [CRAN](https://CRAN.R-project.org) with: -->
-<!-- ```{r eval=FALSE} -->
-<!-- install.packages("wcde") -->
-<!-- ``` -->
+You can install the released version of `wcde` from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("wcde")
+```
 
 Install the developmental version with:
 
@@ -40,8 +42,6 @@ library(wcde)
 
 # SSP2 education specific tfr for Austria
 get_wcde(indicator = "etfr", country_name = "Austria")
-#> [==============================================>------------------------] 67%
-#> [=======================================================================] 100%
 #> # A tibble: 102 x 6
 #>    scenario name    country_code education          period     etfr
 #>       <dbl> <chr>          <dbl> <chr>              <chr>     <dbl>
@@ -59,11 +59,6 @@ get_wcde(indicator = "etfr", country_name = "Austria")
 
 # SSP2 education specific population sizes for Iran and Kenya
 get_wcde(indicator = "epop", country_code = c(364, 404))
-#> [=======================>-----------------------------------------------] 33%
-#> [===================================>-----------------------------------] 50%
-#> [==============================================>------------------------] 67%
-#> [==========================================================>------------] 83%
-#> [=======================================================================] 100%
 #> # A tibble: 36,300 x 8
 #>    scenario name             country_code age   sex   education      year   epop
 #>       <dbl> <chr>                   <dbl> <chr> <chr> <chr>         <dbl>  <dbl>
@@ -79,7 +74,7 @@ get_wcde(indicator = "epop", country_code = c(364, 404))
 #> 10        2 Kenya                     404 All   Both  Primary        1950   139.
 #> # ... with 36,290 more rows
 
-# SSP1, 2 and 3 4 gender gaps in educational attainment (15+) for all countries
+# SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries
 get_wcde(indicator = "ggapedu15", scenario = 1:3)
 #> # A tibble: 124,038 x 6
 #>    scenario name                     country_code  year education    ggapedu15

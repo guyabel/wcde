@@ -27,11 +27,11 @@ Download data from the [Wittgenstein Centre Human Capital Data Explorer](http://
 
 ## Installation
 
-<!-- You can install the released version of `wcde` from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of `wcde` from [CRAN](https://CRAN.R-project.org) with:
 
-<!-- ```{r eval=FALSE} -->
-<!-- install.packages("wcde") -->
-<!-- ``` -->
+```{r eval=FALSE}
+install.packages("wcde")
+```
 
 Install the developmental version with:
 
@@ -53,7 +53,7 @@ get_wcde(indicator = "etfr", country_name = "Austria")
 # SSP2 education specific population sizes for Iran and Kenya
 get_wcde(indicator = "epop", country_code = c(364, 404))
 
-# SSP1, 2 and 3 4 gender gaps in educational attainment (15+) for all countries
+# SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries
 get_wcde(indicator = "ggapedu15", scenario = 1:3)
 ```
 
