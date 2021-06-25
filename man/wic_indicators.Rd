@@ -8,7 +8,7 @@
 A data frame with 31 rows and 8 variables, including:
 \describe{
 \item{indicator}{Short name of indicator to be used in the \code{indicator} argument of the \code{wcde()} function}
-\item{description}{Brief descripition of indicator}
+\item{description}{Brief description of indicator}
 \item{age}{Availability of indicator by five-year age groups}
 \item{bage}{Availability of indicator by broad age groups}
 \item{sage}{Availability of indicator with a new born age group}

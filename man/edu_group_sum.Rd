@@ -15,15 +15,19 @@ edu_group_sum(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE)
 
 \item{factor_convert}{Convert columns that are character strings to factors, with levels based on order of appearance.}
 }
+\value{
+A tibble with the data selected.
+}
 \description{
-Education Group Sums
+Cleans \code{epop} data downloaded using the \code{wcde()} function for summations of population by 4, 6 or 8 education groups.
 }
 \details{
-Cleans \code{epop} data downloaded using the \code{wcde()} function for summations of population by 4, 6 or 8 education groups.
+Strips the \code{epop} data set to relevant rows for the \code{n} education groups.
 }
 \examples{
 library(tidyverse)
 epop_ssp2 \%>\%
   filter(year == 2020) \%>\%
+  mutate(scenario = 2) \%>\%
   edu_group_sum()
 }

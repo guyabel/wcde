@@ -103,7 +103,7 @@ get_wcde(indicator = "sexratio",
 
 ## Country names and codes
 
-Country names are guessed using the [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) package. 
+Country names are guessed using the [countrycode](https://cran.r-project.org/package=countrycode/index.html) package. 
 
 The `get_wcde()` accepts ISO alpha_numeric codes for countries:
 
@@ -158,7 +158,7 @@ get_wcde(indicator = "mage")
 
 ## Multiple indicators
 
-The `get_wdce()` function needs to be called multiple times to download multiple indicators. This can be done using the `map()` function in [`purrr`](https://cran.r-project.org/web/packages/purrr/index.html)
+The `get_wdce()` function needs to be called multiple times to download multiple indicators. This can be done using the `map()` function in [`purrr`](https://cran.r-project.org/package=purrr/index.html)
 
 ```{r, messages = FALSE, message=FALSE}
 mi <- tibble(ind = c("odr", "nirate", "ggapedu25")) %>%
@@ -219,7 +219,7 @@ w
 
 Use standard ggplot code to create population pyramid with
 
--   `scale_x_symmetric()` from the [lemon](https://cran.r-project.org/web/packages/lemon/index.html) package to allow for equal male and female x-axis
+-   `scale_x_symmetric()` from the [lemon](https://cran.r-project.org/package=lemon/index.html) package to allow for equal male and female x-axis
 -   fill colours set to the `wic_col4` object in the wcde package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer.
 
 Note `wic_col6` and `wic_col8` objects also exist for equivalent plots of population data objects with corresponding numbers of categories of education.
@@ -244,7 +244,6 @@ Add male and female labels on the x-axis by
 
 ```{r, fig.width=6, fig.height=6}
 w <- w %>%
-  # group_by(sex) ^>^
   mutate(pop_max = ifelse(sex == "Male", -max(pop), max(pop)))
 
 ggplot(data = w, 

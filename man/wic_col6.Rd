@@ -11,6 +11,6 @@ A named vector
 wic_col6
 }
 \description{
-Three sets of colours used for filling education based plots based on the different availabities of detailed education catrogries (four, six or eight groups)
+Three sets of colours used for filling education based plots based on the different availability of detailed education categories (four, six or eight groups)
 }
 \keyword{datasets}

@@ -30,7 +30,8 @@ A tibble with the data selected.
 Downloads data from the Wittgenstein Centre Human Capital Data Explorer. Requires a working internet connection.
 }
 \details{
-If not \code{country_name} or \code{country_code} is provided data for all countries and regions are downloaded.
+If not \code{country_name} or \code{country_code} is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the \code{wic_locations} data frame.
+
 \code{indicator} must be set to a value in the first column in the table below of available demographic indicators:\tabular{ll}{
    \code{indicator} \tab Indicator Description \cr
    \code{pop} \tab Population Size (000's) \cr
@@ -67,6 +68,8 @@ If not \code{country_name} or \code{country_code} is provided data for all count
 }
 
 
+See \code{wic_indicators} data frame for more details.
+
 \code{scenario} must be set to one or values in the first column table below of the available future scenarios:\tabular{ll}{
    \code{scenario} \tab description \cr
    \code{1} \tab Rapid Development (SSP1) \cr
@@ -75,15 +78,19 @@ If not \code{country_name} or \code{country_code} is provided data for all count
    \code{4} \tab Medium - Zero Migration (SSP2 - ZM) \cr
    \code{5} \tab Medium - Double Migration (SSP2 - DM) \cr
 }
+
+
+See \code{wic_scenarios} data frame for more details.
 }
 \examples{
+\donttest{
 # SSP2 tfr for Austria and Bulgaria
 get_wcde(indicator = "tfr", country_code = c(40, 100))
 
 # SSP1 and SSP2 life expectancy for Vietnam and United Kingdom (guessing the country codes)
 get_wcde(scenario = c(1, 2), indicator = "e0", country_name = c("Vietnam", "UK"))
 
-# Not Run
 # SSP1 and SSP3 population by education for all countries
-# get_wcde(scenario = c(1, 3), indicator = "tfr")
+get_wcde(scenario = c(1, 3), indicator = "tfr")
+}
 }

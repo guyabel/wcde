@@ -8,7 +8,8 @@
 #' @param country_name Vector of length one or more of country names. The corresponding country code will be guessed using the countrycodes package.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
 #'
-#' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded.
+#' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
+#'
 #' `indicator` must be set to a value in the first column in the table below of available demographic indicators:
 #'
 #' | `indicator`   | Indicator Description                                                                |
@@ -45,6 +46,8 @@
 #' | `eassr`     | Age-Specific Survival Ratio by Education                                   |
 #' | `net`       | Net Migration                                                              |
 #'
+#' See `wic_indicators` data frame for more details.
+#'
 #' `scenario` must be set to one or values in the first column table below of the available future scenarios:
 #'
 #' | `scenario` | description                           |
@@ -55,20 +58,24 @@
 #' | `4`        | Medium - Zero Migration (SSP2 - ZM)   |
 #' | `5`        | Medium - Double Migration (SSP2 - DM) |
 #'
+#' See `wic_scenarios` data frame for more details.
+#'
+#'
 #' @md
 #' @return A tibble with the data selected.
 #' @export
 #'
 #' @examples
+#' \donttest{
 #' # SSP2 tfr for Austria and Bulgaria
 #' get_wcde(indicator = "tfr", country_code = c(40, 100))
 #'
 #' # SSP1 and SSP2 life expectancy for Vietnam and United Kingdom (guessing the country codes)
 #' get_wcde(scenario = c(1, 2), indicator = "e0", country_name = c("Vietnam", "UK"))
 #'
-#' # Not Run
 #' # SSP1 and SSP3 population by education for all countries
-#' # get_wcde(scenario = c(1, 3), indicator = "tfr")
+#' get_wcde(scenario = c(1, 3), indicator = "tfr")
+#' }
 get_wcde <- function(indicator = "pop", scenario = 2,
                  country_code = NULL, country_name = NULL,
                  include_scenario_names = FALSE){

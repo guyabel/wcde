@@ -9,9 +9,9 @@ A data frame with 230 rows and 7 variables, including:
 \describe{
 \item{name}{Area name}
 \item{isono}{ISO 3 digit country code}
-\item{continent}{Contient of country}
+\item{continent}{Continent of country}
 \item{region}{UN region of country}
-\item{dim}{Categroy or country/region/area}
+\item{dim}{Category or country/region/area}
 }
 }
 \source{
