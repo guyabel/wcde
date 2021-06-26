@@ -12,7 +12,7 @@ status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/p
 <!-- [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) -->
 <!-- badges: end -->
 
-<img src='./man/figures/logo.png' align="right" height="150" />
+<img src='./man/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
 
 Download data from the [Wittgenstein Centre Human Capital Data
 Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
@@ -96,4 +96,8 @@ get_wcde(indicator = "ggapedu15", scenario = 1:3)
 
 The
 [vignette](https://cran.r-project.org/web/packages/wcde/vignettes/intro.html)
-provides many more examples on how to use the package.
+provides many more examples on how to use the package to download data
+and produce plots from the Wittgenstein Centre Human Capital Data
+Explorer.
+
+<img src='world6_ssp2.gif' height="600"/>

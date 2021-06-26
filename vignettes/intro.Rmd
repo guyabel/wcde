@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-<img src='../man/figures/logo.png' align="right" height="180" />
+<img src='../man/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
 
 The `wcde` package allows for R users to easily download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of helpful functions for working with education specific demographic data.
 
@@ -70,7 +70,7 @@ find_indicator(x = "tfr")
 
 ## Temporal coverage 
 
-By default, `get_wdce()` returns data for all years or available periods or years. The `filter()` function in dplyr can be used to filter data for specific years or periods, for example:
+By default, `get_wdce()` returns data for all years or available periods or years. The `filter()` function in [dplyr](https://cran.r-project.org/package=dplyr/index.html) can be used to filter data for specific years or periods, for example:
 
 ```{r, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -91,7 +91,7 @@ wic_indicators %>%
   select(1:2)
 ```
 
-The filter function can also be used to filter specific indicators to specific age, sex or education groups
+The `filter()` function can also be used to filter specific indicators to specific age, sex or education groups
 
 ```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "sexratio", 
@@ -211,24 +211,26 @@ Create population pyramids by setting male population values to negative equival
 ```{r}
 w <- d %>% 
   edu_group_sum(n = 4) %>%
-  filter(year == 2020) %>%
   mutate(pop = ifelse(test = sex == "Male", yes = -epop, no = epop),
          pop = pop/1e3) 
 w
 ```
 
+## Standard plot
+
 Use standard ggplot code to create population pyramid with
 
--   `scale_x_symmetric()` from the [lemon](https://cran.r-project.org/package=lemon/index.html) package to allow for equal male and female x-axis
+-   `scale_x_symmetric()` from the [`lemon`](https://cran.r-project.org/package=lemon/index.html) package to allow for equal male and female x-axis
 -   fill colours set to the `wic_col4` object in the wcde package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer.
 
 Note `wic_col6` and `wic_col8` objects also exist for equivalent plots of population data objects with corresponding numbers of categories of education.
 
-```{r, message=FALSE, warning=FALSE, fig.width=6, fig.height=6}
+```{r, message=FALSE, warning=FALSE}
 library(lemon)
 
-ggplot(data = w, 
-       mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
+w %>%
+  filter(year == 2020) %>%
+  ggplot(mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
   geom_col() +
   geom_vline(xintercept = 0, colour = "black") + 
   scale_x_symmetric(labels = abs) +
@@ -236,26 +238,59 @@ ggplot(data = w,
   theme_bw()
 ```
 
+## Sex label position
+
 Add male and female labels on the x-axis by 
 
 - Creating a facet plot with the strips on the bottom with transparent backgrounds and no space between.
 - Set the x axis to have zero expansion beyond the values in the data allowing the two sides of the pyramids to meet.
 - Add a `geom_blank()` to allow for equal x-axis and additional space at the end of largest columns.
 
-```{r, fig.width=6, fig.height=6}
+```{r}
 w <- w %>%
   mutate(pop_max = ifelse(sex == "Male", -max(pop), max(pop)))
 
-ggplot(data = w, 
-       mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
+w %>%
+  filter(year == 2020) %>%
+  ggplot(mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
   geom_col() +
   geom_vline(xintercept = 0, colour = "black") +
-  facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
-  geom_blank(mapping = aes(x = pop_max * 1.1)) +
   scale_x_continuous(labels = abs, expand = c(0, 0)) +
   scale_fill_manual(values = wic_col4, name = "Education") +
+  facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
+  geom_blank(mapping = aes(x = pop_max * 1.1)) +
   theme(panel.spacing.x = unit(0, "pt"),
         strip.placement = "outside",
         strip.background = element_rect(fill = "transparent"),
         strip.text.x = element_text(margin = margin( b = 0, t = 0)))
 ```
+
+## Animate
+
+Animate the pyramid through the past data and projection periods using the `transition_time()` function in the 
+[`gganimate`](https://cran.r-project.org/package=gganimate/index.html) package
+
+```{r}
+library(gganimate)
+
+ggplot(data = w, 
+       mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
+  geom_col() +
+  geom_vline(xintercept = 0, colour = "black") +
+  scale_x_continuous(labels = abs, expand = c(0, 0)) +
+  scale_fill_manual(values = wic_col4, name = "Education") +
+  facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
+  geom_blank(mapping = aes(x = pop_max * 1.1)) +
+  theme(panel.spacing.x = unit(0, "pt"),
+        strip.placement = "outside",
+        strip.background = element_rect(fill = "transparent"),
+        strip.text.x = element_text(margin = margin(b = 0, t = 0))) +
+  transition_time(time = year) +
+  labs(x = "Population (millions)", y = "Age", 
+       title = 'SSP2 World Population {round(frame_time)}')
+```
+
+```{r}
+
+```
+
