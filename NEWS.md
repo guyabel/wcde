@@ -7,3 +7,7 @@
 * Expanded vignette to include animation
 * Removed export from `wcde_pull()`
 * Replaced `ssp2_epop` with `past_epop`
+
+# wcde 0.0.2
+
+* Add authors to vignette

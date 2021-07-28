@@ -15,7 +15,7 @@ devtools::check()
 devtools::build()
 file.show("NEWS.md")
 
-
+devtools::build_vignettes()
 
 usethis::use_spell_check()
 usethis::use_release_issue()

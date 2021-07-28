@@ -1,5 +1,6 @@
 ---
 title: "Overview of the `wcde` package"
+author: Guy J. Abel, Samir K.C., Michaela Potancokova, Claudia Reiter, Andrea Tamburini and Dilek Yildiz
 output:
   html_document:
     fig_caption: false
