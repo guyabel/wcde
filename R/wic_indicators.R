@@ -4,7 +4,7 @@
 #'
 #' @format A data frame with 31 rows and 8 variables, including:
 #' \describe{
-#'   \item{indicator}{Short name of indicator to be used in the `indicator` argument of the `wcde()` function}
+#'   \item{indicator}{Short name of indicator to be used in the `indicator` argument of the `get_wcde()` function}
 #'   \item{description}{Brief description of indicator}
 #'   \item{age}{Availability of indicator by five-year age groups}
 #'   \item{bage}{Availability of indicator by broad age groups}

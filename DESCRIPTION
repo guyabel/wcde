@@ -4,21 +4,27 @@ Version: 0.0.1
 Authors@R: 
     c(person(given = c("Guy", "J."),
              family = "Abel",
-             role = c("aut", "cre"),
+             role = c("aut", "cre", "ctb"),
              email = "g.j.abel@gmail.com",
              comment = c(ORCID = "0000-0002-4893-5687")),
-      person(given = "Reiter",
-             family = "Claudia",
-             role = "ctb",
-             comment = c(ORCID = "0000-0002-1485-3851")),
-      person(given = "Yildiz",
-             family = "Dilek",
-             role = "ctb",
-             comment = c(ORCID = "0000-0001-6192-0634")),
       person(given = "Samir",
              family = "K.C.",
              role = "ctb",
-             comment = c(ORCID = "0000-0002-5213-9181")))
+             comment = c(ORCID = "0000-0002-5213-9181")),
+      person(given = "Michaela",
+             family = "Potancokova ",
+             role = "ctb"),
+      person(given = "Claudia",
+             family = "Reiter",
+             role = "ctb",
+             comment = c(ORCID = "0000-0002-1485-3851")),
+      person(given = "Andrea",
+             family = "Tamburini",
+             role = "ctb"),
+      person(given = "Dilek",
+             family = "Yildiz",
+             role = "ctb",
+             comment = c(ORCID = "0000-0001-6192-0634")))
 Description: Download and plot education specific demographic data from the Wittgenstein Human Capital Data Explorer <http://dataexplorer.wittgensteincentre.org/>.
 License: GPL-3
 Encoding: UTF-8

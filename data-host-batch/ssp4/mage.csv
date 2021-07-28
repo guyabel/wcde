@@ -1,0 +1,7100 @@
+name,country_code,year,mage
+Bulgaria,100,1950,27.3
+Myanmar,104,1950,22.8
+Burundi,108,1950,19.5
+Belarus,112,1950,27.2
+Cambodia,116,1950,18.7
+Algeria,12,1950,19.4
+Cameroon,120,1950,20.8
+Canada,124,1950,27.7
+Cape Verde,132,1950,23
+Central African Republic,140,1950,22.5
+Sri Lanka,144,1950,21.6
+Chad,148,1950,21.5
+Chile,152,1950,22.1
+China,156,1950,23.6
+Taiwan Province of China,158,1950,18.9
+Colombia,170,1950,18.7
+Comoros,174,1950,21
+Mayotte,175,1950,30.3
+Congo,178,1950,19.8
+Democratic Republic of the Congo,180,1950,18.1
+Costa Rica,188,1950,18.2
+Croatia,191,1950,27.9
+Cuba,192,1950,22.3
+Cyprus,196,1950,23.7
+Czech Republic,203,1950,32.5
+Benin,204,1950,24.2
+Denmark,208,1950,31.7
+Dominican Republic,214,1950,17.1
+Ecuador,218,1950,20.4
+El Salvador,222,1950,18.5
+Equatorial Guinea,226,1950,23.8
+Ethiopia,231,1950,17.9
+Eritrea,232,1950,17.3
+Estonia,233,1950,29.9
+Angola,24,1950,19.2
+Fiji,242,1950,16.6
+Finland,246,1950,27.8
+France,250,1950,34.7
+French Guiana,254,1950,26.6
+French Polynesia,258,1950,18.7
+Djibouti,262,1950,16.5
+Gabon,266,1950,28.1
+Georgia,268,1950,27.3
+Gambia,270,1950,19.5
+Occupied Palestinian Territory,275,1950,17.3
+Germany,276,1950,35.4
+Antigua and Barbuda,28,1950,20.6
+Ghana,288,1950,17.4
+Kiribati,296,1950,19.2
+Greece,300,1950,25.5
+Grenada,308,1950,16.3
+Azerbaijan,31,1950,22.3
+Guadeloupe,312,1950,20.9
+Guam,316,1950,22.8
+Argentina,32,1950,25.7
+Guatemala,320,1950,18.1
+Guinea,324,1950,21.9
+Guyana,328,1950,20.4
+Haiti,332,1950,20.2
+Honduras,340,1950,18.4
+Hong Kong Special Administrative Region of China,344,1950,23.7
+Hungary,348,1950,30.1
+Iceland,352,1950,26.5
+India,356,1950,21.3
+Australia,36,1950,30.4
+Indonesia,360,1950,20
+Iran (Islamic Republic of),364,1950,21.9
+Iraq,368,1950,22
+Ireland,372,1950,30
+Israel,376,1950,25.5
+Italy,380,1950,28.6
+Cote d'Ivoire,384,1950,18.3
+Jamaica,388,1950,22.2
+Japan,392,1950,22.2
+Kazakhstan,398,1950,23.2
+Afghanistan,4,1950,19.4
+Austria,40,1950,35.7
+Jordan,400,1950,16.3
+Kenya,404,1950,20
+Democratic People's Republic of Korea,408,1950,18
+Republic of Korea,410,1950,19
+Kuwait,414,1950,21.4
+Kyrgyzstan,417,1950,25.3
+Lao People's Democratic Republic,418,1950,19.8
+Lebanon,422,1950,23.2
+Lesotho,426,1950,19.8
+Latvia,428,1950,30.6
+Liberia,430,1950,19.1
+Libyan Arab Jamahiriya,434,1950,21
+Bahamas,44,1950,20.7
+Lithuania,440,1950,27.8
+Luxembourg,442,1950,35
+Macao Special Administrative Region of China,446,1950,26.3
+Madagascar,450,1950,20.9
+Malawi,454,1950,17.1
+Malaysia,458,1950,19.8
+Maldives,462,1950,18.6
+Mali,466,1950,20.8
+Malta,470,1950,23.7
+Martinique,474,1950,21.9
+Mauritania,478,1950,17.9
+Bahrain,48,1950,18.9
+Mauritius,480,1950,17.3
+Mexico,484,1950,18.7
+Mongolia,496,1950,25
+Republic of Moldova,498,1950,26.6
+Montenegro,499,1950,21.6
+Bangladesh,50,1950,19.3
+Morocco,504,1950,19.5
+Mozambique,508,1950,19.4
+Armenia,51,1950,22.4
+Oman,512,1950,18.8
+Namibia,516,1950,20.9
+Barbados,52,1950,24.6
+Nepal,524,1950,20.5
+Netherlands,528,1950,28
+Curaçao,531,1950,22.6
+Aruba,533,1950,18.5
+New Caledonia,540,1950,22.5
+Vanuatu,548,1950,16.8
+Central Asia,5500,1950,23.4
+Southern Asia,5501,1950,21
+New Zealand,554,1950,29.4
+Nicaragua,558,1950,18.2
+Belgium,56,1950,35.5
+Niger,562,1950,15.2
+Nigeria,566,1950,19.1
+Norway,578,1950,32.6
+Micronesia (Federated States of),583,1950,19.8
+Pakistan,586,1950,19.8
+Panama,591,1950,18.8
+Papua New Guinea,598,1950,20.3
+Paraguay,600,1950,16.5
+Peru,604,1950,19.1
+Philippines,608,1950,18.2
+Poland,616,1950,25.8
+Portugal,620,1950,26.1
+Guinea-Bissau,624,1950,21.8
+Timor-Leste,626,1950,19.6
+Puerto Rico,630,1950,18.4
+Qatar,634,1950,18.9
+Reunion,638,1950,20.3
+Bhutan,64,1950,18
+Romania,642,1950,26.3
+Russian Federation,643,1950,24.3
+Rwanda,646,1950,18
+Saint Lucia,662,1950,20.7
+Saint Vincent and the Grenadines,670,1950,15.4
+Sao Tome and Principe,678,1950,24.5
+Bolivia (Plurinational State of),68,1950,20.5
+Saudi Arabia,682,1950,19
+Senegal,686,1950,19.1
+Serbia,688,1950,25.8
+Seychelles,690,1950,26.1
+Sierra Leone,694,1950,19.9
+Bosnia and Herzegovina,70,1950,20
+Singapore,702,1950,20
+Slovakia,703,1950,27
+Viet Nam,704,1950,24.5
+Slovenia,705,1950,27.7
+Somalia,706,1950,19.5
+South Africa,710,1950,21.1
+Zimbabwe,716,1950,19
+Botswana,72,1950,19.2
+Spain,724,1950,27.5
+South Sudan,728,1950,18.1
+Sudan,729,1950,18.1
+Western Sahara,732,1950,18.7
+Suriname,740,1950,20.1
+Swaziland,748,1950,18.4
+Sweden,752,1950,34.2
+Switzerland,756,1950,33.2
+Brazil,76,1950,19.2
+Syrian Arab Republic,760,1950,20.3
+Tajikistan,762,1950,22.3
+Thailand,764,1950,18.6
+Togo,768,1950,19.4
+Tonga,776,1950,15.5
+Trinidad and Tobago,780,1950,20.9
+United Arab Emirates,784,1950,18.9
+Tunisia,788,1950,20.3
+Turkey,792,1950,19.6
+Turkmenistan,795,1950,23.5
+Albania,8,1950,21.2
+Uganda,800,1950,18.2
+Ukraine,804,1950,27.6
+The former Yugoslav Republic of Macedonia,807,1950,21.8
+Egypt,818,1950,20.8
+United Kingdom of Great Britain and Northern Ireland,826,1950,34.9
+Channel Islands,830,1950,35.7
+United Republic of Tanzania,834,1950,16.9
+Belize,84,1950,20.8
+United States of America,840,1950,30
+United States Virgin Islands,850,1950,22
+Burkina Faso,854,1950,19.5
+Uruguay,858,1950,27.8
+Uzbekistan,860,1950,23.9
+Venezuela (Bolivarian Republic of),862,1950,17.2
+Samoa,882,1950,16.6
+Yemen,887,1950,18.9
+Zambia,894,1950,17.5
+Solomon Islands,90,1950,18.3
+World,900,1950,23.5
+Africa,903,1950,19.3
+Latin America and the Caribbean,904,1950,19.9
+Northern America,905,1950,29.8
+Eastern Asia,906,1950,23.1
+Europe,908,1950,28.9
+Oceania,909,1950,29.3
+Eastern Africa,910,1950,18.5
+Middle Africa,911,1950,19.5
+Northern Africa,912,1950,19.9
+Southern Africa,913,1950,20.9
+Western Africa,914,1950,19.2
+Caribbean,915,1950,20.3
+Central America,916,1950,18.6
+South-Eastern Asia,920,1950,20.5
+Western Asia,922,1950,20.7
+Eastern Europe,923,1950,25.9
+Northern Europe,924,1950,33.6
+Southern Europe,925,1950,27.3
+Western Europe,926,1950,34.5
+Australia and New Zealand,927,1950,30.2
+Melanesia,928,1950,17.6
+South America,931,1950,20.3
+Asia,935,1950,21.9
+Micronesia,954,1950,19.5
+Polynesia,957,1950,17
+Brunei Darussalam,96,1950,22.4
+Bulgaria,100,1955,28.8
+Myanmar,104,1955,22.1
+Burundi,108,1955,18.9
+Belarus,112,1955,27.7
+Cambodia,116,1955,17.9
+Algeria,12,1955,18.6
+Cameroon,120,1955,20.7
+Canada,124,1955,27.3
+Cape Verde,132,1955,21.7
+Central African Republic,140,1955,22.1
+Sri Lanka,144,1955,20.2
+Chad,148,1955,20.7
+Chile,152,1955,21.5
+China,156,1955,21.9
+Taiwan Province of China,158,1955,18.3
+Colombia,170,1955,17.7
+Comoros,174,1955,20.3
+Mayotte,175,1955,22.7
+Congo,178,1955,19.6
+Democratic Republic of the Congo,180,1955,18.1
+Costa Rica,188,1955,18.1
+Croatia,191,1955,28.2
+Cuba,192,1955,22.4
+Cyprus,196,1955,24.4
+Czech Republic,203,1955,32.2
+Benin,204,1955,22.3
+Denmark,208,1955,32.4
+Dominican Republic,214,1955,16.8
+Ecuador,218,1955,19.2
+El Salvador,222,1955,18.2
+Equatorial Guinea,226,1955,22.9
+Ethiopia,231,1955,18
+Eritrea,232,1955,17.8
+Estonia,233,1955,30.2
+Angola,24,1955,18
+Fiji,242,1955,16
+Finland,246,1955,27.9
+France,250,1955,32.9
+French Guiana,254,1955,25.5
+French Polynesia,258,1955,18.5
+Djibouti,262,1955,17.5
+Gabon,266,1955,27.6
+Georgia,268,1955,27.8
+Gambia,270,1955,20.1
+Occupied Palestinian Territory,275,1955,17
+Germany,276,1955,34.6
+Antigua and Barbuda,28,1955,20
+Ghana,288,1955,17.6
+Kiribati,296,1955,18.8
+Greece,300,1955,27.1
+Grenada,308,1955,17.1
+Azerbaijan,31,1955,22.6
+Guadeloupe,312,1955,20.3
+Guam,316,1955,22.3
+Argentina,32,1955,26.3
+Guatemala,320,1955,17.5
+Guinea,324,1955,20.8
+Guyana,328,1955,18.7
+Haiti,332,1955,20
+Honduras,340,1955,17.6
+Hong Kong Special Administrative Region of China,344,1955,24
+Hungary,348,1955,30.8
+Iceland,352,1955,26.2
+India,356,1955,20.8
+Australia,36,1955,30.2
+Indonesia,360,1955,20.4
+Iran (Islamic Republic of),364,1955,20.9
+Iraq,368,1955,20.3
+Ireland,372,1955,30.1
+Israel,376,1955,24.6
+Italy,380,1955,30.1
+Cote d'Ivoire,384,1955,18.6
+Jamaica,388,1955,22
+Japan,392,1955,23.5
+Kazakhstan,398,1955,23.3
+Afghanistan,4,1955,19.2
+Austria,40,1955,35.1
+Jordan,400,1955,17.1
+Kenya,404,1955,18.9
+Democratic People's Republic of Korea,408,1955,19.1
+Republic of Korea,410,1955,18.9
+Kuwait,414,1955,22.3
+Kyrgyzstan,417,1955,25.3
+Lao People's Democratic Republic,418,1955,19.4
+Lebanon,422,1955,22
+Lesotho,426,1955,19.1
+Latvia,428,1955,30.7
+Liberia,430,1955,19
+Libyan Arab Jamahiriya,434,1955,19.8
+Bahamas,44,1955,20.1
+Lithuania,440,1955,28
+Luxembourg,442,1955,35.7
+Macao Special Administrative Region of China,446,1955,26
+Madagascar,450,1955,20.2
+Malawi,454,1955,17.3
+Malaysia,458,1955,18.5
+Maldives,462,1955,19.8
+Mali,466,1955,20.1
+Malta,470,1955,21.6
+Martinique,474,1955,19.9
+Mauritania,478,1955,18
+Bahrain,48,1955,19.2
+Mauritius,480,1955,16.9
+Mexico,484,1955,17.8
+Mongolia,496,1955,24.3
+Republic of Moldova,498,1955,26.6
+Montenegro,499,1955,22.2
+Bangladesh,50,1955,19.4
+Morocco,504,1955,19.2
+Mozambique,508,1955,19.1
+Armenia,51,1955,22.7
+Oman,512,1955,18.5
+Namibia,516,1955,20.1
+Barbados,52,1955,24.2
+Nepal,524,1955,20.2
+Netherlands,528,1955,28.4
+Curaçao,531,1955,21.4
+Aruba,533,1955,18.1
+New Caledonia,540,1955,22.4
+Vanuatu,548,1955,16.8
+Central Asia,5500,1955,23.4
+Southern Asia,5501,1955,20.6
+New Zealand,554,1955,28.7
+Nicaragua,558,1955,17.4
+Belgium,56,1955,34.5
+Niger,562,1955,15.6
+Nigeria,566,1955,19.1
+Norway,578,1955,33.6
+Micronesia (Federated States of),583,1955,18.5
+Pakistan,586,1955,20.2
+Panama,591,1955,18.4
+Papua New Guinea,598,1955,19.5
+Paraguay,600,1955,16.2
+Peru,604,1955,18.8
+Philippines,608,1955,17.2
+Poland,616,1955,26
+Portugal,620,1955,27.2
+Guinea-Bissau,624,1955,20.9
+Timor-Leste,626,1955,19.2
+Puerto Rico,630,1955,18.5
+Qatar,634,1955,19.3
+Reunion,638,1955,18.8
+Bhutan,64,1955,18.9
+Romania,642,1955,27.2
+Russian Federation,643,1955,26.1
+Rwanda,646,1955,17.5
+Saint Lucia,662,1955,20.1
+Saint Vincent and the Grenadines,670,1955,14.9
+Sao Tome and Principe,678,1955,24.5
+Bolivia (Plurinational State of),68,1955,19.4
+Saudi Arabia,682,1955,18.8
+Senegal,686,1955,18.6
+Serbia,688,1955,26.5
+Seychelles,690,1955,24
+Sierra Leone,694,1955,19.9
+Bosnia and Herzegovina,70,1955,20.8
+Singapore,702,1955,19.4
+Slovakia,703,1955,27.4
+Viet Nam,704,1955,23.6
+Slovenia,705,1955,28.2
+Somalia,706,1955,19.2
+South Africa,710,1955,20.3
+Zimbabwe,716,1955,18.2
+Botswana,72,1955,18.6
+Spain,724,1955,28.6
+South Sudan,728,1955,18.6
+Sudan,729,1955,17.8
+Western Sahara,732,1955,20.1
+Suriname,740,1955,18.9
+Swaziland,748,1955,17.9
+Sweden,752,1955,35.1
+Switzerland,756,1955,32.9
+Brazil,76,1955,18.9
+Syrian Arab Republic,760,1955,18.8
+Tajikistan,762,1955,22.4
+Thailand,764,1955,18.9
+Togo,768,1955,18.9
+Tonga,776,1955,17.2
+Trinidad and Tobago,780,1955,19.4
+United Arab Emirates,784,1955,18.4
+Tunisia,788,1955,19.4
+Turkey,792,1955,19.7
+Turkmenistan,795,1955,23
+Albania,8,1955,20.6
+Uganda,800,1955,17.7
+Ukraine,804,1955,28.3
+The former Yugoslav Republic of Macedonia,807,1955,21.6
+Egypt,818,1955,21
+United Kingdom of Great Britain and Northern Ireland,826,1955,35.1
+Channel Islands,830,1955,36.1
+United Republic of Tanzania,834,1955,17
+Belize,84,1955,18.6
+United States of America,840,1955,30.2
+United States Virgin Islands,850,1955,21.5
+Burkina Faso,854,1955,19.4
+Uruguay,858,1955,28.4
+Uzbekistan,860,1955,23.6
+Venezuela (Bolivarian Republic of),862,1955,17.3
+Samoa,882,1955,15.6
+Yemen,887,1955,18.7
+Zambia,894,1955,17.5
+Solomon Islands,90,1955,18.6
+World,900,1955,23.1
+Africa,903,1955,19
+Latin America and the Caribbean,904,1955,19.4
+Northern America,905,1955,29.9
+Eastern Asia,906,1955,21.9
+Europe,908,1955,29.5
+Oceania,909,1955,28.9
+Eastern Africa,910,1955,18.2
+Middle Africa,911,1955,19.1
+Northern Africa,912,1955,19.6
+Southern Africa,913,1955,20.1
+Western Africa,914,1955,19.1
+Caribbean,915,1955,20.2
+Central America,916,1955,17.8
+South-Eastern Asia,920,1955,20.3
+Western Asia,922,1955,20.5
+Eastern Europe,923,1955,27
+Northern Europe,924,1955,33.9
+Southern Europe,925,1955,28.4
+Western Europe,926,1955,33.5
+Australia and New Zealand,927,1955,29.9
+Melanesia,928,1955,17.2
+South America,931,1955,19.9
+Asia,935,1955,21.2
+Micronesia,954,1955,18.6
+Polynesia,957,1955,16.9
+Brunei Darussalam,96,1955,21.1
+Bulgaria,100,1960,30.4
+Myanmar,104,1960,20.9
+Burundi,108,1960,18.4
+Belarus,112,1960,28.2
+Cambodia,116,1960,17.2
+Algeria,12,1960,17.9
+Cameroon,120,1960,20.5
+Canada,124,1960,26.5
+Cape Verde,132,1960,20.5
+Central African Republic,140,1960,21.4
+Sri Lanka,144,1960,19.2
+Chad,148,1960,19.9
+Chile,152,1960,20.9
+China,156,1960,20.9
+Taiwan Province of China,158,1960,17.4
+Colombia,170,1960,16.9
+Comoros,174,1960,19.4
+Mayotte,175,1960,19.4
+Congo,178,1960,19.3
+Democratic Republic of the Congo,180,1960,18.2
+Costa Rica,188,1960,17.7
+Croatia,191,1960,29.2
+Cuba,192,1960,22.9
+Cyprus,196,1960,23
+Czech Republic,203,1960,33.2
+Benin,204,1960,20.9
+Denmark,208,1960,33
+Dominican Republic,214,1960,16
+Ecuador,218,1960,18.4
+El Salvador,222,1960,17.6
+Equatorial Guinea,226,1960,22
+Ethiopia,231,1960,18.1
+Eritrea,232,1960,18
+Estonia,233,1960,32.2
+Angola,24,1960,17.1
+Fiji,242,1960,15.8
+Finland,246,1960,28.4
+France,250,1960,33.1
+French Guiana,254,1960,24.8
+French Polynesia,258,1960,18.3
+Djibouti,262,1960,18
+Gabon,266,1960,27
+Georgia,268,1960,28.1
+Gambia,270,1960,20.8
+Occupied Palestinian Territory,275,1960,16.8
+Germany,276,1960,34.6
+Antigua and Barbuda,28,1960,18.1
+Ghana,288,1960,17.7
+Kiribati,296,1960,17.7
+Greece,300,1960,28.9
+Grenada,308,1960,15.6
+Azerbaijan,31,1960,22.3
+Guadeloupe,312,1960,19.2
+Guam,316,1960,21.2
+Argentina,32,1960,26.9
+Guatemala,320,1960,16.9
+Guinea,324,1960,20.1
+Guyana,328,1960,16.8
+Haiti,332,1960,19.8
+Honduras,340,1960,16.8
+Hong Kong Special Administrative Region of China,344,1960,23.2
+Hungary,348,1960,32.2
+Iceland,352,1960,25.4
+India,356,1960,20.3
+Australia,36,1960,29.6
+Indonesia,360,1960,20.2
+Iran (Islamic Republic of),364,1960,19.6
+Iraq,368,1960,19.6
+Ireland,372,1960,29
+Israel,376,1960,24.1
+Italy,380,1960,31.4
+Cote d'Ivoire,384,1960,18.6
+Jamaica,388,1960,19.7
+Japan,392,1960,25.4
+Kazakhstan,398,1960,22.9
+Afghanistan,4,1960,18.8
+Austria,40,1960,35.4
+Jordan,400,1960,17.5
+Kenya,404,1960,17.2
+Democratic People's Republic of Korea,408,1960,19.9
+Republic of Korea,410,1960,19.1
+Kuwait,414,1960,24
+Kyrgyzstan,417,1960,24
+Lao People's Democratic Republic,418,1960,19
+Lebanon,422,1960,20.4
+Lesotho,426,1960,18.3
+Latvia,428,1960,32.3
+Liberia,430,1960,19
+Libyan Arab Jamahiriya,434,1960,19.3
+Bahamas,44,1960,19.3
+Lithuania,440,1960,28.5
+Luxembourg,442,1960,35.2
+Macao Special Administrative Region of China,446,1960,23.9
+Madagascar,450,1960,19.2
+Malawi,454,1960,17.4
+Malaysia,458,1960,17.6
+Maldives,462,1960,20.3
+Mali,466,1960,19.5
+Malta,470,1960,22.3
+Martinique,474,1960,19.2
+Mauritania,478,1960,17.7
+Bahrain,48,1960,19.6
+Mauritius,480,1960,16.7
+Mexico,484,1960,17.1
+Mongolia,496,1960,23
+Republic of Moldova,498,1960,26.1
+Montenegro,499,1960,22.9
+Bangladesh,50,1960,19.1
+Morocco,504,1960,18.1
+Mozambique,508,1960,18.8
+Armenia,51,1960,22.4
+Oman,512,1960,18
+Namibia,516,1960,19.3
+Barbados,52,1960,22.4
+Nepal,524,1960,19.9
+Netherlands,528,1960,28.6
+Curaçao,531,1960,19.9
+Aruba,533,1960,18.1
+New Caledonia,540,1960,22
+Vanuatu,548,1960,16.8
+Central Asia,5500,1960,22.8
+Southern Asia,5501,1960,20.1
+New Zealand,554,1960,27.4
+Nicaragua,558,1960,16.4
+Belgium,56,1960,35.1
+Niger,562,1960,15.8
+Nigeria,566,1960,19.1
+Norway,578,1960,34.3
+Micronesia (Federated States of),583,1960,17.5
+Pakistan,586,1960,20.2
+Panama,591,1960,18
+Papua New Guinea,598,1960,18.9
+Paraguay,600,1960,16
+Peru,604,1960,18.3
+Philippines,608,1960,16.5
+Poland,616,1960,26.5
+Portugal,620,1960,27.9
+Guinea-Bissau,624,1960,20.1
+Timor-Leste,626,1960,19
+Puerto Rico,630,1960,18.5
+Qatar,634,1960,19.4
+Reunion,638,1960,17.8
+Bhutan,64,1960,19
+Romania,642,1960,28.3
+Russian Federation,643,1960,27.2
+Rwanda,646,1960,16.3
+Saint Lucia,662,1960,17.7
+Saint Vincent and the Grenadines,670,1960,15.2
+Sao Tome and Principe,678,1960,24.6
+Bolivia (Plurinational State of),68,1960,18.8
+Saudi Arabia,682,1960,18.5
+Senegal,686,1960,18.2
+Serbia,688,1960,27.9
+Seychelles,690,1960,22
+Sierra Leone,694,1960,20
+Bosnia and Herzegovina,70,1960,21.8
+Singapore,702,1960,18.8
+Slovakia,703,1960,27.7
+Viet Nam,704,1960,21.9
+Slovenia,705,1960,29.2
+Somalia,706,1960,18.9
+South Africa,710,1960,19.6
+Zimbabwe,716,1960,17.4
+Botswana,72,1960,17.2
+Spain,724,1960,29.2
+South Sudan,728,1960,18.8
+Sudan,729,1960,17.5
+Western Sahara,732,1960,20.8
+Suriname,740,1960,16.5
+Swaziland,748,1960,17.4
+Sweden,752,1960,36
+Switzerland,756,1960,32.7
+Brazil,76,1960,18.6
+Syrian Arab Republic,760,1960,17.1
+Tajikistan,762,1960,21.6
+Thailand,764,1960,18.8
+Togo,768,1960,18.5
+Tonga,776,1960,17.3
+Trinidad and Tobago,780,1960,18.7
+United Arab Emirates,784,1960,17.7
+Tunisia,788,1960,18.5
+Turkey,792,1960,19.3
+Turkmenistan,795,1960,21.7
+Albania,8,1960,20.2
+Uganda,800,1960,17.1
+Ukraine,804,1960,28.9
+The former Yugoslav Republic of Macedonia,807,1960,21.5
+Egypt,818,1960,20.1
+United Kingdom of Great Britain and Northern Ireland,826,1960,35.6
+Channel Islands,830,1960,36.6
+United Republic of Tanzania,834,1960,17
+Belize,84,1960,17.8
+United States of America,840,1960,29.6
+United States Virgin Islands,850,1960,21.1
+Burkina Faso,854,1960,19.1
+Uruguay,858,1960,28.9
+Uzbekistan,860,1960,22.2
+Venezuela (Bolivarian Republic of),862,1960,17.1
+Samoa,882,1960,15.2
+Yemen,887,1960,18.5
+Zambia,894,1960,17.2
+Solomon Islands,90,1960,18.3
+World,900,1960,22.6
+Africa,903,1960,18.6
+Latin America and the Caribbean,904,1960,19
+Northern America,905,1960,29.3
+Eastern Asia,906,1960,21.4
+Europe,908,1960,30.3
+Oceania,909,1960,28
+Eastern Africa,910,1960,17.8
+Middle Africa,911,1960,18.8
+Northern Africa,912,1960,18.8
+Southern Africa,913,1960,19.4
+Western Africa,914,1960,18.9
+Caribbean,915,1960,20
+Central America,916,1960,17.1
+South-Eastern Asia,920,1960,19.6
+Western Asia,922,1960,20
+Eastern Europe,923,1960,28
+Northern Europe,924,1960,34.4
+Southern Europe,925,1960,29.3
+Western Europe,926,1960,33.7
+Australia and New Zealand,927,1960,29.2
+Melanesia,928,1960,17
+South America,931,1960,19.5
+Asia,935,1960,20.6
+Micronesia,954,1960,17.6
+Polynesia,957,1960,16.7
+Brunei Darussalam,96,1960,19.5
+Bulgaria,100,1965,32
+Myanmar,104,1965,19.7
+Burundi,108,1965,17.7
+Belarus,112,1965,28.9
+Cambodia,116,1965,16.7
+Algeria,12,1965,16.6
+Cameroon,120,1965,20
+Canada,124,1965,25.5
+Cape Verde,132,1965,16.7
+Central African Republic,140,1965,20.8
+Sri Lanka,144,1965,19.1
+Chad,148,1965,19.2
+Chile,152,1965,20.6
+China,156,1965,19.4
+Taiwan Province of China,158,1965,17.9
+Colombia,170,1965,16.5
+Comoros,174,1965,18.3
+Mayotte,175,1965,17.9
+Congo,178,1965,18.7
+Democratic Republic of the Congo,180,1965,18.2
+Costa Rica,188,1965,17.6
+Croatia,191,1965,30.7
+Cuba,192,1965,22.3
+Cyprus,196,1965,23.4
+Czech Republic,203,1965,33.8
+Benin,204,1965,20
+Denmark,208,1965,32.8
+Dominican Republic,214,1965,15.5
+Ecuador,218,1965,17.8
+El Salvador,222,1965,17.1
+Equatorial Guinea,226,1965,21.1
+Ethiopia,231,1965,18.1
+Eritrea,232,1965,18.2
+Estonia,233,1965,33
+Angola,24,1965,16
+Fiji,242,1965,16.4
+Finland,246,1965,28.6
+France,250,1965,32.8
+French Guiana,254,1965,22.5
+French Polynesia,258,1965,17.4
+Djibouti,262,1965,18
+Gabon,266,1965,26.1
+Georgia,268,1965,28.3
+Gambia,270,1965,20.2
+Occupied Palestinian Territory,275,1965,16.1
+Germany,276,1965,34.3
+Antigua and Barbuda,28,1965,18.2
+Ghana,288,1965,17.6
+Kiribati,296,1965,16.9
+Greece,300,1965,30.5
+Grenada,308,1965,15.2
+Azerbaijan,31,1965,19.4
+Guadeloupe,312,1965,17.6
+Guam,316,1965,20.9
+Argentina,32,1965,27.2
+Guatemala,320,1965,16.6
+Guinea,324,1965,19.6
+Guyana,328,1965,16.1
+Haiti,332,1965,19.4
+Honduras,340,1965,16.4
+Hong Kong Special Administrative Region of China,344,1965,22.7
+Hungary,348,1965,33.5
+Iceland,352,1965,24.2
+India,356,1965,19.6
+Australia,36,1965,28.4
+Indonesia,360,1965,19.4
+Iran (Islamic Republic of),364,1965,18
+Iraq,368,1965,18.6
+Ireland,372,1965,27.4
+Israel,376,1965,23.4
+Italy,380,1965,32
+Cote d'Ivoire,384,1965,18.4
+Jamaica,388,1965,18.5
+Japan,392,1965,27.2
+Kazakhstan,398,1965,22.4
+Afghanistan,4,1965,18.4
+Austria,40,1965,34.7
+Jordan,400,1965,16.9
+Kenya,404,1965,15.8
+Democratic People's Republic of Korea,408,1965,21.1
+Republic of Korea,410,1965,18.4
+Kuwait,414,1965,21.6
+Kyrgyzstan,417,1965,21.6
+Lao People's Democratic Republic,418,1965,18.8
+Lebanon,422,1965,18.7
+Lesotho,426,1965,18
+Latvia,428,1965,33.1
+Liberia,430,1965,18.8
+Libyan Arab Jamahiriya,434,1965,18.5
+Bahamas,44,1965,18.7
+Lithuania,440,1965,29.7
+Luxembourg,442,1965,35.3
+Macao Special Administrative Region of China,446,1965,18.6
+Madagascar,450,1965,17.9
+Malawi,454,1965,17.5
+Malaysia,458,1965,16.9
+Maldives,462,1965,19.8
+Mali,466,1965,19.3
+Malta,470,1965,21.8
+Martinique,474,1965,17.9
+Mauritania,478,1965,17.3
+Bahrain,48,1965,16.8
+Mauritius,480,1965,16.7
+Mexico,484,1965,16.6
+Mongolia,496,1965,20.4
+Republic of Moldova,498,1965,26.2
+Montenegro,499,1965,23.5
+Bangladesh,50,1965,18.5
+Morocco,504,1965,16.3
+Mozambique,508,1965,18.5
+Armenia,51,1965,20.6
+Oman,512,1965,17.4
+Namibia,516,1965,18.8
+Barbados,52,1965,20.7
+Nepal,524,1965,19.6
+Netherlands,528,1965,28.5
+Curaçao,531,1965,19.6
+Aruba,533,1965,19.1
+New Caledonia,540,1965,21.6
+Vanuatu,548,1965,16.8
+Central Asia,5500,1965,21.4
+Southern Asia,5501,1965,19.5
+New Zealand,554,1965,25.8
+Nicaragua,558,1965,15.5
+Belgium,56,1965,34.8
+Niger,562,1965,15.7
+Nigeria,566,1965,19
+Norway,578,1965,34.1
+Micronesia (Federated States of),583,1965,16.6
+Pakistan,586,1965,20
+Panama,591,1965,17.8
+Papua New Guinea,598,1965,18.3
+Paraguay,600,1965,16.2
+Peru,604,1965,17.8
+Philippines,608,1965,16.3
+Poland,616,1965,27.4
+Portugal,620,1965,28.9
+Guinea-Bissau,624,1965,19.9
+Timor-Leste,626,1965,18.8
+Puerto Rico,630,1965,21.1
+Qatar,634,1965,20.4
+Reunion,638,1965,17.1
+Bhutan,64,1965,18.9
+Romania,642,1965,29.9
+Russian Federation,643,1965,28.6
+Rwanda,646,1965,15.4
+Saint Lucia,662,1965,16.4
+Saint Vincent and the Grenadines,670,1965,14.8
+Sao Tome and Principe,678,1965,20.2
+Bolivia (Plurinational State of),68,1965,18.6
+Saudi Arabia,682,1965,18.2
+Senegal,686,1965,17.7
+Serbia,688,1965,29.2
+Seychelles,690,1965,19.9
+Sierra Leone,694,1965,19.9
+Bosnia and Herzegovina,70,1965,21.9
+Singapore,702,1965,18.1
+Slovakia,703,1965,28
+Viet Nam,704,1965,19.2
+Slovenia,705,1965,30.3
+Somalia,706,1965,18.5
+South Africa,710,1965,19
+Zimbabwe,716,1965,16.3
+Botswana,72,1965,15.8
+Spain,724,1965,30
+South Sudan,728,1965,19
+Sudan,729,1965,17.1
+Western Sahara,732,1965,21.1
+Suriname,740,1965,16
+Swaziland,748,1965,16.8
+Sweden,752,1965,36.1
+Switzerland,756,1965,31.5
+Brazil,76,1965,18.3
+Syrian Arab Republic,760,1965,15.9
+Tajikistan,762,1965,18.6
+Thailand,764,1965,18.3
+Togo,768,1965,18.1
+Tonga,776,1965,16.9
+Trinidad and Tobago,780,1965,18.3
+United Arab Emirates,784,1965,20.2
+Tunisia,788,1965,17.5
+Turkey,792,1965,18.9
+Turkmenistan,795,1965,18.7
+Albania,8,1965,19.7
+Uganda,800,1965,16.7
+Ukraine,804,1965,29.8
+The former Yugoslav Republic of Macedonia,807,1965,21.7
+Egypt,818,1965,19.1
+United Kingdom of Great Britain and Northern Ireland,826,1965,35.1
+Channel Islands,830,1965,36.1
+United Republic of Tanzania,834,1965,17
+Belize,84,1965,16.5
+United States of America,840,1965,28.5
+United States Virgin Islands,850,1965,20.3
+Burkina Faso,854,1965,18.8
+Uruguay,858,1965,29.3
+Uzbekistan,860,1965,19
+Venezuela (Bolivarian Republic of),862,1965,16.6
+Samoa,882,1965,14.5
+Yemen,887,1965,18.4
+Zambia,894,1965,16.8
+Solomon Islands,90,1965,18.3
+World,900,1965,21.9
+Africa,903,1965,18.1
+Latin America and the Caribbean,904,1965,18.5
+Northern America,905,1965,28.2
+Eastern Asia,906,1965,20.3
+Europe,908,1965,30.9
+Oceania,909,1965,26.8
+Eastern Africa,910,1965,17.4
+Middle Africa,911,1965,18.5
+Northern Africa,912,1965,17.8
+Southern Africa,913,1965,18.9
+Western Africa,914,1965,18.7
+Caribbean,915,1965,19.6
+Central America,916,1965,16.6
+South-Eastern Asia,920,1965,18.6
+Western Asia,922,1965,19.1
+Eastern Europe,923,1965,29.2
+Northern Europe,924,1965,34.1
+Southern Europe,925,1965,30.2
+Western Europe,926,1965,33.3
+Australia and New Zealand,927,1965,27.9
+Melanesia,928,1965,17.3
+South America,931,1965,19.1
+Asia,935,1965,19.7
+Micronesia,954,1965,16.7
+Polynesia,957,1965,15.9
+Brunei Darussalam,96,1965,17.7
+Bulgaria,100,1970,33.2
+Myanmar,104,1970,19
+Burundi,108,1970,17.2
+Belarus,112,1970,30.3
+Cambodia,116,1970,17
+Algeria,12,1970,16.4
+Cameroon,120,1970,19.5
+Canada,124,1970,26
+Cape Verde,132,1970,15.7
+Central African Republic,140,1970,20
+Sri Lanka,144,1970,19.6
+Chad,148,1970,18.6
+Chile,152,1970,20.8
+China,156,1970,19
+Taiwan Province of China,158,1970,18.8
+Colombia,170,1970,16.8
+Comoros,174,1970,17.5
+Mayotte,175,1970,16.7
+Congo,178,1970,18.1
+Democratic Republic of the Congo,180,1970,18.1
+Costa Rica,188,1970,18.2
+Croatia,191,1970,32.1
+Cuba,192,1970,21.9
+Cyprus,196,1970,26
+Czech Republic,203,1970,33.6
+Benin,204,1970,19
+Denmark,208,1970,32.5
+Dominican Republic,214,1970,16
+Ecuador,218,1970,17.7
+El Salvador,222,1970,17.1
+Equatorial Guinea,226,1970,20.2
+Ethiopia,231,1970,18
+Eritrea,232,1970,18.1
+Estonia,233,1970,33.8
+Angola,24,1970,16
+Fiji,242,1970,17.7
+Finland,246,1970,29.6
+France,250,1970,32.5
+French Guiana,254,1970,21.7
+French Polynesia,258,1970,17.2
+Djibouti,262,1970,17.4
+Gabon,266,1970,25.3
+Georgia,268,1970,28.7
+Gambia,270,1970,20.3
+Occupied Palestinian Territory,275,1970,15.3
+Germany,276,1970,34.1
+Antigua and Barbuda,28,1970,18.7
+Ghana,288,1970,17.3
+Kiribati,296,1970,17.4
+Greece,300,1970,33.1
+Grenada,308,1970,15.3
+Azerbaijan,31,1970,18.2
+Guadeloupe,312,1970,18.2
+Guam,316,1970,20.7
+Argentina,32,1970,27.4
+Guatemala,320,1970,16.8
+Guinea,324,1970,19.2
+Guyana,328,1970,16.2
+Haiti,332,1970,19
+Honduras,340,1970,16
+Hong Kong Special Administrative Region of China,344,1970,21.5
+Hungary,348,1970,34.2
+Iceland,352,1970,24.5
+India,356,1970,19.4
+Australia,36,1970,27.5
+Indonesia,360,1970,18.6
+Iran (Islamic Republic of),364,1970,17.7
+Iraq,368,1970,17.5
+Ireland,372,1970,26.4
+Israel,376,1970,23.5
+Italy,380,1970,32.8
+Cote d'Ivoire,384,1970,18.2
+Jamaica,388,1970,16.9
+Japan,392,1970,28.8
+Kazakhstan,398,1970,21.8
+Afghanistan,4,1970,17.9
+Austria,40,1970,33.6
+Jordan,400,1970,16.7
+Kenya,404,1970,15.4
+Democratic People's Republic of Korea,408,1970,21
+Republic of Korea,410,1970,18.8
+Kuwait,414,1970,19.2
+Kyrgyzstan,417,1970,19.4
+Lao People's Democratic Republic,418,1970,18.7
+Lebanon,422,1970,18.7
+Lesotho,426,1970,17.8
+Latvia,428,1970,34.2
+Liberia,430,1970,18.3
+Libyan Arab Jamahiriya,434,1970,17
+Bahamas,44,1970,19.1
+Lithuania,440,1970,30.8
+Luxembourg,442,1970,35.4
+Macao Special Administrative Region of China,446,1970,19.4
+Madagascar,450,1970,17.2
+Malawi,454,1970,17.2
+Malaysia,458,1970,17.6
+Maldives,462,1970,17.3
+Mali,466,1970,18.8
+Malta,470,1970,24
+Martinique,474,1970,19.1
+Mauritania,478,1970,17
+Bahrain,48,1970,17.5
+Mauritius,480,1970,17.8
+Mexico,484,1970,16.6
+Mongolia,496,1970,18.3
+Republic of Moldova,498,1970,26.3
+Montenegro,499,1970,24
+Bangladesh,50,1970,17.8
+Morocco,504,1970,16.2
+Mozambique,508,1970,18.3
+Armenia,51,1970,20.3
+Oman,512,1970,16.9
+Namibia,516,1970,18.4
+Barbados,52,1970,21.2
+Nepal,524,1970,19.2
+Netherlands,528,1970,28.5
+Curaçao,531,1970,19.7
+Aruba,533,1970,20.8
+New Caledonia,540,1970,21.5
+Vanuatu,548,1970,17.3
+Central Asia,5500,1970,20.2
+Southern Asia,5501,1970,19.2
+New Zealand,554,1970,25.6
+Nicaragua,558,1970,15.9
+Belgium,56,1970,34.5
+Niger,562,1970,15.7
+Nigeria,566,1970,18.8
+Norway,578,1970,32.9
+Micronesia (Federated States of),583,1970,16.8
+Pakistan,586,1970,19.3
+Panama,591,1970,17.8
+Papua New Guinea,598,1970,18
+Paraguay,600,1970,16.7
+Peru,604,1970,17.7
+Philippines,608,1970,16.7
+Poland,616,1970,28.1
+Portugal,620,1970,29.7
+Guinea-Bissau,624,1970,19.7
+Timor-Leste,626,1970,18.9
+Puerto Rico,630,1970,21.6
+Qatar,634,1970,21.9
+Reunion,638,1970,17.1
+Bhutan,64,1970,18.7
+Romania,642,1970,30.6
+Russian Federation,643,1970,30.8
+Rwanda,646,1970,16
+Saint Lucia,662,1970,15
+Saint Vincent and the Grenadines,670,1970,15.1
+Sao Tome and Principe,678,1970,16.3
+Bolivia (Plurinational State of),68,1970,18.5
+Saudi Arabia,682,1970,18
+Senegal,686,1970,17.6
+Serbia,688,1970,30.1
+Seychelles,690,1970,18
+Sierra Leone,694,1970,19.6
+Bosnia and Herzegovina,70,1970,22.4
+Singapore,702,1970,19.7
+Slovakia,703,1970,28.3
+Viet Nam,704,1970,18.2
+Slovenia,705,1970,31
+Somalia,706,1970,18.3
+South Africa,710,1970,18.8
+Zimbabwe,716,1970,15.9
+Botswana,72,1970,15.8
+Spain,724,1970,29.8
+South Sudan,728,1970,18.6
+Sudan,729,1970,16.8
+Western Sahara,732,1970,20.2
+Suriname,740,1970,15.8
+Swaziland,748,1970,16.3
+Sweden,752,1970,35.4
+Switzerland,756,1970,31.8
+Brazil,76,1970,18.7
+Syrian Arab Republic,760,1970,16
+Tajikistan,762,1970,17.1
+Thailand,764,1970,18
+Togo,768,1970,17.6
+Tonga,776,1970,15.9
+Trinidad and Tobago,780,1970,18.8
+United Arab Emirates,784,1970,22.7
+Tunisia,788,1970,17
+Turkey,792,1970,18.8
+Turkmenistan,795,1970,17.7
+Albania,8,1970,19.6
+Uganda,800,1970,16.5
+Ukraine,804,1970,32
+The former Yugoslav Republic of Macedonia,807,1970,22.5
+Egypt,818,1970,19.1
+United Kingdom of Great Britain and Northern Ireland,826,1970,34.2
+Channel Islands,830,1970,35.2
+United Republic of Tanzania,834,1970,16.8
+Belize,84,1970,16.3
+United States of America,840,1970,28.3
+United States Virgin Islands,850,1970,23.2
+Burkina Faso,854,1970,18.3
+Uruguay,858,1970,29.7
+Uzbekistan,860,1970,17.5
+Venezuela (Bolivarian Republic of),862,1970,16.8
+Samoa,882,1970,14.7
+Yemen,887,1970,17.6
+Zambia,894,1970,16.4
+Solomon Islands,90,1970,18.2
+World,900,1970,21.5
+Africa,903,1970,17.8
+Latin America and the Caribbean,904,1970,18.6
+Northern America,905,1970,28.1
+Eastern Asia,906,1970,20
+Europe,908,1970,31.7
+Oceania,909,1970,26.2
+Eastern Africa,910,1970,17.2
+Middle Africa,911,1970,18.2
+Northern Africa,912,1970,17.6
+Southern Africa,913,1970,18.6
+Western Africa,914,1970,18.4
+Caribbean,915,1970,19.4
+Central America,916,1970,16.7
+South-Eastern Asia,920,1970,18.1
+Western Asia,922,1970,18.7
+Eastern Europe,923,1970,30.9
+Northern Europe,924,1970,33.5
+Southern Europe,925,1970,30.9
+Western Europe,926,1970,33.2
+Australia and New Zealand,927,1970,27.2
+Melanesia,928,1970,18.1
+South America,931,1970,19.2
+Asia,935,1970,19.4
+Micronesia,954,1970,17
+Polynesia,957,1970,15.7
+Brunei Darussalam,96,1970,18.4
+Bulgaria,100,1975,33.7
+Myanmar,104,1975,19.2
+Burundi,108,1975,17.2
+Belarus,112,1975,30.7
+Cambodia,116,1975,17.7
+Algeria,12,1975,16.5
+Cameroon,120,1975,18.8
+Canada,124,1975,27.5
+Cape Verde,132,1975,15.8
+Central African Republic,140,1975,19.3
+Sri Lanka,144,1975,20.6
+Chad,148,1975,18.2
+Chile,152,1975,21.7
+China,156,1975,20.1
+Taiwan Province of China,158,1975,20.4
+Colombia,170,1975,17.8
+Comoros,174,1975,17.4
+Mayotte,175,1975,15.6
+Congo,178,1975,17.7
+Democratic Republic of the Congo,180,1975,17.8
+Costa Rica,188,1975,19.3
+Croatia,191,1975,33.1
+Cuba,192,1975,22.3
+Cyprus,196,1975,27.4
+Czech Republic,203,1975,32.7
+Benin,204,1975,18.2
+Denmark,208,1975,33
+Dominican Republic,214,1975,17
+Ecuador,218,1975,18.1
+El Salvador,222,1975,17.5
+Equatorial Guinea,226,1975,17.9
+Ethiopia,231,1975,17.6
+Eritrea,232,1975,17.9
+Estonia,233,1975,34.3
+Angola,24,1975,15.8
+Fiji,242,1975,18.9
+Finland,246,1975,30.7
+France,250,1975,31.8
+French Guiana,254,1975,21
+French Polynesia,258,1975,18.1
+Djibouti,262,1975,16.6
+Gabon,266,1975,23.5
+Georgia,268,1975,28.5
+Gambia,270,1975,18.7
+Occupied Palestinian Territory,275,1975,14.8
+Germany,276,1975,35.3
+Antigua and Barbuda,28,1975,19.8
+Ghana,288,1975,16.9
+Kiribati,296,1975,18.6
+Greece,300,1975,33.5
+Grenada,308,1975,17.8
+Azerbaijan,31,1975,19.1
+Guadeloupe,312,1975,18.6
+Guam,316,1975,21.6
+Argentina,32,1975,27.4
+Guatemala,320,1975,17
+Guinea,324,1975,19.3
+Guyana,328,1975,17.2
+Haiti,332,1975,19.1
+Honduras,340,1975,16
+Hong Kong Special Administrative Region of China,344,1975,23.5
+Hungary,348,1975,34.4
+Iceland,352,1975,25.4
+India,356,1975,19.8
+Australia,36,1975,28.2
+Indonesia,360,1975,18.5
+Iran (Islamic Republic of),364,1975,18.1
+Iraq,368,1975,17
+Ireland,372,1975,26
+Israel,376,1975,24.1
+Italy,380,1975,33.3
+Cote d'Ivoire,384,1975,17.8
+Jamaica,388,1975,17.2
+Japan,392,1975,30.3
+Kazakhstan,398,1975,22.3
+Afghanistan,4,1975,17.4
+Austria,40,1975,33.9
+Jordan,400,1975,15.9
+Kenya,404,1975,15.2
+Democratic People's Republic of Korea,408,1975,19.6
+Republic of Korea,410,1975,19.8
+Kuwait,414,1975,17.9
+Kyrgyzstan,417,1975,19.5
+Lao People's Democratic Republic,418,1975,18.6
+Lebanon,422,1975,19.5
+Lesotho,426,1975,17.5
+Latvia,428,1975,34.9
+Liberia,430,1975,17.9
+Libyan Arab Jamahiriya,434,1975,16.1
+Bahamas,44,1975,19.7
+Lithuania,440,1975,31.5
+Luxembourg,442,1975,35
+Macao Special Administrative Region of China,446,1975,23.1
+Madagascar,450,1975,17
+Malawi,454,1975,16.7
+Malaysia,458,1975,18.6
+Maldives,462,1975,17.1
+Mali,466,1975,18.5
+Malta,470,1975,26.5
+Martinique,474,1975,19
+Mauritania,478,1975,17
+Bahrain,48,1975,19.3
+Mauritius,480,1975,19.5
+Mexico,484,1975,16.6
+Mongolia,496,1975,17.5
+Republic of Moldova,498,1975,26.2
+Montenegro,499,1975,24.9
+Bangladesh,50,1975,17.6
+Morocco,504,1975,16.8
+Mozambique,508,1975,18
+Armenia,51,1975,21.9
+Oman,512,1975,17.1
+Namibia,516,1975,17.8
+Barbados,52,1975,23.7
+Nepal,524,1975,19.4
+Netherlands,528,1975,29.4
+Curaçao,531,1975,20.7
+Aruba,533,1975,23.9
+New Caledonia,540,1975,21.3
+Vanuatu,548,1975,17.3
+Central Asia,5500,1975,20.6
+Southern Asia,5501,1975,19.4
+New Zealand,554,1975,26.3
+Nicaragua,558,1975,16.3
+Belgium,56,1975,34.1
+Niger,562,1975,15.8
+Nigeria,566,1975,18.3
+Norway,578,1975,32.4
+Micronesia (Federated States of),583,1975,16.1
+Pakistan,586,1975,18.6
+Panama,591,1975,18.3
+Papua New Guinea,598,1975,18
+Paraguay,600,1975,17.6
+Peru,604,1975,18.1
+Philippines,608,1975,17.4
+Poland,616,1975,28.5
+Portugal,620,1975,29.8
+Guinea-Bissau,624,1975,19.7
+Timor-Leste,626,1975,19.1
+Puerto Rico,630,1975,22.7
+Qatar,634,1975,23.2
+Reunion,638,1975,18.4
+Bhutan,64,1975,18.7
+Romania,642,1975,30.2
+Russian Federation,643,1975,30.8
+Rwanda,646,1975,16.2
+Saint Lucia,662,1975,16.5
+Saint Vincent and the Grenadines,670,1975,16
+Sao Tome and Principe,678,1975,16.1
+Bolivia (Plurinational State of),68,1975,18.6
+Saudi Arabia,682,1975,18
+Senegal,686,1975,17.5
+Serbia,688,1975,29.9
+Seychelles,690,1975,18.9
+Sierra Leone,694,1975,18.8
+Bosnia and Herzegovina,70,1975,23.7
+Singapore,702,1975,21.9
+Slovakia,703,1975,28.4
+Viet Nam,704,1975,18.3
+Slovenia,705,1975,31.4
+Somalia,706,1975,18.2
+South Africa,710,1975,18.8
+Zimbabwe,716,1975,15.8
+Botswana,72,1975,16.2
+Spain,724,1975,29.9
+South Sudan,728,1975,17.9
+Sudan,729,1975,16.5
+Western Sahara,732,1975,16.7
+Suriname,740,1975,16.1
+Swaziland,748,1975,15.9
+Sweden,752,1975,35.3
+Switzerland,756,1975,32.9
+Brazil,76,1975,19.4
+Syrian Arab Republic,760,1975,15.9
+Tajikistan,762,1975,17.5
+Thailand,764,1975,18.5
+Togo,768,1975,17.1
+Tonga,776,1975,16.9
+Trinidad and Tobago,780,1975,20.1
+United Arab Emirates,784,1975,25
+Tunisia,788,1975,17.8
+Turkey,792,1975,19.4
+Turkmenistan,795,1975,18
+Albania,8,1975,20.2
+Uganda,800,1975,16.4
+Ukraine,804,1975,33.3
+The former Yugoslav Republic of Macedonia,807,1975,24
+Egypt,818,1975,19.2
+United Kingdom of Great Britain and Northern Ireland,826,1975,34
+Channel Islands,830,1975,34.5
+United Republic of Tanzania,834,1975,16.7
+Belize,84,1975,16
+United States of America,840,1975,28.9
+United States Virgin Islands,850,1975,20.3
+Burkina Faso,854,1975,17.8
+Uruguay,858,1975,30
+Uzbekistan,860,1975,18
+Venezuela (Bolivarian Republic of),862,1975,17.7
+Samoa,882,1975,15
+Yemen,887,1975,16.2
+Zambia,894,1975,16.2
+Solomon Islands,90,1975,16.3
+World,900,1975,21.8
+Africa,903,1975,17.6
+Latin America and the Caribbean,904,1975,19.1
+Northern America,905,1975,28.8
+Eastern Asia,906,1975,21
+Europe,908,1975,32.1
+Oceania,909,1975,27
+Eastern Africa,910,1975,16.9
+Middle Africa,911,1975,17.8
+Northern Africa,912,1975,17.8
+Southern Africa,913,1975,18.6
+Western Africa,914,1975,18
+Caribbean,915,1975,19.8
+Central America,916,1975,16.8
+South-Eastern Asia,920,1975,18.4
+Western Asia,922,1975,19
+Eastern Europe,923,1975,31.1
+Northern Europe,924,1975,33.4
+Southern Europe,925,1975,31
+Western Europe,926,1975,33.6
+Australia and New Zealand,927,1975,27.9
+Melanesia,928,1975,18.6
+South America,931,1975,19.9
+Asia,935,1975,20
+Micronesia,954,1975,17.3
+Polynesia,957,1975,16.5
+Brunei Darussalam,96,1975,19.6
+Bulgaria,100,1980,34.2
+Myanmar,104,1980,19.6
+Burundi,108,1980,17.6
+Belarus,112,1980,31.3
+Cambodia,116,1980,19.1
+Algeria,12,1980,16.7
+Cameroon,120,1980,18.1
+Canada,124,1980,29.2
+Cape Verde,132,1980,16
+Central African Republic,140,1980,18.9
+Sri Lanka,144,1980,21.7
+Chad,148,1980,17.5
+Chile,152,1980,22.9
+China,156,1980,21.7
+Taiwan Province of China,158,1980,22.8
+Colombia,170,1980,18.9
+Comoros,174,1980,17.3
+Mayotte,175,1980,15.4
+Congo,178,1980,17.3
+Democratic Republic of the Congo,180,1980,17.7
+Costa Rica,188,1980,20.6
+Croatia,191,1980,33.5
+Cuba,192,1980,23.9
+Cyprus,196,1980,28.3
+Czech Republic,203,1980,32.9
+Benin,204,1980,17.6
+Denmark,208,1980,34.3
+Dominican Republic,214,1980,18.1
+Ecuador,218,1980,18.8
+El Salvador,222,1980,17.9
+Equatorial Guinea,226,1980,17
+Ethiopia,231,1980,17.6
+Eritrea,232,1980,17.8
+Estonia,233,1980,33.9
+Angola,24,1980,15.4
+Fiji,242,1980,19.5
+Finland,246,1980,32.8
+France,250,1980,32.6
+French Guiana,254,1980,23.1
+French Polynesia,258,1980,19.5
+Djibouti,262,1980,16.5
+Gabon,266,1980,21.6
+Georgia,268,1980,29.3
+Gambia,270,1980,17.8
+Occupied Palestinian Territory,275,1980,15.1
+Germany,276,1980,36.4
+Antigua and Barbuda,28,1980,21.8
+Ghana,288,1980,17
+Kiribati,296,1980,19.4
+Greece,300,1980,33.9
+Grenada,308,1980,18.8
+Azerbaijan,31,1980,21
+Guadeloupe,312,1980,22.1
+Guam,316,1980,22.6
+Argentina,32,1980,27.3
+Guatemala,320,1980,16.7
+Guinea,324,1980,19.1
+Guyana,328,1980,18.1
+Haiti,332,1980,19.1
+Honduras,340,1980,16.2
+Hong Kong Special Administrative Region of China,344,1980,25.3
+Hungary,348,1980,34.4
+Iceland,352,1980,26.9
+India,356,1980,20.2
+Australia,36,1980,29.4
+Indonesia,360,1980,19.1
+Iran (Islamic Republic of),364,1980,18.1
+Iraq,368,1980,16.6
+Ireland,372,1980,26.2
+Israel,376,1980,25
+Italy,380,1980,34.1
+Cote d'Ivoire,384,1980,17.4
+Jamaica,388,1980,19.2
+Japan,392,1980,32.5
+Kazakhstan,398,1980,23.5
+Afghanistan,4,1980,16.9
+Austria,40,1980,35
+Jordan,400,1980,15
+Kenya,404,1980,15
+Democratic People's Republic of Korea,408,1980,21.8
+Republic of Korea,410,1980,22.1
+Kuwait,414,1980,20.7
+Kyrgyzstan,417,1980,20.9
+Lao People's Democratic Republic,418,1980,17.7
+Lebanon,422,1980,19.9
+Lesotho,426,1980,17.6
+Latvia,428,1980,35
+Liberia,430,1980,17.5
+Libyan Arab Jamahiriya,434,1980,16.1
+Bahamas,44,1980,20.2
+Lithuania,440,1980,32
+Luxembourg,442,1980,35
+Macao Special Administrative Region of China,446,1980,26
+Madagascar,450,1980,16.8
+Malawi,454,1980,16.3
+Malaysia,458,1980,19.5
+Maldives,462,1980,17.1
+Mali,466,1980,17.9
+Malta,470,1980,28.7
+Martinique,474,1980,23.5
+Mauritania,478,1980,17.1
+Bahrain,48,1980,22.3
+Mauritius,480,1980,21.5
+Mexico,484,1980,17.2
+Mongolia,496,1980,17.8
+Republic of Moldova,498,1980,27.7
+Montenegro,499,1980,26.7
+Bangladesh,50,1980,17.3
+Morocco,504,1980,17.8
+Mozambique,508,1980,18
+Armenia,51,1980,23.5
+Oman,512,1980,17.6
+Namibia,516,1980,16.6
+Barbados,52,1980,24.3
+Nepal,524,1980,19.3
+Netherlands,528,1980,31.2
+Curaçao,531,1980,23.3
+Aruba,533,1980,26
+New Caledonia,540,1980,21.6
+Vanuatu,548,1980,17.5
+Central Asia,5500,1980,21.7
+Southern Asia,5501,1980,19.7
+New Zealand,554,1980,27.9
+Nicaragua,558,1980,16.4
+Belgium,56,1980,34.1
+Niger,562,1980,16.1
+Nigeria,566,1980,18
+Norway,578,1980,33.3
+Micronesia (Federated States of),583,1980,16.3
+Pakistan,586,1980,18.5
+Panama,591,1980,19.1
+Papua New Guinea,598,1980,18
+Paraguay,600,1980,18.4
+Peru,604,1980,18.5
+Philippines,608,1980,18.1
+Poland,616,1980,29.4
+Portugal,620,1980,30.7
+Guinea-Bissau,624,1980,19.5
+Timor-Leste,626,1980,19
+Puerto Rico,630,1980,24.6
+Qatar,634,1980,23.4
+Reunion,638,1980,19.8
+Bhutan,64,1980,18.7
+Romania,642,1980,30.4
+Russian Federation,643,1980,31.4
+Rwanda,646,1980,16
+Saint Lucia,662,1980,17.5
+Saint Vincent and the Grenadines,670,1980,17.4
+Sao Tome and Principe,678,1980,16.3
+Bolivia (Plurinational State of),68,1980,18.7
+Saudi Arabia,682,1980,18.4
+Senegal,686,1980,16.7
+Serbia,688,1980,30.9
+Seychelles,690,1980,19.9
+Sierra Leone,694,1980,17.9
+Bosnia and Herzegovina,70,1980,25.6
+Singapore,702,1980,24.5
+Slovakia,703,1980,28.8
+Viet Nam,704,1980,19.1
+Slovenia,705,1980,31.6
+Somalia,706,1980,17.6
+South Africa,710,1980,18.9
+Zimbabwe,716,1980,15.6
+Botswana,72,1980,16.5
+Spain,724,1980,30.4
+South Sudan,728,1980,17.7
+Sudan,729,1980,16.4
+Western Sahara,732,1980,21.2
+Suriname,740,1980,18.9
+Swaziland,748,1980,15.6
+Sweden,752,1980,36.2
+Switzerland,756,1980,34.6
+Brazil,76,1980,20.2
+Syrian Arab Republic,760,1980,15.6
+Tajikistan,762,1980,18
+Thailand,764,1980,19.7
+Togo,768,1980,16.8
+Tonga,776,1980,18.3
+Trinidad and Tobago,780,1980,21.7
+United Arab Emirates,784,1980,26
+Tunisia,788,1980,18.6
+Turkey,792,1980,19.9
+Turkmenistan,795,1980,18.6
+Albania,8,1980,21.4
+Uganda,800,1980,16.2
+Ukraine,804,1980,33.5
+The former Yugoslav Republic of Macedonia,807,1980,25.9
+Egypt,818,1980,19.4
+United Kingdom of Great Britain and Northern Ireland,826,1980,34.4
+Channel Islands,830,1980,34.9
+United Republic of Tanzania,834,1980,16.6
+Belize,84,1980,16.4
+United States of America,840,1980,29.9
+United States Virgin Islands,850,1980,22.2
+Burkina Faso,854,1980,17.1
+Uruguay,858,1980,30.1
+Uzbekistan,860,1980,18.9
+Venezuela (Bolivarian Republic of),862,1980,18.7
+Samoa,882,1980,16.4
+Yemen,887,1980,15.2
+Zambia,894,1980,16.1
+Solomon Islands,90,1980,16.3
+World,900,1980,22.6
+Africa,903,1980,17.6
+Latin America and the Caribbean,904,1980,19.7
+Northern America,905,1980,29.9
+Eastern Asia,906,1980,22.7
+Europe,908,1980,32.6
+Oceania,909,1980,28.2
+Eastern Africa,910,1980,16.8
+Middle Africa,911,1980,17.4
+Northern Africa,912,1980,18.1
+Southern Africa,913,1980,18.7
+Western Africa,914,1980,17.7
+Caribbean,915,1980,21.1
+Central America,916,1980,17.3
+South-Eastern Asia,920,1980,19.1
+Western Asia,922,1980,19.3
+Eastern Europe,923,1980,31.5
+Northern Europe,924,1980,34
+Southern Europe,925,1980,31.9
+Western Europe,926,1980,34.4
+Australia and New Zealand,927,1980,29.2
+Melanesia,928,1980,18.9
+South America,931,1980,20.6
+Asia,935,1980,20.9
+Micronesia,954,1980,17.8
+Polynesia,957,1980,17.9
+Brunei Darussalam,96,1980,20.2
+Bulgaria,100,1985,35.3
+Myanmar,104,1985,20.1
+Burundi,108,1985,17.4
+Belarus,112,1985,32
+Cambodia,116,1985,18.5
+Algeria,12,1985,17.1
+Cameroon,120,1985,17.5
+Canada,124,1985,31
+Cape Verde,132,1985,16.9
+Central African Republic,140,1985,18.8
+Sri Lanka,144,1985,22.8
+Chad,148,1985,16.8
+Chile,152,1985,24.3
+China,156,1985,23.3
+Taiwan Province of China,158,1985,24.8
+Colombia,170,1985,20.2
+Comoros,174,1985,17.1
+Mayotte,175,1985,15.6
+Congo,178,1985,17.4
+Democratic Republic of the Congo,180,1985,17.5
+Costa Rica,188,1985,22
+Croatia,191,1985,34.3
+Cuba,192,1985,25.5
+Cyprus,196,1985,29.1
+Czech Republic,203,1985,34.1
+Benin,204,1985,17.2
+Denmark,208,1985,36
+Dominican Republic,214,1985,19.2
+Ecuador,218,1985,19.6
+El Salvador,222,1985,18.6
+Equatorial Guinea,226,1985,18.8
+Ethiopia,231,1985,17
+Eritrea,232,1985,17.7
+Estonia,233,1985,34
+Angola,24,1985,15
+Fiji,242,1985,20.3
+Finland,246,1985,34.7
+France,250,1985,33.8
+French Guiana,254,1985,23.8
+French Polynesia,258,1985,20.9
+Djibouti,262,1985,17.2
+Gabon,266,1985,20
+Georgia,268,1985,30.2
+Gambia,270,1985,16.8
+Occupied Palestinian Territory,275,1985,15.5
+Germany,276,1985,37.1
+Antigua and Barbuda,28,1985,23.4
+Ghana,288,1985,17.4
+Kiribati,296,1985,19.5
+Greece,300,1985,34.7
+Grenada,308,1985,20
+Azerbaijan,31,1985,22.9
+Guadeloupe,312,1985,24.4
+Guam,316,1985,23.9
+Argentina,32,1985,27.3
+Guatemala,320,1985,16.6
+Guinea,324,1985,18.6
+Guyana,328,1985,19.5
+Haiti,332,1985,18.8
+Honduras,340,1985,16.5
+Hong Kong Special Administrative Region of China,344,1985,28.4
+Hungary,348,1985,35.1
+Iceland,352,1985,28.4
+India,356,1985,20.6
+Australia,36,1985,30.8
+Indonesia,360,1985,19.9
+Iran (Islamic Republic of),364,1985,17.3
+Iraq,368,1985,16.7
+Ireland,372,1985,26.8
+Israel,376,1985,25.4
+Italy,380,1985,35.5
+Cote d'Ivoire,384,1985,17.3
+Jamaica,388,1985,20.3
+Japan,392,1985,35
+Kazakhstan,398,1985,24.6
+Afghanistan,4,1985,16.2
+Austria,40,1985,35.8
+Jordan,400,1985,15.8
+Kenya,404,1985,15
+Democratic People's Republic of Korea,408,1985,23.5
+Republic of Korea,410,1985,24.4
+Kuwait,414,1985,22.4
+Kyrgyzstan,417,1985,21.8
+Lao People's Democratic Republic,418,1985,17.6
+Lebanon,422,1985,21.5
+Lesotho,426,1985,17.4
+Latvia,428,1985,34.7
+Liberia,430,1985,17.3
+Libyan Arab Jamahiriya,434,1985,17.4
+Bahamas,44,1985,21.8
+Lithuania,440,1985,32.1
+Luxembourg,442,1985,35.8
+Macao Special Administrative Region of China,446,1985,27.4
+Madagascar,450,1985,16.9
+Malawi,454,1985,16.2
+Malaysia,458,1985,20.5
+Maldives,462,1985,16.8
+Mali,466,1985,17.4
+Malta,470,1985,30.2
+Martinique,474,1985,26
+Mauritania,478,1985,17.3
+Bahrain,48,1985,25.1
+Mauritius,480,1985,23.1
+Mexico,484,1985,18.2
+Mongolia,496,1985,18.5
+Republic of Moldova,498,1985,28.7
+Montenegro,499,1985,28.3
+Bangladesh,50,1985,17.7
+Morocco,504,1985,18.7
+Mozambique,508,1985,17.5
+Armenia,51,1985,25.3
+Oman,512,1985,17.5
+Namibia,516,1985,16.4
+Barbados,52,1985,26.3
+Nepal,524,1985,19
+Netherlands,528,1985,33
+Curaçao,531,1985,25.8
+Aruba,533,1985,28
+New Caledonia,540,1985,22.6
+Vanuatu,548,1985,17.8
+Central Asia,5500,1985,22.5
+Southern Asia,5501,1985,19.9
+New Zealand,554,1985,29.5
+Nicaragua,558,1985,16.5
+Belgium,56,1985,35.3
+Niger,562,1985,15.8
+Nigeria,566,1985,17.6
+Norway,578,1985,34.6
+Micronesia (Federated States of),583,1985,16.9
+Pakistan,586,1985,18.6
+Panama,591,1985,20.3
+Papua New Guinea,598,1985,18.2
+Paraguay,600,1985,18.9
+Peru,604,1985,19.4
+Philippines,608,1985,18.7
+Poland,616,1985,30.6
+Portugal,620,1985,32.1
+Guinea-Bissau,624,1985,18.4
+Timor-Leste,626,1985,19.6
+Puerto Rico,630,1985,26.3
+Qatar,634,1985,26.9
+Reunion,638,1985,22.3
+Bhutan,64,1985,18.2
+Romania,642,1985,31.6
+Russian Federation,643,1985,32.2
+Rwanda,646,1985,15.2
+Saint Lucia,662,1985,18.9
+Saint Vincent and the Grenadines,670,1985,19.1
+Sao Tome and Principe,678,1985,16.1
+Bolivia (Plurinational State of),68,1985,18.8
+Saudi Arabia,682,1985,19.3
+Senegal,686,1985,16.2
+Serbia,688,1985,32.1
+Seychelles,690,1985,21.8
+Sierra Leone,694,1985,17.1
+Bosnia and Herzegovina,70,1985,27.4
+Singapore,702,1985,27.3
+Slovakia,703,1985,30
+Viet Nam,704,1985,20
+Slovenia,705,1985,32.5
+Somalia,706,1985,16.7
+South Africa,710,1985,19.2
+Zimbabwe,716,1985,16.2
+Botswana,72,1985,16.7
+Spain,724,1985,31.6
+South Sudan,728,1985,17.8
+Sudan,729,1985,16.6
+Western Sahara,732,1985,21.4
+Suriname,740,1985,21.5
+Swaziland,748,1985,15.6
+Sweden,752,1985,37.6
+Switzerland,756,1985,36
+Brazil,76,1985,21.3
+Syrian Arab Republic,760,1985,15.7
+Tajikistan,762,1985,18.4
+Thailand,764,1985,21.8
+Togo,768,1985,16.7
+Tonga,776,1985,18.4
+Trinidad and Tobago,780,1985,22.7
+United Arab Emirates,784,1985,26.1
+Tunisia,788,1985,19.9
+Turkey,792,1985,20.9
+Turkmenistan,795,1985,19.4
+Albania,8,1985,22.8
+Uganda,800,1985,16.1
+Ukraine,804,1985,34
+The former Yugoslav Republic of Macedonia,807,1985,27.6
+Egypt,818,1985,19.5
+United Kingdom of Great Britain and Northern Ireland,826,1985,35.4
+Channel Islands,830,1985,35.8
+United Republic of Tanzania,834,1985,16.7
+Belize,84,1985,17.2
+United States of America,840,1985,31.4
+United States Virgin Islands,850,1985,24
+Burkina Faso,854,1985,16.6
+Uruguay,858,1985,30.4
+Uzbekistan,860,1985,19.6
+Venezuela (Bolivarian Republic of),862,1985,19.9
+Samoa,882,1985,17.6
+Yemen,887,1985,14.7
+Zambia,894,1985,16.3
+Solomon Islands,90,1985,16.2
+World,900,1985,23.3
+Africa,903,1985,17.4
+Latin America and the Caribbean,904,1985,20.7
+Northern America,905,1985,31.4
+Eastern Asia,906,1985,24.2
+Europe,908,1985,33.5
+Oceania,909,1985,29.5
+Eastern Africa,910,1985,16.6
+Middle Africa,911,1985,17.1
+Northern Africa,912,1985,18.5
+Southern Africa,913,1985,18.9
+Western Africa,914,1985,17.3
+Caribbean,915,1985,22.3
+Central America,916,1985,18.1
+South-Eastern Asia,920,1985,20
+Western Asia,922,1985,19.8
+Eastern Europe,923,1985,32.4
+Northern Europe,924,1985,35.1
+Southern Europe,925,1985,33.1
+Western Europe,926,1985,35.3
+Australia and New Zealand,927,1985,30.6
+Melanesia,928,1985,19.4
+South America,931,1985,21.5
+Asia,935,1985,21.9
+Micronesia,954,1985,18
+Polynesia,957,1985,19
+Brunei Darussalam,96,1985,21.2
+Bulgaria,100,1990,36.5
+Myanmar,104,1990,21.1
+Burundi,108,1990,16.8
+Belarus,112,1990,33.1
+Cambodia,116,1990,17.9
+Algeria,12,1990,18
+Cameroon,120,1990,17.2
+Canada,124,1990,32.9
+Cape Verde,132,1990,16.9
+Central African Republic,140,1990,18.4
+Sri Lanka,144,1990,24.2
+Chad,148,1990,16.3
+Chile,152,1990,25.7
+China,156,1990,24.6
+Taiwan Province of China,158,1990,27
+Colombia,170,1990,21.6
+Comoros,174,1990,16.9
+Mayotte,175,1990,15.9
+Congo,178,1990,17.7
+Democratic Republic of the Congo,180,1990,17.4
+Costa Rica,188,1990,23.1
+Croatia,191,1990,35.8
+Cuba,192,1990,27.7
+Cyprus,196,1990,29.9
+Czech Republic,203,1990,35.3
+Benin,204,1990,17
+Denmark,208,1990,37.2
+Dominican Republic,214,1990,20.2
+Ecuador,218,1990,20.5
+El Salvador,222,1990,19.7
+Equatorial Guinea,226,1990,19
+Ethiopia,231,1990,16.8
+Eritrea,232,1990,17.5
+Estonia,233,1990,34.4
+Angola,24,1990,14.9
+Fiji,242,1990,20.9
+Finland,246,1990,36.4
+France,250,1990,35
+French Guiana,254,1990,24
+French Polynesia,258,1990,22
+Djibouti,262,1990,17.4
+Gabon,266,1990,19.4
+Georgia,268,1990,31.2
+Gambia,270,1990,17
+Occupied Palestinian Territory,275,1990,15.7
+Germany,276,1990,37.6
+Antigua and Barbuda,28,1990,24.4
+Ghana,288,1990,17.8
+Kiribati,296,1990,20.4
+Greece,300,1990,35.8
+Grenada,308,1990,20.4
+Azerbaijan,31,1990,23.5
+Guadeloupe,312,1990,26.8
+Guam,316,1990,25.2
+Argentina,32,1990,27.2
+Guatemala,320,1990,16.9
+Guinea,324,1990,18.2
+Guyana,328,1990,21.2
+Haiti,332,1990,18.5
+Honduras,340,1990,16.9
+Hong Kong Special Administrative Region of China,344,1990,31
+Hungary,348,1990,36.4
+Iceland,352,1990,30
+India,356,1990,21.1
+Australia,36,1990,32.1
+Indonesia,360,1990,21.3
+Iran (Islamic Republic of),364,1990,17.2
+Iraq,368,1990,16.8
+Ireland,372,1990,28.3
+Israel,376,1990,25.9
+Italy,380,1990,37
+Cote d'Ivoire,384,1990,17.4
+Jamaica,388,1990,22
+Japan,392,1990,37.2
+Kazakhstan,398,1990,26
+Afghanistan,4,1990,15.8
+Austria,40,1990,36.4
+Jordan,400,1990,16.1
+Kenya,404,1990,15.5
+Democratic People's Republic of Korea,408,1990,25
+Republic of Korea,410,1990,27
+Kuwait,414,1990,22.6
+Kyrgyzstan,417,1990,21.7
+Lao People's Democratic Republic,418,1990,17.6
+Lebanon,422,1990,23.2
+Lesotho,426,1990,17.7
+Latvia,428,1990,34.6
+Liberia,430,1990,17.4
+Libyan Arab Jamahiriya,434,1990,18.5
+Bahamas,44,1990,23.6
+Lithuania,440,1990,32.7
+Luxembourg,442,1990,36.4
+Macao Special Administrative Region of China,446,1990,29.1
+Madagascar,450,1990,17.1
+Malawi,454,1990,17
+Malaysia,458,1990,21.7
+Maldives,462,1990,16.2
+Mali,466,1990,16.6
+Malta,470,1990,32.1
+Martinique,474,1990,28.3
+Mauritania,478,1990,17.4
+Bahrain,48,1990,25.4
+Mauritius,480,1990,24.9
+Mexico,484,1990,19.5
+Mongolia,496,1990,19.3
+Republic of Moldova,498,1990,29.9
+Montenegro,499,1990,29.8
+Bangladesh,50,1990,18.5
+Morocco,504,1990,19.8
+Mozambique,508,1990,16.3
+Armenia,51,1990,27.1
+Oman,512,1990,17.9
+Namibia,516,1990,17.8
+Barbados,52,1990,28.3
+Nepal,524,1990,18.7
+Netherlands,528,1990,34.5
+Curaçao,531,1990,28.6
+Aruba,533,1990,31.2
+New Caledonia,540,1990,24
+Vanuatu,548,1990,18.1
+Central Asia,5500,1990,23
+Southern Asia,5501,1990,20.3
+New Zealand,554,1990,31.1
+Nicaragua,558,1990,16.9
+Belgium,56,1990,36.5
+Niger,562,1990,15.8
+Nigeria,566,1990,17.5
+Norway,578,1990,35.4
+Micronesia (Federated States of),583,1990,17.6
+Pakistan,586,1990,18.5
+Panama,591,1990,21.7
+Papua New Guinea,598,1990,18.7
+Paraguay,600,1990,19.4
+Peru,604,1990,20.4
+Philippines,608,1990,19.2
+Poland,616,1990,32.4
+Portugal,620,1990,34.2
+Guinea-Bissau,624,1990,17.9
+Timor-Leste,626,1990,19.6
+Puerto Rico,630,1990,28.5
+Qatar,634,1990,28.7
+Reunion,638,1990,24
+Bhutan,64,1990,18
+Romania,642,1990,32.6
+Russian Federation,643,1990,33.4
+Rwanda,646,1990,15.2
+Saint Lucia,662,1990,21.4
+Saint Vincent and the Grenadines,670,1990,20.4
+Sao Tome and Principe,678,1990,16
+Bolivia (Plurinational State of),68,1990,19.1
+Saudi Arabia,682,1990,19.5
+Senegal,686,1990,16.3
+Serbia,688,1990,33.2
+Seychelles,690,1990,21.9
+Sierra Leone,694,1990,16.6
+Bosnia and Herzegovina,70,1990,29.8
+Singapore,702,1990,29.3
+Slovakia,703,1990,31.2
+Viet Nam,704,1990,21
+Slovenia,705,1990,34.2
+Somalia,706,1990,15.9
+South Africa,710,1990,19.9
+Zimbabwe,716,1990,17
+Botswana,72,1990,17.5
+Spain,724,1990,33.4
+South Sudan,728,1990,17.8
+Sudan,729,1990,17
+Western Sahara,732,1990,21.1
+Suriname,740,1990,22.8
+Swaziland,748,1990,16
+Sweden,752,1990,38.3
+Switzerland,756,1990,36.9
+Brazil,76,1990,22.5
+Syrian Arab Republic,760,1990,16.3
+Tajikistan,762,1990,18.1
+Thailand,764,1990,24.3
+Togo,768,1990,16.8
+Tonga,776,1990,19.7
+Trinidad and Tobago,780,1990,24.1
+United Arab Emirates,784,1990,26.5
+Tunisia,788,1990,21.3
+Turkey,792,1990,22
+Turkmenistan,795,1990,19.6
+Albania,8,1990,24.1
+Uganda,800,1990,15.9
+Ukraine,804,1990,35.3
+The former Yugoslav Republic of Macedonia,807,1990,29.2
+Egypt,818,1990,19.6
+United Kingdom of Great Britain and Northern Ireland,826,1990,35.8
+Channel Islands,830,1990,36
+United Republic of Tanzania,834,1990,16.9
+Belize,84,1990,17.9
+United States of America,840,1990,32.8
+United States Virgin Islands,850,1990,28.3
+Burkina Faso,854,1990,16.3
+Uruguay,858,1990,30.7
+Uzbekistan,860,1990,19.6
+Venezuela (Bolivarian Republic of),862,1990,21
+Samoa,882,1990,18.7
+Yemen,887,1990,14.2
+Zambia,894,1990,16.4
+Solomon Islands,90,1990,16.9
+World,900,1990,24
+Africa,903,1990,17.5
+Latin America and the Caribbean,904,1990,21.7
+Northern America,905,1990,32.8
+Eastern Asia,906,1990,25.5
+Europe,908,1990,34.6
+Oceania,909,1990,30.8
+Eastern Africa,910,1990,16.6
+Middle Africa,911,1990,16.9
+Northern Africa,912,1990,19
+Southern Africa,913,1990,19.6
+Western Africa,914,1990,17.3
+Caribbean,915,1990,23.7
+Central America,916,1990,19.3
+South-Eastern Asia,920,1990,21.3
+Western Asia,922,1990,20.1
+Eastern Europe,923,1990,33.6
+Northern Europe,924,1990,35.6
+Southern Europe,925,1990,34.6
+Western Europe,926,1990,36.3
+Australia and New Zealand,927,1990,32
+Melanesia,928,1990,19.8
+South America,931,1990,22.5
+Asia,935,1990,22.9
+Micronesia,954,1990,18.6
+Polynesia,957,1990,20.2
+Brunei Darussalam,96,1990,23.2
+Bulgaria,100,1995,38.2
+Myanmar,104,1995,22.4
+Burundi,108,1995,15.8
+Belarus,112,1995,34.7
+Cambodia,116,1995,17.3
+Algeria,12,1995,19.4
+Cameroon,120,1995,17.2
+Canada,124,1995,34.8
+Cape Verde,132,1995,17.2
+Central African Republic,140,1995,18.5
+Sri Lanka,144,1995,25.8
+Chad,148,1995,15.9
+Chile,152,1995,27.3
+China,156,1995,27.1
+Taiwan Province of China,158,1995,29.4
+Colombia,170,1995,23
+Comoros,174,1995,17.1
+Mayotte,175,1995,17
+Congo,178,1995,18.2
+Democratic Republic of the Congo,180,1995,17.2
+Costa Rica,188,1995,24.3
+Croatia,191,1995,37.9
+Cuba,192,1995,30.2
+Cyprus,196,1995,31
+Czech Republic,203,1995,36.1
+Benin,204,1995,17.4
+Denmark,208,1995,37.7
+Dominican Republic,214,1995,21.3
+Ecuador,218,1995,21.6
+El Salvador,222,1995,21
+Equatorial Guinea,226,1995,18.8
+Ethiopia,231,1995,16.6
+Eritrea,232,1995,16.1
+Estonia,233,1995,36.4
+Angola,24,1995,15
+Fiji,242,1995,21.6
+Finland,246,1995,37.8
+France,250,1995,36.4
+French Guiana,254,1995,23.9
+French Polynesia,258,1995,23.6
+Djibouti,262,1995,18.1
+Gabon,266,1995,19.2
+Georgia,268,1995,32.6
+Gambia,270,1995,16.6
+Occupied Palestinian Territory,275,1995,15.7
+Germany,276,1995,38.4
+Antigua and Barbuda,28,1995,26.6
+Ghana,288,1995,18.4
+Kiribati,296,1995,19.6
+Greece,300,1995,36.9
+Grenada,308,1995,20.9
+Azerbaijan,31,1995,24.3
+Guadeloupe,312,1995,29.5
+Guam,316,1995,26.3
+Argentina,32,1995,27.4
+Guatemala,320,1995,17.3
+Guinea,324,1995,17.9
+Guyana,328,1995,21.3
+Haiti,332,1995,18.5
+Honduras,340,1995,17.3
+Hong Kong Special Administrative Region of China,344,1995,33.8
+Hungary,348,1995,37.5
+Iceland,352,1995,31.5
+India,356,1995,21.8
+Australia,36,1995,33.7
+Indonesia,360,1995,22.8
+Iran (Islamic Republic of),364,1995,18.4
+Iraq,368,1995,17.5
+Ireland,372,1995,30.1
+Israel,376,1995,27.3
+Italy,380,1995,38.6
+Cote d'Ivoire,384,1995,17.8
+Jamaica,388,1995,23.2
+Japan,392,1995,39.4
+Kazakhstan,398,1995,27
+Afghanistan,4,1995,15.8
+Austria,40,1995,36.3
+Jordan,400,1995,18.5
+Kenya,404,1995,16.5
+Democratic People's Republic of Korea,408,1995,27.4
+Republic of Korea,410,1995,29.4
+Kuwait,414,1995,26.9
+Kyrgyzstan,417,1995,21.5
+Lao People's Democratic Republic,418,1995,17.7
+Lebanon,422,1995,24.5
+Lesotho,426,1995,18.4
+Latvia,428,1995,36.2
+Liberia,430,1995,17.8
+Libyan Arab Jamahiriya,434,1995,20.2
+Bahamas,44,1995,25
+Lithuania,440,1995,34
+Luxembourg,442,1995,36.7
+Macao Special Administrative Region of China,446,1995,31.2
+Madagascar,450,1995,17.3
+Malawi,454,1995,16.7
+Malaysia,458,1995,22.6
+Maldives,462,1995,16.7
+Mali,466,1995,16.6
+Malta,470,1995,34.1
+Martinique,474,1995,31.4
+Mauritania,478,1995,17.6
+Bahrain,48,1995,26.4
+Mauritius,480,1995,26.8
+Mexico,484,1995,21.3
+Mongolia,496,1995,20.3
+Republic of Moldova,498,1995,30.8
+Montenegro,499,1995,32.2
+Bangladesh,50,1995,19.5
+Morocco,504,1995,21.1
+Mozambique,508,1995,17.5
+Armenia,51,1995,29.3
+Oman,512,1995,20.7
+Namibia,516,1995,18.6
+Barbados,52,1995,31.1
+Nepal,524,1995,19
+Netherlands,528,1995,35.9
+Curaçao,531,1995,31.9
+Aruba,533,1995,32.5
+New Caledonia,540,1995,25.5
+Vanuatu,548,1995,18.5
+Central Asia,5500,1995,23.2
+Southern Asia,5501,1995,21
+New Zealand,554,1995,32.6
+Nicaragua,558,1995,18
+Belgium,56,1995,37.6
+Niger,562,1995,15.9
+Nigeria,566,1995,17.7
+Norway,578,1995,36.1
+Micronesia (Federated States of),583,1995,17.8
+Pakistan,586,1995,18.6
+Panama,591,1995,23.1
+Papua New Guinea,598,1995,19.3
+Paraguay,600,1995,19.7
+Peru,604,1995,21.5
+Philippines,608,1995,19.8
+Poland,616,1995,33.9
+Portugal,620,1995,36
+Guinea-Bissau,624,1995,17.8
+Timor-Leste,626,1995,19.4
+Puerto Rico,630,1995,30.4
+Qatar,634,1995,29.1
+Reunion,638,1995,26.1
+Bhutan,64,1995,17.6
+Romania,642,1995,33.9
+Russian Federation,643,1995,35
+Rwanda,646,1995,17.7
+Saint Lucia,662,1995,23.1
+Saint Vincent and the Grenadines,670,1995,22.3
+Sao Tome and Principe,678,1995,16.6
+Bolivia (Plurinational State of),68,1995,19.7
+Saudi Arabia,682,1995,19.6
+Senegal,686,1995,16.7
+Serbia,688,1995,34.1
+Seychelles,690,1995,24.5
+Sierra Leone,694,1995,16.3
+Bosnia and Herzegovina,70,1995,33.1
+Singapore,702,1995,31.8
+Slovakia,703,1995,32.4
+Viet Nam,704,1995,22.2
+Slovenia,705,1995,36.2
+Somalia,706,1995,14.8
+South Africa,710,1995,21.5
+Zimbabwe,716,1995,17.6
+Botswana,72,1995,18.8
+Spain,724,1995,35.4
+South Sudan,728,1995,17.7
+Sudan,729,1995,17.8
+Western Sahara,732,1995,21.2
+Suriname,740,1995,23.9
+Swaziland,748,1995,16.2
+Sweden,752,1995,38.5
+Switzerland,756,1995,37.2
+Brazil,76,1995,23.7
+Syrian Arab Republic,760,1995,17.6
+Tajikistan,762,1995,17.9
+Thailand,764,1995,26.6
+Togo,768,1995,17
+Tonga,776,1995,19.8
+Trinidad and Tobago,780,1995,25.7
+United Arab Emirates,784,1995,27.6
+Tunisia,788,1995,23.1
+Turkey,792,1995,23.3
+Turkmenistan,795,1995,20.1
+Albania,8,1995,24.7
+Uganda,800,1995,15.4
+Ukraine,804,1995,36.4
+The former Yugoslav Republic of Macedonia,807,1995,30.2
+Egypt,818,1995,19.9
+United Kingdom of Great Britain and Northern Ireland,826,1995,36.4
+Channel Islands,830,1995,36.9
+United Republic of Tanzania,834,1995,17
+Belize,84,1995,18.4
+United States of America,840,1995,34
+United States Virgin Islands,850,1995,30.8
+Burkina Faso,854,1995,16.3
+Uruguay,858,1995,31.1
+Uzbekistan,860,1995,19.8
+Venezuela (Bolivarian Republic of),862,1995,22
+Samoa,882,1995,19.1
+Yemen,887,1995,14.9
+Zambia,894,1995,16.5
+Solomon Islands,90,1995,17.9
+World,900,1995,25.1
+Africa,903,1995,17.9
+Latin America and the Caribbean,904,1995,22.9
+Northern America,905,1995,34.1
+Eastern Asia,906,1995,27.9
+Europe,908,1995,36.1
+Oceania,909,1995,32.3
+Eastern Africa,910,1995,16.8
+Middle Africa,911,1995,16.8
+Northern Africa,912,1995,19.8
+Southern Africa,913,1995,21.1
+Western Africa,914,1995,17.5
+Caribbean,915,1995,25
+Central America,916,1995,20.7
+South-Eastern Asia,920,1995,22.6
+Western Asia,922,1995,21.1
+Eastern Europe,923,1995,35.1
+Northern Europe,924,1995,36.4
+Southern Europe,925,1995,36.4
+Western Europe,926,1995,37.4
+Australia and New Zealand,927,1995,33.5
+Melanesia,928,1995,20.7
+South America,931,1995,23.6
+Asia,935,1995,24.3
+Micronesia,954,1995,18.5
+Polynesia,957,1995,21.2
+Brunei Darussalam,96,1995,24
+Bulgaria,100,2000,39.7
+Myanmar,104,2000,23.7
+Burundi,108,2000,16
+Belarus,112,2000,36.5
+Cambodia,116,2000,18.2
+Algeria,12,2000,21.7
+Cameroon,120,2000,17.6
+Canada,124,2000,36.8
+Cape Verde,132,2000,18
+Central African Republic,140,2000,18.6
+Sri Lanka,144,2000,27.6
+Chad,148,2000,15.6
+Chile,152,2000,29.2
+China,156,2000,29.9
+Taiwan Province of China,158,2000,31.8
+Colombia,170,2000,24.4
+Comoros,174,2000,17.7
+Mayotte,175,2000,17.7
+Congo,178,2000,18.5
+Democratic Republic of the Congo,180,2000,17.1
+Costa Rica,188,2000,25.6
+Croatia,191,2000,38.9
+Cuba,192,2000,32.8
+Cyprus,196,2000,31.8
+Czech Republic,203,2000,37.4
+Benin,204,2000,17.4
+Denmark,208,2000,38.4
+Dominican Republic,214,2000,22.4
+Ecuador,218,2000,22.8
+El Salvador,222,2000,22
+Equatorial Guinea,226,2000,18
+Ethiopia,231,2000,16.6
+Eritrea,232,2000,17.1
+Estonia,233,2000,38
+Angola,24,2000,15.1
+Fiji,242,2000,22.1
+Finland,246,2000,39.4
+France,250,2000,37.8
+French Guiana,254,2000,23.9
+French Polynesia,258,2000,25.7
+Djibouti,262,2000,19.2
+Gabon,266,2000,19.4
+Georgia,268,2000,34.2
+Gambia,270,2000,16.8
+Occupied Palestinian Territory,275,2000,16
+Germany,276,2000,40.1
+Antigua and Barbuda,28,2000,28.3
+Ghana,288,2000,18.8
+Kiribati,296,2000,19.7
+Greece,300,2000,38.2
+Grenada,308,2000,21.8
+Azerbaijan,31,2000,25.6
+Guadeloupe,312,2000,32.1
+Guam,316,2000,27.3
+Argentina,32,2000,27.9
+Guatemala,320,2000,17.9
+Guinea,324,2000,17.8
+Guyana,328,2000,22.5
+Haiti,332,2000,19.1
+Honduras,340,2000,18
+Hong Kong Special Administrative Region of China,344,2000,36.7
+Hungary,348,2000,38.6
+Iceland,352,2000,32.8
+India,356,2000,22.7
+Australia,36,2000,35.4
+Indonesia,360,2000,24.4
+Iran (Islamic Republic of),364,2000,20.8
+Iraq,368,2000,18.2
+Ireland,372,2000,31.8
+Israel,376,2000,28
+Italy,380,2000,40.4
+Cote d'Ivoire,384,2000,18
+Jamaica,388,2000,24.6
+Japan,392,2000,41.2
+Kazakhstan,398,2000,27.7
+Afghanistan,4,2000,15.5
+Austria,40,2000,38.2
+Jordan,400,2000,18.9
+Kenya,404,2000,17.1
+Democratic People's Republic of Korea,408,2000,29.5
+Republic of Korea,410,2000,32
+Kuwait,414,2000,27.1
+Kyrgyzstan,417,2000,22.5
+Lao People's Democratic Republic,418,2000,18.1
+Lebanon,422,2000,26.3
+Lesotho,426,2000,18.7
+Latvia,428,2000,37.9
+Liberia,430,2000,18.1
+Libyan Arab Jamahiriya,434,2000,22.1
+Bahamas,44,2000,27
+Lithuania,440,2000,35.8
+Luxembourg,442,2000,37.3
+Macao Special Administrative Region of China,446,2000,33.1
+Madagascar,450,2000,17.4
+Malawi,454,2000,16.3
+Malaysia,458,2000,23.9
+Maldives,462,2000,18.6
+Mali,466,2000,16.6
+Malta,470,2000,36
+Martinique,474,2000,34.1
+Mauritania,478,2000,18.2
+Bahrain,48,2000,26.7
+Mauritius,480,2000,29
+Mexico,484,2000,22.8
+Mongolia,496,2000,22
+Republic of Moldova,498,2000,31.3
+Montenegro,499,2000,34.4
+Bangladesh,50,2000,20.9
+Morocco,504,2000,22.7
+Mozambique,508,2000,17.5
+Armenia,51,2000,30.4
+Oman,512,2000,20.9
+Namibia,516,2000,19.5
+Barbados,52,2000,33.5
+Nepal,524,2000,19.3
+Netherlands,528,2000,37.5
+Curaçao,531,2000,35.5
+Aruba,533,2000,34.4
+New Caledonia,540,2000,26.9
+Vanuatu,548,2000,18.9
+Central Asia,5500,2000,23.8
+Southern Asia,5501,2000,22
+New Zealand,554,2000,34.3
+Nicaragua,558,2000,19.4
+Belgium,56,2000,39.1
+Niger,562,2000,15.9
+Nigeria,566,2000,18
+Norway,578,2000,36.9
+Micronesia (Federated States of),583,2000,18.9
+Pakistan,586,2000,19.1
+Panama,591,2000,24.5
+Papua New Guinea,598,2000,19.8
+Paraguay,600,2000,20.5
+Peru,604,2000,22.8
+Philippines,608,2000,20.5
+Poland,616,2000,35.4
+Portugal,620,2000,37.8
+Guinea-Bissau,624,2000,18.1
+Timor-Leste,626,2000,14.6
+Puerto Rico,630,2000,32.3
+Qatar,634,2000,30.3
+Reunion,638,2000,28
+Bhutan,64,2000,18.8
+Romania,642,2000,34.9
+Russian Federation,643,2000,36.5
+Rwanda,646,2000,17.1
+Saint Lucia,662,2000,24.3
+Saint Vincent and the Grenadines,670,2000,24.2
+Sao Tome and Principe,678,2000,17.3
+Bolivia (Plurinational State of),68,2000,20.5
+Saudi Arabia,682,2000,22.3
+Senegal,686,2000,17.2
+Serbia,688,2000,36
+Seychelles,690,2000,26.3
+Sierra Leone,694,2000,16.3
+Bosnia and Herzegovina,70,2000,35.4
+Singapore,702,2000,34.1
+Slovakia,703,2000,33.9
+Viet Nam,704,2000,24.2
+Slovenia,705,2000,38.1
+Somalia,706,2000,14.2
+South Africa,710,2000,22.8
+Zimbabwe,716,2000,18
+Botswana,72,2000,20
+Spain,724,2000,37.6
+South Sudan,728,2000,17.6
+Sudan,729,2000,18.2
+Western Sahara,732,2000,22.3
+Suriname,740,2000,25.1
+Swaziland,748,2000,17.2
+Sweden,752,2000,39.4
+Switzerland,756,2000,38.6
+Brazil,76,2000,25.1
+Syrian Arab Republic,760,2000,18.8
+Tajikistan,762,2000,18.2
+Thailand,764,2000,30.1
+Togo,768,2000,17.5
+Tonga,776,2000,19.9
+Trinidad and Tobago,780,2000,27.8
+United Arab Emirates,784,2000,27.9
+Tunisia,788,2000,25.1
+Turkey,792,2000,24.7
+Turkmenistan,795,2000,21.7
+Albania,8,2000,27.1
+Uganda,800,2000,15.1
+Ukraine,804,2000,37.8
+The former Yugoslav Republic of Macedonia,807,2000,32
+Egypt,818,2000,21
+United Kingdom of Great Britain and Northern Ireland,826,2000,37.6
+Channel Islands,830,2000,38.1
+United Republic of Tanzania,834,2000,17.2
+Belize,84,2000,19.2
+United States of America,840,2000,35.2
+United States Virgin Islands,850,2000,33.7
+Burkina Faso,854,2000,16.4
+Uruguay,858,2000,31.6
+Uzbekistan,860,2000,21
+Venezuela (Bolivarian Republic of),862,2000,23.1
+Samoa,882,2000,19.5
+Yemen,887,2000,15.6
+Zambia,894,2000,16.6
+Solomon Islands,90,2000,18.7
+World,900,2000,26.3
+Africa,903,2000,18.3
+Latin America and the Caribbean,904,2000,24.2
+Northern America,905,2000,35.3
+Eastern Asia,906,2000,30.6
+Europe,908,2000,37.7
+Oceania,909,2000,33.9
+Eastern Africa,910,2000,16.8
+Middle Africa,911,2000,16.9
+Northern Africa,912,2000,21.2
+Southern Africa,913,2000,22.3
+Western Africa,914,2000,17.7
+Caribbean,915,2000,26.4
+Central America,916,2000,22.1
+South-Eastern Asia,920,2000,24.2
+Western Asia,922,2000,22.2
+Eastern Europe,923,2000,36.6
+Northern Europe,924,2000,37.6
+Southern Europe,925,2000,38.3
+Western Europe,926,2000,39
+Australia and New Zealand,927,2000,35.3
+Melanesia,928,2000,21.3
+South America,931,2000,24.9
+Asia,935,2000,25.9
+Micronesia,954,2000,19.2
+Polynesia,957,2000,22.3
+Brunei Darussalam,96,2000,25.5
+Bulgaria,100,2005,41.2
+Myanmar,104,2005,25
+Burundi,108,2005,17.4
+Belarus,112,2005,38.1
+Cambodia,116,2005,20.4
+Algeria,12,2005,24.1
+Cameroon,120,2005,18
+Canada,124,2005,38.6
+Cape Verde,132,2005,19.7
+Central African Republic,140,2005,18.6
+Sri Lanka,144,2005,28.9
+Chad,148,2005,15.4
+Chile,152,2005,30.6
+China,156,2005,32.6
+Taiwan Province of China,158,2005,34.4
+Colombia,170,2005,26.1
+Comoros,174,2005,18.5
+Mayotte,175,2005,18.3
+Congo,178,2005,18.3
+Democratic Republic of the Congo,180,2005,17.1
+Costa Rica,188,2005,27.4
+Croatia,191,2005,40.5
+Cuba,192,2005,35.6
+Cyprus,196,2005,33
+Czech Republic,203,2005,38.7
+Benin,204,2005,17.9
+Denmark,208,2005,39.5
+Dominican Republic,214,2005,23.6
+Ecuador,218,2005,23.9
+El Salvador,222,2005,23
+Equatorial Guinea,226,2005,20.6
+Ethiopia,231,2005,16.8
+Eritrea,232,2005,18.5
+Estonia,233,2005,39.4
+Angola,24,2005,15.1
+Fiji,242,2005,25.3
+Finland,246,2005,40.9
+France,250,2005,39
+French Guiana,254,2005,23.3
+French Polynesia,258,2005,27.1
+Djibouti,262,2005,20.1
+Gabon,266,2005,19.9
+Georgia,268,2005,35.4
+Gambia,270,2005,16.8
+Occupied Palestinian Territory,275,2005,17
+Germany,276,2005,42.2
+Antigua and Barbuda,28,2005,28.5
+Ghana,288,2005,19.3
+Kiribati,296,2005,20.8
+Greece,300,2005,39.5
+Grenada,308,2005,23.3
+Azerbaijan,31,2005,27.1
+Guadeloupe,312,2005,34.8
+Guam,316,2005,28.3
+Argentina,32,2005,28.7
+Guatemala,320,2005,18.5
+Guinea,324,2005,17.8
+Guyana,328,2005,22.9
+Haiti,332,2005,20.3
+Honduras,340,2005,18.9
+Hong Kong Special Administrative Region of China,344,2005,39.2
+Hungary,348,2005,39.1
+Iceland,352,2005,34.3
+India,356,2005,23.8
+Australia,36,2005,36.6
+Indonesia,360,2005,25.5
+Iran (Islamic Republic of),364,2005,24.1
+Iraq,368,2005,18.7
+Ireland,372,2005,33.2
+Israel,376,2005,28.7
+Italy,380,2005,42
+Cote d'Ivoire,384,2005,17.7
+Jamaica,388,2005,26.2
+Japan,392,2005,43
+Kazakhstan,398,2005,28.5
+Afghanistan,4,2005,15.8
+Austria,40,2005,39.9
+Jordan,400,2005,20.1
+Kenya,404,2005,17.6
+Democratic People's Republic of Korea,408,2005,31.6
+Republic of Korea,410,2005,34.7
+Kuwait,414,2005,28.2
+Kyrgyzstan,417,2005,23.9
+Lao People's Democratic Republic,418,2005,19
+Lebanon,422,2005,26.5
+Lesotho,426,2005,19.2
+Latvia,428,2005,39.9
+Liberia,430,2005,18.2
+Libyan Arab Jamahiriya,434,2005,24
+Bahamas,44,2005,29.1
+Lithuania,440,2005,38.5
+Luxembourg,442,2005,38.5
+Macao Special Administrative Region of China,446,2005,35
+Madagascar,450,2005,17.5
+Malawi,454,2005,16.2
+Malaysia,458,2005,25
+Maldives,462,2005,21.5
+Mali,466,2005,16.6
+Malta,470,2005,38.2
+Martinique,474,2005,37.4
+Mauritania,478,2005,18.7
+Bahrain,48,2005,27.8
+Mauritius,480,2005,30.5
+Mexico,484,2005,24.3
+Mongolia,496,2005,24
+Republic of Moldova,498,2005,32.4
+Montenegro,499,2005,35
+Bangladesh,50,2005,22.3
+Morocco,504,2005,24.4
+Mozambique,508,2005,17.3
+Armenia,51,2005,31.2
+Oman,512,2005,22.7
+Namibia,516,2005,19.6
+Barbados,52,2005,35.2
+Nepal,524,2005,19.9
+Netherlands,528,2005,39.1
+Curaçao,531,2005,38
+Aruba,533,2005,36.2
+New Caledonia,540,2005,28.7
+Vanuatu,548,2005,19.8
+Central Asia,5500,2005,24.8
+Southern Asia,5501,2005,23.2
+New Zealand,554,2005,35.5
+Nicaragua,558,2005,21.2
+Belgium,56,2005,40.2
+Niger,562,2005,15.3
+Nigeria,566,2005,18.1
+Norway,578,2005,37.9
+Micronesia (Federated States of),583,2005,19.5
+Pakistan,586,2005,20.2
+Panama,591,2005,25.9
+Papua New Guinea,598,2005,20.4
+Paraguay,600,2005,21.9
+Peru,604,2005,24.3
+Philippines,608,2005,21.3
+Poland,616,2005,36.7
+Portugal,620,2005,39.4
+Guinea-Bissau,624,2005,18.7
+Timor-Leste,626,2005,15.2
+Puerto Rico,630,2005,33.4
+Qatar,634,2005,30.8
+Reunion,638,2005,29
+Bhutan,64,2005,21.6
+Romania,642,2005,37
+Russian Federation,643,2005,37.3
+Rwanda,646,2005,18.1
+Saint Lucia,662,2005,26.2
+Saint Vincent and the Grenadines,670,2005,26.3
+Sao Tome and Principe,678,2005,17.5
+Bolivia (Plurinational State of),68,2005,21.6
+Saudi Arabia,682,2005,24.4
+Senegal,686,2005,17.8
+Serbia,688,2005,37.1
+Seychelles,690,2005,29
+Sierra Leone,694,2005,16.5
+Bosnia and Herzegovina,70,2005,37.4
+Singapore,702,2005,35.9
+Slovakia,703,2005,35.4
+Viet Nam,704,2005,26.4
+Slovenia,705,2005,40
+Somalia,706,2005,13.9
+South Africa,710,2005,23.6
+Zimbabwe,716,2005,18.2
+Botswana,72,2005,21.3
+Spain,724,2005,39
+South Sudan,728,2005,17.7
+Sudan,729,2005,18.5
+Western Sahara,732,2005,24.2
+Suriname,740,2005,25.7
+Swaziland,748,2005,18
+Sweden,752,2005,40.2
+Switzerland,756,2005,40.1
+Brazil,76,2005,27.1
+Syrian Arab Republic,760,2005,19.7
+Tajikistan,762,2005,19.8
+Thailand,764,2005,32.5
+Togo,768,2005,18
+Tonga,776,2005,21.1
+Trinidad and Tobago,780,2005,29.9
+United Arab Emirates,784,2005,29.4
+Tunisia,788,2005,27.2
+Turkey,792,2005,26.4
+Turkmenistan,795,2005,23
+Albania,8,2005,29.2
+Uganda,800,2005,15.1
+Ukraine,804,2005,39.1
+The former Yugoslav Republic of Macedonia,807,2005,34
+Egypt,818,2005,22.4
+United Kingdom of Great Britain and Northern Ireland,826,2005,38.7
+Channel Islands,830,2005,39.6
+United Republic of Tanzania,834,2005,17.2
+Belize,84,2005,20.2
+United States of America,840,2005,36.1
+United States Virgin Islands,850,2005,36.5
+Burkina Faso,854,2005,16.6
+Uruguay,858,2005,32.6
+Uzbekistan,860,2005,22.8
+Venezuela (Bolivarian Republic of),862,2005,24.4
+Samoa,882,2005,20.3
+Yemen,887,2005,16.7
+Zambia,894,2005,16.4
+Solomon Islands,90,2005,19.1
+World,900,2005,27.4
+Africa,903,2005,18.7
+Latin America and the Caribbean,904,2005,25.8
+Northern America,905,2005,36.4
+Eastern Asia,906,2005,33.3
+Europe,908,2005,39.1
+Oceania,909,2005,35.1
+Eastern Africa,910,2005,16.9
+Middle Africa,911,2005,16.9
+Northern Africa,912,2005,22.7
+Southern Africa,913,2005,23
+Western Africa,914,2005,17.8
+Caribbean,915,2005,27.6
+Central America,916,2005,23.4
+South-Eastern Asia,920,2005,25.5
+Western Asia,922,2005,23.5
+Eastern Europe,923,2005,37.6
+Northern Europe,924,2005,38.7
+Southern Europe,925,2005,39.9
+Western Europe,926,2005,40.7
+Australia and New Zealand,927,2005,36.4
+Melanesia,928,2005,23.3
+South America,931,2005,26.6
+Asia,935,2005,27.4
+Micronesia,954,2005,20
+Polynesia,957,2005,23.6
+Brunei Darussalam,96,2005,26.8
+Bulgaria,100,2010,42.5
+Myanmar,104,2010,26.7
+Burundi,108,2010,18.4
+Belarus,112,2010,38.9
+Cambodia,116,2010,22.7
+Algeria,12,2010,26
+Cameroon,120,2010,18
+Canada,124,2010,39.7
+Cape Verde,132,2010,22
+Central African Republic,140,2010,18.5
+Sri Lanka,144,2010,30.4
+Chad,148,2010,15.6
+Chile,152,2010,32.1
+China,156,2010,35
+Taiwan Province of China,158,2010,37.1
+Colombia,170,2010,28
+Comoros,174,2010,19.2
+Mayotte,175,2010,18.5
+Congo,178,2010,18.2
+Democratic Republic of the Congo,180,2010,17
+Costa Rica,188,2010,29.2
+Croatia,191,2010,41.7
+Cuba,192,2010,38.5
+Cyprus,196,2010,34.1
+Czech Republic,203,2010,39.6
+Benin,204,2010,18.3
+Denmark,208,2010,40.6
+Dominican Republic,214,2010,24.8
+Ecuador,218,2010,25.2
+El Salvador,222,2010,24.2
+Equatorial Guinea,226,2010,21.6
+Ethiopia,231,2010,17.5
+Eritrea,232,2010,18.9
+Estonia,233,2010,40.2
+Angola,24,2010,15
+Fiji,242,2010,26.5
+Finland,246,2010,42
+France,250,2010,40.1
+French Guiana,254,2010,24.4
+French Polynesia,258,2010,29.3
+Djibouti,262,2010,21.9
+Gabon,266,2010,20.4
+Georgia,268,2010,36.3
+Gambia,270,2010,16.8
+Occupied Palestinian Territory,275,2010,18.2
+Germany,276,2010,44.3
+Antigua and Barbuda,28,2010,29.3
+Ghana,288,2010,19.9
+Kiribati,296,2010,21.6
+Greece,300,2010,41
+Grenada,308,2010,25
+Azerbaijan,31,2010,28.6
+Guadeloupe,312,2010,37.7
+Guam,316,2010,29.2
+Argentina,32,2010,29.9
+Guatemala,320,2010,19.7
+Guinea,324,2010,18.3
+Guyana,328,2010,24.3
+Haiti,332,2010,21.6
+Honduras,340,2010,20.3
+Hong Kong Special Administrative Region of China,344,2010,41.1
+Hungary,348,2010,39.9
+Iceland,352,2010,34.9
+India,356,2010,25.1
+Australia,36,2010,37
+Indonesia,360,2010,27.1
+Iran (Islamic Republic of),364,2010,26.9
+Iraq,368,2010,18.9
+Ireland,372,2010,34.6
+Israel,376,2010,30.1
+Italy,380,2010,43.8
+Cote d'Ivoire,384,2010,17.8
+Jamaica,388,2010,27.6
+Japan,392,2010,44.8
+Kazakhstan,398,2010,28.8
+Afghanistan,4,2010,15.8
+Austria,40,2010,41.9
+Jordan,400,2010,20.6
+Kenya,404,2010,18.1
+Democratic People's Republic of Korea,408,2010,33
+Republic of Korea,410,2010,37.8
+Kuwait,414,2010,29
+Kyrgyzstan,417,2010,24.1
+Lao People's Democratic Republic,418,2010,20.7
+Lebanon,422,2010,28.5
+Lesotho,426,2010,20.1
+Latvia,428,2010,41.2
+Liberia,430,2010,18.3
+Libyan Arab Jamahiriya,434,2010,25.8
+Bahamas,44,2010,30.9
+Lithuania,440,2010,40.6
+Luxembourg,442,2010,38.9
+Macao Special Administrative Region of China,446,2010,36.5
+Madagascar,450,2010,18
+Malawi,454,2010,16.4
+Malaysia,458,2010,26
+Maldives,462,2010,25
+Mali,466,2010,16.4
+Malta,470,2010,40.5
+Martinique,474,2010,40.4
+Mauritania,478,2010,19.2
+Bahrain,48,2010,30.3
+Mauritius,480,2010,32.9
+Mexico,484,2010,25.9
+Mongolia,496,2010,25.7
+Republic of Moldova,498,2010,34.2
+Montenegro,499,2010,36.5
+Bangladesh,50,2010,23.8
+Morocco,504,2010,26.3
+Mozambique,508,2010,17
+Armenia,51,2010,32.2
+Oman,512,2010,26.2
+Namibia,516,2010,20.2
+Barbados,52,2010,37
+Nepal,524,2010,21.1
+Netherlands,528,2010,41.1
+Curaçao,531,2010,40
+Aruba,533,2010,38.4
+New Caledonia,540,2010,32
+Vanuatu,548,2010,21.2
+Central Asia,5500,2010,25.5
+Southern Asia,5501,2010,24.5
+New Zealand,554,2010,36.6
+Nicaragua,558,2010,23.1
+Belgium,56,2010,41
+Niger,562,2010,14.9
+Nigeria,566,2010,18
+Norway,578,2010,38.7
+Micronesia (Federated States of),583,2010,20.2
+Pakistan,586,2010,21.4
+Panama,591,2010,27.2
+Papua New Guinea,598,2010,20.9
+Paraguay,600,2010,23.3
+Peru,604,2010,25.9
+Philippines,608,2010,23.1
+Poland,616,2010,38
+Portugal,620,2010,41.6
+Guinea-Bissau,624,2010,19.2
+Timor-Leste,626,2010,17.4
+Puerto Rico,630,2010,34.7
+Qatar,634,2010,31.6
+Reunion,638,2010,31.6
+Bhutan,64,2010,23.8
+Romania,642,2010,39.9
+Russian Federation,643,2010,38
+Rwanda,646,2010,18.9
+Saint Lucia,662,2010,30.3
+Saint Vincent and the Grenadines,670,2010,27.9
+Sao Tome and Principe,678,2010,17.8
+Bolivia (Plurinational State of),68,2010,22.8
+Saudi Arabia,682,2010,25.9
+Senegal,686,2010,18.1
+Serbia,688,2010,39.3
+Seychelles,690,2010,31.3
+Sierra Leone,694,2010,17.8
+Bosnia and Herzegovina,70,2010,39.5
+Singapore,702,2010,37.3
+Slovakia,703,2010,37.1
+Viet Nam,704,2010,28.5
+Slovenia,705,2010,41.5
+Somalia,706,2010,16.1
+South Africa,710,2010,24.5
+Zimbabwe,716,2010,18.5
+Botswana,72,2010,23
+Spain,724,2010,40.6
+South Sudan,728,2010,18.1
+Sudan,729,2010,19
+Western Sahara,732,2010,25.5
+Suriname,740,2010,27.2
+Swaziland,748,2010,19.2
+Sweden,752,2010,40.7
+Switzerland,756,2010,41.6
+Brazil,76,2010,29.3
+Syrian Arab Republic,760,2010,21.5
+Tajikistan,762,2010,21.3
+Thailand,764,2010,35.5
+Togo,768,2010,18.3
+Tonga,776,2010,21.2
+Trinidad and Tobago,780,2010,31.9
+United Arab Emirates,784,2010,31.9
+Tunisia,788,2010,29.2
+Turkey,792,2010,28.2
+Turkmenistan,795,2010,24.4
+Albania,8,2010,32.5
+Uganda,800,2010,15.3
+Ukraine,804,2010,39.5
+The former Yugoslav Republic of Macedonia,807,2010,35.8
+Egypt,818,2010,23.9
+United Kingdom of Great Britain and Northern Ireland,826,2010,39.4
+Channel Islands,830,2010,41.2
+United Republic of Tanzania,834,2010,17.2
+Belize,84,2010,21.9
+United States of America,840,2010,37
+United States Virgin Islands,850,2010,39.2
+Burkina Faso,854,2010,16.7
+Uruguay,858,2010,33.7
+Uzbekistan,860,2010,24.5
+Venezuela (Bolivarian Republic of),862,2010,25.8
+Samoa,882,2010,20.8
+Yemen,887,2010,18
+Zambia,894,2010,16.6
+Solomon Islands,90,2010,19.4
+World,900,2010,28.5
+Africa,903,2010,19
+Latin America and the Caribbean,904,2010,27.5
+Northern America,905,2010,37.3
+Eastern Asia,906,2010,35.7
+Europe,908,2010,40.4
+Oceania,909,2010,35.7
+Eastern Africa,910,2010,17.4
+Middle Africa,911,2010,16.8
+Northern Africa,912,2010,24.1
+Southern Africa,913,2010,24
+Western Africa,914,2010,17.9
+Caribbean,915,2010,28.8
+Central America,916,2010,24.9
+South-Eastern Asia,920,2010,27.3
+Western Asia,922,2010,25.1
+Eastern Europe,923,2010,38.6
+Northern Europe,924,2010,39.5
+Southern Europe,925,2010,41.7
+Western Europe,926,2010,42.3
+Australia and New Zealand,927,2010,36.9
+Melanesia,928,2010,24.3
+South America,931,2010,28.4
+Asia,935,2010,28.8
+Micronesia,954,2010,20.9
+Polynesia,957,2010,24.9
+Brunei Darussalam,96,2010,27.5
+Bulgaria,100,2015,43.5
+Myanmar,104,2015,27.7
+Burundi,108,2015,17.6
+Belarus,112,2015,39.6
+Cambodia,116,2015,23.9
+Algeria,12,2015,27.5
+Cameroon,120,2015,18.3
+Canada,124,2015,40.5
+Cape Verde,132,2015,23.8
+Central African Republic,140,2015,17.8
+Sri Lanka,144,2015,32.3
+Chad,148,2015,16.1
+Chile,152,2015,33.8
+China,156,2015,36.9
+Taiwan Province of China,158,2015,39.6
+Colombia,170,2015,30
+Comoros,174,2015,19.7
+Mayotte,175,2015,19
+Congo,178,2015,18.9
+Democratic Republic of the Congo,180,2015,16.8
+Costa Rica,188,2015,31.4
+Croatia,191,2015,42.6
+Cuba,192,2015,41.1
+Cyprus,196,2015,35
+Czech Republic,203,2015,41.4
+Benin,204,2015,18.2
+Denmark,208,2015,41.6
+Dominican Republic,214,2015,26.1
+Ecuador,218,2015,26.6
+El Salvador,222,2015,25.8
+Equatorial Guinea,226,2015,22.2
+Ethiopia,231,2015,18.6
+Eritrea,232,2015,18.9
+Estonia,233,2015,41.6
+Angola,24,2015,16.4
+Fiji,242,2015,27.6
+Finland,246,2015,42.5
+France,250,2015,41.2
+French Guiana,254,2015,24.5
+French Polynesia,258,2015,30.9
+Djibouti,262,2015,23.7
+Gabon,266,2015,22.6
+Georgia,268,2015,38
+Gambia,270,2015,17
+Occupied Palestinian Territory,275,2015,19.3
+Germany,276,2015,45.9
+Antigua and Barbuda,28,2015,30.6
+Ghana,288,2015,20.4
+Kiribati,296,2015,22.4
+Greece,300,2015,43.3
+Grenada,308,2015,27.2
+Azerbaijan,31,2015,30.3
+Guadeloupe,312,2015,41.5
+Guam,316,2015,30.1
+Argentina,32,2015,30.8
+Guatemala,320,2015,21.3
+Guinea,324,2015,18.4
+Guyana,328,2015,24.6
+Haiti,332,2015,23
+Honduras,340,2015,23
+Hong Kong Special Administrative Region of China,344,2015,43.2
+Hungary,348,2015,41.7
+Iceland,352,2015,36
+India,356,2015,26.7
+Australia,36,2015,37.4
+Indonesia,360,2015,28
+Iran (Islamic Republic of),364,2015,29.5
+Iraq,368,2015,19.4
+Ireland,372,2015,36.9
+Israel,376,2015,30.2
+Italy,380,2015,45.9
+Cote d'Ivoire,384,2015,18.3
+Jamaica,388,2015,29.4
+Japan,392,2015,46.3
+Kazakhstan,398,2015,29.3
+Afghanistan,4,2015,17.3
+Austria,40,2015,43.2
+Jordan,400,2015,22.1
+Kenya,404,2015,19
+Democratic People's Republic of Korea,408,2015,34
+Republic of Korea,410,2015,40.8
+Kuwait,414,2015,33.4
+Kyrgyzstan,417,2015,25.3
+Lao People's Democratic Republic,418,2015,22.7
+Lebanon,422,2015,28.5
+Lesotho,426,2015,21.3
+Latvia,428,2015,42.5
+Liberia,430,2015,18.6
+Libyan Arab Jamahiriya,434,2015,27.2
+Bahamas,44,2015,32.5
+Lithuania,440,2015,42.7
+Luxembourg,442,2015,39.3
+Macao Special Administrative Region of China,446,2015,37.6
+Madagascar,450,2015,18.7
+Malawi,454,2015,17.4
+Malaysia,458,2015,27.7
+Maldives,462,2015,27.9
+Mali,466,2015,16
+Malta,470,2015,40.9
+Martinique,474,2015,43.7
+Mauritania,478,2015,19.7
+Bahrain,48,2015,31.2
+Mauritius,480,2015,35.6
+Mexico,484,2015,27.5
+Mongolia,496,2015,27.1
+Republic of Moldova,498,2015,35.6
+Montenegro,499,2015,37.7
+Bangladesh,50,2015,25.6
+Morocco,504,2015,27.9
+Mozambique,508,2015,17.2
+Armenia,51,2015,33.9
+Oman,512,2015,29
+Namibia,516,2015,21
+Barbados,52,2015,38.5
+Nepal,524,2015,23.2
+Netherlands,528,2015,42.1
+Curaçao,531,2015,41.3
+Aruba,533,2015,40.1
+New Caledonia,540,2015,32.8
+Vanuatu,548,2015,22.2
+Central Asia,5500,2015,26.4
+Southern Asia,5501,2015,26.1
+New Zealand,554,2015,37.3
+Nicaragua,558,2015,25.2
+Belgium,56,2015,41.3
+Niger,562,2015,14.9
+Nigeria,566,2015,17.9
+Norway,578,2015,39.2
+Micronesia (Federated States of),583,2015,21.5
+Pakistan,586,2015,22.5
+Panama,591,2015,28.4
+Papua New Guinea,598,2015,21.7
+Paraguay,600,2015,24.9
+Peru,604,2015,27.5
+Philippines,608,2015,24.1
+Poland,616,2015,39.7
+Portugal,620,2015,43.9
+Guinea-Bissau,624,2015,18.9
+Timor-Leste,626,2015,17.4
+Puerto Rico,630,2015,36.4
+Qatar,634,2015,31.3
+Reunion,638,2015,34.5
+Bhutan,64,2015,26.3
+Romania,642,2015,41.3
+Russian Federation,643,2015,38.7
+Rwanda,646,2015,19.4
+Saint Lucia,662,2015,32.6
+Saint Vincent and the Grenadines,670,2015,29.8
+Sao Tome and Principe,678,2015,18.1
+Bolivia (Plurinational State of),68,2015,24.1
+Saudi Arabia,682,2015,29.8
+Senegal,686,2015,18.3
+Serbia,688,2015,40
+Seychelles,690,2015,34.6
+Sierra Leone,694,2015,18.3
+Bosnia and Herzegovina,70,2015,41
+Singapore,702,2015,40
+Slovakia,703,2015,39.2
+Viet Nam,704,2015,30.4
+Slovenia,705,2015,43
+Somalia,706,2015,16.5
+South Africa,710,2015,26.1
+Zimbabwe,716,2015,19
+Botswana,72,2015,24.4
+Spain,724,2015,43.2
+South Sudan,728,2015,18.6
+Sudan,729,2015,18.9
+Western Sahara,732,2015,26.8
+Suriname,740,2015,28.4
+Swaziland,748,2015,20.4
+Sweden,752,2015,40.9
+Switzerland,756,2015,42.2
+Brazil,76,2015,31.3
+Syrian Arab Republic,760,2015,20.2
+Tajikistan,762,2015,22.4
+Thailand,764,2015,37.8
+Togo,768,2015,18.9
+Tonga,776,2015,21.3
+Trinidad and Tobago,780,2015,33.8
+United Arab Emirates,784,2015,33.4
+Tunisia,788,2015,31.1
+Turkey,792,2015,29.9
+Turkmenistan,795,2015,25.6
+Albania,8,2015,36.2
+Uganda,800,2015,15.8
+Ukraine,804,2015,40.3
+The former Yugoslav Republic of Macedonia,807,2015,37.4
+Egypt,818,2015,24.7
+United Kingdom of Great Britain and Northern Ireland,826,2015,40.2
+Channel Islands,830,2015,42.7
+United Republic of Tanzania,834,2015,17.3
+Belize,84,2015,23.5
+United States of America,840,2015,37.6
+United States Virgin Islands,850,2015,41.2
+Burkina Faso,854,2015,17
+Uruguay,858,2015,34.9
+Uzbekistan,860,2015,26.3
+Venezuela (Bolivarian Republic of),862,2015,27.4
+Samoa,882,2015,21.2
+Yemen,887,2015,19.2
+Zambia,894,2015,17
+Solomon Islands,90,2015,19.9
+World,900,2015,29.6
+Africa,903,2015,19.4
+Latin America and the Caribbean,904,2015,29.2
+Northern America,905,2015,37.9
+Eastern Asia,906,2015,37.9
+Europe,908,2015,41.6
+Oceania,909,2015,32.8
+Eastern Africa,910,2015,18
+Middle Africa,911,2015,17.1
+Northern Africa,912,2015,25
+Southern Africa,913,2015,25.5
+Western Africa,914,2015,17.9
+Caribbean,915,2015,30.2
+Central America,916,2015,26.6
+South-Eastern Asia,920,2015,28.5
+Western Asia,922,2015,26.5
+Eastern Europe,923,2015,39.6
+Northern Europe,924,2015,40.4
+Southern Europe,925,2015,43.9
+Western Europe,926,2015,43.5
+Australia and New Zealand,927,2015,37.4
+Melanesia,928,2015,22.3
+South America,931,2015,30.1
+Asia,935,2015,30.3
+Micronesia,954,2015,24.8
+Polynesia,957,2015,25.7
+Brunei Darussalam,96,2015,30
+Bulgaria,100,2020,44.6
+Myanmar,104,2020,29.2
+Burundi,108,2020,18
+Belarus,112,2020,40.5
+Cambodia,116,2020,25.7
+Algeria,12,2020,29.1
+Cameroon,120,2020,19
+Canada,124,2020,42.1
+Cape Verde,132,2020,25.7
+Central African Republic,140,2020,18.9
+Sri Lanka,144,2020,33.6
+Chad,148,2020,16.8
+Chile,152,2020,35.6
+China,156,2020,38.9
+Taiwan Province of China,158,2020,42.4
+Colombia,170,2020,32
+Comoros,174,2020,20.5
+Mayotte,175,2020,20.3
+Congo,178,2020,19.3
+Democratic Republic of the Congo,180,2020,17.2
+Costa Rica,188,2020,33.6
+Croatia,191,2020,43.7
+Cuba,192,2020,42.9
+Cyprus,196,2020,37.1
+Czech Republic,203,2020,43.5
+Benin,204,2020,19
+Denmark,208,2020,42.7
+Dominican Republic,214,2020,27.5
+Ecuador,218,2020,28.2
+El Salvador,222,2020,27.5
+Equatorial Guinea,226,2020,22.1
+Ethiopia,231,2020,19.8
+Eritrea,232,2020,19.5
+Estonia,233,2020,42.6
+Angola,24,2020,17.1
+Fiji,242,2020,28.7
+Finland,246,2020,43.1
+France,250,2020,42.1
+French Guiana,254,2020,25.4
+French Polynesia,258,2020,32.6
+Djibouti,262,2020,25.3
+Gabon,266,2020,23.3
+Georgia,268,2020,38.5
+Gambia,270,2020,17.9
+Occupied Palestinian Territory,275,2020,20.6
+Germany,276,2020,47.3
+Antigua and Barbuda,28,2020,32.1
+Ghana,288,2020,21.2
+Kiribati,296,2020,23.4
+Greece,300,2020,45.3
+Grenada,308,2020,29.2
+Azerbaijan,31,2020,32.5
+Guadeloupe,312,2020,42.7
+Guam,316,2020,31.5
+Argentina,32,2020,31.9
+Guatemala,320,2020,22.8
+Guinea,324,2020,19.1
+Guyana,328,2020,26.3
+Haiti,332,2020,24.4
+Honduras,340,2020,24.9
+Hong Kong Special Administrative Region of China,344,2020,45.6
+Hungary,348,2020,43.5
+Iceland,352,2020,37.4
+India,356,2020,28.3
+Australia,36,2020,38.8
+Indonesia,360,2020,29.4
+Iran (Islamic Republic of),364,2020,32.3
+Iraq,368,2020,20.1
+Ireland,372,2020,38.7
+Israel,376,2020,30.7
+Italy,380,2020,48
+Cote d'Ivoire,384,2020,19
+Jamaica,388,2020,31
+Japan,392,2020,48.3
+Kazakhstan,398,2020,30.7
+Afghanistan,4,2020,18.2
+Austria,40,2020,44.8
+Jordan,400,2020,23.4
+Kenya,404,2020,20
+Democratic People's Republic of Korea,408,2020,35.5
+Republic of Korea,410,2020,43.5
+Kuwait,414,2020,36.7
+Kyrgyzstan,417,2020,26.5
+Lao People's Democratic Republic,418,2020,24.4
+Lebanon,422,2020,30.8
+Lesotho,426,2020,22.4
+Latvia,428,2020,43.2
+Liberia,430,2020,19.3
+Libyan Arab Jamahiriya,434,2020,28.9
+Bahamas,44,2020,34.5
+Lithuania,440,2020,43.2
+Luxembourg,442,2020,41.1
+Macao Special Administrative Region of China,446,2020,40
+Madagascar,450,2020,19.7
+Malawi,454,2020,18
+Malaysia,458,2020,29.8
+Maldives,462,2020,31
+Mali,466,2020,16.7
+Malta,470,2020,42.6
+Martinique,474,2020,45.2
+Mauritania,478,2020,20.6
+Bahrain,48,2020,34.7
+Mauritius,480,2020,37.3
+Mexico,484,2020,29.2
+Mongolia,496,2020,28.7
+Republic of Moldova,498,2020,37.4
+Montenegro,499,2020,39
+Bangladesh,50,2020,27.6
+Morocco,504,2020,29.5
+Mozambique,508,2020,18.1
+Armenia,51,2020,35.5
+Oman,512,2020,32.4
+Namibia,516,2020,22.1
+Barbados,52,2020,39.5
+Nepal,524,2020,24.8
+Netherlands,528,2020,43.3
+Curaçao,531,2020,42.1
+Aruba,533,2020,41.4
+New Caledonia,540,2020,33.8
+Vanuatu,548,2020,23.2
+Central Asia,5500,2020,27.9
+Southern Asia,5501,2020,27.7
+New Zealand,554,2020,38.2
+Nicaragua,558,2020,27.1
+Belgium,56,2020,42.4
+Niger,562,2020,15.3
+Nigeria,566,2020,18.2
+Norway,578,2020,40.3
+Micronesia (Federated States of),583,2020,23.6
+Pakistan,586,2020,23.6
+Panama,591,2020,29.7
+Papua New Guinea,598,2020,22.8
+Paraguay,600,2020,26.6
+Peru,604,2020,29.1
+Philippines,608,2020,25.4
+Poland,616,2020,41.6
+Portugal,620,2020,46
+Guinea-Bissau,624,2020,19.5
+Timor-Leste,626,2020,18.4
+Puerto Rico,630,2020,38.1
+Qatar,634,2020,35.5
+Reunion,638,2020,34.9
+Bhutan,64,2020,28.5
+Romania,642,2020,42.8
+Russian Federation,643,2020,39.8
+Rwanda,646,2020,20.1
+Saint Lucia,662,2020,34.5
+Saint Vincent and the Grenadines,670,2020,31.4
+Sao Tome and Principe,678,2020,19.3
+Bolivia (Plurinational State of),68,2020,25.3
+Saudi Arabia,682,2020,31.7
+Senegal,686,2020,18.9
+Serbia,688,2020,41
+Seychelles,690,2020,36
+Sierra Leone,694,2020,19.1
+Bosnia and Herzegovina,70,2020,42.5
+Singapore,702,2020,42.8
+Slovakia,703,2020,41.2
+Viet Nam,704,2020,32.6
+Slovenia,705,2020,44.6
+Somalia,706,2020,17
+South Africa,710,2020,27.4
+Zimbabwe,716,2020,19.8
+Botswana,72,2020,25.9
+Spain,724,2020,45.6
+South Sudan,728,2020,19.2
+Sudan,729,2020,19.8
+Western Sahara,732,2020,28.7
+Suriname,740,2020,29.6
+Swaziland,748,2020,21.7
+Sweden,752,2020,41.6
+Switzerland,756,2020,43.9
+Brazil,76,2020,33.4
+Syrian Arab Republic,760,2020,22.4
+Tajikistan,762,2020,23.6
+Thailand,764,2020,40.1
+Togo,768,2020,19.7
+Tonga,776,2020,22.9
+Trinidad and Tobago,780,2020,36
+United Arab Emirates,784,2020,37.7
+Tunisia,788,2020,32.8
+Turkey,792,2020,31.6
+Turkmenistan,795,2020,26.9
+Albania,8,2020,37.8
+Uganda,800,2020,16.4
+Ukraine,804,2020,41.4
+The former Yugoslav Republic of Macedonia,807,2020,39.1
+Egypt,818,2020,25.4
+United Kingdom of Great Britain and Northern Ireland,826,2020,41.1
+Channel Islands,830,2020,44.6
+United Republic of Tanzania,834,2020,17.9
+Belize,84,2020,25
+United States of America,840,2020,38.6
+United States Virgin Islands,850,2020,41.5
+Burkina Faso,854,2020,17.7
+Uruguay,858,2020,35.6
+Uzbekistan,860,2020,28.2
+Venezuela (Bolivarian Republic of),862,2020,29
+Samoa,882,2020,22.7
+Yemen,887,2020,20.1
+Zambia,894,2020,17.7
+Solomon Islands,90,2020,21.2
+World,900,2020,31
+Africa,903,2020,19.9
+Latin America and the Caribbean,904,2020,30.9
+Northern America,905,2020,38.9
+Eastern Asia,906,2020,39.8
+Europe,908,2020,42.9
+Oceania,909,2020,34
+Eastern Africa,910,2020,18.8
+Middle Africa,911,2020,17.6
+Northern Africa,912,2020,26
+Southern Africa,913,2020,26.7
+Western Africa,914,2020,18.4
+Caribbean,915,2020,31.7
+Central America,916,2020,28.2
+South-Eastern Asia,920,2020,30
+Western Asia,922,2020,27.9
+Eastern Europe,923,2020,40.9
+Northern Europe,924,2020,41.3
+Southern Europe,925,2020,46
+Western Europe,926,2020,44.7
+Australia and New Zealand,927,2020,38.7
+Melanesia,928,2020,23.4
+South America,931,2020,32
+Asia,935,2020,32.2
+Micronesia,954,2020,26.3
+Polynesia,957,2020,27
+Brunei Darussalam,96,2020,32.4
+Bulgaria,100,2025,46
+Myanmar,104,2025,30.8
+Burundi,108,2025,19
+Belarus,112,2025,42
+Cambodia,116,2025,27.4
+Algeria,12,2025,30.8
+Cameroon,120,2025,20.1
+Canada,124,2025,43.7
+Cape Verde,132,2025,27.7
+Central African Republic,140,2025,20.2
+Sri Lanka,144,2025,34.7
+Chad,148,2025,17.8
+Chile,152,2025,37.6
+China,156,2025,40.9
+Taiwan Province of China,158,2025,45.1
+Colombia,170,2025,34
+Comoros,174,2025,21.6
+Mayotte,175,2025,22
+Congo,178,2025,20.4
+Democratic Republic of the Congo,180,2025,18.2
+Costa Rica,188,2025,35.8
+Croatia,191,2025,44.9
+Cuba,192,2025,44.3
+Cyprus,196,2025,39.3
+Czech Republic,203,2025,45.7
+Benin,204,2025,20
+Denmark,208,2025,43.2
+Dominican Republic,214,2025,29
+Ecuador,218,2025,29.9
+El Salvador,222,2025,29.4
+Equatorial Guinea,226,2025,22.2
+Ethiopia,231,2025,21.2
+Eritrea,232,2025,20.8
+Estonia,233,2025,43.8
+Angola,24,2025,18.3
+Fiji,242,2025,29.9
+Finland,246,2025,43.9
+France,250,2025,43
+French Guiana,254,2025,27
+French Polynesia,258,2025,34.1
+Djibouti,262,2025,26.9
+Gabon,266,2025,24.3
+Georgia,268,2025,39.4
+Gambia,270,2025,19.1
+Occupied Palestinian Territory,275,2025,21.8
+Germany,276,2025,48.3
+Antigua and Barbuda,28,2025,33.6
+Ghana,288,2025,22.2
+Kiribati,296,2025,24.4
+Greece,300,2025,47.3
+Grenada,308,2025,30.9
+Azerbaijan,31,2025,34.9
+Guadeloupe,312,2025,42.6
+Guam,316,2025,33
+Argentina,32,2025,33.2
+Guatemala,320,2025,24.4
+Guinea,324,2025,20
+Guyana,328,2025,28.1
+Haiti,332,2025,26.1
+Honduras,340,2025,26.8
+Hong Kong Special Administrative Region of China,344,2025,48.1
+Hungary,348,2025,45.4
+Iceland,352,2025,38.8
+India,356,2025,29.9
+Australia,36,2025,40.5
+Indonesia,360,2025,30.9
+Iran (Islamic Republic of),364,2025,35.3
+Iraq,368,2025,21.2
+Ireland,372,2025,40.6
+Israel,376,2025,31.1
+Italy,380,2025,50.2
+Cote d'Ivoire,384,2025,20
+Jamaica,388,2025,32.8
+Japan,392,2025,50.5
+Kazakhstan,398,2025,32
+Afghanistan,4,2025,19
+Austria,40,2025,46.2
+Jordan,400,2025,24.9
+Kenya,404,2025,21.3
+Democratic People's Republic of Korea,408,2025,37
+Republic of Korea,410,2025,46
+Kuwait,414,2025,40.1
+Kyrgyzstan,417,2025,27.6
+Lao People's Democratic Republic,418,2025,26.1
+Lebanon,422,2025,33.2
+Lesotho,426,2025,23.4
+Latvia,428,2025,44
+Liberia,430,2025,20.3
+Libyan Arab Jamahiriya,434,2025,30.6
+Bahamas,44,2025,36.5
+Lithuania,440,2025,43.5
+Luxembourg,442,2025,43.1
+Macao Special Administrative Region of China,446,2025,43.3
+Madagascar,450,2025,21
+Malawi,454,2025,18.6
+Malaysia,458,2025,31.9
+Maldives,462,2025,34.1
+Mali,466,2025,17.8
+Malta,470,2025,44.3
+Martinique,474,2025,45.6
+Mauritania,478,2025,21.7
+Bahrain,48,2025,38.1
+Mauritius,480,2025,38.7
+Mexico,484,2025,31
+Mongolia,496,2025,30.1
+Republic of Moldova,498,2025,39.6
+Montenegro,499,2025,40.6
+Bangladesh,50,2025,29.5
+Morocco,504,2025,31.3
+Mozambique,508,2025,19.3
+Armenia,51,2025,37.6
+Oman,512,2025,36
+Namibia,516,2025,23.3
+Barbados,52,2025,40.8
+Nepal,524,2025,26.7
+Netherlands,528,2025,44.2
+Curaçao,531,2025,42.6
+Aruba,533,2025,42.2
+New Caledonia,540,2025,35.1
+Vanuatu,548,2025,24.5
+Central Asia,5500,2025,29.5
+Southern Asia,5501,2025,29.2
+New Zealand,554,2025,39.3
+Nicaragua,558,2025,29
+Belgium,56,2025,43.5
+Niger,562,2025,15.9
+Nigeria,566,2025,18.9
+Norway,578,2025,41.6
+Micronesia (Federated States of),583,2025,25.5
+Pakistan,586,2025,24.7
+Panama,591,2025,31.2
+Papua New Guinea,598,2025,24.1
+Paraguay,600,2025,28.4
+Peru,604,2025,30.8
+Philippines,608,2025,26.8
+Poland,616,2025,43.6
+Portugal,620,2025,48
+Guinea-Bissau,624,2025,20.5
+Timor-Leste,626,2025,18.9
+Puerto Rico,630,2025,39.8
+Qatar,634,2025,39.7
+Reunion,638,2025,35.3
+Bhutan,64,2025,30.7
+Romania,642,2025,44.4
+Russian Federation,643,2025,41.5
+Rwanda,646,2025,21.2
+Saint Lucia,662,2025,36.3
+Saint Vincent and the Grenadines,670,2025,33.1
+Sao Tome and Principe,678,2025,20.9
+Bolivia (Plurinational State of),68,2025,26.8
+Saudi Arabia,682,2025,33.5
+Senegal,686,2025,19.9
+Serbia,688,2025,42
+Seychelles,690,2025,37.4
+Sierra Leone,694,2025,20.2
+Bosnia and Herzegovina,70,2025,43.9
+Singapore,702,2025,45.4
+Slovakia,703,2025,43.2
+Viet Nam,704,2025,34.9
+Slovenia,705,2025,46.6
+Somalia,706,2025,17.7
+South Africa,710,2025,28.6
+Zimbabwe,716,2025,21.1
+Botswana,72,2025,27.4
+Spain,724,2025,48.2
+South Sudan,728,2025,19.9
+Sudan,729,2025,20.9
+Western Sahara,732,2025,30.5
+Suriname,740,2025,31
+Swaziland,748,2025,23
+Sweden,752,2025,42.3
+Switzerland,756,2025,45.5
+Brazil,76,2025,35.5
+Syrian Arab Republic,760,2025,24.5
+Tajikistan,762,2025,24.9
+Thailand,764,2025,41.9
+Togo,768,2025,21
+Tonga,776,2025,24.6
+Trinidad and Tobago,780,2025,38.1
+United Arab Emirates,784,2025,42
+Tunisia,788,2025,34.8
+Turkey,792,2025,33.3
+Turkmenistan,795,2025,28
+Albania,8,2025,39.5
+Uganda,800,2025,17.1
+Ukraine,804,2025,42.9
+The former Yugoslav Republic of Macedonia,807,2025,40.9
+Egypt,818,2025,26.2
+United Kingdom of Great Britain and Northern Ireland,826,2025,42.1
+Channel Islands,830,2025,46.4
+United Republic of Tanzania,834,2025,18.8
+Belize,84,2025,26.7
+United States of America,840,2025,39.7
+United States Virgin Islands,850,2025,41.4
+Burkina Faso,854,2025,18.5
+Uruguay,858,2025,36.7
+Uzbekistan,860,2025,30.2
+Venezuela (Bolivarian Republic of),862,2025,30.6
+Samoa,882,2025,24.3
+Yemen,887,2025,21.1
+Zambia,894,2025,18.4
+Solomon Islands,90,2025,22.8
+World,900,2025,32.3
+Africa,903,2025,20.8
+Latin America and the Caribbean,904,2025,32.7
+Northern America,905,2025,40.1
+Eastern Asia,906,2025,41.8
+Europe,908,2025,44.3
+Oceania,909,2025,35.3
+Eastern Africa,910,2025,19.8
+Middle Africa,911,2025,18.6
+Northern Africa,912,2025,27
+Southern Africa,913,2025,28
+Western Africa,914,2025,19.1
+Caribbean,915,2025,33.2
+Central America,916,2025,30
+South-Eastern Asia,920,2025,31.7
+Western Asia,922,2025,29.2
+Eastern Europe,923,2025,42.6
+Northern Europe,924,2025,42.3
+Southern Europe,925,2025,48
+Western Europe,926,2025,45.6
+Australia and New Zealand,927,2025,40.3
+Melanesia,928,2025,24.7
+South America,931,2025,33.8
+Asia,935,2025,34
+Micronesia,954,2025,27.8
+Polynesia,957,2025,28.4
+Brunei Darussalam,96,2025,34.9
+Bulgaria,100,2030,47.2
+Myanmar,104,2030,32.5
+Burundi,108,2030,20.7
+Belarus,112,2030,43.8
+Cambodia,116,2030,29
+Algeria,12,2030,32.2
+Cameroon,120,2030,21.7
+Canada,124,2030,45.4
+Cape Verde,132,2030,29.7
+Central African Republic,140,2030,21.7
+Sri Lanka,144,2030,35.9
+Chad,148,2030,18.8
+Chile,152,2030,39.7
+China,156,2030,43.4
+Taiwan Province of China,158,2030,47.7
+Colombia,170,2030,35.9
+Comoros,174,2030,23
+Mayotte,175,2030,23.9
+Congo,178,2030,21.9
+Democratic Republic of the Congo,180,2030,19.4
+Costa Rica,188,2030,38.1
+Croatia,191,2030,46.3
+Cuba,192,2030,45.8
+Cyprus,196,2030,41.8
+Czech Republic,203,2030,47.5
+Benin,204,2030,21.3
+Denmark,208,2030,43.4
+Dominican Republic,214,2030,30.5
+Ecuador,218,2030,31.6
+El Salvador,222,2030,31.5
+Equatorial Guinea,226,2030,22.9
+Ethiopia,231,2030,22.5
+Eritrea,232,2030,22.5
+Estonia,233,2030,45.2
+Angola,24,2030,19.6
+Fiji,242,2030,31.1
+Finland,246,2030,44.8
+France,250,2030,43.9
+French Guiana,254,2030,28.7
+French Polynesia,258,2030,35.7
+Djibouti,262,2030,28.4
+Gabon,266,2030,25.5
+Georgia,268,2030,40.7
+Gambia,270,2030,20.7
+Occupied Palestinian Territory,275,2030,23.3
+Germany,276,2030,49.3
+Antigua and Barbuda,28,2030,35.3
+Ghana,288,2030,23.3
+Kiribati,296,2030,25
+Greece,300,2030,49.3
+Grenada,308,2030,32.7
+Azerbaijan,31,2030,37.1
+Guadeloupe,312,2030,41.4
+Guam,316,2030,34.6
+Argentina,32,2030,34.5
+Guatemala,320,2030,26.2
+Guinea,324,2030,21.3
+Guyana,328,2030,30
+Haiti,332,2030,27.9
+Honduras,340,2030,28.7
+Hong Kong Special Administrative Region of China,344,2030,50.7
+Hungary,348,2030,46.6
+Iceland,352,2030,40.1
+India,356,2030,31.6
+Australia,36,2030,42.3
+Indonesia,360,2030,32.5
+Iran (Islamic Republic of),364,2030,38
+Iraq,368,2030,22.5
+Ireland,372,2030,41.9
+Israel,376,2030,31.7
+Italy,380,2030,51.8
+Cote d'Ivoire,384,2030,21.4
+Jamaica,388,2030,34.7
+Japan,392,2030,52.3
+Kazakhstan,398,2030,32.9
+Afghanistan,4,2030,19.5
+Austria,40,2030,47.8
+Jordan,400,2030,26.6
+Kenya,404,2030,22.7
+Democratic People's Republic of Korea,408,2030,38.6
+Republic of Korea,410,2030,48.3
+Kuwait,414,2030,43
+Kyrgyzstan,417,2030,28.7
+Lao People's Democratic Republic,418,2030,27.8
+Lebanon,422,2030,35.7
+Lesotho,426,2030,24.4
+Latvia,428,2030,45.3
+Liberia,430,2030,21.6
+Libyan Arab Jamahiriya,434,2030,32.3
+Bahamas,44,2030,38.6
+Lithuania,440,2030,44.1
+Luxembourg,442,2030,45.2
+Macao Special Administrative Region of China,446,2030,46.6
+Madagascar,450,2030,22.3
+Malawi,454,2030,19.3
+Malaysia,458,2030,33.9
+Maldives,462,2030,37.2
+Mali,466,2030,19
+Malta,470,2030,46.1
+Martinique,474,2030,45.4
+Mauritania,478,2030,23.1
+Bahrain,48,2030,41.6
+Mauritius,480,2030,40.1
+Mexico,484,2030,32.8
+Mongolia,496,2030,30.9
+Republic of Moldova,498,2030,42.2
+Montenegro,499,2030,42
+Bangladesh,50,2030,31.5
+Morocco,504,2030,33.1
+Mozambique,508,2030,20.8
+Armenia,51,2030,39.8
+Oman,512,2030,39.5
+Namibia,516,2030,24.6
+Barbados,52,2030,42
+Nepal,524,2030,28.7
+Netherlands,528,2030,45.1
+Curaçao,531,2030,42.9
+Aruba,533,2030,42.3
+New Caledonia,540,2030,36.9
+Vanuatu,548,2030,26.1
+Central Asia,5500,2030,30.8
+Southern Asia,5501,2030,30.8
+New Zealand,554,2030,40.6
+Nicaragua,558,2030,30.9
+Belgium,56,2030,44.7
+Niger,562,2030,16.7
+Nigeria,566,2030,19.6
+Norway,578,2030,42.9
+Micronesia (Federated States of),583,2030,27.2
+Pakistan,586,2030,25.8
+Panama,591,2030,32.7
+Papua New Guinea,598,2030,25.7
+Paraguay,600,2030,30.1
+Peru,604,2030,32.4
+Philippines,608,2030,28.1
+Poland,616,2030,45.7
+Portugal,620,2030,49.9
+Guinea-Bissau,624,2030,21.9
+Timor-Leste,626,2030,19.5
+Puerto Rico,630,2030,41.6
+Qatar,634,2030,44
+Reunion,638,2030,36.1
+Bhutan,64,2030,32.7
+Romania,642,2030,45.4
+Russian Federation,643,2030,43.4
+Rwanda,646,2030,22.3
+Saint Lucia,662,2030,38.4
+Saint Vincent and the Grenadines,670,2030,34.8
+Sao Tome and Principe,678,2030,22.8
+Bolivia (Plurinational State of),68,2030,28.2
+Saudi Arabia,682,2030,35.1
+Senegal,686,2030,21.3
+Serbia,688,2030,43.1
+Seychelles,690,2030,38.5
+Sierra Leone,694,2030,21.6
+Bosnia and Herzegovina,70,2030,45.3
+Singapore,702,2030,47.7
+Slovakia,703,2030,45.2
+Viet Nam,704,2030,37.4
+Slovenia,705,2030,48.5
+Somalia,706,2030,18.7
+South Africa,710,2030,29.8
+Zimbabwe,716,2030,22.7
+Botswana,72,2030,28.9
+Spain,724,2030,50.7
+South Sudan,728,2030,20.8
+Sudan,729,2030,22.1
+Western Sahara,732,2030,32.1
+Suriname,740,2030,32.4
+Swaziland,748,2030,24.3
+Sweden,752,2030,43.3
+Switzerland,756,2030,47.4
+Brazil,76,2030,37.7
+Syrian Arab Republic,760,2030,26.7
+Tajikistan,762,2030,26.2
+Thailand,764,2030,43.6
+Togo,768,2030,22.6
+Tonga,776,2030,26.4
+Trinidad and Tobago,780,2030,40.1
+United Arab Emirates,784,2030,46.3
+Tunisia,788,2030,36.7
+Turkey,792,2030,35
+Turkmenistan,795,2030,28.9
+Albania,8,2030,41.1
+Uganda,800,2030,17.9
+Ukraine,804,2030,44.7
+The former Yugoslav Republic of Macedonia,807,2030,42.7
+Egypt,818,2030,27.3
+United Kingdom of Great Britain and Northern Ireland,826,2030,43.3
+Channel Islands,830,2030,48.2
+United Republic of Tanzania,834,2030,19.9
+Belize,84,2030,28.5
+United States of America,840,2030,40.8
+United States Virgin Islands,850,2030,40.7
+Burkina Faso,854,2030,19.6
+Uruguay,858,2030,38.1
+Uzbekistan,860,2030,31.9
+Venezuela (Bolivarian Republic of),862,2030,32.2
+Samoa,882,2030,26
+Yemen,887,2030,22.1
+Zambia,894,2030,19.2
+Solomon Islands,90,2030,24.4
+World,900,2030,33.5
+Africa,903,2030,21.9
+Latin America and the Caribbean,904,2030,34.5
+Northern America,905,2030,41.3
+Eastern Asia,906,2030,44
+Europe,908,2030,45.8
+Oceania,909,2030,36.5
+Eastern Africa,910,2030,21
+Middle Africa,911,2030,19.9
+Northern Africa,912,2030,28.1
+Southern Africa,913,2030,29.1
+Western Africa,914,2030,20.1
+Caribbean,915,2030,34.8
+Central America,916,2030,31.8
+South-Eastern Asia,920,2030,33.3
+Western Asia,922,2030,30.5
+Eastern Europe,923,2030,44.4
+Northern Europe,924,2030,43.4
+Southern Europe,925,2030,49.9
+Western Europe,926,2030,46.7
+Australia and New Zealand,927,2030,42
+Melanesia,928,2030,26.2
+South America,931,2030,35.7
+Asia,935,2030,35.6
+Micronesia,954,2030,29.4
+Polynesia,957,2030,29.9
+Brunei Darussalam,96,2030,37.2
+Bulgaria,100,2035,48.4
+Myanmar,104,2035,34.3
+Burundi,108,2035,22.7
+Belarus,112,2035,45.8
+Cambodia,116,2035,30.3
+Algeria,12,2035,33.4
+Cameroon,120,2035,23.5
+Canada,124,2035,47
+Cape Verde,132,2035,31.7
+Central African Republic,140,2035,23.3
+Sri Lanka,144,2035,37
+Chad,148,2035,20.1
+Chile,152,2035,41.7
+China,156,2035,46.1
+Taiwan Province of China,158,2035,50.3
+Colombia,170,2035,37.7
+Comoros,174,2035,24.4
+Mayotte,175,2035,26
+Congo,178,2035,23.6
+Democratic Republic of the Congo,180,2035,20.9
+Costa Rica,188,2035,40.4
+Croatia,191,2035,47.6
+Cuba,192,2035,47.7
+Cyprus,196,2035,44.4
+Czech Republic,203,2035,49
+Benin,204,2035,22.8
+Denmark,208,2035,43.9
+Dominican Republic,214,2035,32.1
+Ecuador,218,2035,33.3
+El Salvador,222,2035,33.5
+Equatorial Guinea,226,2035,24.1
+Ethiopia,231,2035,23.9
+Eritrea,232,2035,24.2
+Estonia,233,2035,46.9
+Angola,24,2035,21.3
+Fiji,242,2035,32.4
+Finland,246,2035,45.5
+France,250,2035,44.5
+French Guiana,254,2035,30.6
+French Polynesia,258,2035,37.2
+Djibouti,262,2035,30
+Gabon,266,2035,27.2
+Georgia,268,2035,42
+Gambia,270,2035,22.7
+Occupied Palestinian Territory,275,2035,24.8
+Germany,276,2035,50.5
+Antigua and Barbuda,28,2035,36.9
+Ghana,288,2035,24.5
+Kiribati,296,2035,26.5
+Greece,300,2035,51.2
+Grenada,308,2035,34.5
+Azerbaijan,31,2035,39.1
+Guadeloupe,312,2035,41.7
+Guam,316,2035,36.3
+Argentina,32,2035,35.7
+Guatemala,320,2035,27.8
+Guinea,324,2035,22.7
+Guyana,328,2035,31.8
+Haiti,332,2035,29.7
+Honduras,340,2035,30.7
+Hong Kong Special Administrative Region of China,344,2035,53.4
+Hungary,348,2035,47.7
+Iceland,352,2035,41.7
+India,356,2035,33.2
+Australia,36,2035,44
+Indonesia,360,2035,34.1
+Iran (Islamic Republic of),364,2035,40.5
+Iraq,368,2035,24
+Ireland,372,2035,42.5
+Israel,376,2035,32.4
+Italy,380,2035,53.1
+Cote d'Ivoire,384,2035,23
+Jamaica,388,2035,36.8
+Japan,392,2035,53.8
+Kazakhstan,398,2035,33
+Afghanistan,4,2035,19.7
+Austria,40,2035,49.5
+Jordan,400,2035,28.4
+Kenya,404,2035,24.1
+Democratic People's Republic of Korea,408,2035,40.5
+Republic of Korea,410,2035,50.6
+Kuwait,414,2035,45.7
+Kyrgyzstan,417,2035,29.6
+Lao People's Democratic Republic,418,2035,29.5
+Lebanon,422,2035,38.2
+Lesotho,426,2035,25.5
+Latvia,428,2035,46.9
+Liberia,430,2035,23
+Libyan Arab Jamahiriya,434,2035,34.1
+Bahamas,44,2035,40.7
+Lithuania,440,2035,45.2
+Luxembourg,442,2035,47
+Macao Special Administrative Region of China,446,2035,50
+Madagascar,450,2035,23.8
+Malawi,454,2035,19.9
+Malaysia,458,2035,35.7
+Maldives,462,2035,40.3
+Mali,466,2035,20.4
+Malta,470,2035,47.9
+Martinique,474,2035,45.4
+Mauritania,478,2035,24.7
+Bahrain,48,2035,45
+Mauritius,480,2035,41.8
+Mexico,484,2035,34.7
+Mongolia,496,2035,31.4
+Republic of Moldova,498,2035,44.8
+Montenegro,499,2035,43.3
+Bangladesh,50,2035,33.6
+Morocco,504,2035,34.7
+Mozambique,508,2035,22.5
+Armenia,51,2035,41.7
+Oman,512,2035,42.1
+Namibia,516,2035,26
+Barbados,52,2035,43.2
+Nepal,524,2035,30.9
+Netherlands,528,2035,46.1
+Curaçao,531,2035,43.2
+Aruba,533,2035,43
+New Caledonia,540,2035,38.5
+Vanuatu,548,2035,27.9
+Central Asia,5500,2035,31.8
+Southern Asia,5501,2035,32.4
+New Zealand,554,2035,42.1
+Nicaragua,558,2035,32.9
+Belgium,56,2035,45.9
+Niger,562,2035,17.4
+Nigeria,566,2035,20.6
+Norway,578,2035,44.1
+Micronesia (Federated States of),583,2035,28.8
+Pakistan,586,2035,27.2
+Panama,591,2035,34.3
+Papua New Guinea,598,2035,27.3
+Paraguay,600,2035,31.8
+Peru,604,2035,34
+Philippines,608,2035,29.5
+Poland,616,2035,47.6
+Portugal,620,2035,51.3
+Guinea-Bissau,624,2035,23.4
+Timor-Leste,626,2035,20.3
+Puerto Rico,630,2035,43.5
+Qatar,634,2035,48.2
+Reunion,638,2035,37.2
+Bhutan,64,2035,34.5
+Romania,642,2035,47
+Russian Federation,643,2035,45.5
+Rwanda,646,2035,23.4
+Saint Lucia,662,2035,40.7
+Saint Vincent and the Grenadines,670,2035,36.7
+Sao Tome and Principe,678,2035,24.8
+Bolivia (Plurinational State of),68,2035,29.7
+Saudi Arabia,682,2035,36.4
+Senegal,686,2035,22.9
+Serbia,688,2035,44.2
+Seychelles,690,2035,39.1
+Sierra Leone,694,2035,23
+Bosnia and Herzegovina,70,2035,46.9
+Singapore,702,2035,49.8
+Slovakia,703,2035,47.1
+Viet Nam,704,2035,39.9
+Slovenia,705,2035,50.3
+Somalia,706,2035,19.8
+South Africa,710,2035,30.9
+Zimbabwe,716,2035,24.5
+Botswana,72,2035,30.4
+Spain,724,2035,52.8
+South Sudan,728,2035,21.9
+Sudan,729,2035,23.3
+Western Sahara,732,2035,33.5
+Suriname,740,2035,33.8
+Swaziland,748,2035,25.7
+Sweden,752,2035,44.5
+Switzerland,756,2035,49.2
+Brazil,76,2035,39.7
+Syrian Arab Republic,760,2035,28.8
+Tajikistan,762,2035,27.8
+Thailand,764,2035,45
+Togo,768,2035,24.3
+Tonga,776,2035,28.2
+Trinidad and Tobago,780,2035,41.6
+United Arab Emirates,784,2035,50.5
+Tunisia,788,2035,38.5
+Turkey,792,2035,36.9
+Turkmenistan,795,2035,30
+Albania,8,2035,43
+Uganda,800,2035,18.8
+Ukraine,804,2035,46.5
+The former Yugoslav Republic of Macedonia,807,2035,44.5
+Egypt,818,2035,28.5
+United Kingdom of Great Britain and Northern Ireland,826,2035,44.4
+Channel Islands,830,2035,49.9
+United Republic of Tanzania,834,2035,21.4
+Belize,84,2035,30.3
+United States of America,840,2035,42
+United States Virgin Islands,850,2035,41.2
+Burkina Faso,854,2035,20.8
+Uruguay,858,2035,39.7
+Uzbekistan,860,2035,33.4
+Venezuela (Bolivarian Republic of),862,2035,33.8
+Samoa,882,2035,27.8
+Yemen,887,2035,23.2
+Zambia,894,2035,20.1
+Solomon Islands,90,2035,26.2
+World,900,2035,34.5
+Africa,903,2035,23.1
+Latin America and the Caribbean,904,2035,36.3
+Northern America,905,2035,42.5
+Eastern Asia,906,2035,46.6
+Europe,908,2035,47.3
+Oceania,909,2035,37.7
+Eastern Africa,910,2035,22.3
+Middle Africa,911,2035,21.5
+Northern Africa,912,2035,29.3
+Southern Africa,913,2035,30.3
+Western Africa,914,2035,21.2
+Caribbean,915,2035,36.4
+Central America,916,2035,33.7
+South-Eastern Asia,920,2035,34.9
+Western Asia,922,2035,31.8
+Eastern Europe,923,2035,46.2
+Northern Europe,924,2035,44.5
+Southern Europe,925,2035,51.4
+Western Europe,926,2035,47.8
+Australia and New Zealand,927,2035,43.6
+Melanesia,928,2035,27.8
+South America,931,2035,37.5
+Asia,935,2035,37.1
+Micronesia,954,2035,30.7
+Polynesia,957,2035,31.5
+Brunei Darussalam,96,2035,39.4
+Bulgaria,100,2040,49.5
+Myanmar,104,2040,36.3
+Burundi,108,2040,24.8
+Belarus,112,2040,47.1
+Cambodia,116,2040,31.9
+Algeria,12,2040,34.5
+Cameroon,120,2040,25.4
+Canada,124,2040,48.5
+Cape Verde,132,2040,33.6
+Central African Republic,140,2040,25
+Sri Lanka,144,2040,38.2
+Chad,148,2040,21.5
+Chile,152,2040,43.6
+China,156,2040,48.3
+Taiwan Province of China,158,2040,52.3
+Colombia,170,2040,39.4
+Comoros,174,2040,26.1
+Mayotte,175,2040,28
+Congo,178,2040,25.3
+Democratic Republic of the Congo,180,2040,22.4
+Costa Rica,188,2040,42.6
+Croatia,191,2040,48.7
+Cuba,192,2040,49.6
+Cyprus,196,2040,47
+Czech Republic,203,2040,50.3
+Benin,204,2040,24.3
+Denmark,208,2040,44.8
+Dominican Republic,214,2040,33.8
+Ecuador,218,2040,34.9
+El Salvador,222,2040,35.3
+Equatorial Guinea,226,2040,25.6
+Ethiopia,231,2040,25.6
+Eritrea,232,2040,25.9
+Estonia,233,2040,48.1
+Angola,24,2040,22.9
+Fiji,242,2040,33.8
+Finland,246,2040,46.2
+France,250,2040,44.9
+French Guiana,254,2040,32.5
+French Polynesia,258,2040,38.6
+Djibouti,262,2040,31.4
+Gabon,266,2040,29.1
+Georgia,268,2040,42.8
+Gambia,270,2040,24.6
+Occupied Palestinian Territory,275,2040,26.7
+Germany,276,2040,51.9
+Antigua and Barbuda,28,2040,38.5
+Ghana,288,2040,26
+Kiribati,296,2040,27.9
+Greece,300,2040,52.4
+Grenada,308,2040,35.9
+Azerbaijan,31,2040,40.4
+Guadeloupe,312,2040,42.8
+Guam,316,2040,37.9
+Argentina,32,2040,37.1
+Guatemala,320,2040,29.4
+Guinea,324,2040,24.3
+Guyana,328,2040,33.5
+Haiti,332,2040,31.7
+Honduras,340,2040,32.6
+Hong Kong Special Administrative Region of China,344,2040,56.1
+Hungary,348,2040,48.8
+Iceland,352,2040,42.9
+India,356,2040,34.9
+Australia,36,2040,45.4
+Indonesia,360,2040,35.9
+Iran (Islamic Republic of),364,2040,42.4
+Iraq,368,2040,25.7
+Ireland,372,2040,42.5
+Israel,376,2040,33.1
+Italy,380,2040,54
+Cote d'Ivoire,384,2040,24.7
+Jamaica,388,2040,38.8
+Japan,392,2040,55.1
+Kazakhstan,398,2040,33.5
+Afghanistan,4,2040,20.5
+Austria,40,2040,51.2
+Jordan,400,2040,30.3
+Kenya,404,2040,25.4
+Democratic People's Republic of Korea,408,2040,42.2
+Republic of Korea,410,2040,52.4
+Kuwait,414,2040,47.1
+Kyrgyzstan,417,2040,31.2
+Lao People's Democratic Republic,418,2040,31.3
+Lebanon,422,2040,40.7
+Lesotho,426,2040,26.9
+Latvia,428,2040,48.3
+Liberia,430,2040,24.4
+Libyan Arab Jamahiriya,434,2040,35.8
+Bahamas,44,2040,42.5
+Lithuania,440,2040,46.7
+Luxembourg,442,2040,48.5
+Macao Special Administrative Region of China,446,2040,53.4
+Madagascar,450,2040,25.4
+Malawi,454,2040,20.8
+Malaysia,458,2040,37.3
+Maldives,462,2040,42.4
+Mali,466,2040,21.8
+Malta,470,2040,49.6
+Martinique,474,2040,44.5
+Mauritania,478,2040,26.5
+Bahrain,48,2040,47
+Mauritius,480,2040,43.4
+Mexico,484,2040,36.5
+Mongolia,496,2040,32.4
+Republic of Moldova,498,2040,46.8
+Montenegro,499,2040,44.7
+Bangladesh,50,2040,35.7
+Morocco,504,2040,36.3
+Mozambique,508,2040,24.3
+Armenia,51,2040,43.1
+Oman,512,2040,44.3
+Namibia,516,2040,27.8
+Barbados,52,2040,44.5
+Nepal,524,2040,33
+Netherlands,528,2040,47
+Curaçao,531,2040,43.6
+Aruba,533,2040,44.4
+New Caledonia,540,2040,39.9
+Vanuatu,548,2040,29.8
+Central Asia,5500,2040,33
+Southern Asia,5501,2040,34
+New Zealand,554,2040,43.4
+Nicaragua,558,2040,34.8
+Belgium,56,2040,46.8
+Niger,562,2040,18.2
+Nigeria,566,2040,21.4
+Norway,578,2040,45.1
+Micronesia (Federated States of),583,2040,30.4
+Pakistan,586,2040,28.6
+Panama,591,2040,35.8
+Papua New Guinea,598,2040,29
+Paraguay,600,2040,33.4
+Peru,604,2040,35.6
+Philippines,608,2040,30.9
+Poland,616,2040,49.2
+Portugal,620,2040,52.2
+Guinea-Bissau,624,2040,25
+Timor-Leste,626,2040,21.4
+Puerto Rico,630,2040,45.5
+Qatar,634,2040,52.3
+Reunion,638,2040,38.5
+Bhutan,64,2040,36.3
+Romania,642,2040,48.2
+Russian Federation,643,2040,46.4
+Rwanda,646,2040,24.4
+Saint Lucia,662,2040,43
+Saint Vincent and the Grenadines,670,2040,38.4
+Sao Tome and Principe,678,2040,27
+Bolivia (Plurinational State of),68,2040,31.1
+Saudi Arabia,682,2040,37.5
+Senegal,686,2040,24.6
+Serbia,688,2040,45.3
+Seychelles,690,2040,39.2
+Sierra Leone,694,2040,24.5
+Bosnia and Herzegovina,70,2040,48.5
+Singapore,702,2040,51.6
+Slovakia,703,2040,48.6
+Viet Nam,704,2040,41.7
+Slovenia,705,2040,51.6
+Somalia,706,2040,21.2
+South Africa,710,2040,32.1
+Zimbabwe,716,2040,26.6
+Botswana,72,2040,32
+Spain,724,2040,54.4
+South Sudan,728,2040,23.2
+Sudan,729,2040,24.6
+Western Sahara,732,2040,34.8
+Suriname,740,2040,35.1
+Swaziland,748,2040,27.3
+Sweden,752,2040,45.8
+Switzerland,756,2040,50.9
+Brazil,76,2040,41.8
+Syrian Arab Republic,760,2040,30.9
+Tajikistan,762,2040,29.5
+Thailand,764,2040,46.5
+Togo,768,2040,26.2
+Tonga,776,2040,30
+Trinidad and Tobago,780,2040,42.7
+United Arab Emirates,784,2040,54.5
+Tunisia,788,2040,40
+Turkey,792,2040,38.7
+Turkmenistan,795,2040,31.2
+Albania,8,2040,45
+Uganda,800,2040,19.7
+Ukraine,804,2040,47.8
+The former Yugoslav Republic of Macedonia,807,2040,46.1
+Egypt,818,2040,29.9
+United Kingdom of Great Britain and Northern Ireland,826,2040,45.3
+Channel Islands,830,2040,51.2
+United Republic of Tanzania,834,2040,22.8
+Belize,84,2040,31.9
+United States of America,840,2040,43
+United States Virgin Islands,850,2040,41.9
+Burkina Faso,854,2040,22
+Uruguay,858,2040,41.3
+Uzbekistan,860,2040,34.6
+Venezuela (Bolivarian Republic of),862,2040,35.5
+Samoa,882,2040,29.7
+Yemen,887,2040,24.5
+Zambia,894,2040,21.3
+Solomon Islands,90,2040,28
+World,900,2040,35.6
+Africa,903,2040,24.4
+Latin America and the Caribbean,904,2040,38.1
+Northern America,905,2040,43.6
+Eastern Asia,906,2040,48.8
+Europe,908,2040,48.4
+Oceania,909,2040,38.8
+Eastern Africa,910,2040,23.7
+Middle Africa,911,2040,23
+Northern Africa,912,2040,30.7
+Southern Africa,913,2040,31.5
+Western Africa,914,2040,22.3
+Caribbean,915,2040,38
+Central America,916,2040,35.5
+South-Eastern Asia,920,2040,36.5
+Western Asia,922,2040,33.2
+Eastern Europe,923,2040,47.5
+Northern Europe,924,2040,45.4
+Southern Europe,925,2040,52.5
+Western Europe,926,2040,48.8
+Australia and New Zealand,927,2040,45.1
+Melanesia,928,2040,29.5
+South America,931,2040,39.3
+Asia,935,2040,38.4
+Micronesia,954,2040,32.2
+Polynesia,957,2040,33
+Brunei Darussalam,96,2040,41.6
+Bulgaria,100,2045,50.1
+Myanmar,104,2045,38.1
+Burundi,108,2045,26.7
+Belarus,112,2045,47.4
+Cambodia,116,2045,33.5
+Algeria,12,2045,36.2
+Cameroon,120,2045,27.2
+Canada,124,2045,49.9
+Cape Verde,132,2045,35.5
+Central African Republic,140,2045,26.7
+Sri Lanka,144,2045,39.6
+Chad,148,2045,23.1
+Chile,152,2045,45.4
+China,156,2045,50.1
+Taiwan Province of China,158,2045,54.1
+Colombia,170,2045,41.1
+Comoros,174,2045,27.8
+Mayotte,175,2045,30
+Congo,178,2045,27.1
+Democratic Republic of the Congo,180,2045,23.9
+Costa Rica,188,2045,44.7
+Croatia,191,2045,49.6
+Cuba,192,2045,51.2
+Cyprus,196,2045,49.4
+Czech Republic,203,2045,51.1
+Benin,204,2045,26
+Denmark,208,2045,45.4
+Dominican Republic,214,2045,35.4
+Ecuador,218,2045,36.7
+El Salvador,222,2045,37
+Equatorial Guinea,226,2045,27.1
+Ethiopia,231,2045,27.4
+Eritrea,232,2045,27.6
+Estonia,233,2045,48.2
+Angola,24,2045,24.5
+Fiji,242,2045,35.4
+Finland,246,2045,46.3
+France,250,2045,45.3
+French Guiana,254,2045,34.5
+French Polynesia,258,2045,39.9
+Djibouti,262,2045,32.8
+Gabon,266,2045,31.2
+Georgia,268,2045,43.1
+Gambia,270,2045,26.5
+Occupied Palestinian Territory,275,2045,28.6
+Germany,276,2045,53.2
+Antigua and Barbuda,28,2045,39.8
+Ghana,288,2045,27.4
+Kiribati,296,2045,29.3
+Greece,300,2045,53.1
+Grenada,308,2045,37.4
+Azerbaijan,31,2045,41.1
+Guadeloupe,312,2045,44.1
+Guam,316,2045,39.5
+Argentina,32,2045,38.5
+Guatemala,320,2045,31.1
+Guinea,324,2045,25.9
+Guyana,328,2045,34.9
+Haiti,332,2045,33.6
+Honduras,340,2045,34.4
+Hong Kong Special Administrative Region of China,344,2045,58.5
+Hungary,348,2045,50
+Iceland,352,2045,43.6
+India,356,2045,36.6
+Australia,36,2045,46.3
+Indonesia,360,2045,37.6
+Iran (Islamic Republic of),364,2045,43.8
+Iraq,368,2045,27.6
+Ireland,372,2045,42.9
+Israel,376,2045,33.9
+Italy,380,2045,54.6
+Cote d'Ivoire,384,2045,26.6
+Jamaica,388,2045,40.4
+Japan,392,2045,56
+Kazakhstan,398,2045,34.9
+Afghanistan,4,2045,21.7
+Austria,40,2045,52.8
+Jordan,400,2045,32.4
+Kenya,404,2045,26.9
+Democratic People's Republic of Korea,408,2045,43.9
+Republic of Korea,410,2045,54.2
+Kuwait,414,2045,47.3
+Kyrgyzstan,417,2045,33.1
+Lao People's Democratic Republic,418,2045,33.1
+Lebanon,422,2045,43
+Lesotho,426,2045,28.3
+Latvia,428,2045,49.2
+Liberia,430,2045,25.9
+Libyan Arab Jamahiriya,434,2045,37.5
+Bahamas,44,2045,44
+Lithuania,440,2045,47.7
+Luxembourg,442,2045,49.6
+Macao Special Administrative Region of China,446,2045,56.6
+Madagascar,450,2045,27.1
+Malawi,454,2045,21.9
+Malaysia,458,2045,38.7
+Maldives,462,2045,44.1
+Mali,466,2045,23.3
+Malta,470,2045,51.1
+Martinique,474,2045,44.9
+Mauritania,478,2045,28.3
+Bahrain,48,2045,48.2
+Mauritius,480,2045,44.9
+Mexico,484,2045,38.3
+Mongolia,496,2045,33.8
+Republic of Moldova,498,2045,48.2
+Montenegro,499,2045,46
+Bangladesh,50,2045,37.7
+Morocco,504,2045,37.8
+Mozambique,508,2045,26.1
+Armenia,51,2045,43.8
+Oman,512,2045,44.5
+Namibia,516,2045,29.7
+Barbados,52,2045,45.8
+Nepal,524,2045,35
+Netherlands,528,2045,47.8
+Curaçao,531,2045,44.4
+Aruba,533,2045,45.9
+New Caledonia,540,2045,41.1
+Vanuatu,548,2045,31.7
+Central Asia,5500,2045,34.5
+Southern Asia,5501,2045,35.6
+New Zealand,554,2045,44.4
+Nicaragua,558,2045,36.7
+Belgium,56,2045,47.4
+Niger,562,2045,19
+Nigeria,566,2045,22.2
+Norway,578,2045,45.8
+Micronesia (Federated States of),583,2045,32.1
+Pakistan,586,2045,30.2
+Panama,591,2045,37.5
+Papua New Guinea,598,2045,30.7
+Paraguay,600,2045,35
+Peru,604,2045,37.2
+Philippines,608,2045,32.5
+Poland,616,2045,50.3
+Portugal,620,2045,52.9
+Guinea-Bissau,624,2045,26.7
+Timor-Leste,626,2045,22.8
+Puerto Rico,630,2045,47.4
+Qatar,634,2045,56.3
+Reunion,638,2045,39.9
+Bhutan,64,2045,37.9
+Romania,642,2045,49
+Russian Federation,643,2045,45.7
+Rwanda,646,2045,25.6
+Saint Lucia,662,2045,45.2
+Saint Vincent and the Grenadines,670,2045,40
+Sao Tome and Principe,678,2045,29.1
+Bolivia (Plurinational State of),68,2045,32.6
+Saudi Arabia,682,2045,38.6
+Senegal,686,2045,26.3
+Serbia,688,2045,46.2
+Seychelles,690,2045,39.2
+Sierra Leone,694,2045,26.1
+Bosnia and Herzegovina,70,2045,50
+Singapore,702,2045,53.3
+Slovakia,703,2045,49.8
+Viet Nam,704,2045,43.3
+Slovenia,705,2045,52.2
+Somalia,706,2045,22.7
+South Africa,710,2045,33.3
+Zimbabwe,716,2045,28.7
+Botswana,72,2045,33.7
+Spain,724,2045,55.2
+South Sudan,728,2045,24.6
+Sudan,729,2045,26
+Western Sahara,732,2045,36.2
+Suriname,740,2045,36.4
+Swaziland,748,2045,28.9
+Sweden,752,2045,45.8
+Switzerland,756,2045,52.2
+Brazil,76,2045,43.8
+Syrian Arab Republic,760,2045,33
+Tajikistan,762,2045,31.5
+Thailand,764,2045,48
+Togo,768,2045,27.9
+Tonga,776,2045,31.8
+Trinidad and Tobago,780,2045,43.7
+United Arab Emirates,784,2045,58.3
+Tunisia,788,2045,41.1
+Turkey,792,2045,40.4
+Turkmenistan,795,2045,32.9
+Albania,8,2045,47.3
+Uganda,800,2045,20.9
+Ukraine,804,2045,48.1
+The former Yugoslav Republic of Macedonia,807,2045,47.4
+Egypt,818,2045,31.9
+United Kingdom of Great Britain and Northern Ireland,826,2045,45.6
+Channel Islands,830,2045,52.3
+United Republic of Tanzania,834,2045,24.2
+Belize,84,2045,33.6
+United States of America,840,2045,43.7
+United States Virgin Islands,850,2045,42.9
+Burkina Faso,854,2045,23.4
+Uruguay,858,2045,42.9
+Uzbekistan,860,2045,36.1
+Venezuela (Bolivarian Republic of),862,2045,37.2
+Samoa,882,2045,31.5
+Yemen,887,2045,25.9
+Zambia,894,2045,22.6
+Solomon Islands,90,2045,29.8
+World,900,2045,36.7
+Africa,903,2045,25.8
+Latin America and the Caribbean,904,2045,39.7
+Northern America,905,2045,44.2
+Eastern Asia,906,2045,50.5
+Europe,908,2045,49
+Oceania,909,2045,39.8
+Eastern Africa,910,2045,25.1
+Middle Africa,911,2045,24.6
+Northern Africa,912,2045,32.5
+Southern Africa,913,2045,32.8
+Western Africa,914,2045,23.4
+Caribbean,915,2045,39.5
+Central America,916,2045,37.2
+South-Eastern Asia,920,2045,38.1
+Western Asia,922,2045,34.6
+Eastern Europe,923,2045,47.7
+Northern Europe,924,2045,45.6
+Southern Europe,925,2045,53.2
+Western Europe,926,2045,49.6
+Australia and New Zealand,927,2045,46
+Melanesia,928,2045,31.2
+South America,931,2045,41
+Asia,935,2045,39.7
+Micronesia,954,2045,33.6
+Polynesia,957,2045,34.6
+Brunei Darussalam,96,2045,43.5
+Bulgaria,100,2050,49.5
+Myanmar,104,2050,39.8
+Burundi,108,2050,28.7
+Belarus,112,2050,47
+Cambodia,116,2050,35.3
+Algeria,12,2050,38.1
+Cameroon,120,2050,29
+Canada,124,2050,50.5
+Cape Verde,132,2050,37.2
+Central African Republic,140,2050,28.5
+Sri Lanka,144,2050,41.1
+Chad,148,2050,24.6
+Chile,152,2050,47
+China,156,2050,50.9
+Taiwan Province of China,158,2050,55.8
+Colombia,170,2050,42.7
+Comoros,174,2050,29.5
+Mayotte,175,2050,32
+Congo,178,2050,28.8
+Democratic Republic of the Congo,180,2050,25.5
+Costa Rica,188,2050,46.4
+Croatia,191,2050,50.5
+Cuba,192,2050,52.6
+Cyprus,196,2050,51
+Czech Republic,203,2050,50.6
+Benin,204,2050,27.6
+Denmark,208,2050,45.8
+Dominican Republic,214,2050,37.1
+Ecuador,218,2050,38.4
+El Salvador,222,2050,38.7
+Equatorial Guinea,226,2050,28.6
+Ethiopia,231,2050,29.2
+Eritrea,232,2050,29.2
+Estonia,233,2050,47.6
+Angola,24,2050,26.2
+Fiji,242,2050,37
+Finland,246,2050,46.1
+France,250,2050,45.8
+French Guiana,254,2050,36.6
+French Polynesia,258,2050,40.8
+Djibouti,262,2050,34.2
+Gabon,266,2050,33.1
+Georgia,268,2050,43.5
+Gambia,270,2050,28.3
+Occupied Palestinian Territory,275,2050,30.5
+Germany,276,2050,54
+Antigua and Barbuda,28,2050,40.8
+Ghana,288,2050,28.8
+Kiribati,296,2050,30.7
+Greece,300,2050,53.6
+Grenada,308,2050,39
+Azerbaijan,31,2050,42
+Guadeloupe,312,2050,45.2
+Guam,316,2050,41
+Argentina,32,2050,40
+Guatemala,320,2050,32.8
+Guinea,324,2050,27.5
+Guyana,328,2050,36.5
+Haiti,332,2050,35.5
+Honduras,340,2050,36.1
+Hong Kong Special Administrative Region of China,344,2050,60.4
+Hungary,348,2050,50.6
+Iceland,352,2050,44.2
+India,356,2050,38.2
+Australia,36,2050,47
+Indonesia,360,2050,39.4
+Iran (Islamic Republic of),364,2050,45.2
+Iraq,368,2050,29.4
+Ireland,372,2050,43.7
+Israel,376,2050,35
+Italy,380,2050,54.9
+Cote d'Ivoire,384,2050,28.4
+Jamaica,388,2050,41.7
+Japan,392,2050,56.7
+Kazakhstan,398,2050,36.9
+Afghanistan,4,2050,23
+Austria,40,2050,54
+Jordan,400,2050,34.4
+Kenya,404,2050,28.4
+Democratic People's Republic of Korea,408,2050,45.5
+Republic of Korea,410,2050,56
+Kuwait,414,2050,47.3
+Kyrgyzstan,417,2050,35.2
+Lao People's Democratic Republic,418,2050,34.9
+Lebanon,422,2050,45.1
+Lesotho,426,2050,29.8
+Latvia,428,2050,48.8
+Liberia,430,2050,27.5
+Libyan Arab Jamahiriya,434,2050,39.1
+Bahamas,44,2050,44.7
+Lithuania,440,2050,48.1
+Luxembourg,442,2050,50.3
+Macao Special Administrative Region of China,446,2050,59.5
+Madagascar,450,2050,28.8
+Malawi,454,2050,23.2
+Malaysia,458,2050,39.8
+Maldives,462,2050,45.4
+Mali,466,2050,24.9
+Malta,470,2050,52.2
+Martinique,474,2050,45.6
+Mauritania,478,2050,30
+Bahrain,48,2050,48.3
+Mauritius,480,2050,46.3
+Mexico,484,2050,39.9
+Mongolia,496,2050,35.6
+Republic of Moldova,498,2050,48.8
+Montenegro,499,2050,47.1
+Bangladesh,50,2050,39.6
+Morocco,504,2050,39.4
+Mozambique,508,2050,27.9
+Armenia,51,2050,44.4
+Oman,512,2050,44.7
+Namibia,516,2050,31.5
+Barbados,52,2050,47.2
+Nepal,524,2050,36.5
+Netherlands,528,2050,48.5
+Curaçao,531,2050,45.2
+Aruba,533,2050,47.4
+New Caledonia,540,2050,42.1
+Vanuatu,548,2050,33.6
+Central Asia,5500,2050,36.4
+Southern Asia,5501,2050,37.1
+New Zealand,554,2050,45.2
+Nicaragua,558,2050,38.6
+Belgium,56,2050,47.8
+Niger,562,2050,20
+Nigeria,566,2050,23.2
+Norway,578,2050,46.1
+Micronesia (Federated States of),583,2050,33.7
+Pakistan,586,2050,31.7
+Panama,591,2050,39.1
+Papua New Guinea,598,2050,32.4
+Paraguay,600,2050,36.6
+Peru,604,2050,38.8
+Philippines,608,2050,34
+Poland,616,2050,50.7
+Portugal,620,2050,53.5
+Guinea-Bissau,624,2050,28.4
+Timor-Leste,626,2050,24.2
+Puerto Rico,630,2050,49.3
+Qatar,634,2050,60.1
+Reunion,638,2050,41
+Bhutan,64,2050,39.5
+Romania,642,2050,49.8
+Russian Federation,643,2050,45
+Rwanda,646,2050,26.8
+Saint Lucia,662,2050,46.8
+Saint Vincent and the Grenadines,670,2050,41.5
+Sao Tome and Principe,678,2050,31
+Bolivia (Plurinational State of),68,2050,34
+Saudi Arabia,682,2050,39.7
+Senegal,686,2050,27.9
+Serbia,688,2050,47.1
+Seychelles,690,2050,39.7
+Sierra Leone,694,2050,27.7
+Bosnia and Herzegovina,70,2050,51.5
+Singapore,702,2050,55
+Slovakia,703,2050,50
+Viet Nam,704,2050,44.8
+Slovenia,705,2050,52
+Somalia,706,2050,24.2
+South Africa,710,2050,34.6
+Zimbabwe,716,2050,30.7
+Botswana,72,2050,35.4
+Spain,724,2050,55.5
+South Sudan,728,2050,26
+Sudan,729,2050,27.4
+Western Sahara,732,2050,37.6
+Suriname,740,2050,37.7
+Swaziland,748,2050,30.5
+Sweden,752,2050,45.6
+Switzerland,756,2050,53
+Brazil,76,2050,45.6
+Syrian Arab Republic,760,2050,35
+Tajikistan,762,2050,33.4
+Thailand,764,2050,49.3
+Togo,768,2050,29.7
+Tonga,776,2050,33.5
+Trinidad and Tobago,780,2050,44.8
+United Arab Emirates,784,2050,61.9
+Tunisia,788,2050,42.3
+Turkey,792,2050,42.1
+Turkmenistan,795,2050,34.8
+Albania,8,2050,49.4
+Uganda,800,2050,22.1
+Ukraine,804,2050,47.6
+The former Yugoslav Republic of Macedonia,807,2050,48.3
+Egypt,818,2050,34
+United Kingdom of Great Britain and Northern Ireland,826,2050,45.5
+Channel Islands,830,2050,53.2
+United Republic of Tanzania,834,2050,25.8
+Belize,84,2050,35.3
+United States of America,840,2050,44.2
+United States Virgin Islands,850,2050,44.1
+Burkina Faso,854,2050,24.7
+Uruguay,858,2050,44.5
+Uzbekistan,860,2050,37.7
+Venezuela (Bolivarian Republic of),862,2050,38.9
+Samoa,882,2050,33.3
+Yemen,887,2050,27.4
+Zambia,894,2050,23.9
+Solomon Islands,90,2050,31.5
+World,900,2050,37.8
+Africa,903,2050,27.2
+Latin America and the Caribbean,904,2050,41.3
+Northern America,905,2050,44.7
+Eastern Asia,906,2050,51.4
+Europe,908,2050,49.1
+Oceania,909,2050,41
+Eastern Africa,910,2050,26.7
+Middle Africa,911,2050,26.2
+Northern Africa,912,2050,34.3
+Southern Africa,913,2050,34.2
+Western Africa,914,2050,24.5
+Caribbean,915,2050,41
+Central America,916,2050,38.9
+South-Eastern Asia,920,2050,39.6
+Western Asia,922,2050,36.1
+Eastern Europe,923,2050,47.2
+Northern Europe,924,2050,45.6
+Southern Europe,925,2050,53.7
+Western Europe,926,2050,50
+Australia and New Zealand,927,2050,46.7
+Melanesia,928,2050,32.8
+South America,931,2050,42.6
+Asia,935,2050,41.1
+Micronesia,954,2050,35
+Polynesia,957,2050,36.2
+Brunei Darussalam,96,2050,45.3
+Bulgaria,100,2055,49.4
+Myanmar,104,2055,41.2
+Burundi,108,2055,30.5
+Belarus,112,2055,47.2
+Cambodia,116,2055,37.1
+Algeria,12,2055,40.3
+Cameroon,120,2055,30.8
+Canada,124,2055,50.5
+Cape Verde,132,2055,38.9
+Central African Republic,140,2055,30.2
+Sri Lanka,144,2055,42.5
+Chad,148,2055,26.3
+Chile,152,2055,48.5
+China,156,2055,51.6
+Taiwan Province of China,158,2055,57.1
+Colombia,170,2055,44.1
+Comoros,174,2055,31.1
+Mayotte,175,2055,33.9
+Congo,178,2055,30.4
+Democratic Republic of the Congo,180,2055,27.1
+Costa Rica,188,2055,48.2
+Croatia,191,2055,51
+Cuba,192,2055,53.7
+Cyprus,196,2055,51.9
+Czech Republic,203,2055,50.3
+Benin,204,2055,29.3
+Denmark,208,2055,46.1
+Dominican Republic,214,2055,38.7
+Ecuador,218,2055,40.2
+El Salvador,222,2055,40.3
+Equatorial Guinea,226,2055,29.9
+Ethiopia,231,2055,31.2
+Eritrea,232,2055,30.8
+Estonia,233,2055,47.9
+Angola,24,2055,27.9
+Fiji,242,2055,38.5
+Finland,246,2055,46.2
+France,250,2055,46.4
+French Guiana,254,2055,38.5
+French Polynesia,258,2055,41.7
+Djibouti,262,2055,35.6
+Gabon,266,2055,35
+Georgia,268,2055,44.5
+Gambia,270,2055,30.1
+Occupied Palestinian Territory,275,2055,32.5
+Germany,276,2055,54.2
+Antigua and Barbuda,28,2055,41.7
+Ghana,288,2055,30.2
+Kiribati,296,2055,32
+Greece,300,2055,54
+Grenada,308,2055,40.8
+Azerbaijan,31,2055,43.4
+Guadeloupe,312,2055,45.8
+Guam,316,2055,42.4
+Argentina,32,2055,41.5
+Guatemala,320,2055,34.6
+Guinea,324,2055,29.1
+Guyana,328,2055,38.2
+Haiti,332,2055,37.4
+Honduras,340,2055,37.7
+Hong Kong Special Administrative Region of China,344,2055,61.8
+Hungary,348,2055,51
+Iceland,352,2055,45
+India,356,2055,39.6
+Australia,36,2055,47.7
+Indonesia,360,2055,41.2
+Iran (Islamic Republic of),364,2055,47
+Iraq,368,2055,31.2
+Ireland,372,2055,45
+Israel,376,2055,35.8
+Italy,380,2055,55.1
+Cote d'Ivoire,384,2055,30.1
+Jamaica,388,2055,42.8
+Japan,392,2055,57.5
+Kazakhstan,398,2055,38.8
+Afghanistan,4,2055,24.4
+Austria,40,2055,54.4
+Jordan,400,2055,36.3
+Kenya,404,2055,29.8
+Democratic People's Republic of Korea,408,2055,46.8
+Republic of Korea,410,2055,57.4
+Kuwait,414,2055,47.6
+Kyrgyzstan,417,2055,37.1
+Lao People's Democratic Republic,418,2055,36.5
+Lebanon,422,2055,46.7
+Lesotho,426,2055,31.3
+Latvia,428,2055,49.1
+Liberia,430,2055,29.1
+Libyan Arab Jamahiriya,434,2055,40.9
+Bahamas,44,2055,45.7
+Lithuania,440,2055,47.9
+Luxembourg,442,2055,50.5
+Macao Special Administrative Region of China,446,2055,61.6
+Madagascar,450,2055,30.5
+Malawi,454,2055,24.5
+Malaysia,458,2055,41
+Maldives,462,2055,47.1
+Mali,466,2055,26.6
+Malta,470,2055,52.7
+Martinique,474,2055,46.3
+Mauritania,478,2055,31.7
+Bahrain,48,2055,48.8
+Mauritius,480,2055,47.4
+Mexico,484,2055,41.6
+Mongolia,496,2055,37
+Republic of Moldova,498,2055,49
+Montenegro,499,2055,48.3
+Bangladesh,50,2055,41.3
+Morocco,504,2055,41.2
+Mozambique,508,2055,29.6
+Armenia,51,2055,45.6
+Oman,512,2055,45.5
+Namibia,516,2055,33.3
+Barbados,52,2055,48.8
+Nepal,524,2055,38.3
+Netherlands,528,2055,49.2
+Curaçao,531,2055,45.8
+Aruba,533,2055,48.8
+New Caledonia,540,2055,43.2
+Vanuatu,548,2055,35.3
+Central Asia,5500,2055,38.2
+Southern Asia,5501,2055,38.5
+New Zealand,554,2055,46.2
+Nicaragua,558,2055,40.4
+Belgium,56,2055,48.2
+Niger,562,2055,21.3
+Nigeria,566,2055,24.2
+Norway,578,2055,46.5
+Micronesia (Federated States of),583,2055,35.4
+Pakistan,586,2055,33.2
+Panama,591,2055,40.9
+Papua New Guinea,598,2055,34
+Paraguay,600,2055,38.2
+Peru,604,2055,40.4
+Philippines,608,2055,35.6
+Poland,616,2055,50.5
+Portugal,620,2055,54.1
+Guinea-Bissau,624,2055,30
+Timor-Leste,626,2055,25.9
+Puerto Rico,630,2055,50.9
+Qatar,634,2055,63.1
+Reunion,638,2055,42
+Bhutan,64,2055,40.9
+Romania,642,2055,50.5
+Russian Federation,643,2055,45.3
+Rwanda,646,2055,28.1
+Saint Lucia,662,2055,47.9
+Saint Vincent and the Grenadines,670,2055,42.8
+Sao Tome and Principe,678,2055,32.9
+Bolivia (Plurinational State of),68,2055,35.4
+Saudi Arabia,682,2055,41
+Senegal,686,2055,29.5
+Serbia,688,2055,48
+Seychelles,690,2055,40.9
+Sierra Leone,694,2055,29.4
+Bosnia and Herzegovina,70,2055,52.4
+Singapore,702,2055,56.4
+Slovakia,703,2055,49.8
+Viet Nam,704,2055,46.4
+Slovenia,705,2055,51.4
+Somalia,706,2055,25.8
+South Africa,710,2055,35.9
+Zimbabwe,716,2055,32.6
+Botswana,72,2055,37
+Spain,724,2055,55.4
+South Sudan,728,2055,27.5
+Sudan,729,2055,28.9
+Western Sahara,732,2055,39
+Suriname,740,2055,38.9
+Swaziland,748,2055,31.9
+Sweden,752,2055,46
+Switzerland,756,2055,53
+Brazil,76,2055,47.2
+Syrian Arab Republic,760,2055,36.6
+Tajikistan,762,2055,35.3
+Thailand,764,2055,50.2
+Togo,768,2055,31.4
+Tonga,776,2055,35.1
+Trinidad and Tobago,780,2055,46.4
+United Arab Emirates,784,2055,65.2
+Tunisia,788,2055,43.8
+Turkey,792,2055,43.7
+Turkmenistan,795,2055,36.7
+Albania,8,2055,50.9
+Uganda,800,2055,23.5
+Ukraine,804,2055,47.6
+The former Yugoslav Republic of Macedonia,807,2055,48.9
+Egypt,818,2055,35.9
+United Kingdom of Great Britain and Northern Ireland,826,2055,45.8
+Channel Islands,830,2055,53.7
+United Republic of Tanzania,834,2055,27.4
+Belize,84,2055,37
+United States of America,840,2055,44.8
+United States Virgin Islands,850,2055,45.5
+Burkina Faso,854,2055,26.2
+Uruguay,858,2055,46.1
+Uzbekistan,860,2055,39.5
+Venezuela (Bolivarian Republic of),862,2055,40.7
+Samoa,882,2055,35
+Yemen,887,2055,28.9
+Zambia,894,2055,25.2
+Solomon Islands,90,2055,33.2
+World,900,2055,39
+Africa,903,2055,28.6
+Latin America and the Caribbean,904,2055,42.9
+Northern America,905,2055,45.3
+Eastern Asia,906,2055,52.2
+Europe,908,2055,49.2
+Oceania,909,2055,42.1
+Eastern Africa,910,2055,28.3
+Middle Africa,911,2055,27.9
+Northern Africa,912,2055,36
+Southern Africa,913,2055,35.5
+Western Africa,914,2055,25.7
+Caribbean,915,2055,42.5
+Central America,916,2055,40.5
+South-Eastern Asia,920,2055,41.2
+Western Asia,922,2055,37.6
+Eastern Europe,923,2055,47.3
+Northern Europe,924,2055,46
+Southern Europe,925,2055,54.1
+Western Europe,926,2055,50.2
+Australia and New Zealand,927,2055,47.4
+Melanesia,928,2055,34.4
+South America,931,2055,44.1
+Asia,935,2055,42.4
+Micronesia,954,2055,36.5
+Polynesia,957,2055,37.6
+Brunei Darussalam,96,2055,46.7
+Bulgaria,100,2060,49.9
+Myanmar,104,2060,42.5
+Burundi,108,2060,32.3
+Belarus,112,2060,48.1
+Cambodia,116,2060,38.7
+Algeria,12,2060,42.2
+Cameroon,120,2060,32.4
+Canada,124,2060,50.7
+Cape Verde,132,2060,40.7
+Central African Republic,140,2060,32
+Sri Lanka,144,2060,43.8
+Chad,148,2060,28
+Chile,152,2060,49.9
+China,156,2060,52.5
+Taiwan Province of China,158,2060,58.1
+Colombia,170,2060,45.4
+Comoros,174,2060,32.6
+Mayotte,175,2060,35.9
+Congo,178,2060,32.1
+Democratic Republic of the Congo,180,2060,28.8
+Costa Rica,188,2060,49.9
+Croatia,191,2060,51.7
+Cuba,192,2060,54.6
+Cyprus,196,2060,52.7
+Czech Republic,203,2060,50.9
+Benin,204,2060,31
+Denmark,208,2060,45.8
+Dominican Republic,214,2060,40.3
+Ecuador,218,2060,41.9
+El Salvador,222,2060,42
+Equatorial Guinea,226,2060,31.3
+Ethiopia,231,2060,33.2
+Eritrea,232,2060,32.4
+Estonia,233,2060,48.7
+Angola,24,2060,29.5
+Fiji,242,2060,39.9
+Finland,246,2060,46.4
+France,250,2060,47
+French Guiana,254,2060,40.3
+French Polynesia,258,2060,42.6
+Djibouti,262,2060,37
+Gabon,266,2060,36.6
+Georgia,268,2060,46
+Gambia,270,2060,31.7
+Occupied Palestinian Territory,275,2060,34.4
+Germany,276,2060,54.1
+Antigua and Barbuda,28,2060,42.5
+Ghana,288,2060,31.5
+Kiribati,296,2060,33.4
+Greece,300,2060,54.5
+Grenada,308,2060,42.6
+Azerbaijan,31,2060,45.2
+Guadeloupe,312,2060,46
+Guam,316,2060,43.8
+Argentina,32,2060,43
+Guatemala,320,2060,36.4
+Guinea,324,2060,30.7
+Guyana,328,2060,39.9
+Haiti,332,2060,39.2
+Honduras,340,2060,39.4
+Hong Kong Special Administrative Region of China,344,2060,62.6
+Hungary,348,2060,51.5
+Iceland,352,2060,45.8
+India,356,2060,41
+Australia,36,2060,48.5
+Indonesia,360,2060,42.9
+Iran (Islamic Republic of),364,2060,49
+Iraq,368,2060,33
+Ireland,372,2060,46.2
+Israel,376,2060,36.7
+Italy,380,2060,55.3
+Cote d'Ivoire,384,2060,31.7
+Jamaica,388,2060,43.9
+Japan,392,2060,58.3
+Kazakhstan,398,2060,40.6
+Afghanistan,4,2060,25.8
+Austria,40,2060,54.5
+Jordan,400,2060,38.1
+Kenya,404,2060,31.3
+Democratic People's Republic of Korea,408,2060,48.2
+Republic of Korea,410,2060,58.2
+Kuwait,414,2060,48.4
+Kyrgyzstan,417,2060,39
+Lao People's Democratic Republic,418,2060,38.1
+Lebanon,422,2060,48.3
+Lesotho,426,2060,32.6
+Latvia,428,2060,50
+Liberia,430,2060,30.6
+Libyan Arab Jamahiriya,434,2060,42.5
+Bahamas,44,2060,46.9
+Lithuania,440,2060,48.2
+Luxembourg,442,2060,50.5
+Macao Special Administrative Region of China,446,2060,62.8
+Madagascar,450,2060,32.3
+Malawi,454,2060,25.9
+Malaysia,458,2060,42.3
+Maldives,462,2060,49.1
+Mali,466,2060,28.3
+Malta,470,2060,52.9
+Martinique,474,2060,46.2
+Mauritania,478,2060,33.3
+Bahrain,48,2060,49.6
+Mauritius,480,2060,47.9
+Mexico,484,2060,43.2
+Mongolia,496,2060,38.4
+Republic of Moldova,498,2060,49.6
+Montenegro,499,2060,49.5
+Bangladesh,50,2060,42.9
+Morocco,504,2060,43
+Mozambique,508,2060,31.3
+Armenia,51,2060,46.9
+Oman,512,2060,47
+Namibia,516,2060,35
+Barbados,52,2060,50.4
+Nepal,524,2060,40.1
+Netherlands,528,2060,49.5
+Curaçao,531,2060,46.6
+Aruba,533,2060,50.1
+New Caledonia,540,2060,44.3
+Vanuatu,548,2060,36.9
+Central Asia,5500,2060,40
+Southern Asia,5501,2060,39.9
+New Zealand,554,2060,47.1
+Nicaragua,558,2060,42.2
+Belgium,56,2060,48.8
+Niger,562,2060,22.6
+Nigeria,566,2060,25.4
+Norway,578,2060,46.7
+Micronesia (Federated States of),583,2060,37.2
+Pakistan,586,2060,34.7
+Panama,591,2060,42.5
+Papua New Guinea,598,2060,35.5
+Paraguay,600,2060,39.9
+Peru,604,2060,41.9
+Philippines,608,2060,37.1
+Poland,616,2060,50.9
+Portugal,620,2060,54.6
+Guinea-Bissau,624,2060,31.5
+Timor-Leste,626,2060,27.5
+Puerto Rico,630,2060,52.4
+Qatar,634,2060,65.7
+Reunion,638,2060,43
+Bhutan,64,2060,42.2
+Romania,642,2060,51.3
+Russian Federation,643,2060,46.6
+Rwanda,646,2060,29.4
+Saint Lucia,662,2060,48.6
+Saint Vincent and the Grenadines,670,2060,44.1
+Sao Tome and Principe,678,2060,34.7
+Bolivia (Plurinational State of),68,2060,36.9
+Saudi Arabia,682,2060,42.3
+Senegal,686,2060,31.1
+Serbia,688,2060,48.7
+Seychelles,690,2060,41.8
+Sierra Leone,694,2060,31.1
+Bosnia and Herzegovina,70,2060,52.9
+Singapore,702,2060,57.4
+Slovakia,703,2060,50.1
+Viet Nam,704,2060,48.2
+Slovenia,705,2060,51.5
+Somalia,706,2060,27.4
+South Africa,710,2060,37
+Zimbabwe,716,2060,34.3
+Botswana,72,2060,38.3
+Spain,724,2060,55.7
+South Sudan,728,2060,29
+Sudan,729,2060,30.3
+Western Sahara,732,2060,40.3
+Suriname,740,2060,40.1
+Swaziland,748,2060,33.3
+Sweden,752,2060,46.4
+Switzerland,756,2060,52.8
+Brazil,76,2060,48.8
+Syrian Arab Republic,760,2060,38.3
+Tajikistan,762,2060,37.1
+Thailand,764,2060,50.9
+Togo,768,2060,33
+Tonga,776,2060,36.8
+Trinidad and Tobago,780,2060,47.9
+United Arab Emirates,784,2060,66.5
+Tunisia,788,2060,45.7
+Turkey,792,2060,45.3
+Turkmenistan,795,2060,38.6
+Albania,8,2060,51.8
+Uganda,800,2060,24.9
+Ukraine,804,2060,48.3
+The former Yugoslav Republic of Macedonia,807,2060,49.4
+Egypt,818,2060,37.6
+United Kingdom of Great Britain and Northern Ireland,826,2060,46.4
+Channel Islands,830,2060,54
+United Republic of Tanzania,834,2060,29
+Belize,84,2060,38.8
+United States of America,840,2060,45.2
+United States Virgin Islands,850,2060,46.9
+Burkina Faso,854,2060,27.7
+Uruguay,858,2060,47.6
+Uzbekistan,860,2060,41.1
+Venezuela (Bolivarian Republic of),862,2060,42.3
+Samoa,882,2060,36.7
+Yemen,887,2060,30.4
+Zambia,894,2060,26.7
+Solomon Islands,90,2060,34.7
+World,900,2060,40.1
+Africa,903,2060,30
+Latin America and the Caribbean,904,2060,44.4
+Northern America,905,2060,45.7
+Eastern Asia,906,2060,53
+Europe,908,2060,49.6
+Oceania,909,2060,43.3
+Eastern Africa,910,2060,29.8
+Middle Africa,911,2060,29.5
+Northern Africa,912,2060,37.6
+Southern Africa,913,2060,36.7
+Western Africa,914,2060,27
+Caribbean,915,2060,43.9
+Central America,916,2060,42.1
+South-Eastern Asia,920,2060,42.7
+Western Asia,922,2060,39
+Eastern Europe,923,2060,48.1
+Northern Europe,924,2060,46.5
+Southern Europe,925,2060,54.5
+Western Europe,926,2060,50.5
+Australia and New Zealand,927,2060,48.3
+Melanesia,928,2060,35.9
+South America,931,2060,45.6
+Asia,935,2060,43.7
+Micronesia,954,2060,38
+Polynesia,957,2060,38.9
+Brunei Darussalam,96,2060,48.1
+Bulgaria,100,2065,50.4
+Myanmar,104,2065,43.6
+Burundi,108,2065,33.9
+Belarus,112,2065,49.4
+Cambodia,116,2065,40.2
+Algeria,12,2065,43.9
+Cameroon,120,2065,34
+Canada,124,2065,51.2
+Cape Verde,132,2065,42.4
+Central African Republic,140,2065,33.7
+Sri Lanka,144,2065,45
+Chad,148,2065,29.6
+Chile,152,2065,51.3
+China,156,2065,53.7
+Taiwan Province of China,158,2065,58.1
+Colombia,170,2065,46.8
+Comoros,174,2065,34
+Mayotte,175,2065,37.8
+Congo,178,2065,33.7
+Democratic Republic of the Congo,180,2065,30.4
+Costa Rica,188,2065,51.6
+Croatia,191,2065,52.5
+Cuba,192,2065,55.4
+Cyprus,196,2065,53.6
+Czech Republic,203,2065,51.5
+Benin,204,2065,32.6
+Denmark,208,2065,45.8
+Dominican Republic,214,2065,41.9
+Ecuador,218,2065,43.5
+El Salvador,222,2065,43.7
+Equatorial Guinea,226,2065,32.6
+Ethiopia,231,2065,35.3
+Eritrea,232,2065,33.9
+Estonia,233,2065,49.5
+Angola,24,2065,31.2
+Fiji,242,2065,41.3
+Finland,246,2065,46.8
+France,250,2065,47.6
+French Guiana,254,2065,41.9
+French Polynesia,258,2065,43.4
+Djibouti,262,2065,38.3
+Gabon,266,2065,38.1
+Georgia,268,2065,47.3
+Gambia,270,2065,33.4
+Occupied Palestinian Territory,275,2065,36.3
+Germany,276,2065,54
+Antigua and Barbuda,28,2065,43.4
+Ghana,288,2065,32.9
+Kiribati,296,2065,34.7
+Greece,300,2065,55.2
+Grenada,308,2065,44.3
+Azerbaijan,31,2065,46.6
+Guadeloupe,312,2065,46.1
+Guam,316,2065,45.3
+Argentina,32,2065,44.4
+Guatemala,320,2065,38.1
+Guinea,324,2065,32.3
+Guyana,328,2065,41.6
+Haiti,332,2065,40.9
+Honduras,340,2065,41.1
+Hong Kong Special Administrative Region of China,344,2065,62.4
+Hungary,348,2065,51.8
+Iceland,352,2065,46.6
+India,356,2065,42.3
+Australia,36,2065,49.5
+Indonesia,360,2065,44.5
+Iran (Islamic Republic of),364,2065,50.9
+Iraq,368,2065,34.8
+Ireland,372,2065,47.1
+Israel,376,2065,37.4
+Italy,380,2065,55.7
+Cote d'Ivoire,384,2065,33.3
+Jamaica,388,2065,45.5
+Japan,392,2065,59
+Kazakhstan,398,2065,42.1
+Afghanistan,4,2065,27.3
+Austria,40,2065,54.7
+Jordan,400,2065,39.9
+Kenya,404,2065,32.8
+Democratic People's Republic of Korea,408,2065,49.5
+Republic of Korea,410,2065,58.3
+Kuwait,414,2065,49.3
+Kyrgyzstan,417,2065,40.7
+Lao People's Democratic Republic,418,2065,39.6
+Lebanon,422,2065,49.8
+Lesotho,426,2065,33.8
+Latvia,428,2065,50.9
+Liberia,430,2065,32.2
+Libyan Arab Jamahiriya,434,2065,44.1
+Bahamas,44,2065,48.1
+Lithuania,440,2065,48.9
+Luxembourg,442,2065,50.6
+Macao Special Administrative Region of China,446,2065,62.3
+Madagascar,450,2065,34.1
+Malawi,454,2065,27.4
+Malaysia,458,2065,43.7
+Maldives,462,2065,51.3
+Mali,466,2065,30
+Malta,470,2065,53.3
+Martinique,474,2065,46.3
+Mauritania,478,2065,34.9
+Bahrain,48,2065,50.5
+Mauritius,480,2065,48.2
+Mexico,484,2065,44.8
+Mongolia,496,2065,39.6
+Republic of Moldova,498,2065,50.3
+Montenegro,499,2065,50.6
+Bangladesh,50,2065,44.5
+Morocco,504,2065,44.6
+Mozambique,508,2065,33
+Armenia,51,2065,48.3
+Oman,512,2065,48.5
+Namibia,516,2065,36.6
+Barbados,52,2065,51.9
+Nepal,524,2065,42
+Netherlands,528,2065,49.8
+Curaçao,531,2065,47.7
+Aruba,533,2065,51
+New Caledonia,540,2065,45.3
+Vanuatu,548,2065,38.5
+Central Asia,5500,2065,41.5
+Southern Asia,5501,2065,41.2
+New Zealand,554,2065,48
+Nicaragua,558,2065,43.9
+Belgium,56,2065,49.4
+Niger,562,2065,24
+Nigeria,566,2065,26.8
+Norway,578,2065,47.1
+Micronesia (Federated States of),583,2065,38.9
+Pakistan,586,2065,36.1
+Panama,591,2065,44.1
+Papua New Guinea,598,2065,37
+Paraguay,600,2065,41.5
+Peru,604,2065,43.4
+Philippines,608,2065,38.6
+Poland,616,2065,51.3
+Portugal,620,2065,54.8
+Guinea-Bissau,624,2065,32.9
+Timor-Leste,626,2065,29.1
+Puerto Rico,630,2065,53.6
+Qatar,634,2065,64.8
+Reunion,638,2065,43.8
+Bhutan,64,2065,43.5
+Romania,642,2065,52
+Russian Federation,643,2065,47.7
+Rwanda,646,2065,30.8
+Saint Lucia,662,2065,49.3
+Saint Vincent and the Grenadines,670,2065,45.4
+Sao Tome and Principe,678,2065,36.5
+Bolivia (Plurinational State of),68,2065,38.2
+Saudi Arabia,682,2065,43.6
+Senegal,686,2065,32.7
+Serbia,688,2065,49.5
+Seychelles,690,2065,42.6
+Sierra Leone,694,2065,32.7
+Bosnia and Herzegovina,70,2065,53.5
+Singapore,702,2065,58.2
+Slovakia,703,2065,50.5
+Viet Nam,704,2065,50
+Slovenia,705,2065,52.1
+Somalia,706,2065,29
+South Africa,710,2065,38
+Zimbabwe,716,2065,35.9
+Botswana,72,2065,39.4
+Spain,724,2065,56.2
+South Sudan,728,2065,30.5
+Sudan,729,2065,31.8
+Western Sahara,732,2065,41.4
+Suriname,740,2065,41.4
+Swaziland,748,2065,34.4
+Sweden,752,2065,47
+Switzerland,756,2065,52.9
+Brazil,76,2065,50.2
+Syrian Arab Republic,760,2065,40
+Tajikistan,762,2065,38.7
+Thailand,764,2065,51.5
+Togo,768,2065,34.5
+Tonga,776,2065,38.4
+Trinidad and Tobago,780,2065,49.5
+United Arab Emirates,784,2065,64.5
+Tunisia,788,2065,47.5
+Turkey,792,2065,46.7
+Turkmenistan,795,2065,40.3
+Albania,8,2065,52.9
+Uganda,800,2065,26.4
+Ukraine,804,2065,49.2
+The former Yugoslav Republic of Macedonia,807,2065,50
+Egypt,818,2065,39.2
+United Kingdom of Great Britain and Northern Ireland,826,2065,47.1
+Channel Islands,830,2065,54.4
+United Republic of Tanzania,834,2065,30.7
+Belize,84,2065,40.6
+United States of America,840,2065,45.9
+United States Virgin Islands,850,2065,48.4
+Burkina Faso,854,2065,29.1
+Uruguay,858,2065,49.1
+Uzbekistan,860,2065,42.6
+Venezuela (Bolivarian Republic of),862,2065,44
+Samoa,882,2065,38.5
+Yemen,887,2065,31.9
+Zambia,894,2065,28.2
+Solomon Islands,90,2065,36.3
+World,900,2065,41.2
+Africa,903,2065,31.4
+Latin America and the Caribbean,904,2065,45.9
+Northern America,905,2065,46.3
+Eastern Asia,906,2065,54.1
+Europe,908,2065,50.3
+Oceania,909,2065,44.5
+Eastern Africa,910,2065,31.5
+Middle Africa,911,2065,31.2
+Northern Africa,912,2065,39
+Southern Africa,913,2065,37.7
+Western Africa,914,2065,28.4
+Caribbean,915,2065,45.3
+Central America,916,2065,43.7
+South-Eastern Asia,920,2065,44.1
+Western Asia,922,2065,40.3
+Eastern Europe,923,2065,49.1
+Northern Europe,924,2065,47.2
+Southern Europe,925,2065,55
+Western Europe,926,2065,50.8
+Australia and New Zealand,927,2065,49.2
+Melanesia,928,2065,37.4
+South America,931,2065,47.1
+Asia,935,2065,44.9
+Micronesia,954,2065,39.5
+Polynesia,957,2065,40.3
+Brunei Darussalam,96,2065,49.5
+Bulgaria,100,2070,50.8
+Myanmar,104,2070,44.7
+Burundi,108,2070,35.3
+Belarus,112,2070,50.4
+Cambodia,116,2070,41.5
+Algeria,12,2070,45.4
+Cameroon,120,2070,35.5
+Canada,124,2070,51.8
+Cape Verde,132,2070,44.1
+Central African Republic,140,2070,35.3
+Sri Lanka,144,2070,46.1
+Chad,148,2070,31.3
+Chile,152,2070,52.6
+China,156,2070,55.1
+Taiwan Province of China,158,2070,57.7
+Colombia,170,2070,48.2
+Comoros,174,2070,35.4
+Mayotte,175,2070,39.8
+Congo,178,2070,35.3
+Democratic Republic of the Congo,180,2070,32.1
+Costa Rica,188,2070,53.2
+Croatia,191,2070,53.2
+Cuba,192,2070,56.4
+Cyprus,196,2070,54.5
+Czech Republic,203,2070,51.9
+Benin,204,2070,34.1
+Denmark,208,2070,46.2
+Dominican Republic,214,2070,43.5
+Ecuador,218,2070,45.1
+El Salvador,222,2070,45.3
+Equatorial Guinea,226,2070,33.9
+Ethiopia,231,2070,37.3
+Eritrea,232,2070,35.5
+Estonia,233,2070,50.1
+Angola,24,2070,32.9
+Fiji,242,2070,42.6
+Finland,246,2070,47.3
+France,250,2070,48.2
+French Guiana,254,2070,43.5
+French Polynesia,258,2070,44.3
+Djibouti,262,2070,39.5
+Gabon,266,2070,39.4
+Georgia,268,2070,48.2
+Gambia,270,2070,34.9
+Occupied Palestinian Territory,275,2070,38.2
+Germany,276,2070,54.4
+Antigua and Barbuda,28,2070,44.4
+Ghana,288,2070,34.4
+Kiribati,296,2070,35.8
+Greece,300,2070,55.3
+Grenada,308,2070,45.9
+Azerbaijan,31,2070,47.6
+Guadeloupe,312,2070,46.6
+Guam,316,2070,46.8
+Argentina,32,2070,45.8
+Guatemala,320,2070,39.7
+Guinea,324,2070,33.8
+Guyana,328,2070,43.3
+Haiti,332,2070,42.4
+Honduras,340,2070,42.8
+Hong Kong Special Administrative Region of China,344,2070,61.8
+Hungary,348,2070,52.1
+Iceland,352,2070,47.3
+India,356,2070,43.5
+Australia,36,2070,50.5
+Indonesia,360,2070,46
+Iran (Islamic Republic of),364,2070,52.7
+Iraq,368,2070,36.7
+Ireland,372,2070,47.6
+Israel,376,2070,38.1
+Italy,380,2070,55.8
+Cote d'Ivoire,384,2070,34.8
+Jamaica,388,2070,47
+Japan,392,2070,59.7
+Kazakhstan,398,2070,43.3
+Afghanistan,4,2070,28.8
+Austria,40,2070,55.1
+Jordan,400,2070,41.6
+Kenya,404,2070,34.2
+Democratic People's Republic of Korea,408,2070,50.7
+Republic of Korea,410,2070,58.3
+Kuwait,414,2070,50.3
+Kyrgyzstan,417,2070,42.1
+Lao People's Democratic Republic,418,2070,40.9
+Lebanon,422,2070,51.3
+Lesotho,426,2070,34.9
+Latvia,428,2070,51.8
+Liberia,430,2070,33.8
+Libyan Arab Jamahiriya,434,2070,45.4
+Bahamas,44,2070,49.3
+Lithuania,440,2070,50
+Luxembourg,442,2070,51.1
+Macao Special Administrative Region of China,446,2070,61
+Madagascar,450,2070,35.8
+Malawi,454,2070,29
+Malaysia,458,2070,45.2
+Maldives,462,2070,53.3
+Mali,466,2070,31.6
+Malta,470,2070,54
+Martinique,474,2070,46.5
+Mauritania,478,2070,36.4
+Bahrain,48,2070,51
+Mauritius,480,2070,48.6
+Mexico,484,2070,46.3
+Mongolia,496,2070,40.6
+Republic of Moldova,498,2070,51
+Montenegro,499,2070,51.6
+Bangladesh,50,2070,46.1
+Morocco,504,2070,46
+Mozambique,508,2070,34.5
+Armenia,51,2070,49.5
+Oman,512,2070,49.7
+Namibia,516,2070,38
+Barbados,52,2070,53.3
+Nepal,524,2070,43.8
+Netherlands,528,2070,50.3
+Curaçao,531,2070,48.7
+Aruba,533,2070,52
+New Caledonia,540,2070,46.3
+Vanuatu,548,2070,40.1
+Central Asia,5500,2070,42.8
+Southern Asia,5501,2070,42.4
+New Zealand,554,2070,49
+Nicaragua,558,2070,45.5
+Belgium,56,2070,50.2
+Niger,562,2070,25.5
+Nigeria,566,2070,28.2
+Norway,578,2070,47.6
+Micronesia (Federated States of),583,2070,40.6
+Pakistan,586,2070,37.4
+Panama,591,2070,45.5
+Papua New Guinea,598,2070,38.4
+Paraguay,600,2070,43
+Peru,604,2070,44.8
+Philippines,608,2070,40.1
+Poland,616,2070,51.7
+Portugal,620,2070,54.6
+Guinea-Bissau,624,2070,34.2
+Timor-Leste,626,2070,30.8
+Puerto Rico,630,2070,54.6
+Qatar,634,2070,62.7
+Reunion,638,2070,44.9
+Bhutan,64,2070,44.8
+Romania,642,2070,52.6
+Russian Federation,643,2070,48.3
+Rwanda,646,2070,32.2
+Saint Lucia,662,2070,50.3
+Saint Vincent and the Grenadines,670,2070,46.7
+Sao Tome and Principe,678,2070,38.2
+Bolivia (Plurinational State of),68,2070,39.5
+Saudi Arabia,682,2070,44.6
+Senegal,686,2070,34.3
+Serbia,688,2070,50.3
+Seychelles,690,2070,43.1
+Sierra Leone,694,2070,34.3
+Bosnia and Herzegovina,70,2070,54
+Singapore,702,2070,58.8
+Slovakia,703,2070,50.9
+Viet Nam,704,2070,51.7
+Slovenia,705,2070,52.7
+Somalia,706,2070,30.6
+South Africa,710,2070,39
+Zimbabwe,716,2070,37.4
+Botswana,72,2070,40.3
+Spain,724,2070,56.5
+South Sudan,728,2070,32
+Sudan,729,2070,33.2
+Western Sahara,732,2070,42.3
+Suriname,740,2070,42.6
+Swaziland,748,2070,35.6
+Sweden,752,2070,47.7
+Switzerland,756,2070,53.4
+Brazil,76,2070,51.6
+Syrian Arab Republic,760,2070,41.9
+Tajikistan,762,2070,40.1
+Thailand,764,2070,52
+Togo,768,2070,36.1
+Tonga,776,2070,40.2
+Trinidad and Tobago,780,2070,50.7
+United Arab Emirates,784,2070,62.1
+Tunisia,788,2070,49.1
+Turkey,792,2070,47.9
+Turkmenistan,795,2070,41.7
+Albania,8,2070,54.1
+Uganda,800,2070,28
+Ukraine,804,2070,49.8
+The former Yugoslav Republic of Macedonia,807,2070,50.7
+Egypt,818,2070,40.7
+United Kingdom of Great Britain and Northern Ireland,826,2070,47.8
+Channel Islands,830,2070,54.8
+United Republic of Tanzania,834,2070,32.4
+Belize,84,2070,42.4
+United States of America,840,2070,46.6
+United States Virgin Islands,850,2070,49.9
+Burkina Faso,854,2070,30.6
+Uruguay,858,2070,50.6
+Uzbekistan,860,2070,43.9
+Venezuela (Bolivarian Republic of),862,2070,45.6
+Samoa,882,2070,40.3
+Yemen,887,2070,33.4
+Zambia,894,2070,29.8
+Solomon Islands,90,2070,37.8
+World,900,2070,42.2
+Africa,903,2070,32.9
+Latin America and the Caribbean,904,2070,47.3
+Northern America,905,2070,47.1
+Eastern Asia,906,2070,55.3
+Europe,908,2070,50.8
+Oceania,909,2070,45.6
+Eastern Africa,910,2070,33.1
+Middle Africa,911,2070,32.8
+Northern Africa,912,2070,40.3
+Southern Africa,913,2070,38.7
+Western Africa,914,2070,29.8
+Caribbean,915,2070,46.6
+Central America,916,2070,45.3
+South-Eastern Asia,920,2070,45.5
+Western Asia,922,2070,41.5
+Eastern Europe,923,2070,49.7
+Northern Europe,924,2070,47.8
+Southern Europe,925,2070,55.2
+Western Europe,926,2070,51.3
+Australia and New Zealand,927,2070,50.3
+Melanesia,928,2070,38.8
+South America,931,2070,48.5
+Asia,935,2070,45.9
+Micronesia,954,2070,40.9
+Polynesia,957,2070,41.8
+Brunei Darussalam,96,2070,50.9
+Bulgaria,100,2075,51.1
+Myanmar,104,2075,45.6
+Burundi,108,2075,36.7
+Belarus,112,2075,50.9
+Cambodia,116,2075,42.8
+Algeria,12,2075,46.5
+Cameroon,120,2075,36.9
+Canada,124,2075,52.5
+Cape Verde,132,2075,45.7
+Central African Republic,140,2075,36.8
+Sri Lanka,144,2075,47.2
+Chad,148,2075,32.8
+Chile,152,2075,53.9
+China,156,2075,55.9
+Taiwan Province of China,158,2075,57.6
+Colombia,170,2075,49.6
+Comoros,174,2075,36.8
+Mayotte,175,2075,41.8
+Congo,178,2075,36.9
+Democratic Republic of the Congo,180,2075,33.6
+Costa Rica,188,2075,54.8
+Croatia,191,2075,53.8
+Cuba,192,2075,57.5
+Cyprus,196,2075,55.5
+Czech Republic,203,2075,52.2
+Benin,204,2075,35.7
+Denmark,208,2075,46.8
+Dominican Republic,214,2075,45
+Ecuador,218,2075,46.5
+El Salvador,222,2075,46.8
+Equatorial Guinea,226,2075,35.3
+Ethiopia,231,2075,39.3
+Eritrea,232,2075,37
+Estonia,233,2075,50.4
+Angola,24,2075,34.4
+Fiji,242,2075,43.9
+Finland,246,2075,47.8
+France,250,2075,48.7
+French Guiana,254,2075,45.1
+French Polynesia,258,2075,45.2
+Djibouti,262,2075,40.7
+Gabon,266,2075,40.6
+Georgia,268,2075,49
+Gambia,270,2075,36.3
+Occupied Palestinian Territory,275,2075,40
+Germany,276,2075,55
+Antigua and Barbuda,28,2075,45.3
+Ghana,288,2075,35.8
+Kiribati,296,2075,36.8
+Greece,300,2075,55.4
+Grenada,308,2075,47.3
+Azerbaijan,31,2075,48.2
+Guadeloupe,312,2075,47.5
+Guam,316,2075,48.3
+Argentina,32,2075,47.1
+Guatemala,320,2075,41.3
+Guinea,324,2075,35.2
+Guyana,328,2075,44.8
+Haiti,332,2075,43.8
+Honduras,340,2075,44.4
+Hong Kong Special Administrative Region of China,344,2075,61.6
+Hungary,348,2075,52.3
+Iceland,352,2075,48
+India,356,2075,44.7
+Australia,36,2075,51.5
+Indonesia,360,2075,47.3
+Iran (Islamic Republic of),364,2075,54.1
+Iraq,368,2075,38.5
+Ireland,372,2075,47.7
+Israel,376,2075,38.8
+Italy,380,2075,55.9
+Cote d'Ivoire,384,2075,36.2
+Jamaica,388,2075,48.5
+Japan,392,2075,60.3
+Kazakhstan,398,2075,44.3
+Afghanistan,4,2075,30.2
+Austria,40,2075,55.7
+Jordan,400,2075,43.2
+Kenya,404,2075,35.7
+Democratic People's Republic of Korea,408,2075,51.9
+Republic of Korea,410,2075,58.4
+Kuwait,414,2075,50.7
+Kyrgyzstan,417,2075,43.4
+Lao People's Democratic Republic,418,2075,42.1
+Lebanon,422,2075,52.6
+Lesotho,426,2075,36
+Latvia,428,2075,52.4
+Liberia,430,2075,35.3
+Libyan Arab Jamahiriya,434,2075,46.6
+Bahamas,44,2075,50.4
+Lithuania,440,2075,51.1
+Luxembourg,442,2075,51.6
+Macao Special Administrative Region of China,446,2075,61.5
+Madagascar,450,2075,37.6
+Malawi,454,2075,30.6
+Malaysia,458,2075,46.5
+Maldives,462,2075,55.1
+Mali,466,2075,33.2
+Malta,470,2075,54.7
+Martinique,474,2075,47.1
+Mauritania,478,2075,37.8
+Bahrain,48,2075,50.9
+Mauritius,480,2075,49.3
+Mexico,484,2075,47.7
+Mongolia,496,2075,41.4
+Republic of Moldova,498,2075,51.5
+Montenegro,499,2075,52.4
+Bangladesh,50,2075,47.5
+Morocco,504,2075,47.2
+Mozambique,508,2075,35.9
+Armenia,51,2075,50.2
+Oman,512,2075,50.2
+Namibia,516,2075,39.3
+Barbados,52,2075,54.5
+Nepal,524,2075,45.5
+Netherlands,528,2075,51.1
+Curaçao,531,2075,49.7
+Aruba,533,2075,53.2
+New Caledonia,540,2075,47.2
+Vanuatu,548,2075,41.7
+Central Asia,5500,2075,43.9
+Southern Asia,5501,2075,43.6
+New Zealand,554,2075,50
+Nicaragua,558,2075,47
+Belgium,56,2075,50.8
+Niger,562,2075,27.1
+Nigeria,566,2075,29.6
+Norway,578,2075,48.1
+Micronesia (Federated States of),583,2075,42
+Pakistan,586,2075,38.7
+Panama,591,2075,46.9
+Papua New Guinea,598,2075,39.8
+Paraguay,600,2075,44.5
+Peru,604,2075,46
+Philippines,608,2075,41.5
+Poland,616,2075,52
+Portugal,620,2075,54.3
+Guinea-Bissau,624,2075,35.5
+Timor-Leste,626,2075,32.3
+Puerto Rico,630,2075,55.6
+Qatar,634,2075,61.3
+Reunion,638,2075,46
+Bhutan,64,2075,46
+Romania,642,2075,53.1
+Russian Federation,643,2075,48.4
+Rwanda,646,2075,33.7
+Saint Lucia,662,2075,51.2
+Saint Vincent and the Grenadines,670,2075,48
+Sao Tome and Principe,678,2075,39.7
+Bolivia (Plurinational State of),68,2075,40.8
+Saudi Arabia,682,2075,45.5
+Senegal,686,2075,35.8
+Serbia,688,2075,51
+Seychelles,690,2075,43.6
+Sierra Leone,694,2075,35.8
+Bosnia and Herzegovina,70,2075,54.6
+Singapore,702,2075,59.3
+Slovakia,703,2075,51.2
+Viet Nam,704,2075,53.2
+Slovenia,705,2075,53
+Somalia,706,2075,32.2
+South Africa,710,2075,39.9
+Zimbabwe,716,2075,38.9
+Botswana,72,2075,41.1
+Spain,724,2075,56.3
+South Sudan,728,2075,33.4
+Sudan,729,2075,34.6
+Western Sahara,732,2075,43.1
+Suriname,740,2075,43.8
+Swaziland,748,2075,36.7
+Sweden,752,2075,48.3
+Switzerland,756,2075,54.1
+Brazil,76,2075,52.8
+Syrian Arab Republic,760,2075,43.9
+Tajikistan,762,2075,41.4
+Thailand,764,2075,52.4
+Togo,768,2075,37.5
+Tonga,776,2075,41.9
+Trinidad and Tobago,780,2075,51.6
+United Arab Emirates,784,2075,61.1
+Tunisia,788,2075,50.3
+Turkey,792,2075,48.9
+Turkmenistan,795,2075,42.8
+Albania,8,2075,55.3
+Uganda,800,2075,29.5
+Ukraine,804,2075,49.9
+The former Yugoslav Republic of Macedonia,807,2075,51.4
+Egypt,818,2075,42.2
+United Kingdom of Great Britain and Northern Ireland,826,2075,48.4
+Channel Islands,830,2075,55.3
+United Republic of Tanzania,834,2075,34.1
+Belize,84,2075,44.1
+United States of America,840,2075,47.3
+United States Virgin Islands,850,2075,51.4
+Burkina Faso,854,2075,32.1
+Uruguay,858,2075,51.9
+Uzbekistan,860,2075,45
+Venezuela (Bolivarian Republic of),862,2075,47.1
+Samoa,882,2075,42.2
+Yemen,887,2075,34.9
+Zambia,894,2075,31.4
+Solomon Islands,90,2075,39.2
+World,900,2075,43.1
+Africa,903,2075,34.3
+Latin America and the Caribbean,904,2075,48.6
+Northern America,905,2075,47.8
+Eastern Asia,906,2075,56.1
+Europe,908,2075,51.2
+Oceania,909,2075,46.6
+Eastern Africa,910,2075,34.7
+Middle Africa,911,2075,34.3
+Northern Africa,912,2075,41.6
+Southern Africa,913,2075,39.6
+Western Africa,914,2075,31.2
+Caribbean,915,2075,47.9
+Central America,916,2075,46.7
+South-Eastern Asia,920,2075,46.7
+Western Asia,922,2075,42.7
+Eastern Europe,923,2075,50
+Northern Europe,924,2075,48.4
+Southern Europe,925,2075,55.3
+Western Europe,926,2075,51.9
+Australia and New Zealand,927,2075,51.2
+Melanesia,928,2075,40.2
+South America,931,2075,49.7
+Asia,935,2075,46.9
+Micronesia,954,2075,42.2
+Polynesia,957,2075,43.2
+Brunei Darussalam,96,2075,52.1
+Bulgaria,100,2080,51.2
+Myanmar,104,2080,46.3
+Burundi,108,2080,38
+Belarus,112,2080,50.9
+Cambodia,116,2080,44
+Algeria,12,2080,47.4
+Cameroon,120,2080,38.1
+Canada,124,2080,53
+Cape Verde,132,2080,47.1
+Central African Republic,140,2080,38.1
+Sri Lanka,144,2080,48.4
+Chad,148,2080,34.2
+Chile,152,2080,55.1
+China,156,2080,56.5
+Taiwan Province of China,158,2080,57.4
+Colombia,170,2080,50.9
+Comoros,174,2080,38.2
+Mayotte,175,2080,43.7
+Congo,178,2080,38.4
+Democratic Republic of the Congo,180,2080,35
+Costa Rica,188,2080,56.1
+Croatia,191,2080,54.4
+Cuba,192,2080,58.5
+Cyprus,196,2080,56.3
+Czech Republic,203,2080,52.1
+Benin,204,2080,37.1
+Denmark,208,2080,47.5
+Dominican Republic,214,2080,46.4
+Ecuador,218,2080,47.9
+El Salvador,222,2080,48.1
+Equatorial Guinea,226,2080,36.6
+Ethiopia,231,2080,41.3
+Eritrea,232,2080,38.5
+Estonia,233,2080,50.4
+Angola,24,2080,35.9
+Fiji,242,2080,45.2
+Finland,246,2080,48.1
+France,250,2080,49.4
+French Guiana,254,2080,46.7
+French Polynesia,258,2080,46
+Djibouti,262,2080,41.7
+Gabon,266,2080,41.8
+Georgia,268,2080,49.5
+Gambia,270,2080,37.6
+Occupied Palestinian Territory,275,2080,41.7
+Germany,276,2080,55.6
+Antigua and Barbuda,28,2080,46
+Ghana,288,2080,37.2
+Kiribati,296,2080,37.8
+Greece,300,2080,55.5
+Grenada,308,2080,48.4
+Azerbaijan,31,2080,48.6
+Guadeloupe,312,2080,48.7
+Guam,316,2080,49.8
+Argentina,32,2080,48.3
+Guatemala,320,2080,42.8
+Guinea,324,2080,36.6
+Guyana,328,2080,46.2
+Haiti,332,2080,45.1
+Honduras,340,2080,45.9
+Hong Kong Special Administrative Region of China,344,2080,62.2
+Hungary,348,2080,52.6
+Iceland,352,2080,48.6
+India,356,2080,45.8
+Australia,36,2080,52.2
+Indonesia,360,2080,48.5
+Iran (Islamic Republic of),364,2080,55.1
+Iraq,368,2080,40.3
+Ireland,372,2080,47.9
+Israel,376,2080,39.6
+Italy,380,2080,56
+Cote d'Ivoire,384,2080,37.5
+Jamaica,388,2080,49.8
+Japan,392,2080,60.8
+Kazakhstan,398,2080,45.3
+Afghanistan,4,2080,31.8
+Austria,40,2080,56.4
+Jordan,400,2080,44.7
+Kenya,404,2080,37
+Democratic People's Republic of Korea,408,2080,53
+Republic of Korea,410,2080,58.8
+Kuwait,414,2080,50.8
+Kyrgyzstan,417,2080,44.6
+Lao People's Democratic Republic,418,2080,43.1
+Lebanon,422,2080,53.7
+Lesotho,426,2080,37.1
+Latvia,428,2080,52.7
+Liberia,430,2080,36.7
+Libyan Arab Jamahiriya,434,2080,47.7
+Bahamas,44,2080,51.3
+Lithuania,440,2080,52
+Luxembourg,442,2080,51.9
+Macao Special Administrative Region of China,446,2080,62.3
+Madagascar,450,2080,39.2
+Malawi,454,2080,32.3
+Malaysia,458,2080,47.7
+Maldives,462,2080,56.3
+Mali,466,2080,34.6
+Malta,470,2080,55.3
+Martinique,474,2080,47.9
+Mauritania,478,2080,39.2
+Bahrain,48,2080,50.6
+Mauritius,480,2080,50.1
+Mexico,484,2080,49.1
+Mongolia,496,2080,42.3
+Republic of Moldova,498,2080,51.7
+Montenegro,499,2080,53.2
+Bangladesh,50,2080,48.9
+Morocco,504,2080,48.2
+Mozambique,508,2080,37.3
+Armenia,51,2080,50.4
+Oman,512,2080,49.9
+Namibia,516,2080,40.5
+Barbados,52,2080,55.5
+Nepal,524,2080,47
+Netherlands,528,2080,51.8
+Curaçao,531,2080,50.6
+Aruba,533,2080,54.5
+New Caledonia,540,2080,48
+Vanuatu,548,2080,43.2
+Central Asia,5500,2080,45
+Southern Asia,5501,2080,44.7
+New Zealand,554,2080,50.9
+Nicaragua,558,2080,48.3
+Belgium,56,2080,51.3
+Niger,562,2080,28.7
+Nigeria,566,2080,31.1
+Norway,578,2080,48.6
+Micronesia (Federated States of),583,2080,43.3
+Pakistan,586,2080,40
+Panama,591,2080,48.3
+Papua New Guinea,598,2080,41
+Paraguay,600,2080,45.7
+Peru,604,2080,47.2
+Philippines,608,2080,42.9
+Poland,616,2080,52
+Portugal,620,2080,54.2
+Guinea-Bissau,624,2080,36.7
+Timor-Leste,626,2080,33.9
+Puerto Rico,630,2080,56.6
+Qatar,634,2080,59.9
+Reunion,638,2080,47.2
+Bhutan,64,2080,47
+Romania,642,2080,53.6
+Russian Federation,643,2080,48.1
+Rwanda,646,2080,35.1
+Saint Lucia,662,2080,52.1
+Saint Vincent and the Grenadines,670,2080,49.3
+Sao Tome and Principe,678,2080,41.1
+Bolivia (Plurinational State of),68,2080,42
+Saudi Arabia,682,2080,46.4
+Senegal,686,2080,37.3
+Serbia,688,2080,51.7
+Seychelles,690,2080,44.2
+Sierra Leone,694,2080,37.2
+Bosnia and Herzegovina,70,2080,55.4
+Singapore,702,2080,59.7
+Slovakia,703,2080,51.3
+Viet Nam,704,2080,54.5
+Slovenia,705,2080,52.9
+Somalia,706,2080,33.7
+South Africa,710,2080,40.8
+Zimbabwe,716,2080,40.2
+Botswana,72,2080,41.8
+Spain,724,2080,55.9
+South Sudan,728,2080,34.8
+Sudan,729,2080,35.9
+Western Sahara,732,2080,43.9
+Suriname,740,2080,45
+Swaziland,748,2080,37.8
+Sweden,752,2080,48.7
+Switzerland,756,2080,54.6
+Brazil,76,2080,53.8
+Syrian Arab Republic,760,2080,45.8
+Tajikistan,762,2080,42.7
+Thailand,764,2080,52.9
+Togo,768,2080,38.8
+Tonga,776,2080,43.7
+Trinidad and Tobago,780,2080,52.3
+United Arab Emirates,784,2080,59.8
+Tunisia,788,2080,51.2
+Turkey,792,2080,49.9
+Turkmenistan,795,2080,43.9
+Albania,8,2080,56.4
+Uganda,800,2080,31.1
+Ukraine,804,2080,49.8
+The former Yugoslav Republic of Macedonia,807,2080,51.9
+Egypt,818,2080,43.8
+United Kingdom of Great Britain and Northern Ireland,826,2080,48.9
+Channel Islands,830,2080,55.7
+United Republic of Tanzania,834,2080,35.7
+Belize,84,2080,45.7
+United States of America,840,2080,48
+United States Virgin Islands,850,2080,53
+Burkina Faso,854,2080,33.6
+Uruguay,858,2080,53.1
+Uzbekistan,860,2080,46
+Venezuela (Bolivarian Republic of),862,2080,48.6
+Samoa,882,2080,44
+Yemen,887,2080,36.4
+Zambia,894,2080,32.9
+Solomon Islands,90,2080,40.5
+World,900,2080,44
+Africa,903,2080,35.7
+Latin America and the Caribbean,904,2080,49.8
+Northern America,905,2080,48.4
+Eastern Asia,906,2080,56.8
+Europe,908,2080,51.4
+Oceania,909,2080,47.5
+Eastern Africa,910,2080,36.2
+Middle Africa,911,2080,35.7
+Northern Africa,912,2080,42.9
+Southern Africa,913,2080,40.6
+Western Africa,914,2080,32.6
+Caribbean,915,2080,49.1
+Central America,916,2080,48.1
+South-Eastern Asia,920,2080,47.7
+Western Asia,922,2080,43.8
+Eastern Europe,923,2080,49.9
+Northern Europe,924,2080,48.8
+Southern Europe,925,2080,55.3
+Western Europe,926,2080,52.5
+Australia and New Zealand,927,2080,52
+Melanesia,928,2080,41.4
+South America,931,2080,50.8
+Asia,935,2080,47.7
+Micronesia,954,2080,43.3
+Polynesia,957,2080,44.7
+Brunei Darussalam,96,2080,53.1
+Bulgaria,100,2085,51.4
+Myanmar,104,2085,46.8
+Burundi,108,2085,39.2
+Belarus,112,2085,50.8
+Cambodia,116,2085,45.2
+Algeria,12,2085,48.3
+Cameroon,120,2085,39.3
+Canada,124,2085,53.3
+Cape Verde,132,2085,48.4
+Central African Republic,140,2085,39.3
+Sri Lanka,144,2085,49.7
+Chad,148,2085,35.5
+Chile,152,2085,56.1
+China,156,2085,56.9
+Taiwan Province of China,158,2085,57.2
+Colombia,170,2085,52.2
+Comoros,174,2085,39.4
+Mayotte,175,2085,45.7
+Congo,178,2085,39.7
+Democratic Republic of the Congo,180,2085,36.4
+Costa Rica,188,2085,57.3
+Croatia,191,2085,54.9
+Cuba,192,2085,59.4
+Cyprus,196,2085,56.8
+Czech Republic,203,2085,51.9
+Benin,204,2085,38.3
+Denmark,208,2085,48.1
+Dominican Republic,214,2085,47.9
+Ecuador,218,2085,49.3
+El Salvador,222,2085,49.3
+Equatorial Guinea,226,2085,37.9
+Ethiopia,231,2085,43.1
+Eritrea,232,2085,39.9
+Estonia,233,2085,50.4
+Angola,24,2085,37.2
+Fiji,242,2085,46.3
+Finland,246,2085,48.5
+France,250,2085,50.2
+French Guiana,254,2085,48.3
+French Polynesia,258,2085,46.7
+Djibouti,262,2085,42.6
+Gabon,266,2085,43
+Georgia,268,2085,50.1
+Gambia,270,2085,38.9
+Occupied Palestinian Territory,275,2085,43.4
+Germany,276,2085,56.1
+Antigua and Barbuda,28,2085,46.7
+Ghana,288,2085,38.6
+Kiribati,296,2085,38.8
+Greece,300,2085,55.7
+Grenada,308,2085,49.4
+Azerbaijan,31,2085,49.1
+Guadeloupe,312,2085,50
+Guam,316,2085,51.1
+Argentina,32,2085,49.6
+Guatemala,320,2085,44.2
+Guinea,324,2085,37.9
+Guyana,328,2085,47.4
+Haiti,332,2085,46.2
+Honduras,340,2085,47.3
+Hong Kong Special Administrative Region of China,344,2085,63.1
+Hungary,348,2085,52.9
+Iceland,352,2085,49.2
+India,356,2085,46.7
+Australia,36,2085,52.7
+Indonesia,360,2085,49.6
+Iran (Islamic Republic of),364,2085,55.5
+Iraq,368,2085,42.1
+Ireland,372,2085,48.5
+Israel,376,2085,40.4
+Italy,380,2085,56.4
+Cote d'Ivoire,384,2085,38.7
+Jamaica,388,2085,50.8
+Japan,392,2085,61.3
+Kazakhstan,398,2085,46.5
+Afghanistan,4,2085,33.2
+Austria,40,2085,56.8
+Jordan,400,2085,46.3
+Kenya,404,2085,38.3
+Democratic People's Republic of Korea,408,2085,53.9
+Republic of Korea,410,2085,59.3
+Kuwait,414,2085,51.2
+Kyrgyzstan,417,2085,45.9
+Lao People's Democratic Republic,418,2085,44.1
+Lebanon,422,2085,54.4
+Lesotho,426,2085,38
+Latvia,428,2085,52.8
+Liberia,430,2085,38
+Libyan Arab Jamahiriya,434,2085,48.8
+Bahamas,44,2085,52.1
+Lithuania,440,2085,52.6
+Luxembourg,442,2085,52.1
+Macao Special Administrative Region of China,446,2085,62.9
+Madagascar,450,2085,40.9
+Malawi,454,2085,33.9
+Malaysia,458,2085,48.7
+Maldives,462,2085,57
+Mali,466,2085,36
+Malta,470,2085,55.8
+Martinique,474,2085,49
+Mauritania,478,2085,40.5
+Bahrain,48,2085,50.6
+Mauritius,480,2085,50.7
+Mexico,484,2085,50.4
+Mongolia,496,2085,43.3
+Republic of Moldova,498,2085,51.7
+Montenegro,499,2085,53.9
+Bangladesh,50,2085,50
+Morocco,504,2085,49.2
+Mozambique,508,2085,38.4
+Armenia,51,2085,50.6
+Oman,512,2085,49.5
+Namibia,516,2085,41.6
+Barbados,52,2085,56.5
+Nepal,524,2085,48.3
+Netherlands,528,2085,52.6
+Curaçao,531,2085,51.3
+Aruba,533,2085,55.8
+New Caledonia,540,2085,48.8
+Vanuatu,548,2085,44.7
+Central Asia,5500,2085,46.1
+Southern Asia,5501,2085,45.7
+New Zealand,554,2085,51.8
+Nicaragua,558,2085,49.6
+Belgium,56,2085,51.8
+Niger,562,2085,30.3
+Nigeria,566,2085,32.5
+Norway,578,2085,49
+Micronesia (Federated States of),583,2085,44.3
+Pakistan,586,2085,41.3
+Panama,591,2085,49.7
+Papua New Guinea,598,2085,42.1
+Paraguay,600,2085,46.9
+Peru,604,2085,48.3
+Philippines,608,2085,44.3
+Poland,616,2085,51.9
+Portugal,620,2085,54.4
+Guinea-Bissau,624,2085,37.9
+Timor-Leste,626,2085,35.4
+Puerto Rico,630,2085,57.6
+Qatar,634,2085,57.5
+Reunion,638,2085,48.4
+Bhutan,64,2085,48.1
+Romania,642,2085,54.1
+Russian Federation,643,2085,47.9
+Rwanda,646,2085,36.5
+Saint Lucia,662,2085,52.8
+Saint Vincent and the Grenadines,670,2085,50.3
+Sao Tome and Principe,678,2085,42.3
+Bolivia (Plurinational State of),68,2085,43.1
+Saudi Arabia,682,2085,47.5
+Senegal,686,2085,38.8
+Serbia,688,2085,52.3
+Seychelles,690,2085,45
+Sierra Leone,694,2085,38.5
+Bosnia and Herzegovina,70,2085,56.1
+Singapore,702,2085,60.3
+Slovakia,703,2085,51.3
+Viet Nam,704,2085,55.5
+Slovenia,705,2085,52.7
+Somalia,706,2085,35.1
+South Africa,710,2085,41.7
+Zimbabwe,716,2085,41.4
+Botswana,72,2085,42.5
+Spain,724,2085,55.6
+South Sudan,728,2085,36.1
+Sudan,729,2085,37.1
+Western Sahara,732,2085,44.8
+Suriname,740,2085,46.1
+Swaziland,748,2085,38.8
+Sweden,752,2085,49
+Switzerland,756,2085,54.9
+Brazil,76,2085,54.6
+Syrian Arab Republic,760,2085,47.6
+Tajikistan,762,2085,44
+Thailand,764,2085,53.2
+Togo,768,2085,40
+Tonga,776,2085,45.3
+Trinidad and Tobago,780,2085,53.1
+United Arab Emirates,784,2085,57.7
+Tunisia,788,2085,51.7
+Turkey,792,2085,50.8
+Turkmenistan,795,2085,45.1
+Albania,8,2085,57.4
+Uganda,800,2085,32.7
+Ukraine,804,2085,49.8
+The former Yugoslav Republic of Macedonia,807,2085,52.3
+Egypt,818,2085,45.4
+United Kingdom of Great Britain and Northern Ireland,826,2085,49.3
+Channel Islands,830,2085,56.1
+United Republic of Tanzania,834,2085,37.3
+Belize,84,2085,47.2
+United States of America,840,2085,48.6
+United States Virgin Islands,850,2085,54.6
+Burkina Faso,854,2085,35.1
+Uruguay,858,2085,54.2
+Uzbekistan,860,2085,47
+Venezuela (Bolivarian Republic of),862,2085,50
+Samoa,882,2085,45.7
+Yemen,887,2085,37.8
+Zambia,894,2085,34.3
+Solomon Islands,90,2085,41.7
+World,900,2085,44.9
+Africa,903,2085,37.1
+Latin America and the Caribbean,904,2085,50.9
+Northern America,905,2085,49
+Eastern Asia,906,2085,57.2
+Europe,908,2085,51.6
+Oceania,909,2085,48.3
+Eastern Africa,910,2085,37.7
+Middle Africa,911,2085,37
+Northern Africa,912,2085,44.2
+Southern Africa,913,2085,41.5
+Western Africa,914,2085,34
+Caribbean,915,2085,50.2
+Central America,916,2085,49.4
+South-Eastern Asia,920,2085,48.7
+Western Asia,922,2085,45.1
+Eastern Europe,923,2085,49.7
+Northern Europe,924,2085,49.2
+Southern Europe,925,2085,55.5
+Western Europe,926,2085,53
+Australia and New Zealand,927,2085,52.5
+Melanesia,928,2085,42.5
+South America,931,2085,51.8
+Asia,935,2085,48.5
+Micronesia,954,2085,44.3
+Polynesia,957,2085,46
+Brunei Darussalam,96,2085,54
+Bulgaria,100,2090,51.8
+Myanmar,104,2090,47
+Burundi,108,2090,40.3
+Belarus,112,2090,51.1
+Cambodia,116,2090,46.3
+Algeria,12,2090,49.3
+Cameroon,120,2090,40.3
+Canada,124,2090,53.5
+Cape Verde,132,2090,49.6
+Central African Republic,140,2090,40.3
+Sri Lanka,144,2090,51
+Chad,148,2090,36.8
+Chile,152,2090,57
+China,156,2090,57
+Taiwan Province of China,158,2090,57.1
+Colombia,170,2090,53.4
+Comoros,174,2090,40.6
+Mayotte,175,2090,47.5
+Congo,178,2090,40.9
+Democratic Republic of the Congo,180,2090,37.5
+Costa Rica,188,2090,58.2
+Croatia,191,2090,55.3
+Cuba,192,2090,60.1
+Cyprus,196,2090,56.9
+Czech Republic,203,2090,52
+Benin,204,2090,39.5
+Denmark,208,2090,48.5
+Dominican Republic,214,2090,49.2
+Ecuador,218,2090,50.6
+El Salvador,222,2090,50.3
+Equatorial Guinea,226,2090,39.1
+Ethiopia,231,2090,45
+Eritrea,232,2090,41.2
+Estonia,233,2090,50.7
+Angola,24,2090,38.4
+Fiji,242,2090,47.5
+Finland,246,2090,49
+France,250,2090,51.1
+French Guiana,254,2090,49.9
+French Polynesia,258,2090,47.4
+Djibouti,262,2090,43.5
+Gabon,266,2090,44.1
+Georgia,268,2090,50.9
+Gambia,270,2090,40
+Occupied Palestinian Territory,275,2090,45
+Germany,276,2090,56.4
+Antigua and Barbuda,28,2090,47.2
+Ghana,288,2090,40
+Kiribati,296,2090,39.8
+Greece,300,2090,56.2
+Grenada,308,2090,50.5
+Azerbaijan,31,2090,49.8
+Guadeloupe,312,2090,51.1
+Guam,316,2090,52.3
+Argentina,32,2090,50.8
+Guatemala,320,2090,45.5
+Guinea,324,2090,39.1
+Guyana,328,2090,48.4
+Haiti,332,2090,47.2
+Honduras,340,2090,48.6
+Hong Kong Special Administrative Region of China,344,2090,63.6
+Hungary,348,2090,53.2
+Iceland,352,2090,49.8
+India,356,2090,47.6
+Australia,36,2090,53.2
+Indonesia,360,2090,50.6
+Iran (Islamic Republic of),364,2090,56
+Iraq,368,2090,43.9
+Ireland,372,2090,49.6
+Israel,376,2090,41.4
+Italy,380,2090,57
+Cote d'Ivoire,384,2090,39.9
+Jamaica,388,2090,51.7
+Japan,392,2090,61.7
+Kazakhstan,398,2090,47.8
+Afghanistan,4,2090,34.7
+Austria,40,2090,57
+Jordan,400,2090,47.7
+Kenya,404,2090,39.6
+Democratic People's Republic of Korea,408,2090,54.6
+Republic of Korea,410,2090,59.9
+Kuwait,414,2090,52.2
+Kyrgyzstan,417,2090,47.2
+Lao People's Democratic Republic,418,2090,45.1
+Lebanon,422,2090,54.8
+Lesotho,426,2090,39
+Latvia,428,2090,53
+Liberia,430,2090,39.3
+Libyan Arab Jamahiriya,434,2090,50
+Bahamas,44,2090,52.7
+Lithuania,440,2090,52.9
+Luxembourg,442,2090,52.3
+Macao Special Administrative Region of China,446,2090,63
+Madagascar,450,2090,42.4
+Malawi,454,2090,35.5
+Malaysia,458,2090,49.5
+Maldives,462,2090,57.5
+Mali,466,2090,37.3
+Malta,470,2090,56
+Martinique,474,2090,50
+Mauritania,478,2090,41.8
+Bahrain,48,2090,51.2
+Mauritius,480,2090,51.2
+Mexico,484,2090,51.7
+Mongolia,496,2090,44.5
+Republic of Moldova,498,2090,51.8
+Montenegro,499,2090,54.5
+Bangladesh,50,2090,51
+Morocco,504,2090,50.2
+Mozambique,508,2090,39.5
+Armenia,51,2090,51.1
+Oman,512,2090,49.8
+Namibia,516,2090,42.7
+Barbados,52,2090,57.4
+Nepal,524,2090,49.4
+Netherlands,528,2090,53.3
+Curaçao,531,2090,51.9
+Aruba,533,2090,56.9
+New Caledonia,540,2090,49.4
+Vanuatu,548,2090,46.2
+Central Asia,5500,2090,47.4
+Southern Asia,5501,2090,46.6
+New Zealand,554,2090,52.5
+Nicaragua,558,2090,50.8
+Belgium,56,2090,52.4
+Niger,562,2090,31.9
+Nigeria,566,2090,33.9
+Norway,578,2090,49.5
+Micronesia (Federated States of),583,2090,45.2
+Pakistan,586,2090,42.6
+Panama,591,2090,51.1
+Papua New Guinea,598,2090,43.1
+Paraguay,600,2090,48.1
+Peru,604,2090,49.4
+Philippines,608,2090,45.6
+Poland,616,2090,52
+Portugal,620,2090,54.8
+Guinea-Bissau,624,2090,38.9
+Timor-Leste,626,2090,36.8
+Puerto Rico,630,2090,58.4
+Qatar,634,2090,55.5
+Reunion,638,2090,49.4
+Bhutan,64,2090,49
+Romania,642,2090,54.7
+Russian Federation,643,2090,48.3
+Rwanda,646,2090,37.8
+Saint Lucia,662,2090,53.2
+Saint Vincent and the Grenadines,670,2090,51.3
+Sao Tome and Principe,678,2090,43.3
+Bolivia (Plurinational State of),68,2090,44.2
+Saudi Arabia,682,2090,48.7
+Senegal,686,2090,40.2
+Serbia,688,2090,52.9
+Seychelles,690,2090,45.9
+Sierra Leone,694,2090,39.7
+Bosnia and Herzegovina,70,2090,56.7
+Singapore,702,2090,61
+Slovakia,703,2090,51.4
+Viet Nam,704,2090,56.2
+Slovenia,705,2090,52.8
+Somalia,706,2090,36.5
+South Africa,710,2090,42.5
+Zimbabwe,716,2090,42.6
+Botswana,72,2090,43.1
+Spain,724,2090,55.8
+South Sudan,728,2090,37.3
+Sudan,729,2090,38.1
+Western Sahara,732,2090,45.7
+Suriname,740,2090,47.2
+Swaziland,748,2090,39.8
+Sweden,752,2090,49.3
+Switzerland,756,2090,55
+Brazil,76,2090,55.3
+Syrian Arab Republic,760,2090,49.3
+Tajikistan,762,2090,45.4
+Thailand,764,2090,53.3
+Togo,768,2090,41.1
+Tonga,776,2090,46.8
+Trinidad and Tobago,780,2090,53.9
+United Arab Emirates,784,2090,56.8
+Tunisia,788,2090,52.3
+Turkey,792,2090,51.6
+Turkmenistan,795,2090,46.4
+Albania,8,2090,58.1
+Uganda,800,2090,34.3
+Ukraine,804,2090,50.1
+The former Yugoslav Republic of Macedonia,807,2090,52.7
+Egypt,818,2090,47
+United Kingdom of Great Britain and Northern Ireland,826,2090,49.8
+Channel Islands,830,2090,56.5
+United Republic of Tanzania,834,2090,38.7
+Belize,84,2090,48.7
+United States of America,840,2090,49.2
+United States Virgin Islands,850,2090,56
+Burkina Faso,854,2090,36.5
+Uruguay,858,2090,55.2
+Uzbekistan,860,2090,48.2
+Venezuela (Bolivarian Republic of),862,2090,51.3
+Samoa,882,2090,47.2
+Yemen,887,2090,39.3
+Zambia,894,2090,35.7
+Solomon Islands,90,2090,42.8
+World,900,2090,45.8
+Africa,903,2090,38.4
+Latin America and the Caribbean,904,2090,52
+Northern America,905,2090,49.5
+Eastern Asia,906,2090,57.4
+Europe,908,2090,52
+Oceania,909,2090,49.1
+Eastern Africa,910,2090,39.1
+Middle Africa,911,2090,38.2
+Northern Africa,912,2090,45.4
+Southern Africa,913,2090,42.3
+Western Africa,914,2090,35.4
+Caribbean,915,2090,51.2
+Central America,916,2090,50.7
+South-Eastern Asia,920,2090,49.6
+Western Asia,922,2090,46.3
+Eastern Europe,923,2090,50
+Northern Europe,924,2090,49.8
+Southern Europe,925,2090,56
+Western Europe,926,2090,53.6
+Australia and New Zealand,927,2090,53
+Melanesia,928,2090,43.6
+South America,931,2090,52.8
+Asia,935,2090,49.3
+Micronesia,954,2090,45.3
+Polynesia,957,2090,47.2
+Brunei Darussalam,96,2090,54.9
+Bulgaria,100,2095,52.4
+Myanmar,104,2095,47.2
+Burundi,108,2095,41.2
+Belarus,112,2095,51.8
+Cambodia,116,2095,47.4
+Algeria,12,2095,50.6
+Cameroon,120,2095,41.3
+Canada,124,2095,53.8
+Cape Verde,132,2095,50.8
+Central African Republic,140,2095,41.3
+Sri Lanka,144,2095,52.1
+Chad,148,2095,37.9
+Chile,152,2095,57.8
+China,156,2095,57.3
+Taiwan Province of China,158,2095,56.9
+Colombia,170,2095,54.4
+Comoros,174,2095,41.6
+Mayotte,175,2095,49.2
+Congo,178,2095,42
+Democratic Republic of the Congo,180,2095,38.6
+Costa Rica,188,2095,59.1
+Croatia,191,2095,55.8
+Cuba,192,2095,60.7
+Cyprus,196,2095,57
+Czech Republic,203,2095,52.7
+Benin,204,2095,40.6
+Denmark,208,2095,48.9
+Dominican Republic,214,2095,50.5
+Ecuador,218,2095,51.9
+El Salvador,222,2095,51.3
+Equatorial Guinea,226,2095,40.2
+Ethiopia,231,2095,46.7
+Eritrea,232,2095,42.5
+Estonia,233,2095,51.4
+Angola,24,2095,39.6
+Fiji,242,2095,48.6
+Finland,246,2095,49.6
+France,250,2095,52
+French Guiana,254,2095,51.5
+French Polynesia,258,2095,48.1
+Djibouti,262,2095,44.3
+Gabon,266,2095,45.2
+Georgia,268,2095,51.8
+Gambia,270,2095,41
+Occupied Palestinian Territory,275,2095,46.6
+Germany,276,2095,56.8
+Antigua and Barbuda,28,2095,47.7
+Ghana,288,2095,41.3
+Kiribati,296,2095,40.7
+Greece,300,2095,56.9
+Grenada,308,2095,51.7
+Azerbaijan,31,2095,50.5
+Guadeloupe,312,2095,51.8
+Guam,316,2095,53.4
+Argentina,32,2095,52
+Guatemala,320,2095,46.7
+Guinea,324,2095,40.3
+Guyana,328,2095,49.4
+Haiti,332,2095,48.1
+Honduras,340,2095,49.9
+Hong Kong Special Administrative Region of China,344,2095,63.6
+Hungary,348,2095,53.6
+Iceland,352,2095,50.5
+India,356,2095,48.5
+Australia,36,2095,53.7
+Indonesia,360,2095,51.4
+Iran (Islamic Republic of),364,2095,56.9
+Iraq,368,2095,45.6
+Ireland,372,2095,50.9
+Israel,376,2095,42.2
+Italy,380,2095,57.7
+Cote d'Ivoire,384,2095,41
+Jamaica,388,2095,52.5
+Japan,392,2095,62.3
+Kazakhstan,398,2095,49.3
+Afghanistan,4,2095,36.1
+Austria,40,2095,57.2
+Jordan,400,2095,49.1
+Kenya,404,2095,40.7
+Democratic People's Republic of Korea,408,2095,55.2
+Republic of Korea,410,2095,60.5
+Kuwait,414,2095,53.5
+Kyrgyzstan,417,2095,48.5
+Lao People's Democratic Republic,418,2095,46
+Lebanon,422,2095,54.9
+Lesotho,426,2095,39.9
+Latvia,428,2095,53.5
+Liberia,430,2095,40.5
+Libyan Arab Jamahiriya,434,2095,51.4
+Bahamas,44,2095,53.4
+Lithuania,440,2095,53.4
+Luxembourg,442,2095,52.8
+Macao Special Administrative Region of China,446,2095,62.7
+Madagascar,450,2095,43.9
+Malawi,454,2095,37
+Malaysia,458,2095,50.4
+Maldives,462,2095,58.1
+Mali,466,2095,38.4
+Malta,470,2095,56.1
+Martinique,474,2095,50.8
+Mauritania,478,2095,43
+Bahrain,48,2095,52.3
+Mauritius,480,2095,51.6
+Mexico,484,2095,52.9
+Mongolia,496,2095,45.9
+Republic of Moldova,498,2095,52.3
+Montenegro,499,2095,55.1
+Bangladesh,50,2095,51.9
+Morocco,504,2095,51.1
+Mozambique,508,2095,40.5
+Armenia,51,2095,51.7
+Oman,512,2095,50.9
+Namibia,516,2095,43.7
+Barbados,52,2095,58.3
+Nepal,524,2095,50.6
+Netherlands,528,2095,53.9
+Curaçao,531,2095,52.4
+Aruba,533,2095,57.8
+New Caledonia,540,2095,50.1
+Vanuatu,548,2095,47.5
+Central Asia,5500,2095,48.7
+Southern Asia,5501,2095,47.5
+New Zealand,554,2095,53.2
+Nicaragua,558,2095,52
+Belgium,56,2095,53.1
+Niger,562,2095,33.4
+Nigeria,566,2095,35.3
+Norway,578,2095,50.1
+Micronesia (Federated States of),583,2095,46.1
+Pakistan,586,2095,43.9
+Panama,591,2095,52.3
+Papua New Guinea,598,2095,44
+Paraguay,600,2095,49.2
+Peru,604,2095,50.5
+Philippines,608,2095,46.8
+Poland,616,2095,52.4
+Portugal,620,2095,55.2
+Guinea-Bissau,624,2095,39.8
+Timor-Leste,626,2095,38.3
+Puerto Rico,630,2095,59
+Qatar,634,2095,55
+Reunion,638,2095,50.3
+Bhutan,64,2095,50
+Romania,642,2095,55.2
+Russian Federation,643,2095,49.2
+Rwanda,646,2095,39.1
+Saint Lucia,662,2095,53.6
+Saint Vincent and the Grenadines,670,2095,52.1
+Sao Tome and Principe,678,2095,44.3
+Bolivia (Plurinational State of),68,2095,45.2
+Saudi Arabia,682,2095,50.2
+Senegal,686,2095,41.5
+Serbia,688,2095,53.4
+Seychelles,690,2095,46.7
+Sierra Leone,694,2095,40.9
+Bosnia and Herzegovina,70,2095,57.1
+Singapore,702,2095,61.5
+Slovakia,703,2095,51.8
+Viet Nam,704,2095,56.9
+Slovenia,705,2095,53.4
+Somalia,706,2095,37.8
+South Africa,710,2095,43.2
+Zimbabwe,716,2095,43.6
+Botswana,72,2095,43.6
+Spain,724,2095,56.4
+South Sudan,728,2095,38.4
+Sudan,729,2095,39.1
+Western Sahara,732,2095,46.6
+Suriname,740,2095,48.3
+Swaziland,748,2095,40.8
+Sweden,752,2095,50
+Switzerland,756,2095,55.2
+Brazil,76,2095,55.9
+Syrian Arab Republic,760,2095,50.7
+Tajikistan,762,2095,46.6
+Thailand,764,2095,53.3
+Togo,768,2095,42.1
+Tonga,776,2095,48.1
+Trinidad and Tobago,780,2095,54.8
+United Arab Emirates,784,2095,57.1
+Tunisia,788,2095,53
+Turkey,792,2095,52.3
+Turkmenistan,795,2095,47.7
+Albania,8,2095,58.5
+Uganda,800,2095,35.9
+Ukraine,804,2095,50.8
+The former Yugoslav Republic of Macedonia,807,2095,53.1
+Egypt,818,2095,48.5
+United Kingdom of Great Britain and Northern Ireland,826,2095,50.6
+Channel Islands,830,2095,57
+United Republic of Tanzania,834,2095,40
+Belize,84,2095,50.2
+United States of America,840,2095,49.8
+United States Virgin Islands,850,2095,57.3
+Burkina Faso,854,2095,37.8
+Uruguay,858,2095,56
+Uzbekistan,860,2095,49.4
+Venezuela (Bolivarian Republic of),862,2095,52.5
+Samoa,882,2095,48.4
+Yemen,887,2095,40.7
+Zambia,894,2095,37.1
+Solomon Islands,90,2095,43.7
+World,900,2095,46.7
+Africa,903,2095,39.7
+Latin America and the Caribbean,904,2095,53
+Northern America,905,2095,50.1
+Eastern Asia,906,2095,57.6
+Europe,908,2095,52.6
+Oceania,909,2095,49.9
+Eastern Africa,910,2095,40.5
+Middle Africa,911,2095,39.2
+Northern Africa,912,2095,46.6
+Southern Africa,913,2095,43.1
+Western Africa,914,2095,36.7
+Caribbean,915,2095,52.1
+Central America,916,2095,51.9
+South-Eastern Asia,920,2095,50.4
+Western Asia,922,2095,47.5
+Eastern Europe,923,2095,50.7
+Northern Europe,924,2095,50.5
+Southern Europe,925,2095,56.6
+Western Europe,926,2095,54.2
+Australia and New Zealand,927,2095,53.6
+Melanesia,928,2095,44.5
+South America,931,2095,53.7
+Asia,935,2095,50.1
+Micronesia,954,2095,46.2
+Polynesia,957,2095,48.2
+Brunei Darussalam,96,2095,55.7
+Bulgaria,100,2100,53.2
+Myanmar,104,2100,47.3
+Burundi,108,2100,42.1
+Belarus,112,2100,52.8
+Cambodia,116,2100,48.4
+Algeria,12,2100,51.9
+Cameroon,120,2100,42.1
+Canada,124,2100,54.3
+Cape Verde,132,2100,52
+Central African Republic,140,2100,42.2
+Sri Lanka,144,2100,53.1
+Chad,148,2100,39
+Chile,152,2100,58.6
+China,156,2100,57.7
+Taiwan Province of China,158,2100,56.6
+Colombia,170,2100,55.5
+Comoros,174,2100,42.6
+Mayotte,175,2100,50.8
+Congo,178,2100,43
+Democratic Republic of the Congo,180,2100,39.6
+Costa Rica,188,2100,59.8
+Croatia,191,2100,56.4
+Cuba,192,2100,61.3
+Cyprus,196,2100,57.4
+Czech Republic,203,2100,53.6
+Benin,204,2100,41.6
+Denmark,208,2100,49.3
+Dominican Republic,214,2100,51.6
+Ecuador,218,2100,53.2
+El Salvador,222,2100,52.2
+Equatorial Guinea,226,2100,41.2
+Ethiopia,231,2100,48.4
+Eritrea,232,2100,43.6
+Estonia,233,2100,52.2
+Angola,24,2100,40.6
+Fiji,242,2100,49.7
+Finland,246,2100,50.4
+France,250,2100,52.9
+French Guiana,254,2100,52.9
+French Polynesia,258,2100,48.7
+Djibouti,262,2100,45.1
+Gabon,266,2100,46.1
+Georgia,268,2100,52.6
+Gambia,270,2100,42
+Occupied Palestinian Territory,275,2100,48.1
+Germany,276,2100,57.2
+Antigua and Barbuda,28,2100,48.2
+Ghana,288,2100,42.6
+Kiribati,296,2100,41.4
+Greece,300,2100,57.7
+Grenada,308,2100,52.9
+Azerbaijan,31,2100,51.1
+Guadeloupe,312,2100,52.4
+Guam,316,2100,54.3
+Argentina,32,2100,53.1
+Guatemala,320,2100,48
+Guinea,324,2100,41.4
+Guyana,328,2100,50.4
+Haiti,332,2100,49
+Honduras,340,2100,51.2
+Hong Kong Special Administrative Region of China,344,2100,63.3
+Hungary,348,2100,54.1
+Iceland,352,2100,51.3
+India,356,2100,49.3
+Australia,36,2100,54.5
+Indonesia,360,2100,52.1
+Iran (Islamic Republic of),364,2100,57.9
+Iraq,368,2100,47.2
+Ireland,372,2100,52
+Israel,376,2100,43.1
+Italy,380,2100,58.5
+Cote d'Ivoire,384,2100,42
+Jamaica,388,2100,53.4
+Japan,392,2100,62.9
+Kazakhstan,398,2100,50.6
+Afghanistan,4,2100,37.5
+Austria,40,2100,57.6
+Jordan,400,2100,50.5
+Kenya,404,2100,41.8
+Democratic People's Republic of Korea,408,2100,55.7
+Republic of Korea,410,2100,60.7
+Kuwait,414,2100,54.9
+Kyrgyzstan,417,2100,49.8
+Lao People's Democratic Republic,418,2100,46.9
+Lebanon,422,2100,54.8
+Lesotho,426,2100,40.7
+Latvia,428,2100,54.3
+Liberia,430,2100,41.6
+Libyan Arab Jamahiriya,434,2100,52.7
+Bahamas,44,2100,54.2
+Lithuania,440,2100,54.1
+Luxembourg,442,2100,53.5
+Macao Special Administrative Region of China,446,2100,62.3
+Madagascar,450,2100,45.3
+Malawi,454,2100,38.5
+Malaysia,458,2100,51.5
+Maldives,462,2100,59.2
+Mali,466,2100,39.6
+Malta,470,2100,56.4
+Martinique,474,2100,51.4
+Mauritania,478,2100,44.2
+Bahrain,48,2100,53.6
+Mauritius,480,2100,51.9
+Mexico,484,2100,54.2
+Mongolia,496,2100,47.1
+Republic of Moldova,498,2100,53
+Montenegro,499,2100,55.6
+Bangladesh,50,2100,52.7
+Morocco,504,2100,52.1
+Mozambique,508,2100,41.4
+Armenia,51,2100,52.4
+Oman,512,2100,52.2
+Namibia,516,2100,44.6
+Barbados,52,2100,59.2
+Nepal,524,2100,51.7
+Netherlands,528,2100,54.5
+Curaçao,531,2100,52.7
+Aruba,533,2100,58.4
+New Caledonia,540,2100,50.7
+Vanuatu,548,2100,48.7
+Central Asia,5500,2100,49.9
+Southern Asia,5501,2100,48.5
+New Zealand,554,2100,53.9
+Nicaragua,558,2100,53.2
+Belgium,56,2100,54
+Niger,562,2100,35
+Nigeria,566,2100,36.7
+Norway,578,2100,50.9
+Micronesia (Federated States of),583,2100,47.2
+Pakistan,586,2100,45.1
+Panama,591,2100,53.5
+Papua New Guinea,598,2100,44.9
+Paraguay,600,2100,50.3
+Peru,604,2100,51.6
+Philippines,608,2100,48.1
+Poland,616,2100,53
+Portugal,620,2100,55.6
+Guinea-Bissau,624,2100,40.7
+Timor-Leste,626,2100,39.6
+Puerto Rico,630,2100,59.5
+Qatar,634,2100,55.6
+Reunion,638,2100,51.1
+Bhutan,64,2100,51.1
+Romania,642,2100,55.8
+Russian Federation,643,2100,50.2
+Rwanda,646,2100,40.3
+Saint Lucia,662,2100,54
+Saint Vincent and the Grenadines,670,2100,53
+Sao Tome and Principe,678,2100,45.2
+Bolivia (Plurinational State of),68,2100,46.1
+Saudi Arabia,682,2100,51.6
+Senegal,686,2100,42.7
+Serbia,688,2100,53.9
+Seychelles,690,2100,47.3
+Sierra Leone,694,2100,41.9
+Bosnia and Herzegovina,70,2100,57.5
+Singapore,702,2100,62
+Slovakia,703,2100,52.4
+Viet Nam,704,2100,57.7
+Slovenia,705,2100,54.3
+Somalia,706,2100,39
+South Africa,710,2100,43.9
+Zimbabwe,716,2100,44.5
+Botswana,72,2100,44
+Spain,724,2100,57.2
+South Sudan,728,2100,39.5
+Sudan,729,2100,40
+Western Sahara,732,2100,47.5
+Suriname,740,2100,49.4
+Swaziland,748,2100,41.7
+Sweden,752,2100,51
+Switzerland,756,2100,55.8
+Brazil,76,2100,56.5
+Syrian Arab Republic,760,2100,51.9
+Tajikistan,762,2100,47.7
+Thailand,764,2100,53.3
+Togo,768,2100,43
+Tonga,776,2100,49.3
+Trinidad and Tobago,780,2100,55.6
+United Arab Emirates,784,2100,58
+Tunisia,788,2100,53.9
+Turkey,792,2100,52.9
+Turkmenistan,795,2100,48.8
+Albania,8,2100,58.8
+Uganda,800,2100,37.4
+Ukraine,804,2100,51.6
+The former Yugoslav Republic of Macedonia,807,2100,53.7
+Egypt,818,2100,49.8
+United Kingdom of Great Britain and Northern Ireland,826,2100,51.6
+Channel Islands,830,2100,57.6
+United Republic of Tanzania,834,2100,41.2
+Belize,84,2100,51.7
+United States of America,840,2100,50.5
+United States Virgin Islands,850,2100,58.4
+Burkina Faso,854,2100,39.1
+Uruguay,858,2100,56.7
+Uzbekistan,860,2100,50.5
+Venezuela (Bolivarian Republic of),862,2100,53.7
+Samoa,882,2100,49.5
+Yemen,887,2100,42.1
+Zambia,894,2100,38.4
+Solomon Islands,90,2100,44.6
+World,900,2100,47.6
+Africa,903,2100,40.9
+Latin America and the Caribbean,904,2100,53.9
+Northern America,905,2100,50.8
+Eastern Asia,906,2100,58.1
+Europe,908,2100,53.4
+Oceania,909,2100,50.8
+Eastern Africa,910,2100,41.8
+Middle Africa,911,2100,40.2
+Northern Africa,912,2100,47.8
+Southern Africa,913,2100,43.7
+Western Africa,914,2100,38
+Caribbean,915,2100,53
+Central America,916,2100,53.1
+South-Eastern Asia,920,2100,51.2
+Western Asia,922,2100,48.6
+Eastern Europe,923,2100,51.5
+Northern Europe,924,2100,51.4
+Southern Europe,925,2100,57.3
+Western Europe,926,2100,54.8
+Australia and New Zealand,927,2100,54.4
+Melanesia,928,2100,45.4
+South America,931,2100,54.5
+Asia,935,2100,50.9
+Micronesia,954,2100,47.1
+Polynesia,957,2100,49.2
+Brunei Darussalam,96,2100,56.6

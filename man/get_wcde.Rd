@@ -13,7 +13,7 @@ get_wcde(
 )
 }
 \arguments{
-\item{indicator}{One character string based on the \code{name} column in the \code{wic_indicators} data frame, representing the variable to be interested.}
+\item{indicator}{One character string based on the \code{indicator} column in the \code{wic_indicators} data frame, representing the variable to be downloaded.}
 
 \item{scenario}{Vector of length one or more with numbers corresponding the scenarios. See details for more information. Defaults to 2 for the SSP2 Medium scenario.}
 
@@ -24,7 +24,7 @@ get_wcde(
 \item{include_scenario_names}{Logical vector of length one to indicate if to include additional columns for scenario names and short names. \code{FALSE} by default.}
 }
 \value{
-A tibble with the data selected.
+A \link[tibble:tibble-package]{tibble} with the data selected.
 }
 \description{
 Downloads data from the Wittgenstein Centre Human Capital Data Explorer. Requires a working internet connection.

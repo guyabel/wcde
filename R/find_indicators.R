@@ -2,7 +2,7 @@
 #'
 #' @param x Character string on key word or name related to indicator of potential interest.
 #'
-#' @return A subset of the wic_indicators data frame with one or more of the `indicator`, `description` or `definition` columns matching the keyword given to `x`. Use the result in the `indicator` column to input to the `wcde` function for downloading data.
+#' @return A subset of the `wic_indicators` data frame with one or more of the `indicator`, `description` or `definition` columns matching the keyword given to `x`. Use the result in the `indicator` column to input to the `get_wcde` function for downloading data.
 #' @export
 #'
 #' @examples
@@ -18,3 +18,4 @@ find_indicator <- function(x){
                           pattern = stringr::regex(x, ignore_case = TRUE))
     ))
 }
+

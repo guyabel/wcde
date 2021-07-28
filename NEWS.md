@@ -1,4 +1,8 @@
 # wcde 0.0.1
 
-* Added a `NEWS.md` file to track changes to the package.
-* Basic set up before CRAN submission
+* Initial version
+
+# wcde 0.0.2
+
+* Expanded vignette to include animation
+* Removed export from `wcde_pull()`

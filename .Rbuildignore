@@ -14,3 +14,8 @@
 ^hex$
 ^tests$
 ^world6_ssp2\.gif$
+^data-host$
+^data-host-batch$
+^build_package\.R$
+^data1\.R$
+^data2\.R$

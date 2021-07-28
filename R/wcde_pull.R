@@ -6,7 +6,6 @@
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
 #'
 #' @return A tibble with multiple columns.
-#' @export
 #' @keywords internal
 #'
 #' @examples

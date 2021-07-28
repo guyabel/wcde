@@ -10,7 +10,7 @@ find_indicator(x)
 \item{x}{Character string on key word or name related to indicator of potential interest.}
 }
 \value{
-A subset of the wic_indicators data frame with one or more of the \code{indicator}, \code{description} or \code{definition} columns matching the keyword given to \code{x}. Use the result in the \code{indicator} column to input to the \code{wcde} function for downloading data.
+A subset of the \code{wic_indicators} data frame with one or more of the \code{indicator}, \code{description} or \code{definition} columns matching the keyword given to \code{x}. Use the result in the \code{indicator} column to input to the \code{get_wcde} function for downloading data.
 }
 \description{
 Find available indicator code names in the Wittgenstein Centre Human Capital Data Explorer

@@ -8,7 +8,7 @@
 A data frame with 5 rows and 3 variables, including:
 \describe{
 \item{scenario_name}{Full scenario name}
-\item{scenario}{Code to match help file of \code{wcde} function}
+\item{scenario}{Code to match help file of \code{get_wcde} function}
 \item{scenario_abb}{Short scenario name}
 }
 }

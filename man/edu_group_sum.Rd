@@ -19,7 +19,7 @@ edu_group_sum(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE)
 A tibble with the data selected.
 }
 \description{
-Cleans \code{epop} data downloaded using the \code{wcde()} function for summations of population by 4, 6 or 8 education groups.
+Cleans \code{epop} data, downloaded using the \code{wcde()} function, for summations of population by 4, 6 or 8 education groups.
 }
 \details{
 Strips the \code{epop} data set to relevant rows for the \code{n} education groups.
