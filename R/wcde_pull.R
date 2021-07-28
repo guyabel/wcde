@@ -53,7 +53,7 @@ wcde_pull <- function(indicator = NULL, scenario = 2, country_code = NULL){
   pb <- progress::progress_bar$new(total = nrow(d0))
   pb$tick(0)
   d0 <- d0 %>%
-    dplyr::mutate(u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-single/ssp",
+    dplyr::mutate(u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-single/",
                              scenario, "/", indicator, "/", country_code, ".csv"),
                   d = purrr::map(.x = u, .f = ~read_with_progress(f = .x))) %>%
     dplyr::group_by(scenario) %>%

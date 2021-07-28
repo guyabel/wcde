@@ -55,8 +55,8 @@
 #' | `1`        | Rapid Development (SSP1)              |
 #' | `2`        | Medium (SSP2)                         |
 #' | `3`        | Stalled Development (SSP3)            |
-#' | `4`        | Medium - Zero Migration (SSP2 - ZM)   |
-#' | `5`        | Medium - Double Migration (SSP2 - DM) |
+#' | `21`        | Medium - Zero Migration (SSP2 - ZM)   |
+#' | `22`        | Medium - Double Migration (SSP2 - DM) |
 #'
 #' See `wic_scenarios` data frame for more details.
 #'
@@ -98,7 +98,7 @@ get_wcde <- function(indicator = "pop", scenario = 2,
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
       dplyr::mutate(
-        u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-batch/ssp",
+        u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-batch/",
                    scenario, "/", indicator, ".csv"),
         d = purrr::map(
           .x = u,

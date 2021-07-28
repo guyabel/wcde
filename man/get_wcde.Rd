@@ -75,8 +75,8 @@ See \code{wic_indicators} data frame for more details.
    \code{1} \tab Rapid Development (SSP1) \cr
    \code{2} \tab Medium (SSP2) \cr
    \code{3} \tab Stalled Development (SSP3) \cr
-   \code{4} \tab Medium - Zero Migration (SSP2 - ZM) \cr
-   \code{5} \tab Medium - Double Migration (SSP2 - DM) \cr
+   \code{21} \tab Medium - Zero Migration (SSP2 - ZM) \cr
+   \code{22} \tab Medium - Double Migration (SSP2 - DM) \cr
 }
 
 
