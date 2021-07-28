@@ -14,11 +14,10 @@ d <- dir_ls(path = "./data-host/", recurse = 1) %>%
   as_tibble() %>%
   rename(dir = 1) %>%
   filter(str_length(dir) > 22) %>%
-  mutate(i = str_remove(string = dir, "./data-host/ssp"),
-         s = str_sub(string = i, start = 1, end = 1),
-         i = str_sub(string = i, start = 3)) %>%
-  # github wont allow over 100mb files
-  filter(!i %in% c("epop", "prop"))
+  mutate(i = str_remove(string = dir, "./data-host/")) %>%
+  separate(col = i, into = c("s", "i")) %>%
+  # github wont allow over 100mb files .. added them to .gitignore
+  # filter(!i %in% c("epop", "prop"))
 
 
 for(i in 1:nrow(d)){
@@ -61,7 +60,7 @@ for(i in 1:nrow(d)){
     {if(!ii$period) . else select(., -year)} %>%
     drop_na(.)
 
-  paste0("./data-host-batch/ssp",d$s[i],"/",d$i[i], ".csv") %>%
+  paste0("./data-host-batch/",d$s[i],"/",d$i[i], ".csv") %>%
     write_csv(x = x2, file = .)
 }
 

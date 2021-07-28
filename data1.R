@@ -14,17 +14,19 @@ d <- dir_ls(path = "../wcde-shiny/", recurse = 2) %>%
   as_tibble() %>%
   rename(file = 1) %>%
   filter(str_detect(string = file, pattern = ".RData"),
-         str_detect(string = file, pattern = "wcde/df")) %>%
-  mutate(dest = str_replace(string = file, pattern = "../wcde/df", replacement = "./data-host/ssp"),
-         dest = str_replace(string = dest, pattern = ".RData", replacement = ".csv"),
+         str_detect(string = file, pattern = "wcde-shiny/df")) %>%
+  mutate(i = str_sub(string = file, start = 19),
+         i = str_replace(string = i, pattern = ".RData", replacement = ".csv"),
          # on github ssp2 takes folder df1, ssp1 takes folder df2 because of samir's coding system
-         dest = ifelse(test = str_detect(string = file, pattern = "df1"),
-                       yes = str_replace(string = dest, pattern = "ssp1", replacement = "ssp2"),
-                       no = dest),
-         dest = ifelse(test = str_detect(string = file, pattern = "df2"),
-                       yes = str_replace(string = dest, pattern = "ssp2", replacement = "ssp1"),
-                       no = dest),
-         dest_dir = dirname(dest))
+         s = case_when(
+           str_detect(string = file, pattern = "df1") ~ 2,
+           str_detect(string = file, pattern = "df2") ~ 1,
+           str_detect(string = file, pattern = "df3") ~ 3,
+           str_detect(string = file, pattern = "df4") ~ 21,
+           str_detect(string = file, pattern = "df5") ~ 22,
+         ),
+         dest_dir = paste0("./data-host/",s),
+         dest = paste0("./data-host/",s,"/",i))
 
 
 x <- d %>%
