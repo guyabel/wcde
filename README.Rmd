@@ -62,6 +62,7 @@ get_wcde(indicator = "ggapedu15", scenario = 1:3)
 The [vignette](https://cran.r-project.org/web/packages/wcde/vignettes/intro.html) provides many more examples on how to use the package to download data and produce plots from the Wittgenstein Centre Human Capital Data Explorer.
 
 ```{r, echo=FALSE, eval=FALSE}
+# run by hand
 library(gganimate)
 
 d <- get_wcde(indicator = "epop", country_code = 900) 

@@ -127,7 +127,7 @@ By default `get_wcde()` returns data for Medium (SSP2) scenario. Results for dif
 ```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "growth", 
          country_name = c("India", "China"), 
-         scenario = 1:5) %>%
+         scenario = c(1:3, 21, 22)) %>%
   filter(period == "2095-2100")
 ```
 
@@ -135,7 +135,8 @@ Set `include_scenario_names = TRUE` to include a columns with the full names of 
 
 ```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "tfr", 
-         country_name = c("Kenya", "Nigeria", "Algeria"), scenario = c(2, 1, 5), 
+         country_name = c("Kenya", "Nigeria", "Algeria"),
+         scenario = 1:3, 
          include_scenario_names = TRUE) %>%
   filter(period == "2045-2050")
 ```
@@ -235,7 +236,9 @@ w %>%
   geom_vline(xintercept = 0, colour = "black") + 
   scale_x_symmetric(labels = abs) +
   scale_fill_manual(values = wic_col4, name = "Education") +
-  theme_bw()
+  labs(x = "Population (millions)", y = "Age") +
+  theme_bw() 
+  
 ```
 
 ## Sex label position
@@ -257,6 +260,7 @@ w %>%
   geom_vline(xintercept = 0, colour = "black") +
   scale_x_continuous(labels = abs, expand = c(0, 0)) +
   scale_fill_manual(values = wic_col4, name = "Education") +
+  labs(x = "Population (millions)", y = "Age") +
   facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
   geom_blank(mapping = aes(x = pop_max * 1.1)) +
   theme(panel.spacing.x = unit(0, "pt"),
@@ -270,7 +274,36 @@ w %>%
 Animate the pyramid through the past data and projection periods using the `transition_time()` function in the 
 [`gganimate`](https://cran.r-project.org/package=gganimate/index.html) package
 
-```{r}
+```{r, echo=FALSE, eval=FALSE}
+library(gganimate)
+
+g <- ggplot(data = w, 
+       mapping = aes(x = pop, y = age, fill = fct_rev(education))) +
+  geom_col() +
+  geom_vline(xintercept = 0, colour = "black") +
+  scale_x_continuous(labels = abs, expand = c(0, 0)) +
+  scale_fill_manual(values = wic_col4, name = "Education") +
+  facet_wrap(facets = "sex", scales = "free_x", strip.position = "bottom") +
+  geom_blank(mapping = aes(x = pop_max * 1.1)) +
+  theme(panel.spacing.x = unit(0, "pt"),
+        strip.placement = "outside",
+        strip.background = element_rect(fill = "transparent"),
+        strip.text.x = element_text(margin = margin(b = 0, t = 0))) +
+  transition_time(time = year) +
+  labs(x = "Population (millions)", y = "Age", 
+       title = 'SSP2 World Population {round(frame_time)}')
+
+animate(g, width = 672, height = 520, units = "px", res = 100,
+        renderer = gifski_renderer())
+
+anim_save(filename = "../man/figures/world4_ssp2.gif")
+```
+
+
+
+
+
+```{r, eval =FALSE}
 library(gganimate)
 
 ggplot(data = w, 
@@ -290,7 +323,4 @@ ggplot(data = w,
        title = 'SSP2 World Population {round(frame_time)}')
 ```
 
-```{r}
-
-```
-
+<img src='../man/figures/world4_ssp2.gif'/>

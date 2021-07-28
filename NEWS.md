@@ -6,3 +6,4 @@
 
 * Expanded vignette to include animation
 * Removed export from `wcde_pull()`
+* Replaced `ssp2_epop` with `past_epop`

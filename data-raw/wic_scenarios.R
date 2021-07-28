@@ -1,7 +1,7 @@
 library(tidyverse)
 library(readxl)
 
-wic_scenarios <- read_excel("../wcde/meta/dimension.xlsx") %>%
+wic_scenarios <- read_excel("../wcde-shiny/meta/dimension.xlsx") %>%
   filter(dim == "scenario") %>%
   rename(scenario = code,
          scenario_name = name,
@@ -9,6 +9,9 @@ wic_scenarios <- read_excel("../wcde/meta/dimension.xlsx") %>%
   select(contains("scenario")) %>%
   mutate(scenario = case_when(scenario == 1 ~ 2,
                               scenario == 2 ~ 1,
-                              TRUE ~ scenario))
+                              scenario == 3 ~ 3,
+                              scenario == 4 ~ 21,
+                              scenario == 5 ~ 22)) %>%
+  arrange(scenario)
 wic_scenarios
 usethis::use_data(wic_scenarios, overwrite = TRUE)

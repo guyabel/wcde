@@ -2,7 +2,7 @@ library(tidyverse)
 library(readxl)
 library(countrycode)
 
-wic_locations <- read_excel("../wcde/meta/geography.xlsx") %>%
+wic_locations <- read_excel("../wcde-shiny/meta/geography.xlsx") %>%
   select(-ggarea, -is185, -edu8) %>%
   # mutate(alpha3 = countrycode(sourcevar = isono,
   #                             origin = "iso3n",

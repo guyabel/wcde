@@ -6,10 +6,6 @@
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
 #'
 #' @return A tibble with multiple columns.
-#' @keywords internal
-#'
-#' @examples
-#' wcde_pull(indicator = "tfr", country_code = "900")
 wcde_pull <- function(indicator = NULL, scenario = 2, country_code = NULL){
   # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
   # scenario = 2; indicator = "e0"; country_code = "900"
@@ -24,8 +20,8 @@ wcde_pull <- function(indicator = NULL, scenario = 2, country_code = NULL){
   #   message("can only get data on one scenario at a time, taking first scenario given")
   #   scenario <- scenario[1]
   # }
-  if(!all(scenario %in% 1:5)){
-    message("scenario must be an integer between 1 and 5")
+  if(!all(scenario %in% c(1:5, 21, 22))){
+    message("scenario must be an integer in wic_scenarios$scenario")
   }
   v0 <- wcde::wic_indicators %>%
     dplyr::filter(indicator == {{indicator}}) %>%

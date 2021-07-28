@@ -19,7 +19,3 @@ A tibble with multiple columns.
 \description{
 Requires a working internet connection. Intended for internal use.
 }
-\examples{
-wcde_pull(indicator = "tfr", country_code = "900")
-}
-\keyword{internal}

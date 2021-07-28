@@ -14,7 +14,7 @@
 #'
 #' @examples
 #' library(tidyverse)
-#' epop_ssp2 %>%
+#' past_epop %>%
 #'   filter(year == 2020) %>%
 #'   mutate(scenario = 2) %>%
 #'   edu_group_sum()
