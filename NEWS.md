@@ -8,6 +8,7 @@
 * Removed export from `wcde_pull()`
 * Replaced `ssp2_epop` with `past_epop`
 
-# wcde 0.0.2
+# wcde 0.0.3
 
 * Add authors to vignette
+* Add start-up citation note
