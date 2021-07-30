@@ -21,6 +21,8 @@ pkgdown::build_site()
 
 pkgdown::build_reference()
 
+usethis::use_pkgdown_github_pages()
+
 devtools::build_vignettes()
 usethis::use_spell_check()
 usethis::use_release_issue()
