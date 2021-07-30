@@ -19,3 +19,6 @@
 ^build_package\.R$
 ^data1\.R$
 ^data2\.R$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
