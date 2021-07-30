@@ -8,6 +8,7 @@ usethis::use_build_ignore(
     "data1.R", "data2.R"))
 
 roxygen2::roxygenise()
+
 # move data-host and data-host-bulk outside of directory whilst
 # doing check https://community.rstudio.com/t/r-cmd-check-preparing-package/27151
 devtools::check(vignettes = FALSE)
@@ -15,8 +16,12 @@ devtools::check()
 devtools::build()
 file.show("NEWS.md")
 
-devtools::build_vignettes()
+usethis::use_pkgdown()
+pkgdown::build_site()
 
+pkgdown::build_reference()
+
+devtools::build_vignettes()
 usethis::use_spell_check()
 usethis::use_release_issue()
 usethis::use_citation()

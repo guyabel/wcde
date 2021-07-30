@@ -12,3 +12,5 @@
 
 * Add authors to vignette
 * Add start-up citation note
+* Renamed `wcde_pull()` to `get_wcde_single()`
+* Initial pkgdown working

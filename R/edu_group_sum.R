@@ -1,4 +1,4 @@
-#' Education Group Sums
+#' Education group sums
 #'
 #' @description Cleans `epop` data, downloaded using the `wcde()` function, for summations of population by 4, 6 or 8 education groups.
 #'

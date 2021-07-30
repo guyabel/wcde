@@ -2,7 +2,7 @@
 % Please edit documentation in R/edu_group_sum.R
 \name{edu_group_sum}
 \alias{edu_group_sum}
-\title{Education Group Sums}
+\title{Education group sums}
 \usage{
 edu_group_sum(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE)
 }

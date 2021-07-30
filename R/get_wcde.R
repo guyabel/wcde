@@ -114,7 +114,7 @@ get_wcde <- function(indicator = "pop", scenario = 2,
     d2a <- wcde::wic_locations %>%
       dplyr::select(isono, name)
 
-    d2 <- wcde_pull(indicator = indicator, scenario = scenario, country_code = country_code) %>%
+    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code) %>%
       dplyr::mutate(isono = as.numeric(isono)) %>%
       dplyr::left_join(d2a, by = "isono") %>%
       {if(include_scenario_names) dplyr::left_join(. , wcde::wic_scenarios, by = "scenario") else .}

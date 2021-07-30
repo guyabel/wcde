@@ -100,4 +100,4 @@ provides many more examples on how to use the package to download data
 and produce plots from the Wittgenstein Centre Human Capital Data
 Explorer.
 
-<img src='world6_ssp2.gif' height="600"/>
+<img src='https://raw.githubusercontent.com/guyabel/wcde/main/world6_ssp2.gif' height="600"/>

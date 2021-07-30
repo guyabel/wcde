@@ -93,7 +93,9 @@ animate(g, width = 15, height = 15, units = "cm", res = 200,
 anim_save(filename = "world6_ssp2.gif")
 ```
 
-<img src='world6_ssp2.gif' height="600"/>
+<img src='https://raw.githubusercontent.com/guyabel/wcde/main/world6_ssp2.gif' height="600"/>
+
+<!-- <img src='world6_ssp2.gif' height="600"/> -->
 
 
 

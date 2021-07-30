@@ -1,0 +1,21 @@
+reference:
+- title: "Getting data"
+- contents:
+  - get_wcde
+- title: "Helper data sets and functions"
+- contents:
+  - find_indicator
+  - edu_group_sum
+  - wic_indicators
+  - wic_locations
+  - wic_scenarios
+- title: "Helper colour vectors"
+- contents:
+  - starts_with("wic_col")
+- title: "Data"
+- contents:
+  - past_epop
+- title: "Miscellaneous"
+- contents:
+  - every_other
+
