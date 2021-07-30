@@ -4,8 +4,9 @@ library(usethis)
 usethis::use_pipe()
 usethis::use_tibble()
 usethis::use_build_ignore(
-  c("tests", "data-host", "data-host-batch", "build_package.R", "data-raw",
-    "data1.R", "data2.R"))
+  c("tests", "data-host", "data-host-batch", "build_package.R",
+    "data-raw", "data1.R", "data2.R")
+)
 
 roxygen2::roxygenise()
 
@@ -21,7 +22,6 @@ pkgdown::build_site()
 
 pkgdown::build_reference()
 
-usethis::use_pkgdown_github_pages()
 
 devtools::build_vignettes()
 usethis::use_spell_check()
