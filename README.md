@@ -12,7 +12,7 @@ status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/p
 <!-- [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) -->
 <!-- badges: end -->
 
-<img src='./man/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
+<img src='./docs/reference/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
 
 Download data from the [Wittgenstein Centre Human Capital Data
 Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
@@ -39,6 +39,8 @@ Download data based on a indicator, scenario and country code:
 
 ``` r
 library(wcde)
+#> Suggested citation for data:
+#> Wittgenstein Centre for Demography and Global Human Capital (WIC) Wittgenstein Centre Data Explorer. Version 2.0, 2018
 
 # SSP2 education specific tfr for Austria
 get_wcde(indicator = "etfr", country_name = "Austria")

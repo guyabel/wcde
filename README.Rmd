@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 <!-- [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) -->
 <!-- badges: end -->
 
-<img src='./man/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
+<img src='./docs/reference/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
 
 Download data from the [Wittgenstein Centre Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
