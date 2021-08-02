@@ -17,6 +17,9 @@ status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/p
 Download data from the [Wittgenstein Centre Human Capital Data
 Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
+See the [pkgdown site](https://guyabel.github.io/wcde/) for full
+details.
+
 ## Installation
 
 You can install the released version of `wcde` from
