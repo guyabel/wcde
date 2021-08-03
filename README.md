@@ -12,7 +12,7 @@ status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/p
 <!-- [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) -->
 <!-- badges: end -->
 
-<img src='./docs/reference/figures/logo.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
+<img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
 
 Download data from the [Wittgenstein Centre Human Capital Data
 Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
