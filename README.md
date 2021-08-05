@@ -10,6 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![CRAN
 status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/package=wcde)
 <!-- [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable) -->
+[![R-CMD-check](https://github.com/guyabel/wcde/workflows/R-CMD-check/badge.svg)](https://github.com/guyabel/wcde/actions)
 <!-- badges: end -->
 
 <img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
