@@ -26,6 +26,7 @@ usethis::use_github_action_check_standard()
 usethis::use_github_action("pkgdown")
 usethis::use_github_actions_badge()
 
+
 devtools::build_vignettes()
 usethis::use_spell_check()
 usethis::use_release_issue()
