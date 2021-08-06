@@ -41,14 +41,14 @@ Imports:
     purrr,
     stringr, 
     readr,
-    forcats,
-    tidyverse,
-    lemon
+    forcats
 Depends: 
     R (>= 2.10)
 Suggests: 
     spelling,
     knitr,
-    rmarkdown
+    rmarkdown,
+    tidyverse,
+    lemon
 VignetteBuilder: knitr
 Language: en-US
