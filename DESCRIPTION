@@ -1,6 +1,6 @@
 Package: wcde
 Title: Download Data from the Wittgenstein Human Capital Data Explorer
-Version: 0.0.2.01
+Version: 0.0.2.02
 Authors@R: 
     c(person(given = c("Guy", "J."),
              family = "Abel",
@@ -25,6 +25,8 @@ Authors@R:
              family = "Yildiz",
              role = "ctb",
              comment = c(ORCID = "0000-0001-6192-0634")))
+URL: https://guyabel.github.io/wcde/
+BugReports: https://github.com/guyabel/wcde/issues/
 Description: Download and plot education specific demographic data from the Wittgenstein Human Capital Data Explorer <http://dataexplorer.wittgensteincentre.org/>.
 License: GPL-3
 Encoding: UTF-8
