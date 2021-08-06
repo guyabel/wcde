@@ -148,18 +148,18 @@
 <span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"eassr"</span>, 
          country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Niger"</span>, <span class="st">"Korea"</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 8,976 x 8</span>
-<span class="co">#&gt;    scenario name         country_code age     sex   education      period  eassr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;   &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Niger                 562 Newborn Male  No Education   2015-2~  91.6</span>
-<span class="co">#&gt;  2        2 Republic of~          410 Newborn Male  No Education   2015-2~  99.4</span>
-<span class="co">#&gt;  3        2 Niger                 562 Newborn Male  Incomplete Pr~ 2015-2~  92  </span>
-<span class="co">#&gt;  4        2 Republic of~          410 Newborn Male  Incomplete Pr~ 2015-2~  99.5</span>
-<span class="co">#&gt;  5        2 Niger                 562 Newborn Male  Primary        2015-2~  92.5</span>
-<span class="co">#&gt;  6        2 Republic of~          410 Newborn Male  Primary        2015-2~  99.5</span>
-<span class="co">#&gt;  7        2 Niger                 562 Newborn Male  Lower Seconda~ 2015-2~  93.4</span>
-<span class="co">#&gt;  8        2 Republic of~          410 Newborn Male  Lower Seconda~ 2015-2~  99.6</span>
-<span class="co">#&gt;  9        2 Niger                 562 Newborn Male  Upper Seconda~ 2015-2~  95.2</span>
-<span class="co">#&gt; 10        2 Republic of~          410 Newborn Male  Upper Seconda~ 2015-2~  99.7</span>
+<span class="co">#&gt;    scenario name              country_code age     sex   education  period eassr</span>
+<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                    &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;  &lt;dbl&gt;</span>
+<span class="co">#&gt;  1        2 Niger                      562 Newborn Male  No Educat~ 2015-~  91.6</span>
+<span class="co">#&gt;  2        2 Republic of Korea          410 Newborn Male  No Educat~ 2015-~  99.4</span>
+<span class="co">#&gt;  3        2 Niger                      562 Newborn Male  Incomplet~ 2015-~  92  </span>
+<span class="co">#&gt;  4        2 Republic of Korea          410 Newborn Male  Incomplet~ 2015-~  99.5</span>
+<span class="co">#&gt;  5        2 Niger                      562 Newborn Male  Primary    2015-~  92.5</span>
+<span class="co">#&gt;  6        2 Republic of Korea          410 Newborn Male  Primary    2015-~  99.5</span>
+<span class="co">#&gt;  7        2 Niger                      562 Newborn Male  Lower Sec~ 2015-~  93.4</span>
+<span class="co">#&gt;  8        2 Republic of Korea          410 Newborn Male  Lower Sec~ 2015-~  99.6</span>
+<span class="co">#&gt;  9        2 Niger                      562 Newborn Male  Upper Sec~ 2015-~  95.2</span>
+<span class="co">#&gt; 10        2 Republic of Korea          410 Newborn Male  Upper Sec~ 2015-~  99.7</span>
 <span class="co">#&gt; # ... with 8,966 more rows</span></code></pre></div>
 <div id="indicator-codes" class="section level2">
 <h2 class="hasAnchor">
@@ -168,10 +168,10 @@
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/find_indicator.html">find_indicator</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"tfr"</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 2 x 3</span>
-<span class="co">#&gt;   indicator description             definition                                  </span>
-<span class="co">#&gt;   &lt;chr&gt;     &lt;chr&gt;                   &lt;chr&gt;                                       </span>
-<span class="co">#&gt; 1 tfr       Total Fertility Rate    "The average number of children born in a p~</span>
-<span class="co">#&gt; 2 etfr      Total Fertility Rate b~ "The average number of children born in a p~</span></code></pre></div>
+<span class="co">#&gt;   indicator description                       definition                        </span>
+<span class="co">#&gt;   &lt;chr&gt;     &lt;chr&gt;                             &lt;chr&gt;                             </span>
+<span class="co">#&gt; 1 tfr       Total Fertility Rate              "The average number of children b~</span>
+<span class="co">#&gt; 2 etfr      Total Fertility Rate by Education "The average number of children b~</span></code></pre></div>
 </div>
 <div id="temporal-coverage" class="section level2">
 <h2 class="hasAnchor">

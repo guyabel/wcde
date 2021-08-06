@@ -163,28 +163,28 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>find_indicator</span><span class='op'>(</span><span class='st'>"education"</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 9 x 3</span>
-#&gt;   indicator description                  definition                             
-#&gt;   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                        <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                                  
-#&gt; <span style='color: #BCBCBC;'>1</span> bpop      Population Size by Broad Ag~ <span style='color: #949494;'>"</span>De facto population in a country or r~
-#&gt; <span style='color: #BCBCBC;'>2</span> epop      Population Size by Educatio~ <span style='color: #949494;'>"</span>De facto population in a country or r~
-#&gt; <span style='color: #BCBCBC;'>3</span> prop      Educational Attainment Dist~ <span style='color: #949494;'>"</span>De facto population by level of educa~
-#&gt; <span style='color: #BCBCBC;'>4</span> bprop     Educational Attainment Dist~ <span style='color: #949494;'>"</span>De facto population by level of educa~
-#&gt; <span style='color: #BCBCBC;'>5</span> ggapedu15 Gender Gap in Educational A~ <span style='color: #949494;'>"</span>The difference between the proportion~
-#&gt; <span style='color: #BCBCBC;'>6</span> ggapedu25 Gender Gap in Educational A~ <span style='color: #949494;'>"</span>The difference between the proportion~
-#&gt; <span style='color: #BCBCBC;'>7</span> etfr      Total Fertility Rate by Edu~ <span style='color: #949494;'>"</span>The average number of children born i~
-#&gt; <span style='color: #BCBCBC;'>8</span> eassr     Age-Specific Survival Ratio~ <span style='color: #949494;'>"</span>Survivorship of population in a parti~
-#&gt; <span style='color: #BCBCBC;'>9</span> easfr     Age-Specific Fertility Rate~ <span style='color: #949494;'>"</span>Number of births occurring to women i~</div><div class='input'><span class='fu'>find_indicator</span><span class='op'>(</span><span class='st'>"migr"</span><span class='op'>)</span>
+#&gt;   indicator description                                      definition         
+#&gt;   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                                            <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>              
+#&gt; <span style='color: #BCBCBC;'>1</span> bpop      Population Size by Broad Age (000's)             <span style='color: #949494;'>"</span>De facto populati~
+#&gt; <span style='color: #BCBCBC;'>2</span> epop      Population Size by Education (000's)             <span style='color: #949494;'>"</span>De facto populati~
+#&gt; <span style='color: #BCBCBC;'>3</span> prop      Educational Attainment Distribution              <span style='color: #949494;'>"</span>De facto populati~
+#&gt; <span style='color: #BCBCBC;'>4</span> bprop     Educational Attainment Distribution by Broad Age <span style='color: #949494;'>"</span>De facto populati~
+#&gt; <span style='color: #BCBCBC;'>5</span> ggapedu15 Gender Gap in Educational Attainment (15+)       <span style='color: #949494;'>"</span>The difference be~
+#&gt; <span style='color: #BCBCBC;'>6</span> ggapedu25 Gender Gap in Educational Attainment (25+)       <span style='color: #949494;'>"</span>The difference be~
+#&gt; <span style='color: #BCBCBC;'>7</span> etfr      Total Fertility Rate by Education                <span style='color: #949494;'>"</span>The average numbe~
+#&gt; <span style='color: #BCBCBC;'>8</span> eassr     Age-Specific Survival Ratio by Education         <span style='color: #949494;'>"</span>Survivorship of p~
+#&gt; <span style='color: #BCBCBC;'>9</span> easfr     Age-Specific Fertility Rate by Education         <span style='color: #949494;'>"</span>Number of births ~</div><div class='input'><span class='fu'>find_indicator</span><span class='op'>(</span><span class='st'>"migr"</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 1 x 3</span>
 #&gt;   indicator description   definition                                            
 #&gt;   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>         <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                                                 
 #&gt; <span style='color: #BCBCBC;'>1</span> net       Net Migration <span style='color: #949494;'>"</span>The number of immigrants minus the number of emigran~</div><div class='input'><span class='fu'>find_indicator</span><span class='op'>(</span><span class='st'>"fert"</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 4 x 3</span>
-#&gt;   indicator description               definition                                
-#&gt;   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                                     
-#&gt; <span style='color: #BCBCBC;'>1</span> tfr       Total Fertility Rate      <span style='color: #949494;'>"</span>The average number of children born in a~
-#&gt; <span style='color: #BCBCBC;'>2</span> etfr      Total Fertility Rate by ~ <span style='color: #949494;'>"</span>The average number of children born in a~
-#&gt; <span style='color: #BCBCBC;'>3</span> asfr      Age-Specific Fertility R~ <span style='color: #949494;'>"</span>Number of births occurring to women in a~
-#&gt; <span style='color: #BCBCBC;'>4</span> easfr     Age-Specific Fertility R~ <span style='color: #949494;'>"</span>Number of births occurring to women in a~</div></pre>
+#&gt;   indicator description                              definition                 
+#&gt;   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                                    <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                      
+#&gt; <span style='color: #BCBCBC;'>1</span> tfr       Total Fertility Rate                     <span style='color: #949494;'>"</span>The average number of chi~
+#&gt; <span style='color: #BCBCBC;'>2</span> etfr      Total Fertility Rate by Education        <span style='color: #949494;'>"</span>The average number of chi~
+#&gt; <span style='color: #BCBCBC;'>3</span> asfr      Age-Specific Fertility Rate              <span style='color: #949494;'>"</span>Number of births occurrin~
+#&gt; <span style='color: #BCBCBC;'>4</span> easfr     Age-Specific Fertility Rate by Education <span style='color: #949494;'>"</span>Number of births occurrin~</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
