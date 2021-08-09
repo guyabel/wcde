@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Test if country code or codes are in wic_locations — wcde_location • wcde</title>
+<title>Count the number of characters per line — nchars_wrap • wcde</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,8 @@
 
 
 
-<meta property="og:title" content="Test if country code or codes are in wic_locations — wcde_location" />
-<meta property="og:description" content="Intended for internal use." />
+<meta property="og:title" content="Count the number of characters per line — nchars_wrap" />
+<meta property="og:description" content="Count the number of characters per line" />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -141,35 +141,34 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Test if country code or codes are in wic_locations</h1>
-    <small class="dont-index">Source: <a href='https://github.com/guyabel/wcde/blob/master/R/wcde_location.R'><code>R/wcde_location.R</code></a></small>
-    <div class="hidden name"><code>wcde_location.Rd</code></div>
+    <h1>Count the number of characters per line</h1>
+    <small class="dont-index">Source: <a href='https://github.com/guyabel/wcde/blob/master/R/nchars_wrap.R'><code>R/nchars_wrap.R</code></a></small>
+    <div class="hidden name"><code>nchars_wrap.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Intended for internal use.</p>
+    <p>Count the number of characters per line</p>
     </div>
 
-    <pre class="usage"><span class='fu'>wcde_location</span><span class='op'>(</span><span class='va'>country_code</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>nchars_wrap</span><span class='op'>(</span><span class='va'>b</span>, <span class='va'>w</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>country_code</th>
-      <td><p><code>vector</code> of integers representing country codes</p></td>
+      <th>b</th>
+      <td><p>Numeric vector for the position of line breaks between the words in <code>w</code></p></td>
+    </tr>
+    <tr>
+      <th>w</th>
+      <td><p>Character string vector of words</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p><code>TRUE</code> if all codes given to <code>country_code</code> are in wic_locations, <code>FALSE</code> if one or more are not.</p>
+    <p>List with vectors for number of characters per line and the number of words per line</p>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>wcde_location</span><span class='op'>(</span>country_code <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>11</span>, <span class='fl'>44</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'>country code -11 not in Wittgenstein Human Capital Data Explorer</span></div><div class='output co'>#&gt; [1] FALSE</div><div class='input'><span class='fu'>wcde_location</span><span class='op'>(</span>country_code <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>100</span>, <span class='fl'>44</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] TRUE</div><div class='input'><span class='fu'>wcde_location</span><span class='op'>(</span>country_code <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'>country code  not in Wittgenstein Human Capital Data Explorer</span></div><div class='output co'>#&gt; [1] FALSE</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
