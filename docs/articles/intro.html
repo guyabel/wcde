@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">wcde</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2.02</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2.03</span>
       </span>
     </div>
 
@@ -117,7 +117,7 @@
 <p>Install the developmental version with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/">devtools</a></span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"guyabel/wcde"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></code></pre></div>
+<span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"guyabel/wcde"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="getting-data-into-r" class="section level1">
 <h1 class="hasAnchor">
@@ -591,7 +591,7 @@
 <div id="animate" class="section level2">
 <h2 class="hasAnchor">
 <a href="#animate" class="anchor"></a>Animate</h2>
-<p>Animate the pyramid through the past data and projection periods using the <code><a href="https://rdrr.io/pkg/gganimate/man/transition_time.html">transition_time()</a></code> function in the <a href="https://cran.r-project.org/package=gganimate/index.html"><code>gganimate</code></a> package</p>
+<p>Animate the pyramid through the past data and projection periods using the <code><a href="https://gganimate.com/reference/transition_time.html">transition_time()</a></code> function in the <a href="https://cran.r-project.org/package=gganimate/index.html"><code>gganimate</code></a> package</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://gganimate.com">gganimate</a></span><span class="op">)</span>
 
@@ -607,7 +607,7 @@
         strip.placement <span class="op">=</span> <span class="st">"outside"</span>,
         strip.background <span class="op">=</span> <span class="fu">element_rect</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,
         strip.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>margin <span class="op">=</span> <span class="fu">margin</span><span class="op">(</span>b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://rdrr.io/pkg/gganimate/man/transition_time.html">transition_time</a></span><span class="op">(</span>time <span class="op">=</span> <span class="va">year</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://gganimate.com/reference/transition_time.html">transition_time</a></span><span class="op">(</span>time <span class="op">=</span> <span class="va">year</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span>, 
        title <span class="op">=</span> <span class="st">'SSP2 World Population {round(frame_time)}'</span><span class="op">)</span></code></pre></div>
 <p><img src="../man/figures/world4_ssp2.gif"></p>

@@ -15,4 +15,5 @@
 * Renamed `wcde_pull()` to `get_wcde_single()`
 * Initial pkgdown working
 * Github actions working
-* Website to description 
+* Website to description
+* Added `str_wrap_n()` function

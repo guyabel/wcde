@@ -6,7 +6,6 @@
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
 #'
 #' @return A tibble with multiple columns.
-#' @keyword internal
 get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL){
   # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
   # scenario = 2; indicator = "e0"; country_code = "900"
