@@ -43,7 +43,8 @@ Imports:
     purrr,
     stringr, 
     readr,
-    forcats
+    forcats,
+    utils
 Depends: 
     R (>= 2.10)
 Suggests: 

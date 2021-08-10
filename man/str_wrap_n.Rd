@@ -26,4 +26,5 @@ When there a number of possible solutions that provide equally balanced number o
 str_wrap_n(string = "a bb ccc dddd eeee ffffff", n = 2)
 str_wrap_n(string = "a bb ccc dddd eeee ffffff", n = 4)
 str_wrap_n(string = "a bb ccc dddd eeee ffffff", n = 8)
+str_wrap_n(string = c("a bb", "a bb ccc"), n = 2)
 }
