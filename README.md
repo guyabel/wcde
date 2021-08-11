@@ -99,7 +99,7 @@ get_wcde(indicator = "ggapedu15", scenario = 1:3)
 
 ## Vignette
 
-The [vignette](https://guyabel.github.io/wcde/articles/intro.html)
+The [vignette](https://guyabel.github.io/wcde/articles/wcde.html)
 provides many more examples on how to use the package to download data
 and produce plots from the Wittgenstein Centre Human Capital Data
 Explorer.
