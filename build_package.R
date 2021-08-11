@@ -19,7 +19,6 @@ file.show("NEWS.md")
 
 usethis::use_pkgdown()
 pkgdown::build_site()
-
 pkgdown::build_reference()
 
 usethis::use_github_action_check_standard()
