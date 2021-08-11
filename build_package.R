@@ -1,6 +1,5 @@
 library(usethis)
 # create_tidy_package(path = "Github/tidywpp")
-# usethis::use_badge()
 usethis::use_pipe()
 usethis::use_tibble()
 usethis::use_build_ignore(
@@ -20,6 +19,9 @@ file.show("NEWS.md")
 usethis::use_pkgdown()
 pkgdown::build_site()
 pkgdown::build_reference()
+
+usethis::use_badge()
+cranlogs::cranlogs_badge(package_name = "wcde", summary = "grand-total")
 
 usethis::use_github_action_check_standard()
 usethis::use_github_action("pkgdown")

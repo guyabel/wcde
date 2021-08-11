@@ -10,6 +10,8 @@ status](https://www.r-pkg.org/badges/version/wcde)](https://CRAN.R-project.org/p
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![R-CMD-check](https://github.com/guyabel/wcde/workflows/R-CMD-check/badge.svg)](https://github.com/guyabel/wcde/actions)
+[![CRAN RStudio mirror
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/wcde?color=blue)](https://r-pkg.org/pkg/wcde)
 <!-- badges: end -->
 
 <img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
