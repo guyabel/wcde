@@ -16,4 +16,4 @@
 * Initial pkgdown working
 * Github actions working
 * Website to description
-* Added `str_wrap_n()` function
+

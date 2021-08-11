@@ -18,7 +18,6 @@ reference:
 - title: "Miscellaneous"
 - contents:
   - every_other
-  - str_wrap_n
 template:
   params:
     ganalytics: G-2XE3QBSNZJ
