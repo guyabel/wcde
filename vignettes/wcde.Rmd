@@ -1,5 +1,5 @@
 ---
-title: "Overview of the `wcde` package"
+title: "Overview of the wcde package"
 author: Guy J. Abel, Samir K.C., Michaela Potancokova, Claudia Reiter, Andrea Tamburini and Dilek Yildiz
 output:
   html_document:
@@ -106,15 +106,18 @@ get_wcde(indicator = "sexratio",
 
 Country names are guessed using the [countrycode](https://cran.r-project.org/package=countrycode/index.html) package. 
 
-The `get_wcde()` accepts ISO alpha_numeric codes for countries:
-
 ```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "tfr", 
          country_name = c("U.A.E", "Espania", "Österreich"))
+```
 
+The `get_wcde()` functions accepts ISO alpha numeric codes for countries via the `country_code` argument:
+
+```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "etfr", country_code = c(44, 100))
 ```
-A full list of available countries and region aggregates can be found in the `wic_locations` data frame. 
+
+A full list of available countries and region aggregates, and their codes, can be found in the `wic_locations` data frame. 
 
 ```{r}
 wic_locations
