@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Overview of the `wcde` package • wcde</title>
+<title>Overview of the wcde package • wcde</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -17,7 +17,7 @@
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Overview of the `wcde` package">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Overview of the wcde package">
 <meta property="og:description" content="wcde">
 <meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -86,7 +86,7 @@
       </header><script src="wcde_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Overview of the <code>wcde</code> package</h1>
+      <h1 data-toc-skip>Overview of the wcde package</h1>
                         <h4 class="author">Guy J. Abel, Samir K.C., Michaela Potancokova, Claudia Reiter, Andrea Tamburini and Dilek Yildiz</h4>
             
       
@@ -246,7 +246,6 @@
 <h2 class="hasAnchor">
 <a href="#country-names-and-codes" class="anchor"></a>Country names and codes</h2>
 <p>Country names are guessed using the <a href="https://cran.r-project.org/package=countrycode/index.html">countrycode</a> package.</p>
-<p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> accepts ISO alpha_numeric codes for countries:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>, 
          country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"U.A.E"</span>, <span class="st">"Espania"</span>, <span class="st">"Österreich"</span><span class="op">)</span><span class="op">)</span>
@@ -265,9 +264,10 @@
 <span class="co">#&gt;  8        2 Spain                         724 1960-1965  2.81</span>
 <span class="co">#&gt;  9        2 Austria                        40 1960-1965  2.78</span>
 <span class="co">#&gt; 10        2 United Arab Emirates          784 1965-1970  6.77</span>
-<span class="co">#&gt; # … with 80 more rows</span>
-
-<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">44</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; # … with 80 more rows</span></code></pre></div>
+<p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> functions accepts ISO alpha numeric codes for countries via the <code>country_code</code> argument:</p>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">44</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 204 × 6</span>
 <span class="co">#&gt;    scenario name     country_code education          period     etfr</span>
 <span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;     &lt;dbl&gt;</span>
@@ -282,8 +282,8 @@
 <span class="co">#&gt;  9        2 Bahamas            44 Upper Secondary    2015-2020  1.76</span>
 <span class="co">#&gt; 10        2 Bulgaria          100 Upper Secondary    2015-2020  1.44</span>
 <span class="co">#&gt; # … with 194 more rows</span></code></pre></div>
-<p>A full list of available countries and region aggregates can be found in the <code>wic_locations</code> data frame.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<p>A full list of available countries and region aggregates, and their codes, can be found in the <code>wic_locations</code> data frame.</p>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">wic_locations</span>
 <span class="co">#&gt; # A tibble: 230 × 5</span>
 <span class="co">#&gt;    name                            isono continent region             dim    </span>
@@ -304,7 +304,7 @@
 <h2 class="hasAnchor">
 <a href="#scenarios" class="anchor"></a>Scenarios</h2>
 <p>By default <code><a href="../reference/get_wcde.html">get_wcde()</a></code> returns data for Medium (SSP2) scenario. Results for different SSP scenarios can be returned by passing a different (or multiple) scenario values to the <code>scenario</code> argument in <code>get_data()</code>.</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"growth"</span>, 
          country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"India"</span>, <span class="st">"China"</span><span class="op">)</span>, 
          scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">21</span>, <span class="fl">22</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
@@ -325,7 +325,7 @@
 <span class="co">#&gt;  9       22 India          356 2095-2100   -0.5</span>
 <span class="co">#&gt; 10       22 China          156 2095-2100   -1</span></code></pre></div>
 <p>Set <code>include_scenario_names = TRUE</code> to include a columns with the full names of the scenarios</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>, 
          country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Kenya"</span>, <span class="st">"Nigeria"</span>, <span class="st">"Algeria"</span><span class="op">)</span>,
          scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, 
@@ -346,7 +346,7 @@
 <span class="co">#&gt; 8        3 Stalled Development … SSP3         Nigeria          566 2045-2…  4.65</span>
 <span class="co">#&gt; 9        3 Stalled Development … SSP3         Algeria           12 2045-2…  2.41</span></code></pre></div>
 <p>Additional details of the pathways for each scenario numeric code can be found in the <code>wic_scenarios</code> object. Further background and links to the corresponding literature are provided in the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/">Data Explorer</a></p>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">wic_scenarios</span>
 <span class="co">#&gt; # A tibble: 5 × 3</span>
 <span class="co">#&gt;   scenario_name                         scenario scenario_abb</span>
@@ -361,7 +361,7 @@
 <h2 class="hasAnchor">
 <a href="#all-countries-data" class="anchor"></a>All countries data</h2>
 <p>Data for all countries can be obtained by not setting <code>country_name</code> or <code>country_code</code></p>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"mage"</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 7,099 × 5</span>
 <span class="co">#&gt;    scenario name                     country_code  year  mage</span>
@@ -382,7 +382,7 @@
 <h2 class="hasAnchor">
 <a href="#multiple-indicators" class="anchor"></a>Multiple indicators</h2>
 <p>The <code>get_wdce()</code> function needs to be called multiple times to download multiple indicators. This can be done using the <code>map()</code> function in <a href="https://cran.r-project.org/package=purrr/index.html"><code>purrr</code></a></p>
-<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">mi</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span>ind <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"odr"</span>, <span class="st">"nirate"</span>, <span class="st">"ggapedu25"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu">mutate</span><span class="op">(</span>d <span class="op">=</span> <span class="fu">map</span><span class="op">(</span>.x <span class="op">=</span> <span class="va">ind</span>, .f <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="va">.x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 <span class="va">mi</span>
@@ -455,7 +455,7 @@
 <h1 class="hasAnchor">
 <a href="#working-with-population-data" class="anchor"></a>Working with population data</h1>
 <p>The education population data in the data explorer, obtained by setting <code>indicator = "epop"</code> in <code><a href="../reference/get_wcde.html">get_wcde()</a></code>, provide results by up to three different education categorizations (4, 6 and 8 education groups).</p>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"epop"</span>, country_code <span class="op">=</span> <span class="fl">900</span><span class="op">)</span>
 <span class="va">d</span>
 <span class="co">#&gt; # A tibble: 16,368 × 8</span>
@@ -473,7 +473,7 @@
 <span class="co">#&gt; 10        2 World          900 0--4  Both  Under 15            1950  338387.</span>
 <span class="co">#&gt; # … with 16,358 more rows</span></code></pre></div>
 <p>As the data frame contains multiple groupings, the <code><a href="../reference/edu_group_sum.html">edu_group_sum()</a></code> function can be used to provide education specific population data. Users can specify the education groupings by setting the <code>n</code> argument to 4, 6 or 8.</p>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">d</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="../reference/edu_group_sum.html">edu_group_sum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span>
@@ -518,7 +518,7 @@
 <h1 class="hasAnchor">
 <a href="#population-pyramids" class="anchor"></a>Population pyramids</h1>
 <p>Create population pyramids by setting male population values to negative equivalent to allow for divergent columns from the y axis.</p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">w</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="../reference/edu_group_sum.html">edu_group_sum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">%&gt;%</span>
   <span class="fu">mutate</span><span class="op">(</span>pop <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span>test <span class="op">=</span> <span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, yes <span class="op">=</span> <span class="op">-</span><span class="va">epop</span>, no <span class="op">=</span> <span class="va">epop</span><span class="op">)</span>,
@@ -548,7 +548,7 @@
 <li>fill colours set to the <code>wic_col4</code> object in the wcde package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer.</li>
 </ul>
 <p>Note <code>wic_col6</code> and <code>wic_col8</code> objects also exist for equivalent plots of population data objects with corresponding numbers of categories of education.</p>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/stefanedwards/lemon">lemon</a></span><span class="op">)</span>
 
 <span class="va">w</span> <span class="op">%&gt;%</span>
@@ -560,7 +560,7 @@
   <span class="fu">scale_fill_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu">theme_bw</span><span class="op">(</span><span class="op">)</span> </code></pre></div>
-<p><img src="wcde_files/figure-html/unnamed-chunk-19-1.png" width="700"></p>
+<p><img src="wcde_files/figure-html/unnamed-chunk-20-1.png" width="700"></p>
 </div>
 <div id="sex-label-position" class="section level2">
 <h2 class="hasAnchor">
@@ -571,7 +571,7 @@
 <li>Set the x axis to have zero expansion beyond the values in the data allowing the two sides of the pyramids to meet.</li>
 <li>Add a <code>geom_blank()</code> to allow for equal x-axis and additional space at the end of largest columns.</li>
 </ul>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">w</span> <span class="op">&lt;-</span> <span class="va">w</span> <span class="op">%&gt;%</span>
   <span class="fu">mutate</span><span class="op">(</span>pop_max <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 
@@ -589,13 +589,13 @@
         strip.placement <span class="op">=</span> <span class="st">"outside"</span>,
         strip.background <span class="op">=</span> <span class="fu">element_rect</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,
         strip.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>margin <span class="op">=</span> <span class="fu">margin</span><span class="op">(</span> b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<p><img src="wcde_files/figure-html/unnamed-chunk-20-1.png" width="700"></p>
+<p><img src="wcde_files/figure-html/unnamed-chunk-21-1.png" width="700"></p>
 </div>
 <div id="animate" class="section level2">
 <h2 class="hasAnchor">
 <a href="#animate" class="anchor"></a>Animate</h2>
 <p>Animate the pyramid through the past data and projection periods using the <code>transition_time()</code> function in the <a href="https://cran.r-project.org/package=gganimate/index.html"><code>gganimate</code></a> package</p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">gganimate</span><span class="op">)</span>
 
 <span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">w</span>, 
