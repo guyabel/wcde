@@ -1,6 +1,6 @@
-#' Indicators used in the Wittgenstein Data Explorer
+#' Indicators used in the Wittgenstein Centre Human Capital Data Explorer
 #'
-#' A data set containing the indicator codes, names and further details used in the Wittgenstein Data Explorer
+#' A data set containing the indicator codes, names and further details used in the Wittgenstein Centre Human Capital Data Explorer
 #'
 #' @format A data frame with 31 rows and 8 variables, including:
 #' \describe{

@@ -1,6 +1,6 @@
-#' Locations used in the Wittgenstein Data Explorer
+#' Locations used in the Wittgenstein Centre Human Capital Data Explorer
 #'
-#' A dataset containing the location codes, names and further details used in the Wittgenstein Data Explorer
+#' A dataset containing the location codes, names and further details used in the Wittgenstein Centre Human Capital Data Explorer
 #'
 #' @format A data frame with 230 rows and 7 variables, including:
 #' \describe{

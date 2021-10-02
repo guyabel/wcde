@@ -3,7 +3,7 @@
 \docType{data}
 \name{wic_col6}
 \alias{wic_col6}
-\title{Colours used in Wittgenstein Human Capital Data Explorer}
+\title{Colours used in Wittgenstein Centre for Demography and Human Capital Data Explorer}
 \format{
 A named vector
 }

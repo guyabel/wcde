@@ -3,7 +3,7 @@
 \docType{data}
 \name{wic_locations}
 \alias{wic_locations}
-\title{Locations used in the Wittgenstein Data Explorer}
+\title{Locations used in the Wittgenstein Centre Human Capital Data Explorer}
 \format{
 A data frame with 230 rows and 7 variables, including:
 \describe{
@@ -21,6 +21,6 @@ A data frame with 230 rows and 7 variables, including:
 wic_locations
 }
 \description{
-A dataset containing the location codes, names and further details used in the Wittgenstein Data Explorer
+A dataset containing the location codes, names and further details used in the Wittgenstein Centre Human Capital Data Explorer
 }
 \keyword{datasets}

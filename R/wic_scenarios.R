@@ -1,6 +1,6 @@
-#' Scenarios used in the Wittgenstein Data Explorer
+#' Scenarios used in the Wittgenstein Centre Human Capital Data Explorer
 #'
-#' A data set containing the scenario codes, names short names used in the Wittgenstein Data Explorer
+#' A data set containing the scenario codes, names short names used in the Wittgenstein Centre Human Capital Data Explorer
 #'
 #' @format A data frame with 5 rows and 3 variables, including:
 #' \describe{

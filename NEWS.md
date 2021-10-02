@@ -16,4 +16,4 @@
 * Initial pkgdown working
 * Github actions working
 * Website to description
-
+* Allow `edu_group_sum()` to work without scenario column

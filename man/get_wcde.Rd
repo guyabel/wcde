@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_wcde.R
 \name{get_wcde}
 \alias{get_wcde}
-\title{Download data from the Wittgenstein Centre Human Capital Data Explorer Data Explorer}
+\title{Download data from the Wittgenstein Centre Human Capital Data Explorer}
 \usage{
 get_wcde(
   indicator = "pop",

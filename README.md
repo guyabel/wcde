@@ -16,7 +16,8 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 <img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
 
-Download data from the [Wittgenstein Centre Human Capital Data
+Download data from the [Wittgenstein Centre for Demography and Human
+Capital Data
 Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) into R
 
 See the [pkgdown site](https://guyabel.github.io/wcde/) for full

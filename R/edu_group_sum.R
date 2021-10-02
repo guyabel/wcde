@@ -16,7 +16,6 @@
 #' library(tidyverse)
 #' past_epop %>%
 #'   filter(year == 2020) %>%
-#'   mutate(scenario = 2) %>%
 #'   edu_group_sum()
 edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE){
   if(!n %in% c(4, 6, 8))
@@ -25,7 +24,9 @@ edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert =
     stop("d must be a population data set, with epop column name")
   d0 <- d %>%
     {if(strip_totals) dplyr::filter(., age != "All", sex != "Both") else . } %>%
-    {if(strip_totals & n != 8) dplyr::filter(., education != "Total") else . }
+    {if(strip_totals & n != 8) dplyr::filter(., education != "Total") else . } %>%
+    {if("scenario" %in% names(d)) . else dplyr::mutate(., scenario = "")}
+
   if(n == 4){
     d1 <- d0 %>%
       dplyr::filter(!education %in% names(wcde::wic_col8)[7:9]) %>%
@@ -56,5 +57,8 @@ edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert =
       tidyr::complete(scenario, name, country_code, year, age, sex, education, fill = list(epop = 0)) %>%
       {if(strip_totals & year >= 2015) dplyr::filter(., education != "Total") else . }
   }
+
+  d1 <- d1 %>%
+    {if("scenario" %in% names(d)) . else dplyr::select(., -scenario)}
   return(d1)
 }

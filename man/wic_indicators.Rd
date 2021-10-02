@@ -3,7 +3,7 @@
 \docType{data}
 \name{wic_indicators}
 \alias{wic_indicators}
-\title{Indicators used in the Wittgenstein Data Explorer}
+\title{Indicators used in the Wittgenstein Centre Human Capital Data Explorer}
 \format{
 A data frame with 31 rows and 8 variables, including:
 \describe{
@@ -26,6 +26,6 @@ A data frame with 31 rows and 8 variables, including:
 wic_indicators
 }
 \description{
-A data set containing the indicator codes, names and further details used in the Wittgenstein Data Explorer
+A data set containing the indicator codes, names and further details used in the Wittgenstein Centre Human Capital Data Explorer
 }
 \keyword{datasets}

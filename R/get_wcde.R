@@ -1,4 +1,4 @@
-#' Download data from the Wittgenstein Centre Human Capital Data Explorer Data Explorer
+#' Download data from the Wittgenstein Centre Human Capital Data Explorer
 #'
 #' @description Downloads data from the Wittgenstein Centre Human Capital Data Explorer. Requires a working internet connection.
 #'
