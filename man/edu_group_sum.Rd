@@ -28,6 +28,5 @@ Strips the \code{epop} data set to relevant rows for the \code{n} education grou
 library(tidyverse)
 past_epop \%>\%
   filter(year == 2020) \%>\%
-  mutate(scenario = 2) \%>\%
   edu_group_sum()
 }
