@@ -1,10 +1,11 @@
-## not run both of these since moving from separate github repo
+## not run data1 and dat2 since moving from separate github repo
 ## wcde-data... but have made edits to the scripts so should work
 ## if have to do again?
 
 ##
 ## data1: replicate wcde-shiny
-## data2: build all country data sets for data batch
+## data2: build pop- data sets
+## data3: build batch data
 ##
 
 library(tidyverse)
@@ -50,3 +51,4 @@ for(i in 1:nrow(d)){
   if(i %% 100 == 0)
     print(i)
 }
+
