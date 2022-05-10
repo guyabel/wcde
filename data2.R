@@ -31,7 +31,8 @@ p <- dir_ls(path = "./data-host/", recurse = 2) %>%
   filter(str_detect(string = file, pattern = "pop"),
          str_detect(string = file, pattern = "csv"),
          str_detect(string = file, pattern = "bpop", negate = TRUE),
-         str_detect(string = file, pattern = "epop", negate = TRUE)) %>%
+         str_detect(string = file, pattern = "epop", negate = TRUE),
+         str_detect(string = file, pattern = "pop-", negate = TRUE)) %>%
   mutate(file = as.character(file),
          s = str_sub(string = file, start = 13, end = 14),
          s = str_remove(string = s, pattern = "\\/"),
@@ -57,7 +58,7 @@ for(i in 1:nrow(p)){
 # pop-age-sex-edattian does not have the all (age, sex and edattian) categories that epop has
 
 ##
-## pop-age
+## pop-total
 ##
 
 p0 <- p %>%
@@ -110,7 +111,9 @@ p0 <- p %>%
   select(-d1)
 
 for(i in 1:5){
+  message(i)
   for(j in 1:ncol(p0$d2[[i]])){
+    message(j)
     p0$d2[[i]] %>%
       select(j) %>%
       write_csv(file = paste0("./data-host/", p0$s[i], "/pop-age/",names(.), ".csv"))
@@ -195,6 +198,7 @@ p0 <- e %>%
 for(i in 1:5){
   message(i)
   for(j in 1:ncol(p0$d2[[i]])){
+    message(j)
     p0$d2[[i]] %>%
       select(j) %>%
       write_csv(file = paste0("./data-host/", p0$s[i], "/pop-sex-edattain/",names(.), ".csv"))

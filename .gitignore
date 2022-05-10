@@ -3,15 +3,19 @@
 inst/doc
 /doc/
 /Meta/
-data-host-batch/2/prop.csv
-data-host-batch/2/epop.csv
 data-host-batch/1/prop.csv
+data-host-batch/2/prop.csv
+data-host-batch/21/prop.csv
+data-host-batch/22/prop.csv
+data-host-batch/3/prop.csv
+data-host-batch/2/epop.csv
 data-host-batch/1/epop.csv
 data-host-batch/3/epop.csv
-data-host-batch/3/prop.csv
 data-host-batch/21/epop.csv
-data-host-batch/21/prop.csv
 data-host-batch/22/epop.csv
-data-host-batch/22/prop.csv
-
+data-host-batch/1/pop-age-sex-edattain.csv
+data-host-batch/2/pop-age-sex-edattain.csv
+data-host-batch/21/pop-age-sex-edattain.csv
+data-host-batch/22/pop-age-sex-edattain.csv
+data-host-batch/3/pop-age-sex-edattain.csv
 

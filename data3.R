@@ -21,7 +21,7 @@ d <- dir_ls(path = "./data-host/", recurse = 1) %>%
   # filter(!i %in% c("epop", "prop"))
 
 
-for(i in 1:nrow(d)){
+for(i in 187:nrow(d)){
   message(paste(i, "s:", d$s[i], d$i[i]))
   x0 <- dir_ls(path = d$dir[i]) %>%
     as_tibble() %>%
