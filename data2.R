@@ -19,9 +19,7 @@ e <- dir_ls(path = "./data-host/", recurse = 2) %>%
   mutate(file = as.character(file),
          s = str_sub(string = file, start = 13, end = 14),
          s = str_remove(string = s, pattern = "\\/"),
-         d0 = map(.x = file, .f = ~read_csv(file = .x)))
-
-e <- e %>%
+         d0 = map(.x = file, .f = ~read_csv(file = .x))) %>%
   group_by(s) %>%
   summarize(d1 = list(reduce(d0, bind_cols)))
 
@@ -37,9 +35,7 @@ p <- dir_ls(path = "./data-host/", recurse = 2) %>%
   mutate(file = as.character(file),
          s = str_sub(string = file, start = 13, end = 14),
          s = str_remove(string = s, pattern = "\\/"),
-         d0 = map(.x = file, .f = ~read_csv(file = .x)))
-
-p <- p %>%
+         d0 = map(.x = file, .f = ~read_csv(file = .x))) %>%
   group_by(s) %>%
   summarize(d1 = list(reduce(d0, bind_cols)))
 
@@ -197,6 +193,7 @@ p0 <- e %>%
   select(-d1)
 
 for(i in 1:5){
+  message(i)
   for(j in 1:ncol(p0$d2[[i]])){
     p0$d2[[i]] %>%
       select(j) %>%

@@ -45,10 +45,24 @@ for(i in 1:nrow(d)){
 
   ii <- wcde::wic_indicators %>%
     filter(indicator == d$i[i])
+  col_lab <- d$i[i]
+
+  if(nrow(ii) == 0){
+    ii <- tibble(
+      age = str_detect(string = d$i[i], pattern = "age"),
+      sex = str_detect(string = d$i[i], pattern = "sex"),
+      edu = str_detect(string = d$i[i], pattern = "edattain"),
+      bage = FALSE,
+      sage = FALSE,
+      period = FALSE
+    )
+    col_lab <- "pop"
+  }
+
 
   # cc <- which(names(x0) %in% country_code)
   x2 <- x0 %>%
-    pivot_longer(cols = all_of(cc), names_to = "isono", values_to = d$i[i]) %>%
+    pivot_longer(cols = all_of(cc), names_to = "isono", values_to = col_lab) %>%
     select(-contains("no"), isono) %>%
     mutate(isono = as.numeric(isono)) %>%
     left_join(x1, by = "isono") %>%
