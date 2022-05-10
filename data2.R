@@ -4,6 +4,9 @@
 ## data3: build batch data
 ##
 
+library(tidyverse)
+library(fs)
+
 ##
 ## read in data
 ##
@@ -67,7 +70,7 @@ p0 <- p %>%
     d %>%
       relocate(ncol(.) - 0:7) %>%
       filter(age == "All", sex == "Both", edu == "Total")})) %>%
-  select(-d1)  select(-d1)
+  select(-d1)
 
 for(i in 1:5){
   for(j in 1:ncol(p0$d2[[i]])){

@@ -14,9 +14,9 @@ library(fs)
 d <- dir_ls(path = "./data-host/", recurse = 1) %>%
   as_tibble() %>%
   rename(dir = 1) %>%
-  filter(str_length(dir) > 22) %>%
+  filter(str_length(dir) > 14) %>%
   mutate(i = str_remove(string = dir, "./data-host/")) %>%
-  separate(col = i, into = c("s", "i")) %>%
+  separate(col = i, into = c("s", "i"), sep = "/") #%>%
   # github wont allow over 100mb files .. added them to .gitignore
   # filter(!i %in% c("epop", "prop"))
 
@@ -41,6 +41,7 @@ for(i in 1:nrow(d)){
     select(isono, name)
 
   cc <- str_which(string = names(x0), pattern = "\\d{1,}")
+
 
   ii <- wcde::wic_indicators %>%
     filter(indicator == d$i[i])
