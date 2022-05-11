@@ -30,6 +30,15 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL)
     tidyr::pivot_longer(cols = dplyr::everything(), names_to = "v", values_to = "avail") %>%
     dplyr::filter(avail == 1) %>%
     dplyr::pull(v)
+
+  if(length(v0) == 0 & stringr::str_detect(string = indicator, pattern = "pop-")){
+    v0 <- stringr::str_split(string = indicator, pattern = "-")[[1]]
+    v0 <- v0[-1]
+    v0 <- stringr::str_replace(string = v0, pattern = "edattain", replacement = "edu")
+    v0 <- stringr::str_replace(string = v0, pattern = "total", replacement = "")
+    v0 <- v0[!nchar(v0)==0]
+  }
+
   if(!any(v0 == "period"))
     v0 <- c(v0, "year")
   if(any(stringr::str_detect(string = v0, pattern = "bage")))
@@ -44,7 +53,8 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL)
 
   read_with_progress <- function(f){
     pb$tick()
-    readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5)
+    # message(f)
+    readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5, progress = FALSE)
   }
   pb <- progress::progress_bar$new(total = nrow(d0))
   pb$tick(0)

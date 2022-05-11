@@ -9,6 +9,9 @@ get_wcde(
   scenario = 2,
   country_code = NULL,
   country_name = NULL,
+  pop_age = c("total", "all"),
+  pop_sex = c("total", "both", "all"),
+  pop_edu = c("total", "four", "six", "eight"),
   include_scenario_names = FALSE
 )
 }
@@ -20,6 +23,12 @@ get_wcde(
 \item{country_code}{Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.}
 
 \item{country_name}{Vector of length one or more of country names. The corresponding country code will be guessed using the countrycodes package.}
+
+\item{pop_age}{Character string for population age groups if \code{indicator} is set to \code{pop}. Defaults to no age groups \code{total}, but can be set to \code{all}.}
+
+\item{pop_sex}{Character string for population sexes if \code{indicator}is set to \code{pop}. Defaults to no sex \code{total}, but can be set to \code{both} or \code{all}.}
+
+\item{pop_edu}{Character string for population educational attainment if \code{indicator} is set to \code{pop}. Defaults to \code{total}, but can be set to \code{four}, \code{six} or \code{eight}.}
 
 \item{include_scenario_names}{Logical vector of length one to indicate if to include additional columns for scenario names and short names. \code{FALSE} by default.}
 }
@@ -92,5 +101,14 @@ get_wcde(scenario = c(1, 2), indicator = "e0", country_name = c("Vietnam", "UK")
 
 # SSP1 and SSP3 population by education for all countries
 get_wcde(scenario = c(1, 3), indicator = "tfr")
+
+# population totals (aggregated over age, sex and education)
+get_wcde(indicator = "pop", country_name = "Austria")
+
+# population totals by education group
+get_wcde(indicator = "pop", country_name = "Austria", pop_edu = "four")
+
+# population totals by age-sex group
+get_wcde(indicator = "pop", country_name = "Austria", pop_age = "all", pop_sex = "both")
 }
 }

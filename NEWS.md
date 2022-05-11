@@ -17,3 +17,7 @@
 * Github actions working
 * Website to description
 * Allow `edu_group_sum()` to work without scenario column
+
+# wcde 0.0.4
+
+* Add `pop_age`, `pop_sex` and `pop_edattain` arguments to `get_wcde()` and added separate population files for different age/sex/education categories to server

@@ -6,6 +6,9 @@
 #' @param scenario Vector of length one or more with numbers corresponding the scenarios. See details for more information. Defaults to 2 for the SSP2 Medium scenario.
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
 #' @param country_name Vector of length one or more of country names. The corresponding country code will be guessed using the countrycodes package.
+#' @param pop_age Character string for population age groups if `indicator` is set to `pop`. Defaults to no age groups `total`, but can be set to `all`.
+#' @param pop_sex Character string for population sexes if `indicator`is set to `pop`. Defaults to no sex `total`, but can be set to `both` or `all`.
+#' @param pop_edu Character string for population educational attainment if `indicator` is set to `pop`. Defaults to `total`, but can be set to `four`, `six` or `eight`.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
 #'
 #' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
@@ -75,24 +78,77 @@
 #'
 #' # SSP1 and SSP3 population by education for all countries
 #' get_wcde(scenario = c(1, 3), indicator = "tfr")
+#'
+#' # population totals (aggregated over age, sex and education)
+#' get_wcde(indicator = "pop", country_name = "Austria")
+#'
+#' # population totals by education group
+#' get_wcde(indicator = "pop", country_name = "Austria", pop_edu = "four")
+#'
+#' # population totals by age-sex group
+#' get_wcde(indicator = "pop", country_name = "Austria", pop_age = "all", pop_sex = "both")
 #' }
-get_wcde <- function(indicator = "pop", scenario = 2,
-                 country_code = NULL, country_name = NULL,
-                 include_scenario_names = FALSE){
+get_wcde <- function(
+    indicator = "pop", scenario = 2,
+    country_code = NULL, country_name = NULL,
+    pop_age = c("total", "all"),
+    pop_sex = c("total", "both", "all"),
+    pop_edu = c("total", "four", "six", "eight"),
+    include_scenario_names = FALSE){
   # scenario = 2; indicator = "epop"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
   # guess country codes from name
+
   guessed_code <- NULL
   if(!is.null(country_name)){
-    guessed_code <- countrycode::countryname(sourcevar = country_name,
-                                             destination = "iso3n")
+    guessed_country <- countrycode::countryname(country_name)
+    guessed_code <- countrycode::countrycode(
+      sourcevar = guessed_country, origin = "country.name", destination = "iso3n"
+    )
   }
   country_code <- c(country_code, guessed_code)
+
+  if(indicator == "pop"){
+    pop_age <- match.arg(pop_age)
+    pop_sex <- match.arg(pop_sex)
+    pop_edu <- match.arg(pop_edu)
+    if(pop_age == "total" & pop_sex == "total" & pop_edu == "total")
+      indicator <- "pop-total"
+    if(pop_age == "total" & pop_sex == "both" & pop_edu == "total")
+      indicator <- "pop-sex"
+    if(pop_age == "total" & pop_sex == "total" & pop_edu %in% c("four", "six", "eight"))
+      indicator <- "pop-edattain"
+    if(pop_age == "all" & pop_sex == "total" & pop_edu == "total")
+      indicator <- "pop-age"
+    if(pop_age == "all" & pop_sex == "both" & pop_edu == "total")
+      indicator <- "pop-age-sex"
+    if(pop_age == "all" & pop_sex == "total" & pop_edu %in% c("four", "six", "eight"))
+      indicator <- "pop-age-edattain"
+    # if(pop_age == "all" & pop_sex == "all" & pop_edu == "total")
+    #   indicator <- "pop"
+    if(pop_age == "total" & pop_sex == "both" & pop_edu %in% c("four", "six", "eight"))
+      indicator <- "pop-sex-edattain"
+    if(pop_age == "all" & pop_sex == "both" & pop_edu %in% c("four", "six", "eight"))
+      indicator <- "pop-age-sex-edattain"
+    if(pop_age == "all" & pop_sex == "all" & pop_edu %in% c("four", "six", "eight"))
+      indicator <- "epop"
+  }
 
   d1 <- wcde::wic_indicators %>%
     dplyr::filter(indicator == {{indicator}})
 
-  if(nrow(d1) < 1){
+  if(nrow(d1) < 1 & !stringr::str_detect(string = indicator, pattern = "pop-")){
     stop(paste(indicator, "not an indicator code in wic_indicators, please select an indicator code in the name column of widc_indicators"))
+  }
+
+  if(nrow(d1) == 0){
+    d1 <- tibble::tibble(
+      age = stringr::str_detect(string = indicator, pattern = "age"),
+      sex = stringr::str_detect(string = indicator, pattern = "sex"),
+      edu = stringr::str_detect(string = indicator, pattern = "edattain"),
+      bage = FALSE,
+      sage = FALSE,
+      period = FALSE
+    )
   }
 
   if(is.null(country_code)){
@@ -127,7 +183,27 @@ get_wcde <- function(indicator = "pop", scenario = 2,
       {if(d1$edu) dplyr::rename(., education=edu) else .} %>%
       tidyr::drop_na(.) %>%
       dplyr::relocate(dplyr::contains("scenario"), name, isono) %>%
-      dplyr::rename(country_code = isono)
+      dplyr::rename(country_code = isono) %>%
+      {if(stringr::str_detect(string = indicator, pattern = "-")) dplyr::rename(. , pop = dplyr::all_of(indicator)) else .}
+
+    if(stringr::str_detect(string = indicator, pattern = "pop-")){
+      # ^ avoids epop
+      if(pop_edu != "total"){
+        n_edu <- switch(pop_edu,
+                        "four" = 4,
+                        "six" = 6,
+                        "eight" = 8
+        )
+        d2 <- d2 %>%
+          {if(pop_age == "total") dplyr::mutate(., age = "All") else .} %>%
+          {if(pop_sex == "total") dplyr::mutate(., sex = "All") else .} %>%
+          dplyr::rename(epop = pop) %>%
+          edu_group_sum(n = n_edu, strip_totals = FALSE) %>%
+          {if(pop_age == "total") dplyr::select(., -age) else .} %>%
+          {if(pop_sex == "total") dplyr::select(., -sex) else .} %>%
+          dplyr::rename(pop = epop)
+      }
+    }
   }
   return(d2)
 }

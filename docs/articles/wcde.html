@@ -32,6 +32,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -44,18 +46,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">wcde</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2.03</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.4</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../articles/wcde.html">Get started</a>
 </li>
@@ -68,19 +64,19 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/guyabel/wcde/">
+  <a href="https://github.com/guyabel/wcde/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="https://twitter.com/guyabelguyabel">
+  <a href="https://twitter.com/guyabelguyabel" class="external-link">
     <span class="fab fa-twitter fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="https://guyabel.com">
+  <a href="https://guyabel.com" class="external-link">
     <span class="fas fa-blog fa-lg"></span>
      
   </a>
@@ -95,525 +91,605 @@
 
       
 
-      </header><script src="wcde_files/header-attrs-2.9/header-attrs.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Overview of the wcde package</h1>
-                        <h4 class="author">Guy J. Abel, Samir K.C., Michaela Potancokova, Claudia Reiter, Andrea Tamburini and Dilek Yildiz</h4>
+                        <h4 data-toc-skip class="author">Guy J. Abel,
+Samir K.C., Michaela Potancokova, Claudia Reiter, Andrea Tamburini and
+Dilek Yildiz</h4>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/guyabel/wcde/blob/master/vignettes/wcde.Rmd"><code>vignettes/wcde.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/guyabel/wcde/blob/HEAD/vignettes/wcde.Rmd" class="external-link"><code>vignettes/wcde.Rmd</code></a></small>
       <div class="hidden name"><code>wcde.Rmd</code></div>
 
     </div>
 
     
     
-<p><img src="../man/figures/logo.png" align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;"></p>
-<p>The <code>wcde</code> package allows for R users to easily download data from the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/">Wittgenstein Centre Human Capital Data Explorer</a> as well as containing a number of helpful functions for working with education specific demographic data.</p>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
-<p>You can install the released version of <code>wcde</code> from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
+<p><img src="https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png" align="right" height="200" style="float:right; height:200px;"></p>
+<p>The <code>wcde</code> package allows for R users to easily download
+data from the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link">Wittgenstein
+Centre for Demography and Human Capital Data Explorer</a> as well as
+containing a number of helpful functions for working with education
+specific demographic data.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the released version of <code>wcde</code> from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"wcde"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"wcde"</span><span class="op">)</span></code></pre></div>
 <p>Install the developmental version with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/">devtools</a></span><span class="op">)</span>
-<span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"guyabel/wcde"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span>
+<span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"guyabel/wcde"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="getting-data-into-r" class="section level1">
-<h1 class="hasAnchor">
-<a href="#getting-data-into-r" class="anchor"></a>Getting data into R</h1>
-<p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> function can be used to download data from the Wittgenstein Centre Human Capital Data Explorer. It requires three user inputs</p>
+<div class="section level2">
+<h2 id="getting-data-into-r">Getting data into R<a class="anchor" aria-label="anchor" href="#getting-data-into-r"></a>
+</h2>
+<p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> function can be used to download data
+from the Wittgenstein Centre Human Capital Data Explorer. It requires
+three user inputs</p>
 <ul>
 <li>
-<code>indicator</code>: a short code for the indicator of interest</li>
+<code>indicator</code>: a short code for the indicator of
+interest</li>
 <li>
-<code>scenario</code>: a number referring to a SSP narrative, by default 2 is used (for SSP2)</li>
+<code>scenario</code>: a number referring to a SSP narrative, by
+default 2 is used (for SSP2)</li>
 <li>
-<code>country_code</code> (or <code>country_name</code>): corresponding to the country of interest</li>
+<code>country_code</code> (or <code>country_name</code>):
+corresponding to the country of interest</li>
 </ul>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://guyabel.github.io/wcde/">wcde</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://guyabel.github.io/wcde/" class="external-link">wcde</a></span><span class="op">)</span>
 <span class="co"># download education specific tfr data</span>
-<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 204 x 6</span>
+<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span>
 <span class="co">#&gt;    scenario name    country_code education          period     etfr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;     &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Brazil            76 No Education       2015-2020  2.47</span>
-<span class="co">#&gt;  2        2 Albania            8 No Education       2015-2020  1.88</span>
-<span class="co">#&gt;  3        2 Brazil            76 Incomplete Primary 2015-2020  2.47</span>
-<span class="co">#&gt;  4        2 Albania            8 Incomplete Primary 2015-2020  1.88</span>
-<span class="co">#&gt;  5        2 Brazil            76 Primary            2015-2020  2.47</span>
-<span class="co">#&gt;  6        2 Albania            8 Primary            2015-2020  1.88</span>
-<span class="co">#&gt;  7        2 Brazil            76 Lower Secondary    2015-2020  1.89</span>
-<span class="co">#&gt;  8        2 Albania            8 Lower Secondary    2015-2020  1.9 </span>
-<span class="co">#&gt;  9        2 Brazil            76 Upper Secondary    2015-2020  1.37</span>
-<span class="co">#&gt; 10        2 Albania            8 Upper Secondary    2015-2020  1.57</span>
-<span class="co">#&gt; # ... with 194 more rows</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2015-2020  2.47</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2015-2020  1.88</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2015-2020  2.47</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2015-2020  1.88</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2015-2020  2.47</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2015-2020  1.88</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2015-2020  1.89</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2015-2020  1.9 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020  1.37</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020  1.57</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 194 more rows</span></span>
 
 <span class="co"># download education specific survivorship rates</span>
-<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"eassr"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Niger"</span>, <span class="st">"Korea"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 8,976 x 8</span>
+<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"eassr"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Niger"</span>, <span class="st">"Korea"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 8,976 × 8</span></span>
 <span class="co">#&gt;    scenario name              country_code age     sex   education  period eassr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                    &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;  &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Niger                      562 Newborn Male  No Educat~ 2015-~  91.6</span>
-<span class="co">#&gt;  2        2 Republic of Korea          410 Newborn Male  No Educat~ 2015-~  99.4</span>
-<span class="co">#&gt;  3        2 Niger                      562 Newborn Male  Incomplet~ 2015-~  92  </span>
-<span class="co">#&gt;  4        2 Republic of Korea          410 Newborn Male  Incomplet~ 2015-~  99.5</span>
-<span class="co">#&gt;  5        2 Niger                      562 Newborn Male  Primary    2015-~  92.5</span>
-<span class="co">#&gt;  6        2 Republic of Korea          410 Newborn Male  Primary    2015-~  99.5</span>
-<span class="co">#&gt;  7        2 Niger                      562 Newborn Male  Lower Sec~ 2015-~  93.4</span>
-<span class="co">#&gt;  8        2 Republic of Korea          410 Newborn Male  Lower Sec~ 2015-~  99.6</span>
-<span class="co">#&gt;  9        2 Niger                      562 Newborn Male  Upper Sec~ 2015-~  95.2</span>
-<span class="co">#&gt; 10        2 Republic of Korea          410 Newborn Male  Upper Sec~ 2015-~  99.7</span>
-<span class="co">#&gt; # ... with 8,966 more rows</span></code></pre></div>
-<div id="indicator-codes" class="section level2">
-<h2 class="hasAnchor">
-<a href="#indicator-codes" class="anchor"></a>Indicator codes</h2>
-<p>The indicator input must match the short code from the indicator table. The <code><a href="../reference/find_indicator.html">find_indicator()</a></code> function can be used to look up short codes (given in the first column) from the <code>wic_indicators</code> data frame:</p>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Niger                      562 Newborn Male  No Educat… 2015-…  91.6</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Republic of Korea          410 Newborn Male  No Educat… 2015-…  99.4</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Niger                      562 Newborn Male  Incomplet… 2015-…  92  </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Republic of Korea          410 Newborn Male  Incomplet… 2015-…  99.5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Niger                      562 Newborn Male  Primary    2015-…  92.5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Republic of Korea          410 Newborn Male  Primary    2015-…  99.5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Niger                      562 Newborn Male  Lower Sec… 2015-…  93.4</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Republic of Korea          410 Newborn Male  Lower Sec… 2015-…  99.6</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Niger                      562 Newborn Male  Upper Sec… 2015-…  95.2</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Republic of Korea          410 Newborn Male  Upper Sec… 2015-…  99.7</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 8,966 more rows</span></span></code></pre></div>
+<div class="section level3">
+<h3 id="indicator-codes">Indicator codes<a class="anchor" aria-label="anchor" href="#indicator-codes"></a>
+</h3>
+<p>The indicator input must match the short code from the indicator
+table. The <code><a href="../reference/find_indicator.html">find_indicator()</a></code> function can be used to look up
+short codes (given in the first column) from the
+<code>wic_indicators</code> data frame:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/find_indicator.html">find_indicator</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"tfr"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 2 x 3</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 3</span></span>
 <span class="co">#&gt;   indicator description                       definition                        </span>
-<span class="co">#&gt;   &lt;chr&gt;     &lt;chr&gt;                             &lt;chr&gt;                             </span>
-<span class="co">#&gt; 1 tfr       Total Fertility Rate              "The average number of children b~</span>
-<span class="co">#&gt; 2 etfr      Total Fertility Rate by Education "The average number of children b~</span></code></pre></div>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                             </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> tfr       Total Fertility Rate              <span style="color: #949494;">"</span>The average number of children b…</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> etfr      Total Fertility Rate by Education <span style="color: #949494;">"</span>The average number of children b…</span></code></pre></div>
 </div>
-<div id="temporal-coverage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#temporal-coverage" class="anchor"></a>Temporal coverage</h2>
-<p>By default, <code>get_wdce()</code> returns data for all years or available periods or years. The <code><a href="https://rdrr.io/r/stats/filter.html">filter()</a></code> function in <a href="https://cran.r-project.org/package=dplyr/index.html">dplyr</a> can be used to filter data for specific years or periods, for example:</p>
+<div class="section level3">
+<h3 id="temporal-coverage">Temporal coverage<a class="anchor" aria-label="anchor" href="#temporal-coverage"></a>
+</h3>
+<p>By default, <code>get_wdce()</code> returns data for all years or
+available periods or years. The <code><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter()</a></code> function in <a href="https://cran.r-project.org/package=dplyr/index.html" class="external-link">dplyr</a> can
+be used to filter data for specific years or periods, for example:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span>
-<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"e0"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Japan"</span>, <span class="st">"Australia"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2015-2020"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 4 x 6</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span>
+<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"e0"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Japan"</span>, <span class="st">"Australia"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2015-2020"</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 4 × 6</span></span>
 <span class="co">#&gt;   scenario name      country_code sex    period       e0</span>
-<span class="co">#&gt;      &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;</span>
-<span class="co">#&gt; 1        2 Japan              392 Male   2015-2020  80.7</span>
-<span class="co">#&gt; 2        2 Australia           36 Male   2015-2020  81.3</span>
-<span class="co">#&gt; 3        2 Japan              392 Female 2015-2020  87.2</span>
-<span class="co">#&gt; 4        2 Australia           36 Female 2015-2020  85</span>
+<span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        2 Japan              392 Male   2015-2020  80.7</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        2 Australia           36 Male   2015-2020  81.3</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span>        2 Japan              392 Female 2015-2020  87.2</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">4</span>        2 Australia           36 Female 2015-2020  85</span>
 
-<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"sexratio"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"China"</span>, <span class="st">"South Korea"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 44 x 6</span>
+<span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"sexratio"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"China"</span>, <span class="st">"South Korea"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 44 × 6</span></span>
 <span class="co">#&gt;    scenario name              country_code age     year sexratio</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                    &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;    &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 China                      156 All     2020     1.06</span>
-<span class="co">#&gt;  2        2 Republic of Korea          410 All     2020     1   </span>
-<span class="co">#&gt;  3        2 China                      156 0--4    2020     1.15</span>
-<span class="co">#&gt;  4        2 Republic of Korea          410 0--4    2020     1.07</span>
-<span class="co">#&gt;  5        2 China                      156 5--9    2020     1.16</span>
-<span class="co">#&gt;  6        2 Republic of Korea          410 5--9    2020     1.07</span>
-<span class="co">#&gt;  7        2 China                      156 10--14  2020     1.17</span>
-<span class="co">#&gt;  8        2 Republic of Korea          410 10--14  2020     1.07</span>
-<span class="co">#&gt;  9        2 China                      156 15--19  2020     1.16</span>
-<span class="co">#&gt; 10        2 Republic of Korea          410 15--19  2020     1.1 </span>
-<span class="co">#&gt; # ... with 34 more rows</span></code></pre></div>
-<p>Past data is only available for selected indicators. These can be viewed using the <code>past</code> indicator column:</p>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 China                      156 All     <span style="text-decoration: underline;">2</span>020     1.06</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Republic of Korea          410 All     <span style="text-decoration: underline;">2</span>020     1   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 China                      156 0--4    <span style="text-decoration: underline;">2</span>020     1.15</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Republic of Korea          410 0--4    <span style="text-decoration: underline;">2</span>020     1.07</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 China                      156 5--9    <span style="text-decoration: underline;">2</span>020     1.16</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Republic of Korea          410 5--9    <span style="text-decoration: underline;">2</span>020     1.07</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 China                      156 10--14  <span style="text-decoration: underline;">2</span>020     1.17</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Republic of Korea          410 10--14  <span style="text-decoration: underline;">2</span>020     1.07</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 China                      156 15--19  <span style="text-decoration: underline;">2</span>020     1.16</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Republic of Korea          410 15--19  <span style="text-decoration: underline;">2</span>020     1.1 </span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 34 more rows</span></span></code></pre></div>
+<p>Past data is only available for selected indicators. These can be
+viewed using the <code>past</code> indicator column:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">wic_indicators</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">past</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">select</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 28 x 2</span>
+<code class="sourceCode R"><span class="va">wic_indicators</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">past</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 28 × 2</span></span>
 <span class="co">#&gt;    indicator description                                     </span>
-<span class="co">#&gt;    &lt;chr&gt;     &lt;chr&gt;                                           </span>
-<span class="co">#&gt;  1 pop       Population Size (000's)                         </span>
-<span class="co">#&gt;  2 bpop      Population Size by Broad Age (000's)            </span>
-<span class="co">#&gt;  3 epop      Population Size by Education (000's)            </span>
-<span class="co">#&gt;  4 prop      Educational Attainment Distribution             </span>
-<span class="co">#&gt;  5 bprop     Educational Attainment Distribution by Broad Age</span>
-<span class="co">#&gt;  6 growth    Average Annual Growth Rate                      </span>
-<span class="co">#&gt;  7 nirate    Average Annual Rate of Natural Increase         </span>
-<span class="co">#&gt;  8 sexratio  Sex Ratio                                       </span>
-<span class="co">#&gt;  9 mage      Population Median Age                           </span>
-<span class="co">#&gt; 10 tdr       Total Dependency Ratio                          </span>
-<span class="co">#&gt; # ... with 18 more rows</span></code></pre></div>
-<p>The <code><a href="https://rdrr.io/r/stats/filter.html">filter()</a></code> function can also be used to filter specific indicators to specific age, sex or education groups</p>
+<span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                           </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> pop       Population Size (000's)                         </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> bpop      Population Size by Broad Age (000's)            </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> epop      Population Size by Education (000's)            </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> prop      Educational Attainment Distribution             </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> bprop     Educational Attainment Distribution by Broad Age</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> growth    Average Annual Growth Rate                      </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> nirate    Average Annual Rate of Natural Increase         </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> sexratio  Sex Ratio                                       </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> mage      Population Median Age                           </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span> tdr       Total Dependency Ratio                          </span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 18 more rows</span></span></code></pre></div>
+<p>The <code><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter()</a></code> function can also be used to filter
+specific indicators to specific age, sex or education groups</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"sexratio"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"China"</span>, <span class="st">"South Korea"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span>, 
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"sexratio"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"China"</span>, <span class="st">"South Korea"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span>,
          <span class="va">age</span> <span class="op">==</span> <span class="st">"All"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 2 x 6</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 6</span></span>
 <span class="co">#&gt;   scenario name              country_code age    year sexratio</span>
-<span class="co">#&gt;      &lt;dbl&gt; &lt;chr&gt;                    &lt;dbl&gt; &lt;chr&gt; &lt;dbl&gt;    &lt;dbl&gt;</span>
-<span class="co">#&gt; 1        2 China                      156 All    2020     1.06</span>
-<span class="co">#&gt; 2        2 Republic of Korea          410 All    2020     1</span></code></pre></div>
+<span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        2 China                      156 All    <span style="text-decoration: underline;">2</span>020     1.06</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        2 Republic of Korea          410 All    <span style="text-decoration: underline;">2</span>020     1</span></code></pre></div>
 </div>
-<div id="country-names-and-codes" class="section level2">
-<h2 class="hasAnchor">
-<a href="#country-names-and-codes" class="anchor"></a>Country names and codes</h2>
-<p>Country names are guessed using the <a href="https://cran.r-project.org/package=countrycode/index.html">countrycode</a> package.</p>
+<div class="section level3">
+<h3 id="country-names-and-codes">Country names and codes<a class="anchor" aria-label="anchor" href="#country-names-and-codes"></a>
+</h3>
+<p>Country names are guessed using the <a href="https://cran.r-project.org/package=countrycode/index.html" class="external-link">countrycode</a>
+package.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"U.A.E"</span>, <span class="st">"Espania"</span>, <span class="st">"Österreich"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 90 x 5</span>
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"U.A.E"</span>, <span class="st">"Espania"</span>, <span class="st">"Österreich"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 90 × 5</span></span>
 <span class="co">#&gt;    scenario name                 country_code period      tfr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                       &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 United Arab Emirates          784 1950-1955  6.97</span>
-<span class="co">#&gt;  2        2 Spain                         724 1950-1955  2.53</span>
-<span class="co">#&gt;  3        2 Austria                        40 1950-1955  2.1 </span>
-<span class="co">#&gt;  4        2 United Arab Emirates          784 1955-1960  6.97</span>
-<span class="co">#&gt;  5        2 Spain                         724 1955-1960  2.7 </span>
-<span class="co">#&gt;  6        2 Austria                        40 1955-1960  2.57</span>
-<span class="co">#&gt;  7        2 United Arab Emirates          784 1960-1965  6.87</span>
-<span class="co">#&gt;  8        2 Spain                         724 1960-1965  2.81</span>
-<span class="co">#&gt;  9        2 Austria                        40 1960-1965  2.78</span>
-<span class="co">#&gt; 10        2 United Arab Emirates          784 1965-1970  6.77</span>
-<span class="co">#&gt; # ... with 80 more rows</span></code></pre></div>
-<p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> functions accepts ISO alpha numeric codes for countries via the <code>country_code</code> argument:</p>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 United Arab Emirates          784 1950-1955  6.97</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Spain                         724 1950-1955  2.53</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Austria                        40 1950-1955  2.1 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 United Arab Emirates          784 1955-1960  6.97</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Spain                         724 1955-1960  2.7 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Austria                        40 1955-1960  2.57</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 United Arab Emirates          784 1960-1965  6.87</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Spain                         724 1960-1965  2.81</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Austria                        40 1960-1965  2.78</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 United Arab Emirates          784 1965-1970  6.77</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 80 more rows</span></span></code></pre></div>
+<p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> functions accepts ISO alpha numeric codes
+for countries via the <code>country_code</code> argument:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">44</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 204 x 6</span>
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">44</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span>
 <span class="co">#&gt;    scenario name     country_code education          period     etfr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;     &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Bahamas            44 No Education       2015-2020  2.71</span>
-<span class="co">#&gt;  2        2 Bulgaria          100 No Education       2015-2020  1.72</span>
-<span class="co">#&gt;  3        2 Bahamas            44 Incomplete Primary 2015-2020  2.71</span>
-<span class="co">#&gt;  4        2 Bulgaria          100 Incomplete Primary 2015-2020  1.72</span>
-<span class="co">#&gt;  5        2 Bahamas            44 Primary            2015-2020  2.71</span>
-<span class="co">#&gt;  6        2 Bulgaria          100 Primary            2015-2020  1.72</span>
-<span class="co">#&gt;  7        2 Bahamas            44 Lower Secondary    2015-2020  2.09</span>
-<span class="co">#&gt;  8        2 Bulgaria          100 Lower Secondary    2015-2020  1.73</span>
-<span class="co">#&gt;  9        2 Bahamas            44 Upper Secondary    2015-2020  1.76</span>
-<span class="co">#&gt; 10        2 Bulgaria          100 Upper Secondary    2015-2020  1.44</span>
-<span class="co">#&gt; # ... with 194 more rows</span></code></pre></div>
-<p>A full list of available countries and region aggregates, and their codes, can be found in the <code>wic_locations</code> data frame.</p>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bahamas            44 No Education       2015-2020  2.71</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Bulgaria          100 No Education       2015-2020  1.72</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Bahamas            44 Incomplete Primary 2015-2020  2.71</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Bulgaria          100 Incomplete Primary 2015-2020  1.72</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Bahamas            44 Primary            2015-2020  2.71</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Bulgaria          100 Primary            2015-2020  1.72</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Bahamas            44 Lower Secondary    2015-2020  2.09</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Bulgaria          100 Lower Secondary    2015-2020  1.73</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Bahamas            44 Upper Secondary    2015-2020  1.76</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Bulgaria          100 Upper Secondary    2015-2020  1.44</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 194 more rows</span></span></code></pre></div>
+<p>A full list of available countries and region aggregates, and their
+codes, can be found in the <code>wic_locations</code> data frame.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">wic_locations</span>
-<span class="co">#&gt; # A tibble: 230 x 5</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 230 × 5</span></span>
 <span class="co">#&gt;    name                            isono continent region             dim    </span>
-<span class="co">#&gt;    &lt;chr&gt;                           &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;              &lt;chr&gt;  </span>
-<span class="co">#&gt;  1 World                             900 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  2 Africa                            903 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  3 Asia                              935 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  4 Europe                            908 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  5 Latin America and the Caribbean   904 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  6 Northern America                  905 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  7 Oceania                           909 &lt;NA&gt;      &lt;NA&gt;               area   </span>
-<span class="co">#&gt;  8 Afghanistan                         4 Asia      South-Central Asia country</span>
-<span class="co">#&gt;  9 Albania                             8 Europe    Southern Europe    country</span>
-<span class="co">#&gt; 10 Algeria                            12 Africa    Northern Africa    country</span>
-<span class="co">#&gt; # ... with 220 more rows</span></code></pre></div>
+<span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> World                             900 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Africa                            903 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Asia                              935 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Europe                            908 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Latin America and the Caribbean   904 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Northern America                  905 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Oceania                           909 <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>                 area   </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Afghanistan                         4 Asia      South-Central Asia country</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Albania                             8 Europe    Southern Europe    country</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Algeria                            12 Africa    Northern Africa    country</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 220 more rows</span></span></code></pre></div>
 </div>
-<div id="scenarios" class="section level2">
-<h2 class="hasAnchor">
-<a href="#scenarios" class="anchor"></a>Scenarios</h2>
-<p>By default <code><a href="../reference/get_wcde.html">get_wcde()</a></code> returns data for Medium (SSP2) scenario. Results for different SSP scenarios can be returned by passing a different (or multiple) scenario values to the <code>scenario</code> argument in <code>get_data()</code>.</p>
+<div class="section level3">
+<h3 id="scenarios">Scenarios<a class="anchor" aria-label="anchor" href="#scenarios"></a>
+</h3>
+<p>By default <code><a href="../reference/get_wcde.html">get_wcde()</a></code> returns data for Medium (SSP2)
+scenario. Results for different SSP scenarios can be returned by passing
+a different (or multiple) scenario values to the <code>scenario</code>
+argument in <code>get_data()</code>.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"growth"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"India"</span>, <span class="st">"China"</span><span class="op">)</span>, 
-         scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">21</span>, <span class="fl">22</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2095-2100"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 10 x 5</span>
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"growth"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"India"</span>, <span class="st">"China"</span><span class="op">)</span>,
+         scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">21</span>, <span class="fl">22</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2095-2100"</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 10 × 5</span></span>
 <span class="co">#&gt;    scenario name  country_code period    growth</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        1 India          356 2095-2100   -0.7</span>
-<span class="co">#&gt;  2        1 China          156 2095-2100   -1.1</span>
-<span class="co">#&gt;  3        2 India          356 2095-2100   -0.5</span>
-<span class="co">#&gt;  4        2 China          156 2095-2100   -1  </span>
-<span class="co">#&gt;  5        3 India          356 2095-2100    0.2</span>
-<span class="co">#&gt;  6        3 China          156 2095-2100   -0.2</span>
-<span class="co">#&gt;  7       21 India          356 2095-2100   -0.5</span>
-<span class="co">#&gt;  8       21 China          156 2095-2100   -0.9</span>
-<span class="co">#&gt;  9       22 India          356 2095-2100   -0.5</span>
-<span class="co">#&gt; 10       22 China          156 2095-2100   -1</span></code></pre></div>
-<p>Set <code>include_scenario_names = TRUE</code> to include a columns with the full names of the scenarios</p>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        1 India          356 2095-2100   -<span style="color: #BB0000;">0.7</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        1 China          156 2095-2100   -<span style="color: #BB0000;">1.1</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 India          356 2095-2100   -<span style="color: #BB0000;">0.5</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 China          156 2095-2100   -<span style="color: #BB0000;">1</span>  </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        3 India          356 2095-2100    0.2</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        3 China          156 2095-2100   -<span style="color: #BB0000;">0.2</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>       21 India          356 2095-2100   -<span style="color: #BB0000;">0.5</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>       21 China          156 2095-2100   -<span style="color: #BB0000;">0.9</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>       22 India          356 2095-2100   -<span style="color: #BB0000;">0.5</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>       22 China          156 2095-2100   -<span style="color: #BB0000;">1</span></span></code></pre></div>
+<p>Set <code>include_scenario_names = TRUE</code> to include a columns
+with the full names of the scenarios</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>, 
-         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Kenya"</span>, <span class="st">"Nigeria"</span>, <span class="st">"Algeria"</span><span class="op">)</span>,
-         scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, 
-         include_scenario_names <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2045-2050"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 9 x 7</span>
-<span class="co">#&gt;   scenario scenario_name         scenario_abb name    country_code period    tfr</span>
-<span class="co">#&gt;      &lt;dbl&gt; &lt;chr&gt;                 &lt;chr&gt;        &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;</span>
-<span class="co">#&gt; 1        1 Rapid Development (S~ SSP1         Kenya            404 2045-2~  1.62</span>
-<span class="co">#&gt; 2        1 Rapid Development (S~ SSP1         Nigeria          566 2045-2~  2.29</span>
-<span class="co">#&gt; 3        1 Rapid Development (S~ SSP1         Algeria           12 2045-2~  1.53</span>
-<span class="co">#&gt; 4        2 Medium (SSP2)         SSP2         Kenya            404 2045-2~  2.36</span>
-<span class="co">#&gt; 5        2 Medium (SSP2)         SSP2         Nigeria          566 2045-2~  3.37</span>
-<span class="co">#&gt; 6        2 Medium (SSP2)         SSP2         Algeria           12 2045-2~  1.77</span>
-<span class="co">#&gt; 7        3 Stalled Development ~ SSP3         Kenya            404 2045-2~  3.33</span>
-<span class="co">#&gt; 8        3 Stalled Development ~ SSP3         Nigeria          566 2045-2~  4.65</span>
-<span class="co">#&gt; 9        3 Stalled Development ~ SSP3         Algeria           12 2045-2~  2.41</span></code></pre></div>
-<p>Additional details of the pathways for each scenario numeric code can be found in the <code>wic_scenarios</code> object. Further background and links to the corresponding literature are provided in the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/">Data Explorer</a></p>
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>,
+         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Kenya"</span>, <span class="st">"Nigeria"</span>, <span class="st">"Algeria"</span><span class="op">)</span>,
+         scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>,
+         include_scenario_names <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2045-2050"</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 7</span></span>
+<span class="co">#&gt;   scenario scenario_name            scenario_abb name  country_code period   tfr</span>
+<span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        1 Rapid Development (SSP1) SSP1         Kenya          404 2045-…  1.62</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        1 Rapid Development (SSP1) SSP1         Nige…          566 2045-…  2.29</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span>        1 Rapid Development (SSP1) SSP1         Alge…           12 2045-…  1.53</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">4</span>        2 Medium (SSP2)            SSP2         Kenya          404 2045-…  2.36</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">5</span>        2 Medium (SSP2)            SSP2         Nige…          566 2045-…  3.37</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">6</span>        2 Medium (SSP2)            SSP2         Alge…           12 2045-…  1.77</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">7</span>        3 Stalled Development (SS… SSP3         Kenya          404 2045-…  3.33</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">8</span>        3 Stalled Development (SS… SSP3         Nige…          566 2045-…  4.65</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">9</span>        3 Stalled Development (SS… SSP3         Alge…           12 2045-…  2.41</span></code></pre></div>
+<p>Additional details of the pathways for each scenario numeric code can
+be found in the <code>wic_scenarios</code> object. Further background
+and links to the corresponding literature are provided in the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link">Data
+Explorer</a></p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">wic_scenarios</span>
-<span class="co">#&gt; # A tibble: 5 x 3</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 5 × 3</span></span>
 <span class="co">#&gt;   scenario_name                         scenario scenario_abb</span>
-<span class="co">#&gt;   &lt;chr&gt;                                    &lt;dbl&gt; &lt;chr&gt;       </span>
-<span class="co">#&gt; 1 Rapid Development (SSP1)                     1 SSP1        </span>
-<span class="co">#&gt; 2 Medium (SSP2)                                2 SSP2        </span>
-<span class="co">#&gt; 3 Stalled Development (SSP3)                   3 SSP3        </span>
-<span class="co">#&gt; 4 Medium - Zero Migration (SSP2 - ZM)         21 SSP2ZM      </span>
-<span class="co">#&gt; 5 Medium - Double Migration (SSP2 - DM)       22 SSP2DM</span></code></pre></div>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Rapid Development (SSP1)                     1 SSP1        </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Medium (SSP2)                                2 SSP2        </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Stalled Development (SSP3)                   3 SSP3        </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Medium - Zero Migration (SSP2 - ZM)         21 SSP2ZM      </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Medium - Double Migration (SSP2 - DM)       22 SSP2DM</span></code></pre></div>
 </div>
-<div id="all-countries-data" class="section level2">
-<h2 class="hasAnchor">
-<a href="#all-countries-data" class="anchor"></a>All countries data</h2>
-<p>Data for all countries can be obtained by not setting <code>country_name</code> or <code>country_code</code></p>
+<div class="section level3">
+<h3 id="all-countries-data">All countries data<a class="anchor" aria-label="anchor" href="#all-countries-data"></a>
+</h3>
+<p>Data for all countries can be obtained by not setting
+<code>country_name</code> or <code>country_code</code></p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"mage"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 7,099 x 5</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 7,099 × 5</span></span>
 <span class="co">#&gt;    scenario name                     country_code  year  mage</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Bulgaria                          100  1950  27.3</span>
-<span class="co">#&gt;  2        2 Myanmar                           104  1950  22.8</span>
-<span class="co">#&gt;  3        2 Burundi                           108  1950  19.5</span>
-<span class="co">#&gt;  4        2 Belarus                           112  1950  27.2</span>
-<span class="co">#&gt;  5        2 Cambodia                          116  1950  18.7</span>
-<span class="co">#&gt;  6        2 Algeria                            12  1950  19.4</span>
-<span class="co">#&gt;  7        2 Cameroon                          120  1950  20.8</span>
-<span class="co">#&gt;  8        2 Canada                            124  1950  27.7</span>
-<span class="co">#&gt;  9        2 Cape Verde                        132  1950  23  </span>
-<span class="co">#&gt; 10        2 Central African Republic          140  1950  22.5</span>
-<span class="co">#&gt; # ... with 7,089 more rows</span></code></pre></div>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100  <span style="text-decoration: underline;">1</span>950  27.3</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104  <span style="text-decoration: underline;">1</span>950  22.8</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108  <span style="text-decoration: underline;">1</span>950  19.5</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Belarus                           112  <span style="text-decoration: underline;">1</span>950  27.2</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Cambodia                          116  <span style="text-decoration: underline;">1</span>950  18.7</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Algeria                            12  <span style="text-decoration: underline;">1</span>950  19.4</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Cameroon                          120  <span style="text-decoration: underline;">1</span>950  20.8</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Canada                            124  <span style="text-decoration: underline;">1</span>950  27.7</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Cape Verde                        132  <span style="text-decoration: underline;">1</span>950  23  </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Central African Republic          140  <span style="text-decoration: underline;">1</span>950  22.5</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 7,089 more rows</span></span></code></pre></div>
 </div>
-<div id="multiple-indicators" class="section level2">
-<h2 class="hasAnchor">
-<a href="#multiple-indicators" class="anchor"></a>Multiple indicators</h2>
-<p>The <code>get_wdce()</code> function needs to be called multiple times to download multiple indicators. This can be done using the <code>map()</code> function in <a href="https://cran.r-project.org/package=purrr/index.html"><code>purrr</code></a></p>
+<div class="section level3">
+<h3 id="multiple-indicators">Multiple indicators<a class="anchor" aria-label="anchor" href="#multiple-indicators"></a>
+</h3>
+<p>The <code>get_wdce()</code> function needs to be called multiple
+times to download multiple indicators. This can be done using the
+<code><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map()</a></code> function in <a href="https://cran.r-project.org/package=purrr/index.html" class="external-link"><code>purrr</code></a></p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mi</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span>ind <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"odr"</span>, <span class="st">"nirate"</span>, <span class="st">"ggapedu25"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">mutate</span><span class="op">(</span>d <span class="op">=</span> <span class="fu">map</span><span class="op">(</span>.x <span class="op">=</span> <span class="va">ind</span>, .f <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="va">.x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
+<code class="sourceCode R"><span class="va">mi</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>ind <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"odr"</span>, <span class="st">"nirate"</span>, <span class="st">"ggapedu25"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>d <span class="op">=</span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map.html" class="external-link">map</a></span><span class="op">(</span>.x <span class="op">=</span> <span class="va">ind</span>, .f <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="va">.x</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 <span class="va">mi</span>
-<span class="co">#&gt; # A tibble: 3 x 2</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 3 × 2</span></span>
 <span class="co">#&gt;   ind       d                    </span>
-<span class="co">#&gt;   &lt;chr&gt;     &lt;list&gt;               </span>
-<span class="co">#&gt; 1 odr       &lt;tibble [7,099 x 5]&gt; </span>
-<span class="co">#&gt; 2 nirate    &lt;tibble [6,870 x 5]&gt; </span>
-<span class="co">#&gt; 3 ggapedu25 &lt;tibble [41,346 x 6]&gt;</span>
+<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>               </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> odr       <span style="color: #949494;">&lt;tibble [7,099 × 5]&gt;</span> </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> nirate    <span style="color: #949494;">&lt;tibble [6,870 × 5]&gt;</span> </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">3</span> ggapedu25 <span style="color: #949494;">&lt;tibble [41,346 × 6]&gt;</span></span>
 
-<span class="va">mi</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">ind</span> <span class="op">==</span> <span class="st">"odr"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">select</span><span class="op">(</span><span class="op">-</span><span class="va">ind</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">unnest</span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 7,099 x 5</span>
+<span class="va">mi</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">ind</span> <span class="op">==</span> <span class="st">"odr"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">ind</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/nest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 7,099 × 5</span></span>
 <span class="co">#&gt;    scenario name                     country_code  year   odr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Bulgaria                          100  1950  0.1 </span>
-<span class="co">#&gt;  2        2 Myanmar                           104  1950  0.05</span>
-<span class="co">#&gt;  3        2 Burundi                           108  1950  0.06</span>
-<span class="co">#&gt;  4        2 Belarus                           112  1950  0.13</span>
-<span class="co">#&gt;  5        2 Cambodia                          116  1950  0.05</span>
-<span class="co">#&gt;  6        2 Algeria                            12  1950  0.06</span>
-<span class="co">#&gt;  7        2 Cameroon                          120  1950  0.06</span>
-<span class="co">#&gt;  8        2 Canada                            124  1950  0.12</span>
-<span class="co">#&gt;  9        2 Cape Verde                        132  1950  0.13</span>
-<span class="co">#&gt; 10        2 Central African Republic          140  1950  0.09</span>
-<span class="co">#&gt; # ... with 7,089 more rows</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100  <span style="text-decoration: underline;">1</span>950  0.1 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104  <span style="text-decoration: underline;">1</span>950  0.05</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108  <span style="text-decoration: underline;">1</span>950  0.06</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Belarus                           112  <span style="text-decoration: underline;">1</span>950  0.13</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Cambodia                          116  <span style="text-decoration: underline;">1</span>950  0.05</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Algeria                            12  <span style="text-decoration: underline;">1</span>950  0.06</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Cameroon                          120  <span style="text-decoration: underline;">1</span>950  0.06</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Canada                            124  <span style="text-decoration: underline;">1</span>950  0.12</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Cape Verde                        132  <span style="text-decoration: underline;">1</span>950  0.13</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Central African Republic          140  <span style="text-decoration: underline;">1</span>950  0.09</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 7,089 more rows</span></span>
 
-<span class="va">mi</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">ind</span> <span class="op">==</span> <span class="st">"nirate"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">select</span><span class="op">(</span><span class="op">-</span><span class="va">ind</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">unnest</span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 6,870 x 5</span>
+<span class="va">mi</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">ind</span> <span class="op">==</span> <span class="st">"nirate"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">ind</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/nest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6,870 × 5</span></span>
 <span class="co">#&gt;    scenario name                     country_code period    nirate</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Bulgaria                          100 1950-1955   11.1</span>
-<span class="co">#&gt;  2        2 Myanmar                           104 1950-1955   19.1</span>
-<span class="co">#&gt;  3        2 Burundi                           108 1950-1955   24.1</span>
-<span class="co">#&gt;  4        2 Belarus                           112 1950-1955   10.1</span>
-<span class="co">#&gt;  5        2 Cambodia                          116 1950-1955   25.9</span>
-<span class="co">#&gt;  6        2 Algeria                            12 1950-1955   27.1</span>
-<span class="co">#&gt;  7        2 Cameroon                          120 1950-1955   17.6</span>
-<span class="co">#&gt;  8        2 Canada                            124 1950-1955   18.9</span>
-<span class="co">#&gt;  9        2 Cape Verde                        132 1950-1955   26.9</span>
-<span class="co">#&gt; 10        2 Central African Republic          140 1950-1955   10.7</span>
-<span class="co">#&gt; # ... with 6,860 more rows</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100 1950-1955   11.1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104 1950-1955   19.1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108 1950-1955   24.1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Belarus                           112 1950-1955   10.1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Cambodia                          116 1950-1955   25.9</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Algeria                            12 1950-1955   27.1</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Cameroon                          120 1950-1955   17.6</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Canada                            124 1950-1955   18.9</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Cape Verde                        132 1950-1955   26.9</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Central African Republic          140 1950-1955   10.7</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 6,860 more rows</span></span>
 
-<span class="va">mi</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">ind</span> <span class="op">==</span> <span class="st">"ggapedu25"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">select</span><span class="op">(</span><span class="op">-</span><span class="va">ind</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">unnest</span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 41,346 x 6</span>
+<span class="va">mi</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">ind</span> <span class="op">==</span> <span class="st">"ggapedu25"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">ind</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/nest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 41,346 × 6</span></span>
 <span class="co">#&gt;    scenario name                     country_code  year education    ggapedu25</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Bulgaria                          100  1950 No Education       -20</span>
-<span class="co">#&gt;  2        2 Myanmar                           104  1950 No Education       -13</span>
-<span class="co">#&gt;  3        2 Burundi                           108  1950 No Education        -6</span>
-<span class="co">#&gt;  4        2 Belarus                           112  1950 No Education       -10</span>
-<span class="co">#&gt;  5        2 Cambodia                          116  1950 No Education       -21</span>
-<span class="co">#&gt;  6        2 Algeria                            12  1950 No Education        -2</span>
-<span class="co">#&gt;  7        2 Cameroon                          120  1950 No Education       -13</span>
-<span class="co">#&gt;  8        2 Canada                            124  1950 No Education        -2</span>
-<span class="co">#&gt;  9        2 Cape Verde                        132  1950 No Education        -9</span>
-<span class="co">#&gt; 10        2 Central African Republic          140  1950 No Education        -1</span>
-<span class="co">#&gt; # ... with 41,336 more rows</span></code></pre></div>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">20</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">13</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108  <span style="text-decoration: underline;">1</span>950 No Education        -<span style="color: #BB0000;">6</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Belarus                           112  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">10</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Cambodia                          116  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">21</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Algeria                            12  <span style="text-decoration: underline;">1</span>950 No Education        -<span style="color: #BB0000;">2</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Cameroon                          120  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">13</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Canada                            124  <span style="text-decoration: underline;">1</span>950 No Education        -<span style="color: #BB0000;">2</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Cape Verde                        132  <span style="text-decoration: underline;">1</span>950 No Education        -<span style="color: #BB0000;">9</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Central African Republic          140  <span style="text-decoration: underline;">1</span>950 No Education        -<span style="color: #BB0000;">1</span></span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 41,336 more rows</span></span></code></pre></div>
 </div>
 </div>
-<div id="working-with-population-data" class="section level1">
-<h1 class="hasAnchor">
-<a href="#working-with-population-data" class="anchor"></a>Working with population data</h1>
-<p>The education population data in the data explorer, obtained by setting <code>indicator = "epop"</code> in <code><a href="../reference/get_wcde.html">get_wcde()</a></code>, provide results by up to three different education categorizations (4, 6 and 8 education groups).</p>
+<div class="section level2">
+<h2 id="working-with-population-data">Working with population data<a class="anchor" aria-label="anchor" href="#working-with-population-data"></a>
+</h2>
+<p>Population data for a range of age-sex-educational attainment
+combinations can be obtained by setting <code>indicator = "pop"</code>
+in <code><a href="../reference/get_wcde.html">get_wcde()</a></code> and specifying a <code>pop_age</code>,
+<code>pop_sex</code> and <code>pop_edu</code> arguments. By default each
+of the three population breakdown arguments are set to “total”</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"epop"</span>, country_code <span class="op">=</span> <span class="fl">900</span><span class="op">)</span>
-<span class="va">d</span>
-<span class="co">#&gt; # A tibble: 16,368 x 8</span>
-<span class="co">#&gt;    scenario name  country_code age   sex   education           year     epop</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;              &lt;dbl&gt;    &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 World          900 All   Both  Total               1950 2541292.</span>
-<span class="co">#&gt;  2        2 World          900 All   Both  Under 15            1950  868844.</span>
-<span class="co">#&gt;  3        2 World          900 All   Both  No Education        1950  763612.</span>
-<span class="co">#&gt;  4        2 World          900 All   Both  Incomplete Primary  1950  197922.</span>
-<span class="co">#&gt;  5        2 World          900 All   Both  Primary             1950  351588.</span>
-<span class="co">#&gt;  6        2 World          900 All   Both  Lower Secondary     1950  209181.</span>
-<span class="co">#&gt;  7        2 World          900 All   Both  Upper Secondary     1950  120001.</span>
-<span class="co">#&gt;  8        2 World          900 All   Both  Post Secondary      1950   30143.</span>
-<span class="co">#&gt;  9        2 World          900 0--4  Both  Total               1950  338387.</span>
-<span class="co">#&gt; 10        2 World          900 0--4  Both  Under 15            1950  338387.</span>
-<span class="co">#&gt; # ... with 16,358 more rows</span></code></pre></div>
-<p>As the data frame contains multiple groupings, the <code><a href="../reference/edu_group_sum.html">edu_group_sum()</a></code> function can be used to provide education specific population data. Users can specify the education groupings by setting the <code>n</code> argument to 4, 6 or 8.</p>
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"India"</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 31 × 5</span></span>
+<span class="co">#&gt;    scenario name  country_code  year     pop</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 India          356  <span style="text-decoration: underline;">1</span>950 <span style="text-decoration: underline;">376</span>325.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 India          356  <span style="text-decoration: underline;">1</span>955 <span style="text-decoration: underline;">409</span>276.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 India          356  <span style="text-decoration: underline;">1</span>960 <span style="text-decoration: underline;">449</span>604.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 India          356  <span style="text-decoration: underline;">1</span>965 <span style="text-decoration: underline;">497</span>830.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 India          356  <span style="text-decoration: underline;">1</span>970 <span style="text-decoration: underline;">553</span>787.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 India          356  <span style="text-decoration: underline;">1</span>975 <span style="text-decoration: underline;">621</span>525.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 India          356  <span style="text-decoration: underline;">1</span>980 <span style="text-decoration: underline;">697</span>040.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 India          356  <span style="text-decoration: underline;">1</span>985 <span style="text-decoration: underline;">781</span>904.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 India          356  <span style="text-decoration: underline;">1</span>990 <span style="text-decoration: underline;">870</span>422.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 India          356  <span style="text-decoration: underline;">1</span>995 <span style="text-decoration: underline;">960</span>733.</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 21 more rows</span></span></code></pre></div>
+<p>The <code>pop_age</code> argument can be set to <code>all</code> to
+get population data broken down in five-year age groups. The
+<code>pop_sex</code> argument can be set to <code>both</code> to get
+population data broken down into female and male groups. The
+<code>pop_edu</code> argument can be set to <code>four</code>,
+<code>six</code> or <code>eight</code> to get population data broken
+down into education categorizations with different levels of detail.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">d</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="../reference/edu_group_sum.html">edu_group_sum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 210 x 8</span>
-<span class="co">#&gt;    scenario name  country_code  year age   sex    education         epop</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;fct&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;  &lt;fct&gt;            &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 World          900  2020 0--4  Male   Under 15       340742.</span>
-<span class="co">#&gt;  2        2 World          900  2020 0--4  Male   No Education        0 </span>
-<span class="co">#&gt;  3        2 World          900  2020 0--4  Male   Primary             0 </span>
-<span class="co">#&gt;  4        2 World          900  2020 0--4  Male   Secondary           0 </span>
-<span class="co">#&gt;  5        2 World          900  2020 0--4  Male   Post Secondary      0 </span>
-<span class="co">#&gt;  6        2 World          900  2020 0--4  Female Under 15       319616.</span>
-<span class="co">#&gt;  7        2 World          900  2020 0--4  Female No Education        0 </span>
-<span class="co">#&gt;  8        2 World          900  2020 0--4  Female Primary             0 </span>
-<span class="co">#&gt;  9        2 World          900  2020 0--4  Female Secondary           0 </span>
-<span class="co">#&gt; 10        2 World          900  2020 0--4  Female Post Secondary      0 </span>
-<span class="co">#&gt; # ... with 200 more rows</span>
-
-<span class="va">d</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="../reference/edu_group_sum.html">edu_group_sum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">6</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span>,
-         <span class="va">age</span> <span class="op">==</span> <span class="st">"30--34"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 14 x 8</span>
-<span class="co">#&gt;    scenario name  country_code  year age    sex    education            epop</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;fct&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;  &lt;fct&gt;  &lt;fct&gt;               &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 World          900  2020 30--34 Male   Under 15               0 </span>
-<span class="co">#&gt;  2        2 World          900  2020 30--34 Male   No Education       23820.</span>
-<span class="co">#&gt;  3        2 World          900  2020 30--34 Male   Incomplete Primary 14488.</span>
-<span class="co">#&gt;  4        2 World          900  2020 30--34 Male   Primary            35713.</span>
-<span class="co">#&gt;  5        2 World          900  2020 30--34 Male   Lower Secondary    69758.</span>
-<span class="co">#&gt;  6        2 World          900  2020 30--34 Male   Upper Secondary    96988.</span>
-<span class="co">#&gt;  7        2 World          900  2020 30--34 Male   Post Secondary     68842.</span>
-<span class="co">#&gt;  8        2 World          900  2020 30--34 Female Under 15               0 </span>
-<span class="co">#&gt;  9        2 World          900  2020 30--34 Female No Education       35410.</span>
-<span class="co">#&gt; 10        2 World          900  2020 30--34 Female Incomplete Primary 14645.</span>
-<span class="co">#&gt; 11        2 World          900  2020 30--34 Female Primary            33563.</span>
-<span class="co">#&gt; 12        2 World          900  2020 30--34 Female Lower Secondary    60923.</span>
-<span class="co">#&gt; 13        2 World          900  2020 30--34 Female Upper Secondary    83646.</span>
-<span class="co">#&gt; 14        2 World          900  2020 30--34 Female Post Secondary     69475.</span></code></pre></div>
-</div>
-<div id="population-pyramids" class="section level1">
-<h1 class="hasAnchor">
-<a href="#population-pyramids" class="anchor"></a>Population pyramids</h1>
-<p>Create population pyramids by setting male population values to negative equivalent to allow for divergent columns from the y axis.</p>
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 155 × 6</span></span>
+<span class="co">#&gt;    scenario name  country_code  year education          pop</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Under 15       <span style="text-decoration: underline;">868</span>844.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 No Education   <span style="text-decoration: underline;">763</span>612.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Primary        <span style="text-decoration: underline;">549</span>510.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Secondary      <span style="text-decoration: underline;">329</span>182.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Post Secondary  <span style="text-decoration: underline;">30</span>143.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 World          900  <span style="text-decoration: underline;">1</span>955 Under 15       <span style="text-decoration: underline;">984</span>764.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 World          900  <span style="text-decoration: underline;">1</span>955 No Education   <span style="text-decoration: underline;">762</span>022.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 World          900  <span style="text-decoration: underline;">1</span>955 Primary        <span style="text-decoration: underline;">600</span>299.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 World          900  <span style="text-decoration: underline;">1</span>955 Secondary      <span style="text-decoration: underline;">392</span>261.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 World          900  <span style="text-decoration: underline;">1</span>955 Post Secondary  <span style="text-decoration: underline;">38</span>199.</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 145 more rows</span></span></code></pre></div>
+<p>The population breakdown arguments can be used in combination to
+provide further breakdowns, for example sex and education specific
+population totals</p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">w</span> <span class="op">&lt;-</span> <span class="va">d</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="../reference/edu_group_sum.html">edu_group_sum</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">4</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">mutate</span><span class="op">(</span>pop <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span>test <span class="op">=</span> <span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, yes <span class="op">=</span> <span class="op">-</span><span class="va">epop</span>, no <span class="op">=</span> <span class="va">epop</span><span class="op">)</span>,
-         pop <span class="op">=</span> <span class="va">pop</span><span class="op">/</span><span class="fl">1e3</span><span class="op">)</span> 
+<code class="sourceCode R"><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>, pop_edu <span class="op">=</span> <span class="st">"six"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 434 × 7</span></span>
+<span class="co">#&gt;    scenario name  country_code  year sex    education              pop</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Under 15           <span style="text-decoration: underline;">443</span>968.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   No Education       <span style="text-decoration: underline;">317</span>636.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Incomplete Primary <span style="text-decoration: underline;">116</span>692.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Primary            <span style="text-decoration: underline;">194</span>902 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Lower Secondary    <span style="text-decoration: underline;">104</span>160 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Upper Secondary     <span style="text-decoration: underline;">69</span>384.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Post Secondary      <span style="text-decoration: underline;">21</span>102.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Female Under 15           <span style="text-decoration: underline;">424</span>877.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Female No Education       <span style="text-decoration: underline;">445</span>976.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Female Incomplete Primary  <span style="text-decoration: underline;">81</span>231.</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 424 more rows</span></span></code></pre></div>
+<p>The full age-sex-education specific data can also be obtained by
+setting <code>indicator = "epop"</code> in <code><a href="../reference/get_wcde.html">get_wcde()</a></code>.
+<!-- The education population data in the data explorer, obtained by setting `indicator = "epop"` in `get_wcde()`, provide results by up to three different education categorizations (4, 6 and 8 education groups).  --></p>
+<!-- ```{r, messages = FALSE, message=FALSE} -->
+<!-- d <- get_wcde(indicator = "epop", country_code = 900) -->
+<!-- d -->
+<!-- ``` -->
+<!-- As the data frame contains multiple groupings, the `edu_group_sum()` function can be used to provide education specific population data. Users can specify the education groupings by setting the `n` argument to 4, 6 or 8. -->
+<!-- ```{r, warning=FALSE, message=FALSE} -->
+<!-- d %>%  -->
+<!--   edu_group_sum(n = 4) %>% -->
+<!--   filter(year == 2020) -->
+<!-- d %>%  -->
+<!--   edu_group_sum(n = 6) %>% -->
+<!--   filter(year == 2020, -->
+<!--          age == "30--34") -->
+<!-- ``` -->
+</div>
+<div class="section level2">
+<h2 id="population-pyramids">Population pyramids<a class="anchor" aria-label="anchor" href="#population-pyramids"></a>
+</h2>
+<p>Create population pyramids by setting male population values to
+negative equivalent to allow for divergent columns from the y axis.</p>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">w</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>,
+              pop_age <span class="op">=</span> <span class="st">"all"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span>
 <span class="va">w</span>
-<span class="co">#&gt; # A tibble: 6,510 x 9</span>
-<span class="co">#&gt;    scenario name  country_code  year age   sex    education         epop   pop</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;fct&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;  &lt;fct&gt;            &lt;dbl&gt; &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 World          900  1950 0--4  Male   Under 15       172362. -172.</span>
-<span class="co">#&gt;  2        2 World          900  1950 0--4  Male   No Education        0     0 </span>
-<span class="co">#&gt;  3        2 World          900  1950 0--4  Male   Primary             0     0 </span>
-<span class="co">#&gt;  4        2 World          900  1950 0--4  Male   Secondary           0     0 </span>
-<span class="co">#&gt;  5        2 World          900  1950 0--4  Male   Post Secondary      0     0 </span>
-<span class="co">#&gt;  6        2 World          900  1950 0--4  Female Under 15       166026.  166.</span>
-<span class="co">#&gt;  7        2 World          900  1950 0--4  Female No Education        0     0 </span>
-<span class="co">#&gt;  8        2 World          900  1950 0--4  Female Primary             0     0 </span>
-<span class="co">#&gt;  9        2 World          900  1950 0--4  Female Secondary           0     0 </span>
-<span class="co">#&gt; 10        2 World          900  1950 0--4  Female Post Secondary      0     0 </span>
-<span class="co">#&gt; # ... with 6,500 more rows</span></code></pre></div>
-<div id="standard-plot" class="section level2">
-<h2 class="hasAnchor">
-<a href="#standard-plot" class="anchor"></a>Standard plot</h2>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6,510 × 8</span></span>
+<span class="co">#&gt;    scenario name  country_code  year age   sex    education          pop</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Under 15       <span style="text-decoration: underline;">172</span>362.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   No Education        0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Primary             0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Secondary           0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Post Secondary      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Under 15       <span style="text-decoration: underline;">166</span>026.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female No Education        0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Primary             0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Secondary           0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Post Secondary      0 </span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 6,500 more rows</span></span>
+
+<span class="va">w</span> <span class="op">&lt;-</span> <span class="va">w</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>pop_pm <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span>test <span class="op">=</span> <span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, yes <span class="op">=</span> <span class="op">-</span><span class="va">pop</span>, no <span class="op">=</span> <span class="va">pop</span><span class="op">)</span>,
+         pop_pm <span class="op">=</span> <span class="va">pop_pm</span><span class="op">/</span><span class="fl">1e3</span><span class="op">)</span>
+<span class="va">w</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6,510 × 9</span></span>
+<span class="co">#&gt;    scenario name  country_code  year age   sex    education          pop pop_pm</span>
+<span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Under 15       <span style="text-decoration: underline;">172</span>362.  -<span style="color: #BB0000;">172.</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   No Education        0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Primary             0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Secondary           0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Post Secondary      0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Under 15       <span style="text-decoration: underline;">166</span>026.   166.</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female No Education        0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Primary             0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Secondary           0      0 </span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Female Post Secondary      0      0 </span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 6,500 more rows</span></span></code></pre></div>
+<div class="section level3">
+<h3 id="standard-plot">Standard plot<a class="anchor" aria-label="anchor" href="#standard-plot"></a>
+</h3>
 <p>Use standard ggplot code to create population pyramid with</p>
 <ul>
 <li>
-<code><a href="https://rdrr.io/pkg/lemon/man/scale_symmetric.html">scale_x_symmetric()</a></code> from the <a href="https://cran.r-project.org/package=lemon/index.html"><code>lemon</code></a> package to allow for equal male and female x-axis</li>
-<li>fill colours set to the <code>wic_col4</code> object in the wcde package which contains the names of the colours used in the Wittgenstein Centre Human Capital Data Explorer Data Explorer.</li>
+<code><a href="https://rdrr.io/pkg/lemon/man/scale_symmetric.html" class="external-link">scale_x_symmetric()</a></code> from the <a href="https://cran.r-project.org/package=lemon/index.html" class="external-link"><code>lemon</code></a>
+package to allow for equal male and female x-axis</li>
+<li>fill colours set to the <code>wic_col4</code> object in the wcde
+package which contains the names of the colours used in the Wittgenstein
+Centre Human Capital Data Explorer Data Explorer.</li>
 </ul>
-<p>Note <code>wic_col6</code> and <code>wic_col8</code> objects also exist for equivalent plots of population data objects with corresponding numbers of categories of education.</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/stefanedwards/lemon">lemon</a></span><span class="op">)</span>
-
-<span class="va">w</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">ggplot</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop</span>, y <span class="op">=</span> <span class="va">age</span>, fill <span class="op">=</span> <span class="fu">fct_rev</span><span class="op">(</span><span class="va">education</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_col</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_vline</span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, colour <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span> 
-  <span class="fu"><a href="https://rdrr.io/pkg/lemon/man/scale_symmetric.html">scale_x_symmetric</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="va">abs</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">scale_fill_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">theme_bw</span><span class="op">(</span><span class="op">)</span> </code></pre></div>
-<p><img src="wcde_files/figure-html/unnamed-chunk-20-1.png" width="700"></p>
-</div>
-<div id="sex-label-position" class="section level2">
-<h2 class="hasAnchor">
-<a href="#sex-label-position" class="anchor"></a>Sex label position</h2>
-<p>Add male and female labels on the x-axis by</p>
-<ul>
-<li>Creating a facet plot with the strips on the bottom with transparent backgrounds and no space between.</li>
-<li>Set the x axis to have zero expansion beyond the values in the data allowing the two sides of the pyramids to meet.</li>
-<li>Add a <code>geom_blank()</code> to allow for equal x-axis and additional space at the end of largest columns.</li>
-</ul>
+<p>Note <code>wic_col6</code> and <code>wic_col8</code> objects also
+exist for equivalent plots of population data objects with corresponding
+numbers of categories of education.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">w</span> <span class="op">&lt;-</span> <span class="va">w</span> <span class="op">%&gt;%</span>
-  <span class="fu">mutate</span><span class="op">(</span>pop_max <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/stefanedwards/lemon" class="external-link">lemon</a></span><span class="op">)</span>
 
-<span class="va">w</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">ggplot</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop</span>, y <span class="op">=</span> <span class="va">age</span>, fill <span class="op">=</span> <span class="fu">fct_rev</span><span class="op">(</span><span class="va">education</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_col</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_vline</span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, colour <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">scale_x_continuous</span><span class="op">(</span>labels <span class="op">=</span> <span class="va">abs</span>, expand <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">scale_fill_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">facet_wrap</span><span class="op">(</span>facets <span class="op">=</span> <span class="st">"sex"</span>, scales <span class="op">=</span> <span class="st">"free_x"</span>, strip.position <span class="op">=</span> <span class="st">"bottom"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_blank</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_max</span> <span class="op">*</span> <span class="fl">1.1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">theme</span><span class="op">(</span>panel.spacing.x <span class="op">=</span> <span class="fu">unit</span><span class="op">(</span><span class="fl">0</span>, <span class="st">"pt"</span><span class="op">)</span>,
-        strip.placement <span class="op">=</span> <span class="st">"outside"</span>,
-        strip.background <span class="op">=</span> <span class="fu">element_rect</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,
-        strip.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>margin <span class="op">=</span> <span class="fu">margin</span><span class="op">(</span> b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<span class="va">w</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_pm</span>, y <span class="op">=</span> <span class="va">age</span>, fill <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_rev.html" class="external-link">fct_rev</a></span><span class="op">(</span><span class="va">education</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, colour <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://rdrr.io/pkg/lemon/man/scale_symmetric.html" class="external-link">scale_x_symmetric</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="va">abs</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html" class="external-link">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="wcde_files/figure-html/unnamed-chunk-21-1.png" width="700"></p>
 </div>
-<div id="animate" class="section level2">
-<h2 class="hasAnchor">
-<a href="#animate" class="anchor"></a>Animate</h2>
-<p>Animate the pyramid through the past data and projection periods using the <code><a href="https://gganimate.com/reference/transition_time.html">transition_time()</a></code> function in the <a href="https://cran.r-project.org/package=gganimate/index.html"><code>gganimate</code></a> package</p>
+<div class="section level3">
+<h3 id="sex-label-position">Sex label position<a class="anchor" aria-label="anchor" href="#sex-label-position"></a>
+</h3>
+<p>Add male and female labels on the x-axis by</p>
+<ul>
+<li>Creating a facet plot with the strips on the bottom with transparent
+backgrounds and no space between.</li>
+<li>Set the x axis to have zero expansion beyond the values in the data
+allowing the two sides of the pyramids to meet.</li>
+<li>Add a <code><a href="https://ggplot2.tidyverse.org/reference/geom_blank.html" class="external-link">geom_blank()</a></code> to allow for equal x-axis and
+additional space at the end of largest columns.</li>
+</ul>
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://gganimate.com">gganimate</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="va">w</span> <span class="op">&lt;-</span> <span class="va">w</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>pop_max <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">/</span><span class="fl">1e3</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">/</span><span class="fl">1e3</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 
-<span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">w</span>, 
-       mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop</span>, y <span class="op">=</span> <span class="va">age</span>, fill <span class="op">=</span> <span class="fu">fct_rev</span><span class="op">(</span><span class="va">education</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_col</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_vline</span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, colour <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">scale_x_continuous</span><span class="op">(</span>labels <span class="op">=</span> <span class="va">abs</span>, expand <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">scale_fill_manual</span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">facet_wrap</span><span class="op">(</span>facets <span class="op">=</span> <span class="st">"sex"</span>, scales <span class="op">=</span> <span class="st">"free_x"</span>, strip.position <span class="op">=</span> <span class="st">"bottom"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_blank</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_max</span> <span class="op">*</span> <span class="fl">1.1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">theme</span><span class="op">(</span>panel.spacing.x <span class="op">=</span> <span class="fu">unit</span><span class="op">(</span><span class="fl">0</span>, <span class="st">"pt"</span><span class="op">)</span>,
+<span class="va">w</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_pm</span>, y <span class="op">=</span> <span class="va">age</span>, fill <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_rev.html" class="external-link">fct_rev</a></span><span class="op">(</span><span class="va">education</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, colour <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="va">abs</span>, expand <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html" class="external-link">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html" class="external-link">facet_wrap</a></span><span class="op">(</span>facets <span class="op">=</span> <span class="st">"sex"</span>, scales <span class="op">=</span> <span class="st">"free_x"</span>, strip.position <span class="op">=</span> <span class="st">"bottom"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_blank.html" class="external-link">geom_blank</a></span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_max</span> <span class="op">*</span> <span class="fl">1.1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>panel.spacing.x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html" class="external-link">unit</a></span><span class="op">(</span><span class="fl">0</span>, <span class="st">"pt"</span><span class="op">)</span>,
         strip.placement <span class="op">=</span> <span class="st">"outside"</span>,
-        strip.background <span class="op">=</span> <span class="fu">element_rect</span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,
-        strip.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>margin <span class="op">=</span> <span class="fu">margin</span><span class="op">(</span>b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://gganimate.com/reference/transition_time.html">transition_time</a></span><span class="op">(</span>time <span class="op">=</span> <span class="va">year</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">labs</span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span>, 
+        strip.background <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_rect</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,
+        strip.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>margin <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">margin</a></span><span class="op">(</span> b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<p><img src="wcde_files/figure-html/unnamed-chunk-22-1.png" width="700"></p>
+</div>
+<div class="section level3">
+<h3 id="animate">Animate<a class="anchor" aria-label="anchor" href="#animate"></a>
+</h3>
+<p>Animate the pyramid through the past data and projection periods
+using the <code><a href="https://gganimate.com/reference/transition_time.html" class="external-link">transition_time()</a></code> function in the <a href="https://cran.r-project.org/package=gganimate/index.html" class="external-link"><code>gganimate</code></a>
+package</p>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gganimate.com" class="external-link">gganimate</a></span><span class="op">)</span>
+
+<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">w</span>,
+       mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_pm</span>, y <span class="op">=</span> <span class="va">age</span>, fill <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_rev.html" class="external-link">fct_rev</a></span><span class="op">(</span><span class="va">education</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html" class="external-link">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="fl">0</span>, colour <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="va">abs</span>, expand <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html" class="external-link">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html" class="external-link">facet_wrap</a></span><span class="op">(</span>facets <span class="op">=</span> <span class="st">"sex"</span>, scales <span class="op">=</span> <span class="st">"free_x"</span>, strip.position <span class="op">=</span> <span class="st">"bottom"</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_blank.html" class="external-link">geom_blank</a></span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">pop_max</span> <span class="op">*</span> <span class="fl">1.1</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>panel.spacing.x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html" class="external-link">unit</a></span><span class="op">(</span><span class="fl">0</span>, <span class="st">"pt"</span><span class="op">)</span>,
+        strip.placement <span class="op">=</span> <span class="st">"outside"</span>,
+        strip.background <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_rect</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,
+        strip.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>margin <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">margin</a></span><span class="op">(</span>b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://gganimate.com/reference/transition_time.html" class="external-link">transition_time</a></span><span class="op">(</span>time <span class="op">=</span> <span class="va">year</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span>,
        title <span class="op">=</span> <span class="st">'SSP2 World Population {round(frame_time)}'</span><span class="op">)</span></code></pre></div>
-<p><img src="../man/figures/world4_ssp2.gif"></p>
+<p><img src="../reference/figures/world4_ssp2.gif"></p>
 </div>
 </div>
   </div>
@@ -629,11 +705,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Guy J. Abel.</p>
+  <p></p>
+<p>Developed by Guy J. Abel.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
 </div>
 
       </footer>
@@ -641,6 +719,8 @@
 
   
 
+
+  
 
   </body>
 </html>

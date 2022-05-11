@@ -14,7 +14,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/guyabel/wcde/workflows/R-CMD-check/badge.svg)](https://github.com/guyabel/wcde/actions)
 <!-- badges: end -->
 
-<img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;" />
+<img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="200" style="float:right; height:200px;"/>
 
 Download data from the [Wittgenstein Centre for Demography and Human
 Capital Data
@@ -50,7 +50,7 @@ library(wcde)
 
 # SSP2 education specific tfr for Austria
 get_wcde(indicator = "etfr", country_name = "Austria")
-#> # A tibble: 102 x 6
+#> # A tibble: 102 × 6
 #>    scenario name    country_code education          period     etfr
 #>       <dbl> <chr>          <dbl> <chr>              <chr>     <dbl>
 #>  1        2 Austria           40 No Education       2015-2020  1.64
@@ -63,28 +63,28 @@ get_wcde(indicator = "etfr", country_name = "Austria")
 #>  8        2 Austria           40 Incomplete Primary 2020-2025  1.68
 #>  9        2 Austria           40 Primary            2020-2025  1.68
 #> 10        2 Austria           40 Lower Secondary    2020-2025  1.67
-#> # ... with 92 more rows
+#> # … with 92 more rows
 
 # SSP2 education specific population sizes for Iran and Kenya
-get_wcde(indicator = "epop", country_code = c(364, 404))
-#> # A tibble: 36,300 x 8
-#>    scenario name             country_code age   sex   education      year   epop
-#>       <dbl> <chr>                   <dbl> <chr> <chr> <chr>         <dbl>  <dbl>
-#>  1        2 Iran (Islamic R~          364 All   Both  Total          1950 17119.
-#>  2        2 Kenya                     404 All   Both  Total          1950  6077.
-#>  3        2 Iran (Islamic R~          364 All   Both  Under 15       1950  6210 
-#>  4        2 Kenya                     404 All   Both  Under 15       1950  2417.
-#>  5        2 Iran (Islamic R~          364 All   Both  No Education   1950  9648.
-#>  6        2 Kenya                     404 All   Both  No Education   1950  2867.
-#>  7        2 Iran (Islamic R~          364 All   Both  Incomplete P~  1950   378 
-#>  8        2 Kenya                     404 All   Both  Incomplete P~  1950   555.
-#>  9        2 Iran (Islamic R~          364 All   Both  Primary        1950   631.
-#> 10        2 Kenya                     404 All   Both  Primary        1950   139.
-#> # ... with 36,290 more rows
+get_wcde(indicator = "pop", country_code = c(364, 404), pop_edu = "four")
+#> # A tibble: 310 × 6
+#>    scenario name                       country_code  year education         pop
+#>       <dbl> <fct>                             <dbl> <dbl> <fct>           <dbl>
+#>  1        2 Iran (Islamic Republic of)          364  1950 Under 15       6210  
+#>  2        2 Iran (Islamic Republic of)          364  1950 No Education   9648. 
+#>  3        2 Iran (Islamic Republic of)          364  1950 Primary        1009. 
+#>  4        2 Iran (Islamic Republic of)          364  1950 Secondary       231. 
+#>  5        2 Iran (Islamic Republic of)          364  1950 Post Secondary   20.8
+#>  6        2 Iran (Islamic Republic of)          364  1955 Under 15       7559. 
+#>  7        2 Iran (Islamic Republic of)          364  1955 No Education   9983. 
+#>  8        2 Iran (Islamic Republic of)          364  1955 Primary        1343. 
+#>  9        2 Iran (Islamic Republic of)          364  1955 Secondary       375. 
+#> 10        2 Iran (Islamic Republic of)          364  1955 Post Secondary   33.8
+#> # … with 300 more rows
 
 # SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries
 get_wcde(indicator = "ggapedu15", scenario = 1:3)
-#> # A tibble: 124,038 x 6
+#> # A tibble: 124,038 × 6
 #>    scenario name                     country_code  year education    ggapedu15
 #>       <int> <chr>                           <dbl> <dbl> <chr>            <dbl>
 #>  1        1 Bulgaria                          100  1950 No Education       -16
@@ -97,7 +97,7 @@ get_wcde(indicator = "ggapedu15", scenario = 1:3)
 #>  8        1 Canada                            124  1950 No Education        -1
 #>  9        1 Cape Verde                        132  1950 No Education       -14
 #> 10        1 Central African Republic          140  1950 No Education        -4
-#> # ... with 124,028 more rows
+#> # … with 124,028 more rows
 ```
 
 ## Vignette
@@ -107,6 +107,6 @@ provides many more examples on how to use the package to download data
 and produce plots from the Wittgenstein Centre Human Capital Data
 Explorer.
 
-<img src='https://raw.githubusercontent.com/guyabel/wcde/main/world6_ssp2.gif' height="600"/>
+<img src="https://raw.githubusercontent.com/guyabel/wcde/main/world6_ssp2.gif" width="600px" height="600px" />
 
 <!-- <img src='world6_ssp2.gif' height="600"/> -->

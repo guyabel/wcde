@@ -11,6 +11,7 @@ roxygen2::roxygenise()
 
 # move data-host and data-host-bulk outside of directory whilst
 # doing check https://community.rstudio.com/t/r-cmd-check-preparing-package/27151
+usethis::use_build_ignore(c("data-host", "data-host-bulk"))
 devtools::check(vignettes = FALSE)
 devtools::check()
 devtools::build()

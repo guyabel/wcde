@@ -19,6 +19,8 @@
 ^build_package\.R$
 ^data1\.R$
 ^data2\.R$
+^data3\.R$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^data-host-bulk$
