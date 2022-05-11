@@ -1,6 +1,6 @@
 Package: wcde
 Title: Download Data from the Wittgenstein Centre Human Capital Data Explorer
-Version: 0.0.4
+Version: 0.0.5
 Authors@R: 
     c(person(given = c("Guy", "J."),
              family = "Abel",

@@ -20,4 +20,8 @@
 
 # wcde 0.0.4
 
-* Add `pop_age`, `pop_sex` and `pop_edattain` arguments to `get_wcde()` and added separate population files for different age/sex/education categories to server
+* Add `pop_age`, `pop_sex` and `pop_edu` arguments to `get_wcde()` and added separate population files for different age/sex/education categories to server
+
+# wcde 0.0.5
+
+* Fixed bug for `pop_edu` argument for bulk downloads in `get_wcde()`
