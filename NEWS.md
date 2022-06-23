@@ -25,3 +25,7 @@
 # wcde 0.0.5
 
 * Fixed bug for `pop_edu` argument for bulk downloads in `get_wcde()`
+
+# wcde 0.0.6
+
+* Add `server` argument in `get_wcde()`

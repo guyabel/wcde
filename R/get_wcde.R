@@ -10,6 +10,7 @@
 #' @param pop_sex Character string for population sexes if `indicator`is set to `pop`. Defaults to no sex `total`, but can be set to `both` or `all`.
 #' @param pop_edu Character string for population educational attainment if `indicator` is set to `pop`. Defaults to `total`, but can be set to `four`, `six` or `eight`.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
+#' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` if IIASA server is down.
 #'
 #' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
 #'
@@ -94,8 +95,10 @@ get_wcde <- function(
     pop_age = c("total", "all"),
     pop_sex = c("total", "both", "all"),
     pop_edu = c("total", "four", "six", "eight"),
-    include_scenario_names = FALSE){
-  # scenario = 2; indicator = "epop"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
+    include_scenario_names = FALSE,
+    server = c("iiasa", "github")
+  ){
+  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
   # guess country codes from name
 
   guessed_code <- NULL
@@ -151,11 +154,17 @@ get_wcde <- function(
     )
   }
 
+  server <- match.arg(server)
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
       dplyr::mutate(
         u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-batch/",
-                   scenario, "/", indicator, ".csv"),
+                   scenario, "/", indicator, ".csv")) %>%
+      {if(server == "github")
+        dplyr::mutate(., u = paste0("https://github.com/guyabel/wcde/raw/main/data-host/",
+                                    scenario, "/", indicator, "/", country_code, ".csv"))
+        else .} %>%
+      dplyr::mutate(
         d = purrr::map(
           .x = u,
           .f = ~readr::read_csv(.x, col_types = readr::cols(), guess_max = 1e5)
@@ -170,7 +179,7 @@ get_wcde <- function(
     d2a <- wcde::wic_locations %>%
       dplyr::select(isono, name)
 
-    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code) %>%
+    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code, server = server) %>%
       dplyr::mutate(isono = as.numeric(isono)) %>%
       dplyr::left_join(d2a, by = "isono") %>%
       {if(include_scenario_names) dplyr::left_join(. , wcde::wic_scenarios, by = "scenario") else .}

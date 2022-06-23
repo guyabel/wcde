@@ -4,11 +4,13 @@
 #' @param indicator One character string based on the `name` column in the `wic_indicators` data frame, representing the variable to be interested.
 #' @param scenario Vector with a numbers corresponding the scenarios. See details in `wcde` for more information.
 #' @param country_code Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.
+#' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` if IIASA server is down.
 #'
 #' @return A tibble with multiple columns.
-get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL){
+get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL, server = NULL){
   # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
   # scenario = 2; indicator = "e0"; country_code = "900"
+  # server = "github"
   if(length(indicator) > 1){
     message("can only get data on one indicator at a time, taking first indicator given")
     indicator <- indicator[1]
@@ -60,8 +62,12 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL)
   pb$tick(0)
   d0 <- d0 %>%
     dplyr::mutate(u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-single/",
-                             scenario, "/", indicator, "/", country_code, ".csv"),
-                  d = purrr::map(.x = u, .f = ~read_with_progress(f = .x))) %>%
+                             scenario, "/", indicator, "/", country_code, ".csv")) %>%
+    {if(server == "github")
+      dplyr::mutate(., u = paste0("https://github.com/guyabel/wcde/raw/main/data-host/",
+                                  scenario, "/", indicator, "/", country_code, ".csv"))
+      else .} %>%
+    dplyr::mutate(d = purrr::map(.x = u, .f = ~read_with_progress(f = .x))) %>%
     dplyr::group_by(scenario) %>%
     dplyr::summarise(dplyr::bind_cols(d), .groups = "drop_last") %>%
     dplyr::ungroup()
