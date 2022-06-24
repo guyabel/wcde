@@ -12,7 +12,8 @@ get_wcde(
   pop_age = c("total", "all"),
   pop_sex = c("total", "both", "all"),
   pop_edu = c("total", "four", "six", "eight"),
-  include_scenario_names = FALSE
+  include_scenario_names = FALSE,
+  server = c("iiasa", "github")
 )
 }
 \arguments{
@@ -31,6 +32,8 @@ get_wcde(
 \item{pop_edu}{Character string for population educational attainment if \code{indicator} is set to \code{pop}. Defaults to \code{total}, but can be set to \code{four}, \code{six} or \code{eight}.}
 
 \item{include_scenario_names}{Logical vector of length one to indicate if to include additional columns for scenario names and short names. \code{FALSE} by default.}
+
+\item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} if IIASA server is down.}
 }
 \value{
 A \link[tibble:tibble-package]{tibble} with the data selected.

@@ -23,7 +23,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">wcde</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.5</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.6</span>
       </span>
     </div>
 
@@ -82,7 +82,8 @@
   pop_age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"all"</span><span class="op">)</span>,
   pop_sex <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"both"</span>, <span class="st">"all"</span><span class="op">)</span>,
   pop_edu <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"four"</span>, <span class="st">"six"</span>, <span class="st">"eight"</span><span class="op">)</span>,
-  include_scenario_names <span class="op">=</span> <span class="cn">FALSE</span>
+  include_scenario_names <span class="op">=</span> <span class="cn">FALSE</span>,
+  server <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"iiasa"</span>, <span class="st">"github"</span><span class="op">)</span>
 <span class="op">)</span></code></pre></div>
     </div>
 
@@ -104,6 +105,8 @@
 <dd><p>Character string for population educational attainment if <code>indicator</code> is set to <code>pop</code>. Defaults to <code>total</code>, but can be set to <code>four</code>, <code>six</code> or <code>eight</code>.</p></dd>
 <dt>include_scenario_names</dt>
 <dd><p>Logical vector of length one to indicate if to include additional columns for scenario names and short names. <code>FALSE</code> by default.</p></dd>
+<dt>server</dt>
+<dd><p>Character string for server to download from. Defaults to <code>iiasa</code>, but can use <code>github</code> if IIASA server is down.</p></dd>
 </dl></div>
     <div id="value">
     <h2>Value</h2>

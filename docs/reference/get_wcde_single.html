@@ -23,7 +23,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">wcde</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.5</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.6</span>
       </span>
     </div>
 
@@ -74,7 +74,12 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_wcde_single</span><span class="op">(</span>indicator <span class="op">=</span> <span class="cn">NULL</span>, scenario <span class="op">=</span> <span class="fl">2</span>, country_code <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_wcde_single</span><span class="op">(</span>
+  indicator <span class="op">=</span> <span class="cn">NULL</span>,
+  scenario <span class="op">=</span> <span class="fl">2</span>,
+  country_code <span class="op">=</span> <span class="cn">NULL</span>,
+  server <span class="op">=</span> <span class="cn">NULL</span>
+<span class="op">)</span></code></pre></div>
     </div>
 
     <div id="arguments">
@@ -85,6 +90,8 @@
 <dd><p>Vector with a numbers corresponding the scenarios. See details in <code>wcde</code> for more information.</p></dd>
 <dt>country_code</dt>
 <dd><p>Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.</p></dd>
+<dt>server</dt>
+<dd><p>Character string for server to download from. Defaults to <code>iiasa</code>, but can use <code>github</code> if IIASA server is down.</p></dd>
 </dl></div>
     <div id="value">
     <h2>Value</h2>
