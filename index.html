@@ -32,6 +32,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -44,18 +46,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">wcde</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.6</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="articles/wcde.html">Get started</a>
 </li>
@@ -68,19 +64,19 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/guyabel/wcde/">
+  <a href="https://github.com/guyabel/wcde/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="https://twitter.com/guyabelguyabel">
+  <a href="https://twitter.com/guyabelguyabel" class="external-link">
     <span class="fab fa-twitter fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="https://guyabel.com">
+  <a href="https://guyabel.com" class="external-link">
     <span class="fas fa-blog fa-lg"></span>
      
   </a>
@@ -97,90 +93,90 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="wcde" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#wcde" class="anchor"></a>wcde</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="wcde">wcde<a class="anchor" aria-label="anchor" href="#wcde"></a>
+</h1></div>
 <!-- badges: start -->
 
-<p><img src="https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png" align="right" height="180" style="padding-left: 20px; padding-bottom: 20px;"></p>
-<p>Download data from the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/">Wittgenstein Centre for Demography and Human Capital Data Explorer</a> into R</p>
-<p>See the <a href="https://guyabel.github.io/wcde/">pkgdown site</a> for full details.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of <code>wcde</code> from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
+<p><img src="https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png" align="right" height="200" style="float:right; height:200px;"></p>
+<p>Download data from the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link">Wittgenstein Centre for Demography and Human Capital Data Explorer</a> into R</p>
+<p>See the <a href="https://guyabel.github.io/wcde/" class="external-link">pkgdown site</a> for full details.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the released version of <code>wcde</code> from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"wcde"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"wcde"</span><span class="op">)</span></span></code></pre></div>
 <p>Install the developmental version with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">devtools</span><span class="op">)</span>
-<span class="fu">install_github</span><span class="op">(</span><span class="st">"guyabel/wcde"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://devtools.r-lib.org/" class="external-link">devtools</a></span><span class="op">)</span></span>
+<span><span class="fu">install_github</span><span class="op">(</span><span class="st">"guyabel/wcde"</span>, ref <span class="op">=</span> <span class="st">"main"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
 <p>Download data based on a indicator, scenario and country code:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://guyabel.github.io/wcde/">wcde</a></span><span class="op">)</span>
-<span class="co">#&gt; Suggested citation for data:</span>
-<span class="co">#&gt; Wittgenstein Centre for Demography and Global Human Capital (WIC) Wittgenstein Centre Data Explorer. Version 2.0, 2018</span>
-
-<span class="co"># SSP2 education specific tfr for Austria</span>
-<span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 102 x 6</span>
-<span class="co">#&gt;    scenario name    country_code education          period     etfr</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;     &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Austria           40 No Education       2015-2020  1.64</span>
-<span class="co">#&gt;  2        2 Austria           40 Incomplete Primary 2015-2020  1.64</span>
-<span class="co">#&gt;  3        2 Austria           40 Primary            2015-2020  1.64</span>
-<span class="co">#&gt;  4        2 Austria           40 Lower Secondary    2015-2020  1.66</span>
-<span class="co">#&gt;  5        2 Austria           40 Upper Secondary    2015-2020  1.46</span>
-<span class="co">#&gt;  6        2 Austria           40 Post Secondary     2015-2020  1.36</span>
-<span class="co">#&gt;  7        2 Austria           40 No Education       2020-2025  1.68</span>
-<span class="co">#&gt;  8        2 Austria           40 Incomplete Primary 2020-2025  1.68</span>
-<span class="co">#&gt;  9        2 Austria           40 Primary            2020-2025  1.68</span>
-<span class="co">#&gt; 10        2 Austria           40 Lower Secondary    2020-2025  1.67</span>
-<span class="co">#&gt; # ... with 92 more rows</span>
-
-<span class="co"># SSP2 education specific population sizes for Iran and Kenya</span>
-<span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"epop"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">364</span>, <span class="fl">404</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 36,300 x 8</span>
-<span class="co">#&gt;    scenario name             country_code age   sex   education      year   epop</span>
-<span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;                   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;         &lt;dbl&gt;  &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        2 Iran (Islamic R~          364 All   Both  Total          1950 17119.</span>
-<span class="co">#&gt;  2        2 Kenya                     404 All   Both  Total          1950  6077.</span>
-<span class="co">#&gt;  3        2 Iran (Islamic R~          364 All   Both  Under 15       1950  6210 </span>
-<span class="co">#&gt;  4        2 Kenya                     404 All   Both  Under 15       1950  2417.</span>
-<span class="co">#&gt;  5        2 Iran (Islamic R~          364 All   Both  No Education   1950  9648.</span>
-<span class="co">#&gt;  6        2 Kenya                     404 All   Both  No Education   1950  2867.</span>
-<span class="co">#&gt;  7        2 Iran (Islamic R~          364 All   Both  Incomplete P~  1950   378 </span>
-<span class="co">#&gt;  8        2 Kenya                     404 All   Both  Incomplete P~  1950   555.</span>
-<span class="co">#&gt;  9        2 Iran (Islamic R~          364 All   Both  Primary        1950   631.</span>
-<span class="co">#&gt; 10        2 Kenya                     404 All   Both  Primary        1950   139.</span>
-<span class="co">#&gt; # ... with 36,290 more rows</span>
-
-<span class="co"># SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries</span>
-<span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"ggapedu15"</span>, scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 124,038 x 6</span>
-<span class="co">#&gt;    scenario name                     country_code  year education    ggapedu15</span>
-<span class="co">#&gt;       &lt;int&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;</span>
-<span class="co">#&gt;  1        1 Bulgaria                          100  1950 No Education       -16</span>
-<span class="co">#&gt;  2        1 Myanmar                           104  1950 No Education       -13</span>
-<span class="co">#&gt;  3        1 Burundi                           108  1950 No Education       -11</span>
-<span class="co">#&gt;  4        1 Belarus                           112  1950 No Education       -10</span>
-<span class="co">#&gt;  5        1 Cambodia                          116  1950 No Education       -28</span>
-<span class="co">#&gt;  6        1 Algeria                            12  1950 No Education        -6</span>
-<span class="co">#&gt;  7        1 Cameroon                          120  1950 No Education       -16</span>
-<span class="co">#&gt;  8        1 Canada                            124  1950 No Education        -1</span>
-<span class="co">#&gt;  9        1 Cape Verde                        132  1950 No Education       -14</span>
-<span class="co">#&gt; 10        1 Central African Republic          140  1950 No Education        -4</span>
-<span class="co">#&gt; # ... with 124,028 more rows</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://guyabel.github.io/wcde/" class="external-link">wcde</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; Suggested citation for data:</span></span>
+<span><span class="co">#&gt; Wittgenstein Centre for Demography and Global Human Capital (WIC) Wittgenstein Centre Data Explorer. Version 2.0, 2018</span></span>
+<span></span>
+<span><span class="co"># SSP2 education specific tfr for Austria</span></span>
+<span><span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 102 × 6</span></span>
+<span><span class="co">#&gt;    scenario name    country_code education          period     etfr</span></span>
+<span><span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;     &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1        2 Austria           40 No Education       2015-2020  1.64</span></span>
+<span><span class="co">#&gt;  2        2 Austria           40 Incomplete Primary 2015-2020  1.64</span></span>
+<span><span class="co">#&gt;  3        2 Austria           40 Primary            2015-2020  1.64</span></span>
+<span><span class="co">#&gt;  4        2 Austria           40 Lower Secondary    2015-2020  1.66</span></span>
+<span><span class="co">#&gt;  5        2 Austria           40 Upper Secondary    2015-2020  1.46</span></span>
+<span><span class="co">#&gt;  6        2 Austria           40 Post Secondary     2015-2020  1.36</span></span>
+<span><span class="co">#&gt;  7        2 Austria           40 No Education       2020-2025  1.68</span></span>
+<span><span class="co">#&gt;  8        2 Austria           40 Incomplete Primary 2020-2025  1.68</span></span>
+<span><span class="co">#&gt;  9        2 Austria           40 Primary            2020-2025  1.68</span></span>
+<span><span class="co">#&gt; 10        2 Austria           40 Lower Secondary    2020-2025  1.67</span></span>
+<span><span class="co">#&gt; # … with 92 more rows</span></span>
+<span></span>
+<span><span class="co"># SSP2 education specific population sizes for Iran and Kenya</span></span>
+<span><span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">364</span>, <span class="fl">404</span><span class="op">)</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 310 × 6</span></span>
+<span><span class="co">#&gt;    scenario name                       country_code  year education         pop</span></span>
+<span><span class="co">#&gt;       &lt;dbl&gt; &lt;fct&gt;                             &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;           &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1        2 Iran (Islamic Republic of)          364  1950 Under 15       6210  </span></span>
+<span><span class="co">#&gt;  2        2 Iran (Islamic Republic of)          364  1950 No Education   9648. </span></span>
+<span><span class="co">#&gt;  3        2 Iran (Islamic Republic of)          364  1950 Primary        1009. </span></span>
+<span><span class="co">#&gt;  4        2 Iran (Islamic Republic of)          364  1950 Secondary       231. </span></span>
+<span><span class="co">#&gt;  5        2 Iran (Islamic Republic of)          364  1950 Post Secondary   20.8</span></span>
+<span><span class="co">#&gt;  6        2 Iran (Islamic Republic of)          364  1955 Under 15       7559. </span></span>
+<span><span class="co">#&gt;  7        2 Iran (Islamic Republic of)          364  1955 No Education   9983. </span></span>
+<span><span class="co">#&gt;  8        2 Iran (Islamic Republic of)          364  1955 Primary        1343. </span></span>
+<span><span class="co">#&gt;  9        2 Iran (Islamic Republic of)          364  1955 Secondary       375. </span></span>
+<span><span class="co">#&gt; 10        2 Iran (Islamic Republic of)          364  1955 Post Secondary   33.8</span></span>
+<span><span class="co">#&gt; # … with 300 more rows</span></span>
+<span></span>
+<span><span class="co"># SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries</span></span>
+<span><span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"ggapedu15"</span>, scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 124,038 × 6</span></span>
+<span><span class="co">#&gt;    scenario name                     country_code  year education    ggapedu15</span></span>
+<span><span class="co">#&gt;       &lt;int&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1        1 Bulgaria                          100  1950 No Education       -16</span></span>
+<span><span class="co">#&gt;  2        1 Myanmar                           104  1950 No Education       -13</span></span>
+<span><span class="co">#&gt;  3        1 Burundi                           108  1950 No Education       -11</span></span>
+<span><span class="co">#&gt;  4        1 Belarus                           112  1950 No Education       -10</span></span>
+<span><span class="co">#&gt;  5        1 Cambodia                          116  1950 No Education       -28</span></span>
+<span><span class="co">#&gt;  6        1 Algeria                            12  1950 No Education        -6</span></span>
+<span><span class="co">#&gt;  7        1 Cameroon                          120  1950 No Education       -16</span></span>
+<span><span class="co">#&gt;  8        1 Canada                            124  1950 No Education        -1</span></span>
+<span><span class="co">#&gt;  9        1 Cape Verde                        132  1950 No Education       -14</span></span>
+<span><span class="co">#&gt; 10        1 Central African Republic          140  1950 No Education        -4</span></span>
+<span><span class="co">#&gt; # … with 124,028 more rows</span></span></code></pre></div>
 </div>
-<div id="vignette" class="section level2">
-<h2 class="hasAnchor">
-<a href="#vignette" class="anchor"></a>Vignette</h2>
-<p>The <a href="https://guyabel.github.io/wcde/articles/wcde.html">vignette</a> provides many more examples on how to use the package to download data and produce plots from the Wittgenstein Centre Human Capital Data Explorer.</p>
-<p><img src="https://raw.githubusercontent.com/guyabel/wcde/main/world6_ssp2.gif" height="600"></p>
+<div class="section level2">
+<h2 id="vignette">Vignette<a class="anchor" aria-label="anchor" href="#vignette"></a>
+</h2>
+<p>The <a href="https://guyabel.github.io/wcde/articles/wcde.html" class="external-link">vignette</a> provides many more examples on how to use the package to download data and produce plots from the Wittgenstein Centre Human Capital Data Explorer.</p>
+<p><img src="https://raw.githubusercontent.com/guyabel/wcde/main/world6_ssp2.gif" width="600px" height="600px"></p>
 <!-- <img src='world6_ssp2.gif' height="600"/> -->
 </div>
 </div>
@@ -188,49 +184,59 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=wcde">https://​cloud.r-project.org/​package=wcde</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/guyabel/wcde/">https://​github.com/​guyabel/​wcde/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/guyabel/wcde/issues/">https://​github.com/​guyabel/​wcde/​issues/​</a>
-</li>
-</ul>
-</div>
-<div class="license">
-<h2>License</h2>
-<ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>Guy J. Abel <br><small class="roles"> Author, maintainer, contributor </small> <a href="https://orcid.org/0000-0002-4893-5687" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li><a href="authors.html">All authors...</a></li>
+<li><a href="https://cloud.r-project.org/package=wcde" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/guyabel/wcde/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/guyabel/wcde/issues/" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="license">
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://CRAN.R-project.org/package=wcde"><img src="https://www.r-pkg.org/badges/version/wcde" alt="CRAN status"></a></li>
-<li><a href="https://r-pkg.org/pkg/wcde"><img src="https://cranlogs.r-pkg.org/badges/grand-total/wcde?color=blue" alt="CRAN RStudio mirror downloads"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
-<li><a href="https://github.com/guyabel/wcde/actions"><img src="https://github.com/guyabel/wcde/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing wcde</a></li>
+</ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Guy J. Abel <br><small class="roles"> Author, maintainer, contributor </small> <a href="https://orcid.org/0000-0002-4893-5687" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="authors.html">More about authors...</a></li>
+</ul>
+</div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://CRAN.R-project.org/package=wcde" class="external-link"><img src="https://www.r-pkg.org/badges/version/wcde" alt="CRAN status"></a></li>
+<li><a href="https://r-pkg.org/pkg/wcde" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/wcde?color=blue" alt="CRAN RStudio mirror downloads"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://github.com/guyabel/wcde/actions" class="external-link"><img src="https://github.com/guyabel/wcde/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+</ul>
+</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Guy J. Abel.</p>
+  <p></p>
+<p>Developed by Guy J. Abel.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -238,6 +244,8 @@
 
   
 
+
+  
 
   </body>
 </html>
