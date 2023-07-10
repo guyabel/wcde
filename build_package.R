@@ -1,7 +1,3 @@
-library(usethis)
-# create_tidy_package(path = "Github/tidywpp")
-usethis::use_pipe()
-usethis::use_tibble()
 usethis::use_build_ignore(
   c("tests", "data-host", "data-host-batch", "build_package.R",
     "data-raw", "data1.R", "data2.R")
@@ -17,7 +13,19 @@ devtools::check()
 devtools::build()
 file.show("NEWS.md")
 
+##
+## these are key if devtools::check() is working by github actions are not
+##
+usethis::use_github_action_check_standard()
+usethis::use_github_action("pkgdown")
+usethis::use_github_actions_badge()
+file.show("NEWS.md")
+
+
+
+
 usethis::use_pkgdown()
+roxygen2::roxygenise()
 pkgdown::build_site()
 pkgdown::build_reference()
 

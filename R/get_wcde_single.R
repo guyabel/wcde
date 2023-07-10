@@ -7,6 +7,8 @@
 #' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` if IIASA server is down.
 #'
 #' @return A tibble with multiple columns.
+#' @keywords internal
+#' @export
 get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL, server = NULL){
   # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
   # scenario = 2; indicator = "e0"; country_code = "900"
@@ -69,7 +71,7 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
       else .} %>%
     dplyr::mutate(d = purrr::map(.x = u, .f = ~read_with_progress(f = .x))) %>%
     dplyr::group_by(scenario) %>%
-    dplyr::summarise(dplyr::bind_cols(d), .groups = "drop_last") %>%
+    dplyr::reframe(dplyr::bind_cols(d), .groups = "drop_last") %>%
     dplyr::ungroup()
   pb$terminate()
 

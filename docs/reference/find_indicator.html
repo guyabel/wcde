@@ -74,22 +74,25 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">find_indicator</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">find_indicator</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>Character string on key word or name related to indicator of potential interest.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A subset of the <code>wic_indicators</code> data frame with one or more of the <code>indicator</code>, <code>description</code> or <code>definition</code> columns matching the keyword given to <code>x</code>. Use the result in the <code>indicator</code> column to input to the <code>get_wcde</code> function for downloading data.</p>
+    
+
+<p>A subset of the <code>wic_indicators</code> data frame with one or more of the <code>indicator</code>, <code>description</code> or <code>definition</code> columns matching the keyword given to <code>x</code>. Use the result in the <code>indicator</code> column to input to the <code>get_wcde</code> function for downloading data.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"education"</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"education"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 9 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description                                      definition         </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              </span>
@@ -102,12 +105,12 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> etfr      Total Fertility Rate by Education                <span style="color: #949494;">"</span>The average numbe…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> eassr     Age-Specific Survival Ratio by Education         <span style="color: #949494;">"</span>Survivorship of p…</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">9</span> easfr     Age-Specific Fertility Rate by Education         <span style="color: #949494;">"</span>Number of births …</span>
-<span class="r-in"><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"migr"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"migr"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description   definition                                            </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                                 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> net       Net Migration <span style="color: #949494;">"</span>The number of immigrants minus the number of emigran…</span>
-<span class="r-in"><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"fert"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"fert"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 3</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description                              definition                 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                      </span>
@@ -129,7 +132,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

@@ -74,43 +74,62 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">get_wcde</span><span class="op">(</span>
-  indicator <span class="op">=</span> <span class="st">"pop"</span>,
-  scenario <span class="op">=</span> <span class="fl">2</span>,
-  country_code <span class="op">=</span> <span class="cn">NULL</span>,
-  country_name <span class="op">=</span> <span class="cn">NULL</span>,
-  pop_age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"all"</span><span class="op">)</span>,
-  pop_sex <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"both"</span>, <span class="st">"all"</span><span class="op">)</span>,
-  pop_edu <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"four"</span>, <span class="st">"six"</span>, <span class="st">"eight"</span><span class="op">)</span>,
-  include_scenario_names <span class="op">=</span> <span class="cn">FALSE</span>,
-  server <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"iiasa"</span>, <span class="st">"github"</span><span class="op">)</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_wcde</span><span class="op">(</span></span>
+<span>  indicator <span class="op">=</span> <span class="st">"pop"</span>,</span>
+<span>  scenario <span class="op">=</span> <span class="fl">2</span>,</span>
+<span>  country_code <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  country_name <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  pop_age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"all"</span><span class="op">)</span>,</span>
+<span>  pop_sex <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"both"</span>, <span class="st">"all"</span><span class="op">)</span>,</span>
+<span>  pop_edu <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"total"</span>, <span class="st">"four"</span>, <span class="st">"six"</span>, <span class="st">"eight"</span><span class="op">)</span>,</span>
+<span>  include_scenario_names <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  server <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"iiasa"</span>, <span class="st">"github"</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>indicator</dt>
 <dd><p>One character string based on the <code>indicator</code> column in the <code>wic_indicators</code> data frame, representing the variable to be downloaded.</p></dd>
+
+
 <dt>scenario</dt>
 <dd><p>Vector of length one or more with numbers corresponding the scenarios. See details for more information. Defaults to 2 for the SSP2 Medium scenario.</p></dd>
+
+
 <dt>country_code</dt>
 <dd><p>Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.</p></dd>
+
+
 <dt>country_name</dt>
 <dd><p>Vector of length one or more of country names. The corresponding country code will be guessed using the countrycodes package.</p></dd>
+
+
 <dt>pop_age</dt>
 <dd><p>Character string for population age groups if <code>indicator</code> is set to <code>pop</code>. Defaults to no age groups <code>total</code>, but can be set to <code>all</code>.</p></dd>
+
+
 <dt>pop_sex</dt>
 <dd><p>Character string for population sexes if <code>indicator</code>is set to <code>pop</code>. Defaults to no sex <code>total</code>, but can be set to <code>both</code> or <code>all</code>.</p></dd>
+
+
 <dt>pop_edu</dt>
 <dd><p>Character string for population educational attainment if <code>indicator</code> is set to <code>pop</code>. Defaults to <code>total</code>, but can be set to <code>four</code>, <code>six</code> or <code>eight</code>.</p></dd>
+
+
 <dt>include_scenario_names</dt>
 <dd><p>Logical vector of length one to indicate if to include additional columns for scenario names and short names. <code>FALSE</code> by default.</p></dd>
+
+
 <dt>server</dt>
 <dd><p>Character string for server to download from. Defaults to <code>iiasa</code>, but can use <code>github</code> if IIASA server is down.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A <a href="https://tibble.tidyverse.org/reference/tibble-package.html" class="external-link">tibble</a> with the data selected.</p>
+    
+
+<p>A <a href="https://tibble.tidyverse.org/reference/tibble-package.html" class="external-link">tibble</a> with the data selected.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -121,43 +140,43 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># \donttest{</span></span>
-<span class="r-in"><span class="co"># SSP2 tfr for Austria and Bulgaria</span></span>
-<span class="r-in"><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 60 × 5</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name     country_code period      tfr</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        2 Austria            40 1950-1955  2.1 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        2 Bulgaria          100 1950-1955  2.53</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        2 Austria            40 1955-1960  2.57</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        2 Bulgaria          100 1955-1960  2.3 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        2 Austria            40 1960-1965  2.78</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        2 Bulgaria          100 1960-1965  2.22</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        2 Austria            40 1965-1970  2.57</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        2 Bulgaria          100 1965-1970  2.13</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria            40 1970-1975  2.04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Bulgaria          100 1970-1975  2.16</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># \donttest{</span></span></span>
+<span class="r-in"><span><span class="co"># SSP2 tfr for Austria and Bulgaria</span></span></span>
+<span class="r-in"><span><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 60 × 6</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name     country_code period    .groups     tfr</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        2 Austria            40 1950-1955 drop_last  2.1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        2 Bulgaria          100 1950-1955 drop_last  2.53</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        2 Austria            40 1955-1960 drop_last  2.57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        2 Bulgaria          100 1955-1960 drop_last  2.3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        2 Austria            40 1960-1965 drop_last  2.78</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        2 Bulgaria          100 1960-1965 drop_last  2.22</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        2 Austria            40 1965-1970 drop_last  2.57</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        2 Bulgaria          100 1965-1970 drop_last  2.13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria            40 1970-1975 drop_last  2.04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Bulgaria          100 1970-1975 drop_last  2.16</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 50 more rows</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># SSP1 and SSP2 life expectancy for Vietnam and United Kingdom (guessing the country codes)</span></span>
-<span class="r-in"><span class="fu">get_wcde</span><span class="op">(</span>scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span>, indicator <span class="op">=</span> <span class="st">"e0"</span>, country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Vietnam"</span>, <span class="st">"UK"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 240 × 6</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name                                 country_code sex   period    e0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        1 Viet Nam                                      704 Male  1950-…  50.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        1 United Kingdom of Great Britain and…          826 Male  1950-…  66.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        1 Viet Nam                                      704 Fema… 1950-…  56.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        1 United Kingdom of Great Britain and…          826 Fema… 1950-…  71.9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        1 Viet Nam                                      704 Male  1955-…  54  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        1 United Kingdom of Great Britain and…          826 Male  1955-…  67.7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        1 Viet Nam                                      704 Fema… 1955-…  60.7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        1 United Kingdom of Great Britain and…          826 Fema… 1955-…  73.4</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        1 Viet Nam                                      704 Male  1960-…  56.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        1 United Kingdom of Great Britain and…          826 Male  1960-…  68  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 230 more rows</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># SSP1 and SSP3 population by education for all countries</span></span>
-<span class="r-in"><span class="fu">get_wcde</span><span class="op">(</span>scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span>, indicator <span class="op">=</span> <span class="st">"tfr"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># SSP1 and SSP2 life expectancy for Vietnam and United Kingdom (guessing the country codes)</span></span></span>
+<span class="r-in"><span><span class="fu">get_wcde</span><span class="op">(</span>scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">)</span>, indicator <span class="op">=</span> <span class="st">"e0"</span>, country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Vietnam"</span>, <span class="st">"UK"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 240 × 7</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name                              count…¹ sex   period .groups    e0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                               <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        1 Viet Nam                              704 Male  1950-… drop_l…  50.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        1 United Kingdom of Great Britain …     826 Male  1950-… drop_l…  66.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        1 Viet Nam                              704 Fema… 1950-… drop_l…  56.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        1 United Kingdom of Great Britain …     826 Fema… 1950-… drop_l…  71.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        1 Viet Nam                              704 Male  1955-… drop_l…  54  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        1 United Kingdom of Great Britain …     826 Male  1955-… drop_l…  67.7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        1 Viet Nam                              704 Fema… 1955-… drop_l…  60.7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        1 United Kingdom of Great Britain …     826 Fema… 1955-… drop_l…  73.4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        1 Viet Nam                              704 Male  1960-… drop_l…  56.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        1 United Kingdom of Great Britain …     826 Male  1960-… drop_l…  68  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 230 more rows, and abbreviated variable name ¹​country_code</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># SSP1 and SSP3 population by education for all countries</span></span></span>
+<span class="r-in"><span><span class="fu">get_wcde</span><span class="op">(</span>scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span>, indicator <span class="op">=</span> <span class="st">"tfr"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 13,740 × 5</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name                     country_code period      tfr</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
@@ -172,26 +191,26 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        1 Cape Verde                        132 1950-1955  6.57</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        1 Central African Republic          140 1950-1955  5.52</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 13,730 more rows</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># population totals (aggregated over age, sex and education)</span></span>
-<span class="r-in"><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 31 × 5</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name    country_code  year   pop</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>950 <span style="text-decoration: underline;">6</span>936.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>955 <span style="text-decoration: underline;">6</span>951.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>960 <span style="text-decoration: underline;">7</span>068.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>965 <span style="text-decoration: underline;">7</span>302.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>970 <span style="text-decoration: underline;">7</span>512.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>975 <span style="text-decoration: underline;">7</span>630.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>980 <span style="text-decoration: underline;">7</span>599.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>985 <span style="text-decoration: underline;">7</span>603.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>990 <span style="text-decoration: underline;">7</span>709.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>995 <span style="text-decoration: underline;">7</span>975.</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># population totals (aggregated over age, sex and education)</span></span></span>
+<span class="r-in"><span><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 31 × 6</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name    country_code  year .groups     pop</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>950 drop_last <span style="text-decoration: underline;">6</span>936.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>955 drop_last <span style="text-decoration: underline;">6</span>951.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>960 drop_last <span style="text-decoration: underline;">7</span>068.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>965 drop_last <span style="text-decoration: underline;">7</span>302.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>970 drop_last <span style="text-decoration: underline;">7</span>512.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>975 drop_last <span style="text-decoration: underline;">7</span>630.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>980 drop_last <span style="text-decoration: underline;">7</span>599.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>985 drop_last <span style="text-decoration: underline;">7</span>603.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>990 drop_last <span style="text-decoration: underline;">7</span>709.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>995 drop_last <span style="text-decoration: underline;">7</span>975.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 21 more rows</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># population totals by education group</span></span>
-<span class="r-in"><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># population totals by education group</span></span></span>
+<span class="r-in"><span><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 155 × 6</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name    country_code  year education        pop</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
@@ -206,24 +225,24 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>955 Secondary      <span style="text-decoration: underline;">2</span>292.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Austria           40  <span style="text-decoration: underline;">1</span>955 Post Secondary  220.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 145 more rows</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># population totals by age-sex group</span></span>
-<span class="r-in"><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span>, pop_age <span class="op">=</span> <span class="st">"all"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1,302 × 7</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name    country_code age    sex    year   pop</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        2 Austria           40 0--4   Male   <span style="text-decoration: underline;">1</span>950  264.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        2 Austria           40 5--9   Male   <span style="text-decoration: underline;">1</span>950  285.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        2 Austria           40 10--14 Male   <span style="text-decoration: underline;">1</span>950  255.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        2 Austria           40 15--19 Male   <span style="text-decoration: underline;">1</span>950  233.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        2 Austria           40 20--24 Male   <span style="text-decoration: underline;">1</span>950  242.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        2 Austria           40 25--29 Male   <span style="text-decoration: underline;">1</span>950  223.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        2 Austria           40 30--34 Male   <span style="text-decoration: underline;">1</span>950  151.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        2 Austria           40 35--39 Male   <span style="text-decoration: underline;">1</span>950  220.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria           40 40--44 Male   <span style="text-decoration: underline;">1</span>950  246 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Austria           40 45--49 Male   <span style="text-decoration: underline;">1</span>950  255.</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># population totals by age-sex group</span></span></span>
+<span class="r-in"><span><span class="fu">get_wcde</span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"Austria"</span>, pop_age <span class="op">=</span> <span class="st">"all"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1,302 × 8</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    scenario name    country_code age    sex    year .groups     pop</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span>        2 Austria           40 0--4   Male   <span style="text-decoration: underline;">1</span>950 drop_last  264.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span>        2 Austria           40 5--9   Male   <span style="text-decoration: underline;">1</span>950 drop_last  285.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span>        2 Austria           40 10--14 Male   <span style="text-decoration: underline;">1</span>950 drop_last  255.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>        2 Austria           40 15--19 Male   <span style="text-decoration: underline;">1</span>950 drop_last  233.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>        2 Austria           40 20--24 Male   <span style="text-decoration: underline;">1</span>950 drop_last  242.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span>        2 Austria           40 25--29 Male   <span style="text-decoration: underline;">1</span>950 drop_last  223.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span>        2 Austria           40 30--34 Male   <span style="text-decoration: underline;">1</span>950 drop_last  151.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span>        2 Austria           40 35--39 Male   <span style="text-decoration: underline;">1</span>950 drop_last  220.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span>        2 Austria           40 40--44 Male   <span style="text-decoration: underline;">1</span>950 drop_last  246 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>        2 Austria           40 45--49 Male   <span style="text-decoration: underline;">1</span>950 drop_last  255.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 1,292 more rows</span></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -238,7 +257,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

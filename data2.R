@@ -225,3 +225,11 @@ for(i in 1:5){
       write_csv(file = paste0("./data-host/", p0$s[i], "/pop-age-sex-edattain/",names(.), ".csv"))
   }
 }
+
+
+##
+## check no 0MB file sizes
+##
+library(fs)
+dir_info(path = "./data-host/", recurse = TRUE, type = "file") %>%
+  arrange(size)

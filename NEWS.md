@@ -29,3 +29,5 @@
 # wcde 0.0.6
 
 * Add `server` argument in `get_wcde()`
+* Updated UK pop-age file for scenario 1 on server
+* Replaced `dplyr::summarize()` with `dplyr::reframe()` in `get_wcde_single()`

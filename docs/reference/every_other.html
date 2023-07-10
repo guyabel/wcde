@@ -74,32 +74,41 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">every_other</span><span class="op">(</span><span class="va">x</span>, n <span class="op">=</span> <span class="fl">2</span>, start <span class="op">=</span> <span class="fl">1</span>, fill <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">every_other</span><span class="op">(</span><span class="va">x</span>, n <span class="op">=</span> <span class="fl">2</span>, start <span class="op">=</span> <span class="fl">1</span>, fill <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>Vector to select (remove) elements from</p></dd>
+
+
 <dt>n</dt>
 <dd><p>Numeric value for the number of elements to skip. Default is 2, i.e. skips every second element</p></dd>
+
+
 <dt>start</dt>
 <dd><p>Numeric value to indicate which element of the vector to commence from.</p></dd>
+
+
 <dt>fill</dt>
 <dd><p>Character string to be used in place of skipped element. By default is <code>NULL</code> and hence skipped elements are removed rather than replaced.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>Vector with elements removed</p>
+    
+
+<p>Vector with elements removed</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">every_other</span><span class="op">(</span>x <span class="op">=</span> <span class="va">letters</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">every_other</span><span class="op">(</span>x <span class="op">=</span> <span class="va">letters</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "a" "c" "e" "g" "i" "k" "m" "o" "q" "s" "u" "w" "y"</span>
-<span class="r-in"><span class="fu">every_other</span><span class="op">(</span><span class="va">LETTERS</span>, n <span class="op">=</span> <span class="fl">3</span>, start <span class="op">=</span> <span class="fl">6</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">every_other</span><span class="op">(</span><span class="va">LETTERS</span>, n <span class="op">=</span> <span class="fl">3</span>, start <span class="op">=</span> <span class="fl">6</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "F" "I" "L" "O" "R" "U" "X"</span>
-<span class="r-in"><span class="fu">every_other</span><span class="op">(</span>x <span class="op">=</span> <span class="va">letters</span>, fill <span class="op">=</span> <span class="st">""</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu">every_other</span><span class="op">(</span>x <span class="op">=</span> <span class="va">letters</span>, fill <span class="op">=</span> <span class="st">""</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "a" ""  "c" ""  "e" ""  "g" ""  "i" ""  "k" ""  "m" ""  "o" ""  "q" ""  "s"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [20] ""  "u" ""  "w" ""  "y" "" </span>
 </code></pre></div>
@@ -116,7 +125,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

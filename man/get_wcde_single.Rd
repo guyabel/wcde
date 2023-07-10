@@ -26,3 +26,4 @@ A tibble with multiple columns.
 \description{
 Requires a working internet connection. Intended for internal use.
 }
+\keyword{internal}
