@@ -13,7 +13,8 @@ get_wcde(
   pop_sex = c("total", "both", "all"),
   pop_edu = c("total", "four", "six", "eight"),
   include_scenario_names = FALSE,
-  server = c("iiasa", "github")
+  server = c("iiasa", "github", "iiasa-local"),
+  version = c("wcde-v2", "wcde-v1", "fume")
 )
 }
 \arguments{
@@ -34,6 +35,8 @@ get_wcde(
 \item{include_scenario_names}{Logical vector of length one to indicate if to include additional columns for scenario names and short names. \code{FALSE} by default.}
 
 \item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} if IIASA server is down.}
+
+\item{version}{Character string for version of projections to obtain. Defaults to \code{wcde-v2}, but can use \code{wcde-v2} and \code{fume}. Scenario and indicator availability vary between versions.}
 }
 \value{
 A \link[tibble:tibble-package]{tibble} with the data selected.

@@ -8,7 +8,8 @@ get_wcde_single(
   indicator = NULL,
   scenario = 2,
   country_code = NULL,
-  server = NULL
+  server = NULL,
+  version = NULL
 )
 }
 \arguments{
@@ -19,6 +20,8 @@ get_wcde_single(
 \item{country_code}{Vector of length one or more of country numeric codes based on ISO 3 digit numeric values.}
 
 \item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} if IIASA server is down.}
+
+\item{version}{Character string for version of projections to obtain. Defaults to \code{wcde-v2}, but can use \code{wcde-v2} and \code{fume}. Scenario and indicator availability vary between versions.}
 }
 \value{
 A tibble with multiple columns.

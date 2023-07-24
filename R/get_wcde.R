@@ -11,6 +11,7 @@
 #' @param pop_edu Character string for population educational attainment if `indicator` is set to `pop`. Defaults to `total`, but can be set to `four`, `six` or `eight`.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
 #' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` if IIASA server is down.
+#' @param version Character string for version of projections to obtain. Defaults to `wcde-v2`, but can use `wcde-v2` and `fume`. Scenario and indicator availability vary between versions.
 #'
 #' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
 #'
@@ -96,7 +97,8 @@ get_wcde <- function(
     pop_sex = c("total", "both", "all"),
     pop_edu = c("total", "four", "six", "eight"),
     include_scenario_names = FALSE,
-    server = c("iiasa", "github")
+    server = c("iiasa", "github", "iiasa-local"),
+    version = c("wcde-v2", "wcde-v1", "fume")
   ){
   # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
   # guess country codes from name
@@ -157,12 +159,18 @@ get_wcde <- function(
   server <- match.arg(server)
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
-      dplyr::mutate(
-        u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/data-batch/",
-                   scenario, "/", indicator, ".csv")) %>%
+      dplyr::mutate(u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/",
+                               version, "/data-batch/", scenario, "/",
+                               indicator, "/", country_code, ".csv")) %>%
       {if(server == "github")
-        dplyr::mutate(., u = paste0("https://github.com/guyabel/wcde/raw/main/data-host/",
-                                    scenario, "/", indicator, "/", country_code, ".csv"))
+        dplyr::mutate(., u = paste0("https://github.com/guyabel/wcde-data/raw/main/",
+                                    version, "/data-batch/", scenario, "/",
+                                    indicator, "/", country_code, ".csv"))
+        else .} %>%
+      {if(server == "iiasa-local")
+        dplyr::mutate(., u = paste0("../wcde-data/",
+                                    version, "/data-batch/", scenario, "/",
+                                    indicator, "/", country_code, ".csv"))
         else .} %>%
       dplyr::mutate(
         d = purrr::map(
