@@ -26,7 +26,7 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
   #   message("can only get data on one scenario at a time, taking first scenario given")
   #   scenario <- scenario[1]
   # }
-  if(!all(scenario %in% c(1:5, 21, 22))){
+  if(!all(scenario %in% wcde::wic_scenarios$scenario)){
     message("scenario must be an integer in wic_scenarios$scenario")
   }
   v0 <- wcde::wic_indicators %>%
