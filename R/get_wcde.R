@@ -10,8 +10,8 @@
 #' @param pop_sex Character string for population sexes if `indicator`is set to `pop`. Defaults to no sex `total`, but can be set to `both` or `all`.
 #' @param pop_edu Character string for population educational attainment if `indicator` is set to `pop`. Defaults to `total`, but can be set to `four`, `six` or `eight`.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
-#' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` if IIASA server is down.
-#' @param version Character string for version of projections to obtain. Defaults to `wcde-v2`, but can use `wcde-v2` and `fume`. Scenario and indicator availability vary between versions.
+#' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` or `1&1` if IIASA server is down. Can check availability by setting to `search-available`
+#' @param version Character string for version of projections to obtain. Defaults to `wcde-v3`, but can use `wcde-v2` or `wcde-v1`. Scenario and indicator availability vary between versions.
 #'
 #' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
 #'
@@ -97,10 +97,10 @@ get_wcde <- function(
     pop_sex = c("total", "both", "all"),
     pop_edu = c("total", "four", "six", "eight"),
     include_scenario_names = FALSE,
-    server = c("iiasa", "github", "iiasa-local"),
-    version = c("wcde-v2", "wcde-v1", "fume")
+    server = c("iiasa", "github", "1&1", "search-available", "iiasa-local"),
+    version = c("wcde-v3", "wcde-v2", "wcde-v1")
   ){
-  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE
+  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE; server = "search-available"; version = "wcde-v2"
   # guess country codes from name
 
   guessed_code <- NULL
@@ -157,25 +157,59 @@ get_wcde <- function(
   }
 
   server <- match.arg(server)
+  if(server == "search-available" | is.null(server)){
+    server <- dplyr::case_when(
+      RCurl::url.exists("https://wicshiny2023.iiasa.ac.at/wcde-data/") ~ "iiasa",
+      # RCurl::url.exists("https://wicshiny.iiasa.ac.at/wcde-data/") ~ "iiasa",
+      RCurl::url.exists("https://github.com/guyabel/wcde-data/raw/main/") ~ "github",
+      RCurl::url.exists("https://shiny.wittgensteincentre.info/wcde-data/") ~ "1&1",
+      TRUE ~ "none-available"
+    )
+    stop("No server available. Please contact package maintainer")
+  }
+
+  server_url <- dplyr::case_when(
+    server == "iiasa" ~ "https://wicshiny2023.iiasa.ac.at/wcde-data/",
+    server == "iiasa-local" ~ "../wcde-data/",
+    server == "github" ~ "https://github.com/guyabel/wcde-data/raw/main/",
+    server == "1&1" ~ "https://shiny.wittgensteincentre.info/wcde-data/",
+    TRUE ~ server)
+
+  version <- match.arg(version)
+  vv <- ifelse(is.null(country_code), "-batch", "-single")
+  v <- NULL
+  if(RCurl::url.exists(paste0(server_url, version, vv)))
+    v <- version
+  if(is.null(v)){
+    uu <- paste0(server_url, "wcde-v3", vv)
+    if(RCurl::url.exists(uu)){
+      v <- "wcde-v3"
+      message("Version ", version, " not available on server, using wcde-v3")
+    }
+  }
+  if(is.null(v)){
+    uu <- paste0(server_url, "wcde-v2", vv)
+    if(RCurl::url.exists(uu)){
+      v <- "wcde-v2"
+      message("Version ", version, " not available on server, using wcde-v2")
+    }
+  }
+  if(is.null(v)){
+    uu <- paste0(server_url, "wcde-v1", vv)
+    if(RCurl::url.exists(uu)){
+      v <- "wcde-v1"
+      message("Version ", version, " not available on server, using wcde-v1")
+    }
+  }
+
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
-      dplyr::mutate(u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/",
-                               version, "/data-batch/", scenario, "/",
-                               indicator, "/", country_code, ".csv")) %>%
-      {if(server == "github")
-        dplyr::mutate(., u = paste0("https://github.com/guyabel/wcde-data/raw/main/",
-                                    version, "/data-batch/", scenario, "/",
-                                    indicator, "/", country_code, ".csv"))
-        else .} %>%
-      {if(server == "iiasa-local")
-        dplyr::mutate(., u = paste0("../wcde-data/",
-                                    version, "/data-batch/", scenario, "/",
-                                    indicator, "/", country_code, ".csv"))
-        else .} %>%
+      dplyr::mutate(u = paste0(server_url, v, "-batch/", scenario, "/",
+                               indicator, ".rds")) %>%
       dplyr::mutate(
         d = purrr::map(
           .x = u,
-          .f = ~readr::read_csv(.x, col_types = readr::cols(), guess_max = 1e5)
+          .f = ~readRDS(url(.x))
           )
         ) %>%
       dplyr::select(-u) %>%
@@ -187,7 +221,7 @@ get_wcde <- function(
     d2a <- wcde::wic_locations %>%
       dplyr::select(isono, name)
 
-    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code, server = server) %>%
+    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code, version = v, server = server) %>%
       dplyr::mutate(isono = as.numeric(isono)) %>%
       dplyr::left_join(d2a, by = "isono") %>%
       {if(include_scenario_names) dplyr::left_join(. , wcde::wic_scenarios, by = "scenario") else .}

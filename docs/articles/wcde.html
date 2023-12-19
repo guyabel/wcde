@@ -4,7 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="wcde">
 <title>Overview of the wcde package • wcde</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -12,12 +13,11 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
-<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Overview of the wcde package">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Overview of the wcde package">
 <meta property="og:description" content="wcde">
 <meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -31,78 +31,76 @@
   gtag('config', 'G-2XE3QBSNZJ');
 </script>
 </head>
-<body data-spy="scroll" data-target="#toc">
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
     
 
-    <div class="container template-article">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">wcde</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.6</span>
-      </span>
-    </div>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="../index.html">wcde</a>
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="../articles/wcde.html">Get started</a>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.6</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="active nav-item">
+  <a class="nav-link" href="../articles/wcde.html">Get started</a>
 </li>
-<li>
-  <a href="../reference/index.html">Reference</a>
+<li class="nav-item">
+  <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="../news/index.html">Changelog</a>
+<li class="nav-item">
+  <a class="nav-link" href="../news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/guyabel/wcde/" class="external-link">
-    <span class="fab fa-github fa-lg"></span>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/guyabel/wcde/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
-<li>
-  <a href="https://twitter.com/guyabelguyabel" class="external-link">
-    <span class="fab fa-twitter fa-lg"></span>
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://twitter.com/guyabelguyabel">
+    <span class="fab fa fab fa-twitter fa-lg"></span>
      
   </a>
 </li>
-<li>
-  <a href="https://guyabel.com" class="external-link">
-    <span class="fas fa-blog fa-lg"></span>
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://guyabel.com">
+    <span class="fas fa fas fa-blog fa-lg"></span>
      
   </a>
 </li>
       </ul>
 </div>
-<!--/.nav-collapse -->
+
+    
   </div>
-<!--/.container -->
-</div>
-<!--/.navbar -->
+</nav><div class="container template-article">
 
-      
 
-      </header><div class="row">
-  <div class="col-md-9 contents">
-    <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Overview of the wcde package</h1>
+
+
+<div class="row">
+  <main id="main" class="col-md-9"><div class="page-header">
+      <img src="../logo.png" class="logo" alt=""><h1>Overview of the wcde package</h1>
                         <h4 data-toc-skip class="author">Guy J. Abel,
 Samir K.C., Michaela Potancokova, Claudia Reiter, Andrea Tamburini and
 Dilek Yildiz</h4>
             
       
       <small class="dont-index">Source: <a href="https://github.com/guyabel/wcde/blob/HEAD/vignettes/wcde.Rmd" class="external-link"><code>vignettes/wcde.Rmd</code></a></small>
-      <div class="hidden name"><code>wcde.Rmd</code></div>
-
+      <div class="d-none name"><code>wcde.Rmd</code></div>
     </div>
 
     
@@ -146,39 +144,38 @@ corresponding to the country of interest</li>
 <span><span class="co"># download education specific tfr data</span></span>
 <span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 7</span></span></span>
-<span><span class="co">#&gt;    scenario name    country_code education          period    .groups    etfr</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2015-2020 drop_last  2.47</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2015-2020 drop_last  1.88</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2015-2020 drop_last  2.47</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2015-2020 drop_last  1.88</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2015-2020 drop_last  2.47</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2015-2020 drop_last  1.88</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2015-2020 drop_last  1.89</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2015-2020 drop_last  1.9 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020 drop_last  1.37</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020 drop_last  1.57</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span></span>
+<span><span class="co">#&gt;    scenario name    country_code education          period     etfr</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2015-2020  1.89</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2015-2020  1.9 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020  1.37</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020  1.57</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 194 more rows</span></span></span>
 <span></span>
 <span><span class="co"># download education specific survivorship rates</span></span>
 <span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"eassr"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Niger"</span>, <span class="st">"Korea"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 8,976 × 9</span></span></span>
-<span><span class="co">#&gt;    scenario name              country…¹ age   sex   educa…² period .groups eassr</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                 <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Niger                   562 Newb… Male  No Edu… 2015-… drop_l…  91.6</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Republic of Korea       410 Newb… Male  No Edu… 2015-… drop_l…  99.4</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Niger                   562 Newb… Male  Incomp… 2015-… drop_l…  92  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Republic of Korea       410 Newb… Male  Incomp… 2015-… drop_l…  99.5</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Niger                   562 Newb… Male  Primary 2015-… drop_l…  92.5</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Republic of Korea       410 Newb… Male  Primary 2015-… drop_l…  99.5</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Niger                   562 Newb… Male  Lower … 2015-… drop_l…  93.4</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Republic of Korea       410 Newb… Male  Lower … 2015-… drop_l…  99.6</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Niger                   562 Newb… Male  Upper … 2015-… drop_l…  95.2</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Republic of Korea       410 Newb… Male  Upper … 2015-… drop_l…  99.7</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># … with 8,966 more rows, and abbreviated variable names ¹​country_code,</span></span></span>
-<span><span class="co">#&gt; <span style="color: #949494;">#   ²​education</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 8,976 × 8</span></span></span>
+<span><span class="co">#&gt;    scenario name              country_code age     sex   education  period eassr</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Niger                      562 Newborn Male  No Educat… 2015-…  91.6</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Republic of Korea          410 Newborn Male  No Educat… 2015-…  99.4</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Niger                      562 Newborn Male  Incomplet… 2015-…  92  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Republic of Korea          410 Newborn Male  Incomplet… 2015-…  99.5</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Niger                      562 Newborn Male  Primary    2015-…  92.5</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Republic of Korea          410 Newborn Male  Primary    2015-…  99.5</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Niger                      562 Newborn Male  Lower Sec… 2015-…  93.4</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Republic of Korea          410 Newborn Male  Lower Sec… 2015-…  99.6</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Niger                      562 Newborn Male  Upper Sec… 2015-…  95.2</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Republic of Korea          410 Newborn Male  Upper Sec… 2015-…  99.7</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># … with 8,966 more rows</span></span></span></code></pre></div>
 <div class="section level3">
 <h3 id="indicator-codes">Indicator codes<a class="anchor" aria-label="anchor" href="#indicator-codes"></a>
 </h3>
@@ -205,30 +202,30 @@ be used to filter data for specific years or periods, for example:</p>
 <span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"e0"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Japan"</span>, <span class="st">"Australia"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2015-2020"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 4 × 7</span></span></span>
-<span><span class="co">#&gt;   scenario name      country_code sex    period    .groups      e0</span></span>
-<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        2 Japan              392 Male   2015-2020 drop_last  80.7</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        2 Australia           36 Male   2015-2020 drop_last  81.3</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>        2 Japan              392 Female 2015-2020 drop_last  87.2</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span>        2 Australia           36 Female 2015-2020 drop_last  85</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 4 × 6</span></span></span>
+<span><span class="co">#&gt;   scenario name      country_code sex    period       e0</span></span>
+<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        2 Japan              392 Male   2015-2020  80.7</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        2 Australia           36 Male   2015-2020  81.3</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>        2 Japan              392 Female 2015-2020  87.2</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span>        2 Australia           36 Female 2015-2020  85</span></span>
 <span></span>
 <span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"sexratio"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"China"</span>, <span class="st">"South Korea"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 44 × 7</span></span></span>
-<span><span class="co">#&gt;    scenario name              country_code age     year .groups   sexratio</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 China                      156 All     <span style="text-decoration: underline;">2</span>020 drop_last     1.06</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Republic of Korea          410 All     <span style="text-decoration: underline;">2</span>020 drop_last     1   </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 China                      156 0--4    <span style="text-decoration: underline;">2</span>020 drop_last     1.15</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Republic of Korea          410 0--4    <span style="text-decoration: underline;">2</span>020 drop_last     1.07</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 China                      156 5--9    <span style="text-decoration: underline;">2</span>020 drop_last     1.16</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Republic of Korea          410 5--9    <span style="text-decoration: underline;">2</span>020 drop_last     1.07</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 China                      156 10--14  <span style="text-decoration: underline;">2</span>020 drop_last     1.17</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Republic of Korea          410 10--14  <span style="text-decoration: underline;">2</span>020 drop_last     1.07</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 China                      156 15--19  <span style="text-decoration: underline;">2</span>020 drop_last     1.16</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Republic of Korea          410 15--19  <span style="text-decoration: underline;">2</span>020 drop_last     1.1 </span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 44 × 6</span></span></span>
+<span><span class="co">#&gt;    scenario name              country_code age     year sexratio</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 China                      156 All     <span style="text-decoration: underline;">2</span>020     1.06</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Republic of Korea          410 All     <span style="text-decoration: underline;">2</span>020     1   </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 China                      156 0--4    <span style="text-decoration: underline;">2</span>020     1.15</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Republic of Korea          410 0--4    <span style="text-decoration: underline;">2</span>020     1.07</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 China                      156 5--9    <span style="text-decoration: underline;">2</span>020     1.16</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Republic of Korea          410 5--9    <span style="text-decoration: underline;">2</span>020     1.07</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 China                      156 10--14  <span style="text-decoration: underline;">2</span>020     1.17</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Republic of Korea          410 10--14  <span style="text-decoration: underline;">2</span>020     1.07</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 China                      156 15--19  <span style="text-decoration: underline;">2</span>020     1.16</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Republic of Korea          410 15--19  <span style="text-decoration: underline;">2</span>020     1.1 </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 34 more rows</span></span></span></code></pre></div>
 <p>Past data is only available for selected indicators. These can be
 viewed using the <code>past</code> indicator column:</p>
@@ -257,11 +254,11 @@ specific indicators to specific age, sex or education groups</p>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"China"</span>, <span class="st">"South Korea"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2020</span>,</span>
 <span>         <span class="va">age</span> <span class="op">==</span> <span class="st">"All"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 7</span></span></span>
-<span><span class="co">#&gt;   scenario name              country_code age    year .groups   sexratio</span></span>
-<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        2 China                      156 All    <span style="text-decoration: underline;">2</span>020 drop_last     1.06</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        2 Republic of Korea          410 All    <span style="text-decoration: underline;">2</span>020 drop_last     1</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 6</span></span></span>
+<span><span class="co">#&gt;   scenario name              country_code age    year sexratio</span></span>
+<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        2 China                      156 All    <span style="text-decoration: underline;">2</span>020     1.06</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        2 Republic of Korea          410 All    <span style="text-decoration: underline;">2</span>020     1</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="country-names-and-codes">Country names and codes<a class="anchor" aria-label="anchor" href="#country-names-and-codes"></a>
@@ -271,37 +268,37 @@ package.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"tfr"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"U.A.E"</span>, <span class="st">"Espania"</span>, <span class="st">"Österreich"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 90 × 6</span></span></span>
-<span><span class="co">#&gt;    scenario name                 country_code period    .groups     tfr</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 United Arab Emirates          784 1950-1955 drop_last  6.97</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Spain                         724 1950-1955 drop_last  2.53</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Austria                        40 1950-1955 drop_last  2.1 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 United Arab Emirates          784 1955-1960 drop_last  6.97</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Spain                         724 1955-1960 drop_last  2.7 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Austria                        40 1955-1960 drop_last  2.57</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 United Arab Emirates          784 1960-1965 drop_last  6.87</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Spain                         724 1960-1965 drop_last  2.81</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Austria                        40 1960-1965 drop_last  2.78</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 United Arab Emirates          784 1965-1970 drop_last  6.77</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 90 × 5</span></span></span>
+<span><span class="co">#&gt;    scenario name                 country_code period      tfr</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 United Arab Emirates          784 1950-1955  6.97</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Spain                         724 1950-1955  2.53</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Austria                        40 1950-1955  2.1 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 United Arab Emirates          784 1955-1960  6.97</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Spain                         724 1955-1960  2.7 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Austria                        40 1955-1960  2.57</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 United Arab Emirates          784 1960-1965  6.87</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Spain                         724 1960-1965  2.81</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Austria                        40 1960-1965  2.78</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 United Arab Emirates          784 1965-1970  6.77</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 80 more rows</span></span></span></code></pre></div>
 <p>The <code><a href="../reference/get_wcde.html">get_wcde()</a></code> functions accepts ISO alpha numeric codes
 for countries via the <code>country_code</code> argument:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>, country_code <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">44</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 7</span></span></span>
-<span><span class="co">#&gt;    scenario name     country_code education          period    .groups    etfr</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bahamas            44 No Education       2015-2020 drop_last  2.71</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Bulgaria          100 No Education       2015-2020 drop_last  1.72</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Bahamas            44 Incomplete Primary 2015-2020 drop_last  2.71</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Bulgaria          100 Incomplete Primary 2015-2020 drop_last  1.72</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Bahamas            44 Primary            2015-2020 drop_last  2.71</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Bulgaria          100 Primary            2015-2020 drop_last  1.72</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Bahamas            44 Lower Secondary    2015-2020 drop_last  2.09</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Bulgaria          100 Lower Secondary    2015-2020 drop_last  1.73</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Bahamas            44 Upper Secondary    2015-2020 drop_last  1.76</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Bulgaria          100 Upper Secondary    2015-2020 drop_last  1.44</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span></span>
+<span><span class="co">#&gt;    scenario name     country_code education          period     etfr</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bahamas            44 No Education       2015-2020  2.71</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Bulgaria          100 No Education       2015-2020  1.72</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Bahamas            44 Incomplete Primary 2015-2020  2.71</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Bulgaria          100 Incomplete Primary 2015-2020  1.72</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Bahamas            44 Primary            2015-2020  2.71</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Bulgaria          100 Primary            2015-2020  1.72</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Bahamas            44 Lower Secondary    2015-2020  2.09</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Bulgaria          100 Lower Secondary    2015-2020  1.73</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Bahamas            44 Upper Secondary    2015-2020  1.76</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Bulgaria          100 Upper Secondary    2015-2020  1.44</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 194 more rows</span></span></span></code></pre></div>
 <p>A full list of available countries and region aggregates, and their
 codes, can be found in the <code>wic_locations</code> data frame.</p>
@@ -334,19 +331,19 @@ argument in <code>get_data()</code>.</p>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"India"</span>, <span class="st">"China"</span><span class="op">)</span>,</span>
 <span>         scenario <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, <span class="fl">21</span>, <span class="fl">22</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2095-2100"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 10 × 6</span></span></span>
-<span><span class="co">#&gt;    scenario name  country_code period    .groups   growth</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        1 India          356 2095-2100 drop_last   -<span style="color: #BB0000;">0.7</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        1 China          156 2095-2100 drop_last   -<span style="color: #BB0000;">1.1</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 India          356 2095-2100 drop_last   -<span style="color: #BB0000;">0.5</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 China          156 2095-2100 drop_last   -<span style="color: #BB0000;">1</span>  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        3 India          356 2095-2100 drop_last    0.2</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        3 China          156 2095-2100 drop_last   -<span style="color: #BB0000;">0.2</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>       21 India          356 2095-2100 drop_last   -<span style="color: #BB0000;">0.5</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>       21 China          156 2095-2100 drop_last   -<span style="color: #BB0000;">0.9</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>       22 India          356 2095-2100 drop_last   -<span style="color: #BB0000;">0.5</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>       22 China          156 2095-2100 drop_last   -<span style="color: #BB0000;">1</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 10 × 5</span></span></span>
+<span><span class="co">#&gt;    scenario name  country_code period    growth</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        1 India          356 2095-2100   -<span style="color: #BB0000;">0.7</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        1 China          156 2095-2100   -<span style="color: #BB0000;">1.1</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 India          356 2095-2100   -<span style="color: #BB0000;">0.5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 China          156 2095-2100   -<span style="color: #BB0000;">1</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        3 India          356 2095-2100    0.2</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        3 China          156 2095-2100   -<span style="color: #BB0000;">0.2</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>       21 India          356 2095-2100   -<span style="color: #BB0000;">0.5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>       21 China          156 2095-2100   -<span style="color: #BB0000;">0.9</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>       22 India          356 2095-2100   -<span style="color: #BB0000;">0.5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>       22 China          156 2095-2100   -<span style="color: #BB0000;">1</span></span></span></code></pre></div>
 <p>Set <code>include_scenario_names = TRUE</code> to include a columns
 with the full names of the scenarios</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
@@ -355,19 +352,19 @@ with the full names of the scenarios</p>
 <span>         scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>,</span>
 <span>         include_scenario_names <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"2045-2050"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 8</span></span></span>
-<span><span class="co">#&gt;   scenario scenario_name              scena…¹ name  count…² period .groups   tfr</span></span>
-<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        1 Rapid Development (SSP1)   SSP1    Kenya     404 2045-… drop_l…  1.62</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        1 Rapid Development (SSP1)   SSP1    Nige…     566 2045-… drop_l…  2.29</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>        1 Rapid Development (SSP1)   SSP1    Alge…      12 2045-… drop_l…  1.53</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span>        2 Medium (SSP2)              SSP2    Kenya     404 2045-… drop_l…  2.36</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span>        2 Medium (SSP2)              SSP2    Nige…     566 2045-… drop_l…  3.37</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span>        2 Medium (SSP2)              SSP2    Alge…      12 2045-… drop_l…  1.77</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span>        3 Stalled Development (SSP3) SSP3    Kenya     404 2045-… drop_l…  3.33</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span>        3 Stalled Development (SSP3) SSP3    Nige…     566 2045-… drop_l…  4.65</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">9</span>        3 Stalled Development (SSP3) SSP3    Alge…      12 2045-… drop_l…  2.41</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># … with abbreviated variable names ¹​scenario_abb, ²​country_code</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 7</span></span></span>
+<span><span class="co">#&gt;   scenario scenario_name              scenario_abb name    countr…¹ period   tfr</span></span>
+<span><span class="co">#&gt;      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span>        1 Rapid Development (SSP1)   SSP1         Kenya        404 2045-…  1.62</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span>        1 Rapid Development (SSP1)   SSP1         Nigeria      566 2045-…  2.29</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span>        1 Rapid Development (SSP1)   SSP1         Algeria       12 2045-…  1.53</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span>        2 Medium (SSP2)              SSP2         Kenya        404 2045-…  2.36</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span>        2 Medium (SSP2)              SSP2         Nigeria      566 2045-…  3.37</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span>        2 Medium (SSP2)              SSP2         Algeria       12 2045-…  1.77</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span>        3 Stalled Development (SSP3) SSP3         Kenya        404 2045-…  3.33</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span>        3 Stalled Development (SSP3) SSP3         Nigeria      566 2045-…  4.65</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">9</span>        3 Stalled Development (SSP3) SSP3         Algeria       12 2045-…  2.41</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># … with abbreviated variable name ¹​country_code</span></span></span></code></pre></div>
 <p>Additional details of the pathways for each scenario numeric code can
 be found in the <code>wic_scenarios</code> object. Further background
 and links to the corresponding literature are provided in the <a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link">Data
@@ -392,7 +389,7 @@ Explorer</a></p>
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"mage"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 7,099 × 5</span></span></span>
 <span><span class="co">#&gt;    scenario name                     country_code  year  mage</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100  <span style="text-decoration: underline;">1</span>950  27.3</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104  <span style="text-decoration: underline;">1</span>950  22.8</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108  <span style="text-decoration: underline;">1</span>950  19.5</span></span>
@@ -428,7 +425,7 @@ times to download multiple indicators. This can be done using the
 <span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 7,099 × 5</span></span></span>
 <span><span class="co">#&gt;    scenario name                     country_code  year   odr</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100  <span style="text-decoration: underline;">1</span>950  0.1 </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104  <span style="text-decoration: underline;">1</span>950  0.05</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108  <span style="text-decoration: underline;">1</span>950  0.06</span></span>
@@ -466,7 +463,7 @@ times to download multiple indicators. This can be done using the
 <span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/unnest.html" class="external-link">unnest</a></span><span class="op">(</span>cols <span class="op">=</span> <span class="va">d</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 41,346 × 6</span></span></span>
 <span><span class="co">#&gt;    scenario name                     country_code  year education    ggapedu25</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                           <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Bulgaria                          100  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">20</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Myanmar                           104  <span style="text-decoration: underline;">1</span>950 No Education       -<span style="color: #BB0000;">13</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Burundi                           108  <span style="text-decoration: underline;">1</span>950 No Education        -<span style="color: #BB0000;">6</span></span></span>
@@ -490,19 +487,20 @@ in <code><a href="../reference/get_wcde.html">get_wcde()</a></code> and specifyi
 of the three population breakdown arguments are set to “total”</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"India"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 31 × 6</span></span></span>
-<span><span class="co">#&gt;    scenario name  country_code  year .groups       pop</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 India          356  <span style="text-decoration: underline;">1</span>950 drop_last <span style="text-decoration: underline;">376</span>325.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 India          356  <span style="text-decoration: underline;">1</span>955 drop_last <span style="text-decoration: underline;">409</span>276.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 India          356  <span style="text-decoration: underline;">1</span>960 drop_last <span style="text-decoration: underline;">449</span>604.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 India          356  <span style="text-decoration: underline;">1</span>965 drop_last <span style="text-decoration: underline;">497</span>830.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 India          356  <span style="text-decoration: underline;">1</span>970 drop_last <span style="text-decoration: underline;">553</span>787.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 India          356  <span style="text-decoration: underline;">1</span>975 drop_last <span style="text-decoration: underline;">621</span>525.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 India          356  <span style="text-decoration: underline;">1</span>980 drop_last <span style="text-decoration: underline;">697</span>040.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 India          356  <span style="text-decoration: underline;">1</span>985 drop_last <span style="text-decoration: underline;">781</span>904.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 India          356  <span style="text-decoration: underline;">1</span>990 drop_last <span style="text-decoration: underline;">870</span>422.</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 India          356  <span style="text-decoration: underline;">1</span>995 drop_last <span style="text-decoration: underline;">960</span>733.</span></span>
+<span><span class="co">#&gt; Version wcde-v3 not available on server, using wcde-v2</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 31 × 5</span></span></span>
+<span><span class="co">#&gt;    scenario name  country_code  year     pop</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 India          356  <span style="text-decoration: underline;">1</span>950 <span style="text-decoration: underline;">376</span>325.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 India          356  <span style="text-decoration: underline;">1</span>955 <span style="text-decoration: underline;">409</span>276.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 India          356  <span style="text-decoration: underline;">1</span>960 <span style="text-decoration: underline;">449</span>604.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 India          356  <span style="text-decoration: underline;">1</span>965 <span style="text-decoration: underline;">497</span>830.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 India          356  <span style="text-decoration: underline;">1</span>970 <span style="text-decoration: underline;">553</span>787.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 India          356  <span style="text-decoration: underline;">1</span>975 <span style="text-decoration: underline;">621</span>525.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 India          356  <span style="text-decoration: underline;">1</span>980 <span style="text-decoration: underline;">697</span>040.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 India          356  <span style="text-decoration: underline;">1</span>985 <span style="text-decoration: underline;">781</span>904.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 India          356  <span style="text-decoration: underline;">1</span>990 <span style="text-decoration: underline;">870</span>422.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 India          356  <span style="text-decoration: underline;">1</span>995 <span style="text-decoration: underline;">960</span>733.</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 21 more rows</span></span></span></code></pre></div>
 <p>The <code>pop_age</code> argument can be set to <code>all</code> to
 get population data broken down in five-year age groups. The
@@ -513,9 +511,10 @@ population data broken down into female and male groups. The
 down into education categorizations with different levels of detail.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Version wcde-v3 not available on server, using wcde-v2</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 155 × 6</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year education          pop</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Under 15       <span style="text-decoration: underline;">868</span>844.</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 No Education   <span style="text-decoration: underline;">763</span>612.</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Primary        <span style="text-decoration: underline;">549</span>510.</span></span>
@@ -532,9 +531,10 @@ provide further breakdowns, for example sex and education specific
 population totals</p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>, pop_edu <span class="op">=</span> <span class="st">"six"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Version wcde-v3 not available on server, using wcde-v2</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 434 × 7</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year sex    education              pop</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Under 15           <span style="text-decoration: underline;">443</span>968.</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   No Education       <span style="text-decoration: underline;">317</span>636.</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 Male   Incomplete Primary <span style="text-decoration: underline;">116</span>692.</span></span>
@@ -572,10 +572,11 @@ negative equivalent to allow for divergent columns from the y axis.</p>
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">w</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>,</span>
 <span>              pop_age <span class="op">=</span> <span class="st">"all"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Version wcde-v3 not available on server, using wcde-v2</span></span>
 <span><span class="va">w</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6,510 × 8</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year age   sex    education          pop</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Under 15       <span style="text-decoration: underline;">172</span>362.</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   No Education        0 </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Primary             0 </span></span>
@@ -594,7 +595,7 @@ negative equivalent to allow for divergent columns from the y axis.</p>
 <span><span class="va">w</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6,510 × 9</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year age   sex    education          pop pop_pm</span></span>
-<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Under 15       <span style="text-decoration: underline;">172</span>362.  -<span style="color: #BB0000;">172.</span></span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   No Education        0      0 </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 World          900  <span style="text-decoration: underline;">1</span>950 0--4  Male   Primary             0      0 </span></span>
@@ -694,33 +695,26 @@ package</p>
 <p><img src="../reference/figures/world4_ssp2.gif"></p>
 </div>
 </div>
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
-
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
 
-      <footer><div class="copyright">
+    <footer><div class="pkgdown-footer-left">
   <p></p>
 <p>Developed by Guy J. Abel.</p>
 </div>
 
-<div class="pkgdown">
+<div class="pkgdown-footer-right">
   <p></p>
 <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
-      </footer>
+    </footer>
 </div>
 
   
-
 
   
 

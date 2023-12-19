@@ -60,24 +60,36 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
   read_with_progress <- function(f){
     pb$tick()
     # message(f)
-    readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5, progress = FALSE)
+    f %>%
+      url() %>%
+      readRDS()
+    # readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5, progress = FALSE)
   }
+
+  # server <- match.arg(server)
+  # version <- match.arg(version)
+  if(server == "search-available" | is.null(server)){
+    server <- dplyr::case_when(
+      RCurl::url.exists("https://wicshiny2023.iiasa.ac.at/wcde-data/") ~ "iiasa",
+      # RCurl::url.exists("https://wicshiny.iiasa.ac.at/wcde-data/") ~ "iiasa",
+      RCurl::url.exists("https://github.com/guyabel/wcde-data/raw/main/") ~ "github",
+      RCurl::url.exists("https://shiny.wittgensteincentre.info/wcde-data/") ~ "1&1",
+      TRUE ~ "none-available"
+    )
+  }
+
+  server_url <- dplyr::case_when(
+    server == "iiasa" ~ "https://wicshiny2023.iiasa.ac.at/wcde-data/",
+    server == "iiasa-local" ~ "../wcde-data/",
+    server == "github" ~ "https://github.com/guyabel/wcde-data/raw/main/",
+    server == "1&1" ~ "https://shiny.wittgensteincentre.info/wcde-data/",
+    TRUE ~ server)
+
   pb <- progress::progress_bar$new(total = nrow(d0))
   pb$tick(0)
   d0 <- d0 %>%
-    dplyr::mutate(u = paste0("http://dataexplorer.wittgensteincentre.org/wcde-data/",
-                             version, "/data-single/", scenario, "/",
-                             indicator, "/", country_code, ".csv")) %>%
-    {if(server == "github")
-      dplyr::mutate(., u = paste0("https://github.com/guyabel/wcde-data/raw/main/",
-                                  version, "/data-single/", scenario, "/",
-                                  indicator, "/", country_code, ".csv"))
-      else .} %>%
-    {if(server == "iiasa-local")
-      dplyr::mutate(., u = paste0("../wcde-data/",
-                                  version, "/data-single/", scenario, "/",
-                                  indicator, "/", country_code, ".csv"))
-      else .} %>%
+    dplyr::mutate(u = paste0(server_url, version, "-single/", scenario, "/",
+                             indicator, "/", country_code, ".rds")) %>%
     dplyr::mutate(d = purrr::map(.x = u, .f = ~read_with_progress(f = .x))) %>%
     dplyr::group_by(scenario) %>%
     dplyr::reframe(dplyr::bind_cols(d)) %>%

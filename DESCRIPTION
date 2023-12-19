@@ -42,8 +42,8 @@ Imports:
     tibble,
     purrr,
     stringr, 
-    readr,
-    forcats
+    forcats,
+    RCurl
 Depends: 
     R (>= 2.10)
 Suggests: 
