@@ -16,7 +16,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">wcde</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.7</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
 </li>
 <li class="nav-item">
   <a class="external-link nav-link" href="https://guyabel.com">
-    <span class="fas fa fas fa-blog fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -91,31 +91,36 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"education"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 9 × 3</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description                                      definition         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> bpop      Population Size by Broad Age (000's)             <span style="color: #949494;">"</span>De facto populati…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> epop      Population Size by Education (000's)             <span style="color: #949494;">"</span>De facto populati…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> prop      Educational Attainment Distribution              <span style="color: #949494;">"</span>De facto populati…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> bprop     Educational Attainment Distribution by Broad Age <span style="color: #949494;">"</span>De facto populati…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> ggapedu15 Gender Gap in Educational Attainment (15+)       <span style="color: #949494;">"</span>The difference be…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> ggapedu25 Gender Gap in Educational Attainment (25+)       <span style="color: #949494;">"</span>The difference be…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> etfr      Total Fertility Rate by Education                <span style="color: #949494;">"</span>The average numbe…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> eassr     Age-Specific Survival Ratio by Education         <span style="color: #949494;">"</span>Survivorship of p…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">9</span> easfr     Age-Specific Fertility Rate by Education         <span style="color: #949494;">"</span>Number of births …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 11 × 6</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    indicator description         `wcde-v3` `wcde-v2` `wcde-v1` definition_latest</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> bpop      Population Size by… projecti… past-ava… past-ava… De facto populat…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> bprop     Educational Attain… projecti… past-ava… past-ava… De facto populat…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> easfr     Age-Specific Ferti… projecti… projecti… <span style="color: #BB0000;">NA</span>        Number of births…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> eassr     Age-Specific Survi… projecti… projecti… projecti… Survivorship of …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> emacb     Mean Age at Childb… projecti… <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>        The mean age of …</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> epop      Population Size by… projecti… past-ava… past-ava… De facto populat…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> etfr      Total Fertility Ra… projecti… projecti… projecti… The average numb…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> ggapedu15 Gender Gap in Educ… projecti… past-ava… past-ava… The difference b…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> ggapedu25 Gender Gap in Educ… projecti… past-ava… past-ava… The difference b…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> netedu    Net Migration Flow… projecti… <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>        The number of im…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> prop      Educational Attain… projecti… past-ava… past-ava… De facto populat…</span>
 <span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"migr"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 3</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description   definition                                            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> net       Net Migration <span style="color: #949494;">"</span>The number of immigrants minus the number of emigran…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 6</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description          `wcde-v3` `wcde-v2` `wcde-v1` definition_latest</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> emi       Emigration Flows     projecti… <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>        The number of em…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> imm       Immigration Flows    projecti… <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>        The number of im…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> net       Net Migration Flows  projecti… past-ava… past-ava… The number of im…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> netedu    Net Migration Flows… projecti… <span style="color: #BB0000;">NA</span>        <span style="color: #BB0000;">NA</span>        The number of im…</span>
 <span class="r-in"><span><span class="fu">find_indicator</span><span class="op">(</span><span class="st">"fert"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 3</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description                              definition                 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                                    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> tfr       Total Fertility Rate                     <span style="color: #949494;">"</span>The average number of chi…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> etfr      Total Fertility Rate by Education        <span style="color: #949494;">"</span>The average number of chi…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> asfr      Age-Specific Fertility Rate              <span style="color: #949494;">"</span>Number of births occurrin…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> easfr     Age-Specific Fertility Rate by Education <span style="color: #949494;">"</span>Number of births occurrin…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 6</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   indicator description          `wcde-v3` `wcde-v2` `wcde-v1` definition_latest</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> asfr      Age-Specific Fertil… projecti… past-ava… past-ava… Number of births…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> easfr     Age-Specific Fertil… projecti… projecti… <span style="color: #BB0000;">NA</span>        Number of births…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> etfr      Total Fertility Rat… projecti… projecti… projecti… The average numb…</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> tfr       Total Fertility Rate projecti… past-ava… past-ava… The average numb…</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
