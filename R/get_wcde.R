@@ -10,10 +10,10 @@
 #' @param pop_sex Character string for population sexes if `indicator`is set to `pop`. Defaults to no sex `total`, but can be set to `both` or `all`.
 #' @param pop_edu Character string for population educational attainment if `indicator` is set to `pop`. Defaults to `total`, but can be set to `four`, `six` or `eight`.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
-#' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` or `1&1` if IIASA server is down. Can check availability by setting to `search-available`
+#' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` or `1&1` if IIASA server is down. Can check availability by setting to `search-available`.
 #' @param version Character string for version of projections to obtain. Defaults to `wcde-v3`, but can use `wcde-v2` or `wcde-v1`. Scenario and indicator availability vary between versions.
 #'
-#' @details If not `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
+#' @details If no `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
 #'
 #' `indicator` must be set to a value in the first column in the table below of available demographic indicators:
 #'
@@ -45,23 +45,32 @@
 #' | `easfr`     | Age-Specific Fertility Rate by Education                  |
 #' | `cbr`       | Crude Birth Rate                                                           |
 #' | `macb`      | Mean Age at Childbearing                                                   |
+#' | `emacb`      | Mean Age at Childbearing by Education |
 #' | `e0`        | Life Expectancy at Birth                                                   |
 #' | `cdr`       | Crude Death Rate                                                           |
 #' | `assr`      | Age-Specific Survival Ratio                                                |
 #' | `eassr`     | Age-Specific Survival Ratio by Education                                   |
-#' | `net`       | Net Migration                                                              |
+#' | `net`       | Net Migration
+#' | `netedu`       | Net Migration Flows by Education
+#' | `emi`       | Emigration Flows
+#' | `imm`       | Immigration Flows
 #'
 #' See `wic_indicators` data frame for more details.
 #'
 #' `scenario` must be set to one or values in the first column table below of the available future scenarios:
 #'
-#' | `scenario` | description                           |
-#' |----------|---------------------------------------|
-#' | `1`        | Rapid Development (SSP1)              |
-#' | `2`        | Medium (SSP2)                         |
-#' | `3`        | Stalled Development (SSP3)            |
-#' | `21`        | Medium - Zero Migration (SSP2 - ZM)   |
-#' | `22`        | Medium - Double Migration (SSP2 - DM) |
+#' | `scenario` | description                           | version |
+#' |----------|---------------------------------------|--------|
+#' | `1`        | Rapid Development (SSP1)              | V1, V2, V3 |
+#' | `2`        | Medium (SSP2)                         | V1, V2, V3 |
+#' | `3`        | Stalled Development (SSP3)            | V1, V2, V3 |
+#' | `4`        | Inequality (SSP4)            | V1, V3 |
+#' | `5`        | Conventional Development (SSP5)            |V1, V3 |
+#' | `20`        | Medium - Constant Enrollment Rate (SSP2 - CER)   | V1 |
+#' | `21`        | Medium - Fast Track Education (SSP2 - FT) | V1 |
+#' | `22`        | Medium - Zero Migration (SSP2 - ZM)   | V2, V3 |
+#' | `23`        | Medium - Double Migration (SSP2 - DM) | V2, V3 |
+
 #'
 #' See `wic_scenarios` data frame for more details.
 #'
@@ -100,7 +109,8 @@ get_wcde <- function(
     server = c("iiasa", "github", "1&1", "search-available", "iiasa-local"),
     version = c("wcde-v3", "wcde-v2", "wcde-v1")
   ){
-  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE; server = "search-available"; version = "wcde-v2"
+  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE; server = "search-available"; version = "wcde-v3"
+  # indicator = "etfr"; country_name = c("Brazil", "Albania"); country_code = NULL; server = "iiasa"
   # guess country codes from name
 
   guessed_code <- NULL
@@ -111,6 +121,8 @@ get_wcde <- function(
     )
   }
   country_code <- c(country_code, guessed_code)
+
+  version <- match.arg(version)
 
   if(indicator == "pop"){
     pop_age <- match.arg(pop_age)
@@ -136,13 +148,18 @@ get_wcde <- function(
       indicator <- "pop-age-sex-edattain"
     if(pop_age == "all" & pop_sex == "all" & pop_edu %in% c("four", "six", "eight"))
       indicator <- "epop"
+    if(pop_edu == "eight" & version != "wcde-v2")
+      stop("Eight education categories only avialable in wcde-v2")
   }
 
   d1 <- wcde::wic_indicators %>%
+    tidyr::pivot_longer(dplyr::contains("wcde"), names_to = "v", values_to = "avail") %>%
+    dplyr::filter(v == version,
+                  !is.na(avail)) %>%
     dplyr::filter(indicator == {{indicator}})
 
   if(nrow(d1) < 1 & !stringr::str_detect(string = indicator, pattern = "pop-")){
-    stop(paste(indicator, "not an indicator code in wic_indicators, please select an indicator code in the name column of widc_indicators"))
+    stop(paste(indicator, "not an indicator code in wic_indicators for given version, please select an indicator code in the name column of widc_indicators"))
   }
 
   if(nrow(d1) == 0){
@@ -165,7 +182,8 @@ get_wcde <- function(
       RCurl::url.exists("https://shiny.wittgensteincentre.info/wcde-data/") ~ "1&1",
       TRUE ~ "none-available"
     )
-    stop("No server available. Please contact package maintainer")
+    if(server == "none-available")
+      stop("No server available. Please contact package maintainer")
   }
 
   server_url <- dplyr::case_when(
@@ -175,11 +193,21 @@ get_wcde <- function(
     server == "1&1" ~ "https://shiny.wittgensteincentre.info/wcde-data/",
     TRUE ~ server)
 
-  version <- match.arg(version)
   vv <- ifelse(is.null(country_code), "-batch", "-single")
+  # # version to wcde_v3 if no version check
+  # if(is.null(server_check)){
+  #   server_check <- ifelse(server == "iiasa-local", TRUE, FALSE)
+  # }
+  # v <- ifelse(server_check, NULL, "wcde-v3")
   v <- NULL
-  if(RCurl::url.exists(paste0(server_url, version, vv)))
-    v <- version
+  # version given if available
+  if(is.null(v)){
+    uu <- paste0(server_url, version, vv)
+    if(RCurl::url.exists(uu)){
+      v <- version
+    }
+  }
+  # wcde-v3 if version not given and v3 is available
   if(is.null(v)){
     uu <- paste0(server_url, "wcde-v3", vv)
     if(RCurl::url.exists(uu)){
@@ -202,6 +230,12 @@ get_wcde <- function(
     }
   }
 
+  wic_scenarios_v <- wcde::wic_scenarios %>%
+    tidyr::pivot_longer(dplyr::contains("wcde"), names_to = "v", values_to = "avail") %>%
+    dplyr::filter(v == version,
+                  avail) %>%
+    dplyr::select(1:3)
+
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
       dplyr::mutate(u = paste0(server_url, v, "-batch/", scenario, "/",
@@ -214,17 +248,20 @@ get_wcde <- function(
         ) %>%
       dplyr::select(-u) %>%
       tidyr::unnest(d) %>%
-      {if(include_scenario_names) dplyr::left_join(. , wcde::wic_scenarios, by = "scenario") else .}
+      {if(include_scenario_names) dplyr::left_join(. , wic_scenarios_v, by = "scenario") else .}
   }
 
   if(!is.null(country_code)){
-    d2a <- wcde::wic_locations %>%
+    wic_locations_v <- wcde::wic_locations %>%
+      tidyr::pivot_longer(dplyr::contains("wcde"), names_to = "v", values_to = "avail") %>%
+      dplyr::filter(v == version,
+                    avail) %>%
       dplyr::select(isono, name)
 
     d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code, version = v, server = server) %>%
       dplyr::mutate(isono = as.numeric(isono)) %>%
-      dplyr::left_join(d2a, by = "isono") %>%
-      {if(include_scenario_names) dplyr::left_join(. , wcde::wic_scenarios, by = "scenario") else .}
+      dplyr::left_join(wic_locations_v, by = "isono") %>%
+      {if(include_scenario_names) dplyr::left_join(. , wic_scenarios_v, by = "scenario") else .}
 
     d2 <- d2 %>%
       # {if(d1$period) dplyr::select(., -period) else dplyr::select(., -year)} %>%
@@ -250,7 +287,8 @@ get_wcde <- function(
         {if(pop_age == "total") dplyr::mutate(., age = "All") else .} %>%
         {if(pop_sex == "total") dplyr::mutate(., sex = "All") else .} %>%
         dplyr::rename(epop = pop) %>%
-        edu_group_sum(n = n_edu, strip_totals = FALSE) %>%
+        edu_group_sum(n = n_edu, strip_totals = FALSE,
+                      year_edu_start = ifelse(version == "wcde-v3", 2020, 2015)) %>%
         {if(pop_age == "total") dplyr::select(., -age) else .} %>%
         {if(pop_sex == "total") dplyr::select(., -sex) else .} %>%
         dplyr::rename(pop = epop)

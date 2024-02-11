@@ -4,8 +4,9 @@
 #'
 #' @param d Data frame downloaded from the
 #' @param n Number of education groups (from 4, 6 or 8)
-#' @param strip_totals Remove total sums in `epop` column. Will not strip education totals if `year < 2015` and `n = 8` as past data on population size by 8 education groups is unavailable.
+#' @param strip_totals Remove total sums in `epop` column. Will not strip education totals if `year < year_edu_start` and `n = 8` as past data on population size by 8 education groups is unavailable.
 #' @param factor_convert Convert columns that are character strings to factors, with levels based on order of appearance.
+#' @param year_edu_start Year in which education splits are available for given groupings - in some versions past data is not available for some education groupings. Set to 2020 by default.
 #'
 #' @details Strips the `epop` data set to relevant rows for the `n` education groups.
 #' @md
@@ -17,7 +18,8 @@
 #' past_epop %>%
 #'   filter(year == 2020) %>%
 #'   edu_group_sum()
-edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE){
+edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE,
+                          factor_convert = TRUE, year_edu_start = 2020){
   if(!n %in% c(4, 6, 8))
     stop("number of education groups must be 4, 6 or 8")
   if(!"epop" %in% names(d))
@@ -52,10 +54,10 @@ edu_group_sum <- function(d = NULL, n = 4, strip_totals = TRUE, factor_convert =
       dplyr::summarise(epop = sum(epop)) %>%
       dplyr::ungroup() %>%
       # all education splits to zero if less than 2015
-      dplyr::mutate(epop = ifelse(year < 2015 & education != "Total", 0, epop)) %>%
+      dplyr::mutate(epop = ifelse(year < year_edu_start & education != "Total", 0, epop)) %>%
       # fill in missing rows for masters etc pre 2015
       tidyr::complete(scenario, name, country_code, year, age, sex, education, fill = list(epop = 0)) %>%
-      {if(strip_totals & year >= 2015) dplyr::filter(., education != "Total") else . }
+      {if(strip_totals & year >= year_edu_start) dplyr::filter(., education != "Total") else . }
   }
 
   d1 <- d1 %>%

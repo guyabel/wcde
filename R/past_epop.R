@@ -12,5 +12,5 @@
 #'   \item{sex}{Sex}
 #'   \item{epop}{Population size in thousands for each age, sex and education group}
 #' }
-#' @source \url{http://dataexplorer.wittgensteincentre.org/wcde-v2/}
+#' @source \url{http://dataexplorer.wittgensteincentre.org/}
 "past_epop"

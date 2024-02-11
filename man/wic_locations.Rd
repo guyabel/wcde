@@ -5,17 +5,20 @@
 \alias{wic_locations}
 \title{Locations used in the Wittgenstein Centre Human Capital Data Explorer}
 \format{
-A data frame with 230 rows and 7 variables, including:
+A data frame with 232 rows and 8 variables, including:
 \describe{
 \item{name}{Area name}
 \item{isono}{ISO 3 digit country code}
 \item{continent}{Continent of country}
 \item{region}{UN region of country}
 \item{dim}{Category or country/region/area}
+\item{wcde-v3}{Availability of area in Version 3}
+\item{wcde-v2}{Availability of area in Version 2}
+\item{wcde-v1}{Availability of area in Version 1}
 }
 }
 \source{
-\url{http://dataexplorer.wittgensteincentre.org/wcde-v2/}
+\url{http://dataexplorer.wittgensteincentre.org/}
 }
 \usage{
 wic_locations

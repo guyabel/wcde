@@ -34,7 +34,7 @@ get_wcde(
 
 \item{include_scenario_names}{Logical vector of length one to indicate if to include additional columns for scenario names and short names. \code{FALSE} by default.}
 
-\item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} or \code{1&1} if IIASA server is down. Can check availability by setting to \code{search-available}}
+\item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} or \code{1&1} if IIASA server is down. Can check availability by setting to \code{search-available}.}
 
 \item{version}{Character string for version of projections to obtain. Defaults to \code{wcde-v3}, but can use \code{wcde-v2} or \code{wcde-v1}. Scenario and indicator availability vary between versions.}
 }
@@ -45,7 +45,7 @@ A \link[tibble:tibble-package]{tibble} with the data selected.
 Downloads data from the Wittgenstein Centre Human Capital Data Explorer. Requires a working internet connection.
 }
 \details{
-If not \code{country_name} or \code{country_code} is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the \code{wic_locations} data frame.
+If no \code{country_name} or \code{country_code} is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the \code{wic_locations} data frame.
 
 \code{indicator} must be set to a value in the first column in the table below of available demographic indicators:\tabular{ll}{
    \code{indicator} \tab Indicator Description \cr
@@ -75,23 +75,31 @@ If not \code{country_name} or \code{country_code} is provided data for all count
    \code{easfr} \tab Age-Specific Fertility Rate by Education \cr
    \code{cbr} \tab Crude Birth Rate \cr
    \code{macb} \tab Mean Age at Childbearing \cr
+   \code{emacb} \tab Mean Age at Childbearing by Education \cr
    \code{e0} \tab Life Expectancy at Birth \cr
    \code{cdr} \tab Crude Death Rate \cr
    \code{assr} \tab Age-Specific Survival Ratio \cr
    \code{eassr} \tab Age-Specific Survival Ratio by Education \cr
    \code{net} \tab Net Migration \cr
+   \code{netedu} \tab Net Migration Flows by Education \cr
+   \code{emi} \tab Emigration Flows \cr
+   \code{imm} \tab Immigration Flows \cr
 }
 
 
 See \code{wic_indicators} data frame for more details.
 
-\code{scenario} must be set to one or values in the first column table below of the available future scenarios:\tabular{ll}{
-   \code{scenario} \tab description \cr
-   \code{1} \tab Rapid Development (SSP1) \cr
-   \code{2} \tab Medium (SSP2) \cr
-   \code{3} \tab Stalled Development (SSP3) \cr
-   \code{21} \tab Medium - Zero Migration (SSP2 - ZM) \cr
-   \code{22} \tab Medium - Double Migration (SSP2 - DM) \cr
+\code{scenario} must be set to one or values in the first column table below of the available future scenarios:\tabular{lll}{
+   \code{scenario} \tab description \tab version \cr
+   \code{1} \tab Rapid Development (SSP1) \tab V1, V2, V3 \cr
+   \code{2} \tab Medium (SSP2) \tab V1, V2, V3 \cr
+   \code{3} \tab Stalled Development (SSP3) \tab V1, V2, V3 \cr
+   \code{4} \tab Inequality (SSP4) \tab V1, V3 \cr
+   \code{5} \tab Conventional Development (SSP5) \tab V1, V3 \cr
+   \code{20} \tab Medium - Constant Enrollment Rate (SSP2 - CER) \tab V1 \cr
+   \code{21} \tab Medium - Fast Track Education (SSP2 - FT) \tab V1 \cr
+   \code{22} \tab Medium - Zero Migration (SSP2 - ZM) \tab V2, V3 \cr
+   \code{23} \tab Medium - Double Migration (SSP2 - DM) \tab V2, V3 \cr
 }
 
 

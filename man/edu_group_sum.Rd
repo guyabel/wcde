@@ -4,16 +4,24 @@
 \alias{edu_group_sum}
 \title{Education group sums}
 \usage{
-edu_group_sum(d = NULL, n = 4, strip_totals = TRUE, factor_convert = TRUE)
+edu_group_sum(
+  d = NULL,
+  n = 4,
+  strip_totals = TRUE,
+  factor_convert = TRUE,
+  year_edu_start = 2020
+)
 }
 \arguments{
 \item{d}{Data frame downloaded from the}
 
 \item{n}{Number of education groups (from 4, 6 or 8)}
 
-\item{strip_totals}{Remove total sums in \code{epop} column. Will not strip education totals if \code{year < 2015} and \code{n = 8} as past data on population size by 8 education groups is unavailable.}
+\item{strip_totals}{Remove total sums in \code{epop} column. Will not strip education totals if \code{year < year_edu_start} and \code{n = 8} as past data on population size by 8 education groups is unavailable.}
 
 \item{factor_convert}{Convert columns that are character strings to factors, with levels based on order of appearance.}
+
+\item{year_edu_start}{Year in which education splits are available for given groupings - in some versions past data is not available for some education groupings. Set to 2020 by default.}
 }
 \value{
 A tibble with the data selected.

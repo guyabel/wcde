@@ -17,7 +17,7 @@ A data frame with 840,126 rows and 7 variables, including:
 }
 }
 \source{
-\url{http://dataexplorer.wittgensteincentre.org/wcde-v2/}
+\url{http://dataexplorer.wittgensteincentre.org/}
 }
 \usage{
 past_epop

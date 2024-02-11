@@ -22,9 +22,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-<img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="200" style="float:right; height:200px;"/>
+<!-- <img src='https://raw.githubusercontent.com/guyabel/wcde/main/hex/logo_transp.png' align="right" height="200" style="float:right; height:200px;"/> -->
 
-The `wcde` package allows for R users to easily download data from the [Wittgenstein Centre for Demography and Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/) as well as containing a number of helpful functions for working with education specific demographic data.
+The `wcde` package allows for R users to easily download data from the [Wittgenstein Centre for Demography and Human Capital Data Explorer](http://dataexplorer.wittgensteincentre.org/) as well as containing a number of helpful functions for working with education specific demographic data.
 
 # Installation
 
@@ -84,11 +84,11 @@ get_wcde(indicator = "sexratio",
   filter(year == 2020)
 ```
 
-Past data is only available for selected indicators. These can be viewed using the `past` indicator column:
+Past data is only available for selected indicators. These can be viewed using the version column:
 
 ```{r}
 wic_indicators %>%
-  filter(past) %>%
+  filter(`wcde-v2` == "past-available") %>%
   select(1:2)
 ```
 
@@ -131,7 +131,7 @@ By default `get_wcde()` returns data for Medium (SSP2) scenario. Results for dif
 ```{r, messages = FALSE, message=FALSE}
 get_wcde(indicator = "growth",
          country_name = c("India", "China"),
-         scenario = c(1:3, 21, 22)) %>%
+         scenario = c(1:3, 22, 23)) %>%
   filter(period == "2095-2100")
 ```
 
@@ -145,7 +145,7 @@ get_wcde(indicator = "tfr",
   filter(period == "2045-2050")
 ```
 
-Additional details of the pathways for each scenario numeric code can be found in the `wic_scenarios` object. Further background and links to the corresponding literature are provided in the [Data Explorer](http://dataexplorer.wittgensteincentre.org/wcde-v2/)
+Additional details of the pathways for each scenario numeric code can be found in the `wic_scenarios` object. Further background and links to the corresponding literature are provided in the [Data Explorer](http://dataexplorer.wittgensteincentre.org/)
 
 ```{r}
 wic_scenarios
@@ -233,7 +233,8 @@ Create population pyramids by setting male population values to negative equival
 
 ```{r}
 w <- get_wcde(indicator = "pop", country_code = 900,
-              pop_age = "all", pop_sex = "both", pop_edu = "four")
+              pop_age = "all", pop_sex = "both", pop_edu = "four",
+              version = "wcde-v2")
 w
 
 w <- w %>%

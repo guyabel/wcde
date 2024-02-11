@@ -5,22 +5,24 @@
 \alias{wic_indicators}
 \title{Indicators used in the Wittgenstein Centre Human Capital Data Explorer}
 \format{
-A data frame with 31 rows and 8 variables, including:
+A data frame with 37 rows and 11 variables, including:
 \describe{
 \item{indicator}{Short name of indicator to be used in the \code{indicator} argument of the \code{get_wcde()} function}
 \item{description}{Brief description of indicator}
+\item{wcde-v3}{Availability in wcde-v3 of \code{projection-only} or \code{past-available} (in addition to projections) of indicator. If value is \code{NA} then indicator not available in version.}
+\item{wcde-v2}{Availability in wcde-v2 of \code{projection-only} or \code{past-available} (in addition to projections) of indicator. If value is \code{NA} then indicator not available in version.}
+\item{wcde-v1}{Availability in wcde-v1 of \code{projection-only} or \code{past-available} (in addition to projections) of indicator. If value is \code{NA} then indicator not available in version.}
 \item{age}{Availability of indicator by five-year age groups}
 \item{bage}{Availability of indicator by broad age groups}
 \item{sage}{Availability of indicator with a new born age group}
 \item{sex}{Availability of indicator by sex}
 \item{edu}{Availability of indicator by education}
 \item{period}{Indicator is a period (flow)}
-\item{past}{Availability of past data for indicator}
-\item{definition}{Full definition for indicator}
+\item{definition_latest}{Full definition for indicator based on latest available version}
 }
 }
 \source{
-\url{http://dataexplorer.wittgensteincentre.org/wcde-v2/}
+\url{http://dataexplorer.wittgensteincentre.org/}
 }
 \usage{
 wic_indicators

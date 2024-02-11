@@ -21,7 +21,7 @@ get_wcde_single(
 
 \item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} if IIASA server is down.}
 
-\item{version}{Character string for version of projections to obtain. Defaults to \code{wcde-v2}, but can use \code{wcde-v2} and \code{fume}. Scenario and indicator availability vary between versions.}
+\item{version}{Character string for version of projections to obtain. Defaults to \code{wcde-v3}, but can use \code{wcde-v2} and \code{wcde-v1}. Scenario and indicator availability vary between versions.}
 }
 \value{
 A tibble with multiple columns.

@@ -16,7 +16,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">wcde</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.7</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
 </li>
 <li class="nav-item">
   <a class="external-link nav-link" href="https://guyabel.com">
-    <span class="fas fa fas fa-blog fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -77,11 +77,20 @@
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A data frame with 31 rows and 8 variables, including:</p><dl><dt>indicator</dt>
+    <p>A data frame with 37 rows and 11 variables, including:</p><dl><dt>indicator</dt>
 <dd><p>Short name of indicator to be used in the <code>indicator</code> argument of the <code><a href="get_wcde.html">get_wcde()</a></code> function</p></dd>
 
 <dt>description</dt>
 <dd><p>Brief description of indicator</p></dd>
+
+<dt>wcde-v3</dt>
+<dd><p>Availability in wcde-v3 of <code>projection-only</code> or <code>past-available</code> (in addition to projections) of indicator. If value is <code>NA</code> then indicator not available in version.</p></dd>
+
+<dt>wcde-v2</dt>
+<dd><p>Availability in wcde-v2 of <code>projection-only</code> or <code>past-available</code> (in addition to projections) of indicator. If value is <code>NA</code> then indicator not available in version.</p></dd>
+
+<dt>wcde-v1</dt>
+<dd><p>Availability in wcde-v1 of <code>projection-only</code> or <code>past-available</code> (in addition to projections) of indicator. If value is <code>NA</code> then indicator not available in version.</p></dd>
 
 <dt>age</dt>
 <dd><p>Availability of indicator by five-year age groups</p></dd>
@@ -101,17 +110,14 @@
 <dt>period</dt>
 <dd><p>Indicator is a period (flow)</p></dd>
 
-<dt>past</dt>
-<dd><p>Availability of past data for indicator</p></dd>
-
-<dt>definition</dt>
-<dd><p>Full definition for indicator</p></dd>
+<dt>definition_latest</dt>
+<dd><p>Full definition for indicator based on latest available version</p></dd>
 
 
 </dl></div>
     <div class="section level2">
     <h2 id="source">Source<a class="anchor" aria-label="anchor" href="#source"></a></h2>
-    <p><a href="http://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link">http://dataexplorer.wittgensteincentre.org/wcde-v2/</a></p>
+    <p><a href="http://dataexplorer.wittgensteincentre.org/" class="external-link">http://dataexplorer.wittgensteincentre.org/</a></p>
     </div>
 
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>

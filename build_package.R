@@ -1,16 +1,14 @@
 usethis::use_build_ignore(
-  c("tests", "data-host", "data-host-batch", "build_package.R",
-    "data-raw", "data1.R", "data2.R")
+  c("tests", "build_package.R", "data-raw")
 )
 
 roxygen2::roxygenise()
 
 # move data-host and data-host-bulk outside of directory whilst
 # doing check https://community.rstudio.com/t/r-cmd-check-preparing-package/27151
-usethis::use_build_ignore(c("data-host", "data-host-bulk"))
+devtools::build()
 devtools::check(vignettes = FALSE)
 devtools::check()
-devtools::build()
 file.show("NEWS.md")
 
 ##
@@ -27,7 +25,9 @@ file.show("NEWS.md")
 usethis::use_pkgdown()
 roxygen2::roxygenise()
 pkgdown::build_site()
+pkgdown::build_site(run_dont_run = TRUE)
 pkgdown::build_reference()
+
 
 usethis::use_badge()
 cranlogs::cranlogs_badge(package_name = "wcde", summary = "grand-total")

@@ -4,7 +4,7 @@
 \alias{wcde_location}
 \title{Test if country code or codes are in wic_locations}
 \usage{
-wcde_location(country_code)
+wcde_location(country_code, version = c("wcde-v3", "wcde-v2", "wcde-v1"))
 }
 \arguments{
 \item{country_code}{\code{vector} of integers representing country codes}
