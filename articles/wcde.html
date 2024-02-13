@@ -479,9 +479,10 @@ times to download multiple indicators. This can be done using the
 </h3>
 <p>Previous versions of projections from the Wittgenstein Centre for
 Demography are available using the <code>version</code> argument in
-<code>get_wdce()</code> to <a href="https://dataexplorer.wittgensteincentre.org/wcde-v1/" class="external-link"><code>"wcde-v1"</code></a>
-or <a href="https://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link"><code>"wcde-v2"</code></a>,
-where <code>"wcde-v3"</code> is used as the default since 2024.</p>
+<code>get_wdce()</code>. Set <code>version</code> to <a href="https://dataexplorer.wittgensteincentre.org/wcde-v1/" class="external-link"><code>"wcde-v1"</code></a>
+or <a href="https://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link"><code>"wcde-v2"</code></a>
+or <a href="https://dataexplorer.wittgensteincentre.org" class="external-link"><code>"wcde-v3"</code></a>
+(the default since 2024).</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span>,</span>
@@ -502,15 +503,15 @@ where <code>"wcde-v3"</code> is used as the default since 2024.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 194 more rows</span></span></span></code></pre></div>
 <p>Note, not all indicators and scenarios are available in all versions
 - see the the <code>wic_indicators</code> and <code>wic_scenarios</code>
-objects for further details (above).</p>
+objects for further details or see above.</p>
 </div>
 <div class="section level3">
 <h3 id="server">Server<a class="anchor" aria-label="anchor" href="#server"></a>
 </h3>
 <p>If you have trouble with connecting to the IIASA server you can try
-back versions using the <code>server</code> option in
-<code><a href="../reference/get_wcde.html">get_wcde()</a></code>, which can be set to <code>github</code>,
-<code>1&amp;1</code>.</p>
+alternative hosts using the <code>server</code> option in
+<code><a href="../reference/get_wcde.html">get_wcde()</a></code>, which can be set to <code>"iiasa"</code>
+(default) <code>"github"</code> and <code>"1&amp;1"</code>.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,</span>
 <span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span>, </span>
@@ -529,8 +530,8 @@ back versions using the <code>server</code> option in
 <span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020  1.37</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020  1.57</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 194 more rows</span></span></span></code></pre></div>
-<p>You may also set <code>server = search-available</code> to search
-through the three possible data location to download the data whereever
+<p>You may also set <code>server = "search-available"</code> to search
+through the three possible data location to download the data wherever
 it is available.</p>
 </div>
 </div>
