@@ -373,10 +373,10 @@ and links to the corresponding literature are provided in the <a href="http://da
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Stalled Development (SSP3)        3 SSP3         TRUE      TRUE      TRUE     </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Inequality (SSP4)                 4 SSP4         TRUE      FALSE     TRUE     </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Conventional Development …        5 SSP5         TRUE      FALSE     TRUE     </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Medium - Zero Migration (…       22 SSP2ZM       TRUE      TRUE      FALSE    </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> Medium - Double Migration…       23 SSP2DM       TRUE      TRUE      FALSE    </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span> Medium-Constant Enrolment…       20 SSP2-CER     FALSE     FALSE     TRUE     </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">9</span> Medium-Fast Track Educati…       21 SSP2-FT      FALSE     FALSE     TRUE</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Medium - Zero Migration (…       22 SSP2-ZM      TRUE      TRUE      FALSE    </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> Medium - Double Migration…       23 SSP2-DM      TRUE      TRUE      FALSE    </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span> Medium - Constant Enrolme…       20 SSP2-CER     FALSE     FALSE     TRUE     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">9</span> Medium - Fast Track Educa…       21 SSP2-FT      FALSE     FALSE     TRUE</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="all-countries-data">All countries data<a class="anchor" aria-label="anchor" href="#all-countries-data"></a>
@@ -474,6 +474,65 @@ times to download multiple indicators. This can be done using the
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Central African Republic          140  <span style="text-decoration: underline;">2</span>020 No Education -<span style="color: #BB0000;">3.13</span><span style="color: #949494;">e</span><span style="color: #BB0000;">- 1</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 23,246 more rows</span></span></span></code></pre></div>
 </div>
+<div class="section level3">
+<h3 id="previous-versions">Previous versions<a class="anchor" aria-label="anchor" href="#previous-versions"></a>
+</h3>
+<p>Previous versions of projections from the Wittgenstein Centre for
+Demography are available using the <code>version</code> argument in
+<code>get_wdce()</code> to <a href="https://dataexplorer.wittgensteincentre.org/wcde-v1/" class="external-link"><code>"wcde-v1"</code></a>
+or <a href="https://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link"><code>"wcde-v2"</code></a>,
+where <code>"wcde-v3"</code> is used as the default since 2024.</p>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,</span>
+<span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span>,</span>
+<span>         version <span class="op">=</span> <span class="st">"wcde-v2"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span></span>
+<span><span class="co">#&gt;    scenario name    country_code education          period     etfr</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2015-2020  1.89</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2015-2020  1.9 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020  1.37</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020  1.57</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 194 more rows</span></span></span></code></pre></div>
+<p>Note, not all indicators and scenarios are available in all versions
+- see the the <code>wic_indicators</code> and <code>wic_scenarios</code>
+objects for further details (above).</p>
+</div>
+<div class="section level3">
+<h3 id="server">Server<a class="anchor" aria-label="anchor" href="#server"></a>
+</h3>
+<p>If you have trouble with connecting to the IIASA server you can try
+back versions using the <code>server</code> option in
+<code><a href="../reference/get_wcde.html">get_wcde()</a></code>, which can be set to <code>github</code>,
+<code>1&amp;1</code>.</p>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,</span>
+<span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span>, </span>
+<span>         version <span class="op">=</span> <span class="st">"wcde-v2"</span>, server <span class="op">=</span> <span class="st">"github"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span></span>
+<span><span class="co">#&gt;    scenario name    country_code education          period     etfr</span></span>
+<span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2015-2020  2.47</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2015-2020  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2015-2020  1.89</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2015-2020  1.9 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020  1.37</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020  1.57</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 194 more rows</span></span></span></code></pre></div>
+<p>You may also set <code>server = search-available</code> to search
+through the three possible data location to download the data whereever
+it is available.</p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="working-with-population-data">Working with population data<a class="anchor" aria-label="anchor" href="#working-with-population-data"></a>
@@ -483,7 +542,7 @@ combinations can be obtained by setting <code>indicator = "pop"</code>
 in <code><a href="../reference/get_wcde.html">get_wcde()</a></code> and specifying a <code>pop_age</code>,
 <code>pop_sex</code> and <code>pop_edu</code> arguments. By default each
 of the three population breakdown arguments are set to “total”</p>
-<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_name <span class="op">=</span> <span class="st">"India"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 17 × 5</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year      pop</span></span>
@@ -512,7 +571,7 @@ population data broken down into female and male groups. The
 <code>pop_edu</code> argument can be set to <code>four</code>,
 <code>six</code> or <code>eight</code> to get population data broken
 down into education categorizations with different levels of detail.</p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 85 × 6</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year education           pop</span></span>
@@ -531,7 +590,7 @@ down into education categorizations with different levels of detail.</p>
 <p>The population breakdown arguments can be used in combination to
 provide further breakdowns, for example sex and education specific
 population totals</p>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>, pop_edu <span class="op">=</span> <span class="st">"six"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 238 × 7</span></span></span>
 <span><span class="co">#&gt;    scenario name  country_code  year sex    education               pop</span></span>
@@ -570,7 +629,7 @@ setting <code>indicator = "epop"</code> in <code><a href="../reference/get_wcde.
 </h2>
 <p>Create population pyramids by setting male population values to
 negative equivalent to allow for divergent columns from the y axis.</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">w</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"pop"</span>, country_code <span class="op">=</span> <span class="fl">900</span>,</span>
 <span>              pop_age <span class="op">=</span> <span class="st">"all"</span>, pop_sex <span class="op">=</span> <span class="st">"both"</span>, pop_edu <span class="op">=</span> <span class="st">"four"</span>,</span>
 <span>              version <span class="op">=</span> <span class="st">"wcde-v2"</span><span class="op">)</span></span>
@@ -623,7 +682,7 @@ Centre Human Capital Data Explorer Data Explorer.</li>
 <p>Note <code>wic_col6</code> and <code>wic_col8</code> objects also
 exist for equivalent plots of population data objects with corresponding
 numbers of categories of education.</p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/stefanedwards/lemon" class="external-link">lemon</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">w</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
@@ -635,7 +694,7 @@ numbers of categories of education.</p>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html" class="external-link">scale_fill_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="va">wic_col4</span>, name <span class="op">=</span> <span class="st">"Education"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Population (millions)"</span>, y <span class="op">=</span> <span class="st">"Age"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="wcde_files/figure-html/unnamed-chunk-21-1.png" width="700"></p>
+<p><img src="wcde_files/figure-html/unnamed-chunk-23-1.png" width="700"></p>
 </div>
 <div class="section level3">
 <h3 id="sex-label-position">Sex label position<a class="anchor" aria-label="anchor" href="#sex-label-position"></a>
@@ -649,7 +708,7 @@ allowing the two sides of the pyramids to meet.</li>
 <li>Add a <code><a href="https://ggplot2.tidyverse.org/reference/geom_blank.html" class="external-link">geom_blank()</a></code> to allow for equal x-axis and
 additional space at the end of largest columns.</li>
 </ul>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">w</span> <span class="op">&lt;-</span> <span class="va">w</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>pop_max <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"Male"</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">/</span><span class="fl">1e3</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">pop</span><span class="op">/</span><span class="fl">1e3</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
@@ -667,7 +726,7 @@ additional space at the end of largest columns.</li>
 <span>        strip.placement <span class="op">=</span> <span class="st">"outside"</span>,</span>
 <span>        strip.background <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_rect</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"transparent"</span><span class="op">)</span>,</span>
 <span>        strip.text.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>margin <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">margin</a></span><span class="op">(</span> b <span class="op">=</span> <span class="fl">0</span>, t <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-<p><img src="wcde_files/figure-html/unnamed-chunk-22-1.png" width="700"></p>
+<p><img src="wcde_files/figure-html/unnamed-chunk-24-1.png" width="700"></p>
 </div>
 <div class="section level3">
 <h3 id="animate">Animate<a class="anchor" aria-label="anchor" href="#animate"></a>
@@ -675,7 +734,7 @@ additional space at the end of largest columns.</li>
 <p>Animate the pyramid through the past data and projection periods
 using the <code>transition_time()</code> function in the <a href="https://cran.r-project.org/package=gganimate/index.html" class="external-link"><code>gganimate</code></a>
 package</p>
-<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://gganimate.com" class="external-link">gganimate</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">w</span>,</span>
