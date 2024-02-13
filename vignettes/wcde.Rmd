@@ -186,6 +186,27 @@ mi %>%
   unnest(cols = d)
 ```
 
+## Previous versions
+
+Previous versions of projections from the Wittgenstein Centre for Demography are available using the `version` argument in `get_wdce()` to [`"wcde-v1"`](https://dataexplorer.wittgensteincentre.org/wcde-v1/) or [`"wcde-v2"`](https://dataexplorer.wittgensteincentre.org/wcde-v2/), where `"wcde-v3"` is used as the default since 2024. 
+```{r}
+get_wcde(indicator = "etfr",
+         country_name = c("Brazil", "Albania"),
+         version = "wcde-v2")
+```
+Note, not all indicators and scenarios are available in all versions - see the the `wic_indicators` and `wic_scenarios` objects for further details (above). 
+
+## Server
+
+If you have trouble with connecting to the IIASA server you can try back versions using the `server` option in `get_wcde()`, which can be set to `github`, `1&1`. 
+
+```{r}
+get_wcde(indicator = "etfr",
+         country_name = c("Brazil", "Albania"), 
+         version = "wcde-v2", server = "github")
+```
+
+You may also set `server = search-available` to search through the three possible data location to download the data whereever it is available.
 
 # Working with population data
 

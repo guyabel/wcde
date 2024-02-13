@@ -2,7 +2,7 @@
 
 * Expanded `wic_locations`, `wic_indicators` and `wic_scenarios` data frames to cover V1, V2 and V3
 * Updated `get_wcde()` and `get_wcde_single()` to work with new  `wic_locations`, `wic_indicators` and `wic_scenarios`data frames
-* Re-coded SSP2ZM and SSP2DM as scenario numbers `22` and `23` on server to make room for SSP2-CER (`20`) and SSP2-FT (`21`) from V1
+* Re-coded SSP2-ZM and SSP2-DM as scenario numbers `22` and `23` on server to make room for SSP2-CER (`20`) and SSP2-FT (`21`) from V1
 
 # wcde 0.0.6
 

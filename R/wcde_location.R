@@ -15,6 +15,7 @@
 #' wcde_location(country_code = 3)
 wcde_location <- function(country_code,
                           version = c("wcde-v3", "wcde-v2", "wcde-v1")){
+  version <- match.arg(version)
   v <- wcde::wic_locations %>%
     tidyr::pivot_longer(dplyr::contains("wcde"), names_to = "vv", values_to = "avail") %>%
     dplyr::filter(vv == version,

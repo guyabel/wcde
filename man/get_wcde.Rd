@@ -96,10 +96,10 @@ See \code{wic_indicators} data frame for more details.
    \code{3} \tab Stalled Development (SSP3) \tab V1, V2, V3 \cr
    \code{4} \tab Inequality (SSP4) \tab V1, V3 \cr
    \code{5} \tab Conventional Development (SSP5) \tab V1, V3 \cr
-   \code{20} \tab Medium - Constant Enrollment Rate (SSP2 - CER) \tab V1 \cr
-   \code{21} \tab Medium - Fast Track Education (SSP2 - FT) \tab V1 \cr
-   \code{22} \tab Medium - Zero Migration (SSP2 - ZM) \tab V2, V3 \cr
-   \code{23} \tab Medium - Double Migration (SSP2 - DM) \tab V2, V3 \cr
+   \code{20} \tab Medium - Constant Enrollment Rate (SSP2-CER) \tab V1 \cr
+   \code{21} \tab Medium - Fast Track Education (SSP2-FT) \tab V1 \cr
+   \code{22} \tab Medium - Zero Migration (SSP2-ZM) \tab V2, V3 \cr
+   \code{23} \tab Medium - Double Migration (SSP2-DM) \tab V2, V3 \cr
 }
 
 

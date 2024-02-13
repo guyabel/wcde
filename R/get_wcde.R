@@ -66,10 +66,10 @@
 #' | `3`        | Stalled Development (SSP3)            | V1, V2, V3 |
 #' | `4`        | Inequality (SSP4)            | V1, V3 |
 #' | `5`        | Conventional Development (SSP5)            |V1, V3 |
-#' | `20`        | Medium - Constant Enrollment Rate (SSP2 - CER)   | V1 |
-#' | `21`        | Medium - Fast Track Education (SSP2 - FT) | V1 |
-#' | `22`        | Medium - Zero Migration (SSP2 - ZM)   | V2, V3 |
-#' | `23`        | Medium - Double Migration (SSP2 - DM) | V2, V3 |
+#' | `20`        | Medium - Constant Enrollment Rate (SSP2-CER)   | V1 |
+#' | `21`        | Medium - Fast Track Education (SSP2-FT) | V1 |
+#' | `22`        | Medium - Zero Migration (SSP2-ZM)   | V2, V3 |
+#' | `23`        | Medium - Double Migration (SSP2-DM) | V2, V3 |
 
 #'
 #' See `wic_scenarios` data frame for more details.
@@ -109,8 +109,8 @@ get_wcde <- function(
     server = c("iiasa", "github", "1&1", "search-available", "iiasa-local"),
     version = c("wcde-v3", "wcde-v2", "wcde-v1")
   ){
-  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE; server = "search-available"; version = "wcde-v3"
-  # indicator = "etfr"; country_name = c("Brazil", "Albania"); country_code = NULL; server = "iiasa"
+  # scenario = 2; indicator = "tfr"; country_code = c(410, 288); country_name = NULL; include_scenario_names = FALSE; server = "iiasa"; version = "wcde-v3"
+  # indicator = "etfr"; country_name = c("Brazil", "Albania"); country_code = NULL; server = "github"
   # guess country codes from name
 
   guessed_code <- NULL
@@ -178,7 +178,7 @@ get_wcde <- function(
     server <- dplyr::case_when(
       RCurl::url.exists("https://wicshiny2023.iiasa.ac.at/wcde-data/") ~ "iiasa",
       # RCurl::url.exists("https://wicshiny.iiasa.ac.at/wcde-data/") ~ "iiasa",
-      RCurl::url.exists("https://github.com/guyabel/wcde-data/raw/main/") ~ "github",
+      RCurl::url.exists("https://github.com/guyabel/wcde-data/") ~ "github",
       RCurl::url.exists("https://shiny.wittgensteincentre.info/wcde-data/") ~ "1&1",
       TRUE ~ "none-available"
     )
@@ -189,46 +189,11 @@ get_wcde <- function(
   server_url <- dplyr::case_when(
     server == "iiasa" ~ "https://wicshiny2023.iiasa.ac.at/wcde-data/",
     server == "iiasa-local" ~ "../wcde-data/",
-    server == "github" ~ "https://github.com/guyabel/wcde-data/raw/main/",
+    server == "github" ~ "https://github.com/guyabel/wcde-data/raw/master/",
     server == "1&1" ~ "https://shiny.wittgensteincentre.info/wcde-data/",
     TRUE ~ server)
 
-  vv <- ifelse(is.null(country_code), "-batch", "-single")
-  # # version to wcde_v3 if no version check
-  # if(is.null(server_check)){
-  #   server_check <- ifelse(server == "iiasa-local", TRUE, FALSE)
-  # }
-  # v <- ifelse(server_check, NULL, "wcde-v3")
-  v <- NULL
-  # version given if available
-  if(is.null(v)){
-    uu <- paste0(server_url, version, vv)
-    if(RCurl::url.exists(uu)){
-      v <- version
-    }
-  }
-  # wcde-v3 if version not given and v3 is available
-  if(is.null(v)){
-    uu <- paste0(server_url, "wcde-v3", vv)
-    if(RCurl::url.exists(uu)){
-      v <- "wcde-v3"
-      message("Version ", version, " not available on server, using wcde-v3")
-    }
-  }
-  if(is.null(v)){
-    uu <- paste0(server_url, "wcde-v2", vv)
-    if(RCurl::url.exists(uu)){
-      v <- "wcde-v2"
-      message("Version ", version, " not available on server, using wcde-v2")
-    }
-  }
-  if(is.null(v)){
-    uu <- paste0(server_url, "wcde-v1", vv)
-    if(RCurl::url.exists(uu)){
-      v <- "wcde-v1"
-      message("Version ", version, " not available on server, using wcde-v1")
-    }
-  }
+  vv <- paste0(version, ifelse(is.null(country_code), "-batch", "-single"))
 
   wic_scenarios_v <- wcde::wic_scenarios %>%
     tidyr::pivot_longer(dplyr::contains("wcde"), names_to = "v", values_to = "avail") %>%
@@ -238,7 +203,7 @@ get_wcde <- function(
 
   if(is.null(country_code)){
     d2 <- tibble::tibble(scenario = scenario) %>%
-      dplyr::mutate(u = paste0(server_url, v, "-batch/", scenario, "/",
+      dplyr::mutate(u = paste0(server_url, vv, "/", scenario, "/",
                                indicator, ".rds")) %>%
       dplyr::mutate(
         d = purrr::map(
@@ -258,7 +223,7 @@ get_wcde <- function(
                     avail) %>%
       dplyr::select(isono, name)
 
-    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code, version = v, server = server) %>%
+    d2 <- get_wcde_single(indicator = indicator, scenario = scenario, country_code = country_code, version = version, server = server) %>%
       dplyr::mutate(isono = as.numeric(isono)) %>%
       dplyr::left_join(wic_locations_v, by = "isono") %>%
       {if(include_scenario_names) dplyr::left_join(. , wic_scenarios_v, by = "scenario") else .}

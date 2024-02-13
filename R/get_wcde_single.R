@@ -12,9 +12,9 @@
 #' @export
 get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
                             server = NULL, version = NULL){
-  # scenario = c(1, 3); indicator = "tfr"; country_code = c(40, 100)
+  # scenario = c(1, 3); indicator = "etfr"; country_code = c(40, 100)
   # scenario = 2; indicator = "e0"; country_code = "900"
-  # server = "github"
+  # server = "github"; version = "wcde-v1"
   if(length(indicator) > 1){
     message("can only get data on one indicator at a time, taking first indicator given")
     indicator <- indicator[1]
@@ -77,7 +77,7 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
     server <- dplyr::case_when(
       RCurl::url.exists("https://wicshiny2023.iiasa.ac.at/wcde-data/") ~ "iiasa",
       # RCurl::url.exists("https://wicshiny.iiasa.ac.at/wcde-data/") ~ "iiasa",
-      RCurl::url.exists("https://github.com/guyabel/wcde-data/raw/main/") ~ "github",
+      RCurl::url.exists("https://github.com/guyabel/wcde-data/") ~ "github",
       RCurl::url.exists("https://shiny.wittgensteincentre.info/wcde-data/") ~ "1&1",
       TRUE ~ "none-available"
     )
@@ -86,7 +86,7 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
   server_url <- dplyr::case_when(
     server == "iiasa" ~ "https://wicshiny2023.iiasa.ac.at/wcde-data/",
     server == "iiasa-local" ~ "../wcde-data/",
-    server == "github" ~ "https://github.com/guyabel/wcde-data/raw/main/",
+    server == "github" ~ "https://github.com/guyabel/wcde-data/raw/master/",
     server == "1&1" ~ "https://shiny.wittgensteincentre.info/wcde-data/",
     TRUE ~ server)
 

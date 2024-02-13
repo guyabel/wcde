@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wcde
+# wcde <a href="https://guyabel.github.io/wcde/"><img src="man/figures/logo.png" align="right" height="138" /></a>
 
 <!-- badges: start -->
 
@@ -84,7 +84,6 @@ get_wcde(indicator = "pop", country_code = c(364, 404), pop_edu = "four")
 
 # SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries
 get_wcde(indicator = "ggapedu15", scenario = 1:3)
-#> Version wcde-v3 not available on server, using wcde-v3
 #> # A tibble: 69,768 × 6
 #>    scenario name                     country_code  year education      ggapedu15
 #>       <int> <chr>                           <dbl> <dbl> <chr>              <dbl>

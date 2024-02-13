@@ -6,8 +6,9 @@ roxygen2::roxygenise()
 
 # move data-host and data-host-bulk outside of directory whilst
 # doing check https://community.rstudio.com/t/r-cmd-check-preparing-package/27151
-devtools::build()
+devtools::build(vignettes = FALSE)
 devtools::check(vignettes = FALSE)
+devtools::build()
 devtools::check()
 file.show("NEWS.md")
 
