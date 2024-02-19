@@ -124,16 +124,16 @@
 <span><span class="co">#&gt; # A tibble: 96 × 6</span></span>
 <span><span class="co">#&gt;    scenario name    country_code education          period     etfr</span></span>
 <span><span class="co">#&gt;       &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;              &lt;chr&gt;     &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1        2 Austria           40 No Education       2020-2025  1.70</span></span>
-<span><span class="co">#&gt;  2        2 Austria           40 Incomplete Primary 2020-2025  1.70</span></span>
-<span><span class="co">#&gt;  3        2 Austria           40 Primary            2020-2025  1.70</span></span>
-<span><span class="co">#&gt;  4        2 Austria           40 Lower Secondary    2020-2025  1.70</span></span>
-<span><span class="co">#&gt;  5        2 Austria           40 Upper Secondary    2020-2025  1.46</span></span>
-<span><span class="co">#&gt;  6        2 Austria           40 Post Secondary     2020-2025  1.33</span></span>
-<span><span class="co">#&gt;  7        2 Austria           40 No Education       2025-2030  1.70</span></span>
-<span><span class="co">#&gt;  8        2 Austria           40 Incomplete Primary 2025-2030  1.70</span></span>
-<span><span class="co">#&gt;  9        2 Austria           40 Primary            2025-2030  1.70</span></span>
-<span><span class="co">#&gt; 10        2 Austria           40 Lower Secondary    2025-2030  1.70</span></span>
+<span><span class="co">#&gt;  1        2 Austria           40 No Education       2020-2025   1.7</span></span>
+<span><span class="co">#&gt;  2        2 Austria           40 Incomplete Primary 2020-2025   1.7</span></span>
+<span><span class="co">#&gt;  3        2 Austria           40 Primary            2020-2025   1.7</span></span>
+<span><span class="co">#&gt;  4        2 Austria           40 Lower Secondary    2020-2025   1.7</span></span>
+<span><span class="co">#&gt;  5        2 Austria           40 Upper Secondary    2020-2025   1.5</span></span>
+<span><span class="co">#&gt;  6        2 Austria           40 Post Secondary     2020-2025   1.3</span></span>
+<span><span class="co">#&gt;  7        2 Austria           40 No Education       2025-2030   1.7</span></span>
+<span><span class="co">#&gt;  8        2 Austria           40 Incomplete Primary 2025-2030   1.7</span></span>
+<span><span class="co">#&gt;  9        2 Austria           40 Primary            2025-2030   1.7</span></span>
+<span><span class="co">#&gt; 10        2 Austria           40 Lower Secondary    2025-2030   1.7</span></span>
 <span><span class="co">#&gt; # … with 86 more rows</span></span>
 <span></span>
 <span><span class="co"># SSP2 education specific population sizes for Iran and Kenya</span></span>
@@ -146,7 +146,7 @@
 <span><span class="co">#&gt;  3        2 Iran (Islamic Republic of)          364  2020 Primary        14412.</span></span>
 <span><span class="co">#&gt;  4        2 Iran (Islamic Republic of)          364  2020 Secondary      32781.</span></span>
 <span><span class="co">#&gt;  5        2 Iran (Islamic Republic of)          364  2020 Post Secondary 10465.</span></span>
-<span><span class="co">#&gt;  6        2 Iran (Islamic Republic of)          364  2025 Under 15       20522.</span></span>
+<span><span class="co">#&gt;  6        2 Iran (Islamic Republic of)          364  2025 Under 15       20522 </span></span>
 <span><span class="co">#&gt;  7        2 Iran (Islamic Republic of)          364  2025 No Education    7559.</span></span>
 <span><span class="co">#&gt;  8        2 Iran (Islamic Republic of)          364  2025 Primary        14236.</span></span>
 <span><span class="co">#&gt;  9        2 Iran (Islamic Republic of)          364  2025 Secondary      36161.</span></span>
@@ -156,18 +156,18 @@
 <span><span class="co"># SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries</span></span>
 <span><span class="fu"><a href="reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"ggapedu15"</span>, scenario <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span></span>
 <span><span class="co">#&gt; # A tibble: 69,768 × 6</span></span>
-<span><span class="co">#&gt;    scenario name                     country_code  year education      ggapedu15</span></span>
-<span><span class="co">#&gt;       &lt;int&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;              &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1        1 Bulgaria                          100  2020 No Education    -4.33e-3</span></span>
-<span><span class="co">#&gt;  2        1 Myanmar                           104  2020 No Education    -3.42e-2</span></span>
-<span><span class="co">#&gt;  3        1 Burundi                           108  2020 No Education     1.22e-1</span></span>
-<span><span class="co">#&gt;  4        1 Belarus                           112  2020 No Education    -5.71e-4</span></span>
-<span><span class="co">#&gt;  5        1 Cambodia                          116  2020 No Education    -9.23e-2</span></span>
-<span><span class="co">#&gt;  6        1 Algeria                            12  2020 No Education    -1.41e-1</span></span>
-<span><span class="co">#&gt;  7        1 Cameroon                          120  2020 No Education    -9.23e-2</span></span>
-<span><span class="co">#&gt;  8        1 Canada                            124  2020 No Education    -5.58e-7</span></span>
-<span><span class="co">#&gt;  9        1 Cape Verde                        132  2020 No Education     1.75e-2</span></span>
-<span><span class="co">#&gt; 10        1 Central African Republic          140  2020 No Education    -2.60e-1</span></span>
+<span><span class="co">#&gt;    scenario name                     country_code  year education    ggapedu15</span></span>
+<span><span class="co">#&gt;       &lt;int&gt; &lt;chr&gt;                           &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt;  1        1 Bulgaria                          100  2020 No Education      -0.4</span></span>
+<span><span class="co">#&gt;  2        1 Myanmar                           104  2020 No Education      -3.4</span></span>
+<span><span class="co">#&gt;  3        1 Burundi                           108  2020 No Education      12.2</span></span>
+<span><span class="co">#&gt;  4        1 Belarus                           112  2020 No Education      -0.1</span></span>
+<span><span class="co">#&gt;  5        1 Cambodia                          116  2020 No Education      -9.2</span></span>
+<span><span class="co">#&gt;  6        1 Algeria                            12  2020 No Education     -14.1</span></span>
+<span><span class="co">#&gt;  7        1 Cameroon                          120  2020 No Education      -9.2</span></span>
+<span><span class="co">#&gt;  8        1 Canada                            124  2020 No Education       0  </span></span>
+<span><span class="co">#&gt;  9        1 Cape Verde                        132  2020 No Education       1.8</span></span>
+<span><span class="co">#&gt; 10        1 Central African Republic          140  2020 No Education     -26  </span></span>
 <span><span class="co">#&gt; # … with 69,758 more rows</span></span></code></pre></div>
 </div>
 <div class="section level2">
