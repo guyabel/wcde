@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# wcde <a href="https://guyabel.github.io/wcde/"><img src="man/figures/logo.png" align="right" height="138" /></a>
+# wcde <a href="https://guyabel.github.io/wcde/"><img src="man/figures/logo.png" align="right" height="138"/></a>
 
 <!-- badges: start -->
 
@@ -53,16 +53,16 @@ get_wcde(indicator = "etfr", country_name = "Austria")
 #> # A tibble: 96 × 6
 #>    scenario name    country_code education          period     etfr
 #>       <dbl> <chr>          <dbl> <chr>              <chr>     <dbl>
-#>  1        2 Austria           40 No Education       2020-2025  1.70
-#>  2        2 Austria           40 Incomplete Primary 2020-2025  1.70
-#>  3        2 Austria           40 Primary            2020-2025  1.70
-#>  4        2 Austria           40 Lower Secondary    2020-2025  1.70
-#>  5        2 Austria           40 Upper Secondary    2020-2025  1.46
-#>  6        2 Austria           40 Post Secondary     2020-2025  1.33
-#>  7        2 Austria           40 No Education       2025-2030  1.70
-#>  8        2 Austria           40 Incomplete Primary 2025-2030  1.70
-#>  9        2 Austria           40 Primary            2025-2030  1.70
-#> 10        2 Austria           40 Lower Secondary    2025-2030  1.70
+#>  1        2 Austria           40 No Education       2020-2025   1.7
+#>  2        2 Austria           40 Incomplete Primary 2020-2025   1.7
+#>  3        2 Austria           40 Primary            2020-2025   1.7
+#>  4        2 Austria           40 Lower Secondary    2020-2025   1.7
+#>  5        2 Austria           40 Upper Secondary    2020-2025   1.5
+#>  6        2 Austria           40 Post Secondary     2020-2025   1.3
+#>  7        2 Austria           40 No Education       2025-2030   1.7
+#>  8        2 Austria           40 Incomplete Primary 2025-2030   1.7
+#>  9        2 Austria           40 Primary            2025-2030   1.7
+#> 10        2 Austria           40 Lower Secondary    2025-2030   1.7
 #> # … with 86 more rows
 
 # SSP2 education specific population sizes for Iran and Kenya
@@ -75,7 +75,7 @@ get_wcde(indicator = "pop", country_code = c(364, 404), pop_edu = "four")
 #>  3        2 Iran (Islamic Republic of)          364  2020 Primary        14412.
 #>  4        2 Iran (Islamic Republic of)          364  2020 Secondary      32781.
 #>  5        2 Iran (Islamic Republic of)          364  2020 Post Secondary 10465.
-#>  6        2 Iran (Islamic Republic of)          364  2025 Under 15       20522.
+#>  6        2 Iran (Islamic Republic of)          364  2025 Under 15       20522 
 #>  7        2 Iran (Islamic Republic of)          364  2025 No Education    7559.
 #>  8        2 Iran (Islamic Republic of)          364  2025 Primary        14236.
 #>  9        2 Iran (Islamic Republic of)          364  2025 Secondary      36161.
@@ -85,18 +85,18 @@ get_wcde(indicator = "pop", country_code = c(364, 404), pop_edu = "four")
 # SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries
 get_wcde(indicator = "ggapedu15", scenario = 1:3)
 #> # A tibble: 69,768 × 6
-#>    scenario name                     country_code  year education      ggapedu15
-#>       <int> <chr>                           <dbl> <dbl> <chr>              <dbl>
-#>  1        1 Bulgaria                          100  2020 No Education    -4.33e-3
-#>  2        1 Myanmar                           104  2020 No Education    -3.42e-2
-#>  3        1 Burundi                           108  2020 No Education     1.22e-1
-#>  4        1 Belarus                           112  2020 No Education    -5.71e-4
-#>  5        1 Cambodia                          116  2020 No Education    -9.23e-2
-#>  6        1 Algeria                            12  2020 No Education    -1.41e-1
-#>  7        1 Cameroon                          120  2020 No Education    -9.23e-2
-#>  8        1 Canada                            124  2020 No Education    -5.58e-7
-#>  9        1 Cape Verde                        132  2020 No Education     1.75e-2
-#> 10        1 Central African Republic          140  2020 No Education    -2.60e-1
+#>    scenario name                     country_code  year education    ggapedu15
+#>       <int> <chr>                           <dbl> <dbl> <chr>            <dbl>
+#>  1        1 Bulgaria                          100  2020 No Education      -0.4
+#>  2        1 Myanmar                           104  2020 No Education      -3.4
+#>  3        1 Burundi                           108  2020 No Education      12.2
+#>  4        1 Belarus                           112  2020 No Education      -0.1
+#>  5        1 Cambodia                          116  2020 No Education      -9.2
+#>  6        1 Algeria                            12  2020 No Education     -14.1
+#>  7        1 Cameroon                          120  2020 No Education      -9.2
+#>  8        1 Canada                            124  2020 No Education       0  
+#>  9        1 Cape Verde                        132  2020 No Education       1.8
+#> 10        1 Central African Republic          140  2020 No Education     -26  
 #> # … with 69,758 more rows
 ```
 
