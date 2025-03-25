@@ -11,7 +11,7 @@
 #' @param pop_edu Character string for population educational attainment if `indicator` is set to `pop`. Defaults to `total`, but can be set to `four`, `six` or `eight`.
 #' @param include_scenario_names Logical vector of length one to indicate if to include additional columns for scenario names and short names. `FALSE` by default.
 #' @param server Character string for server to download from. Defaults to `iiasa`, but can use `github` or `1&1` if IIASA server is down. Can check availability by setting to `search-available`.
-#' @param version Character string for version of projections to obtain. Defaults to `wcde-v3`, but can use `wcde-v2` or `wcde-v1`. Scenario and indicator availability vary between versions.
+#' @param version Character string for version of projections to obtain. Defaults to `wcde-v31`, but can use `wcde-v2` or `wcde-v1`. Scenario and indicator availability vary between versions.
 #'
 #' @details If no `country_name` or `country_code` is provided data for all countries and regions are downloaded. A full list of available countries and regions can be found in the `wic_locations` data frame.
 #'
@@ -123,6 +123,8 @@ get_wcde <- function(
   country_code <- c(country_code, guessed_code)
 
   version <- match.arg(version)
+  # if(version == "wcde-v3")
+  #   version <- "wcde-v31"
 
   if(indicator == "pop"){
     pop_age <- match.arg(pop_age)

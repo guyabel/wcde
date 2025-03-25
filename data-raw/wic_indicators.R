@@ -14,6 +14,18 @@ x <- dir_ls("./data-raw", type = "directory") %>%
          description = 2) %>%
   mutate_if(is.numeric, as.logical)
 
+# x0 <- x %>%
+#   filter(version == "wcde-v3") %>%
+#   mutate(version = "wcde-v30")
+#
+# x1 <- x %>%
+#   filter(version == "wcde-v3") %>%
+#   mutate(version = "wcde-v31")
+#
+# x <- x %>%
+#   bind_rows(x0) %>%
+#   bind_rows(x1)
+
 # latest definition - to many edits which messes up pivot wider later on
 d <- x %>%
   arrange(version) %>%
@@ -36,7 +48,10 @@ wic_indicators <- x %>%
   relocate(1, 2, contains("wcde")) %>%
   rename(wcde_v1 = `wcde-v1`,
          wcde_v2 = `wcde-v2`,
-         wcde_v3 = `wcde-v3`) %>%
+         wcde_v3 = `wcde-v3`,
+         # wcde_v30 = `wcde-v30`,
+         # wcde_v31 = `wcde-v31`
+         ) %>%
   mutate(
     wcde_v1 = case_when(
       wcde_v1 == FALSE ~ "projection-only",
@@ -49,7 +64,15 @@ wic_indicators <- x %>%
     wcde_v3 = case_when(
       wcde_v3 == FALSE ~ "projection-only",
       wcde_v3 == TRUE ~ "past-available",
-    )
+    ),
+    # wcde_v30 = case_when(
+    #   wcde_v30 == FALSE ~ "projection-only",
+    #   wcde_v30 == TRUE ~ "past-available",
+    # ),
+    # wcde_v31 = case_when(
+    #   wcde_v31 == FALSE ~ "projection-only",
+    #   wcde_v31 == TRUE ~ "past-available",
+    # )
   ) %>%
   rename("wcde-v1" = wcde_v1,
          "wcde-v2" = wcde_v2,
