@@ -65,10 +65,12 @@ get_wcde_single <- function(indicator = NULL, scenario = 2, country_code = NULL,
   read_with_progress <- function(f){
     pb$tick()
     # message(f)
-    f %>%
-      url() %>%
-      readRDS()
+    con <- f %>%
+      url()
+    df <- readRDS(con)
+    close(con)
     # readr::read_csv(f, col_types = readr::cols(), guess_max = 1e5, progress = FALSE)
+    return(df)
   }
 
   # server <- match.arg(server)
