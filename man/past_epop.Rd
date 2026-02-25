@@ -5,7 +5,7 @@
 \alias{past_epop}
 \title{Past population sizes for all countries by education}
 \format{
-A data frame with 840,126 rows and 7 variables, including:
+A data frame with 574,968 rows and 7 variables, including:
 \describe{
 \item{name}{Area name}
 \item{country_code}{ISO 3 digit country code}
@@ -23,6 +23,6 @@ A data frame with 840,126 rows and 7 variables, including:
 past_epop
 }
 \description{
-A data set containing population sizes for all countries by education between 1950 and 2020
+A data set containing population sizes for all countries by education between 1950 and 2020 from Version 3.
 }
 \keyword{datasets}

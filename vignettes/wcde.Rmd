@@ -88,7 +88,7 @@ Past data is only available for selected indicators. These can be viewed using t
 
 ```{r}
 wic_indicators %>%
-  filter(`wcde-v2` == "past-available") %>%
+  filter(`wcde-v3` == "past-available") %>%
   select(1:2)
 ```
 
@@ -255,7 +255,7 @@ Create population pyramids by setting male population values to negative equival
 ```{r}
 w <- get_wcde(indicator = "pop", country_code = 900,
               pop_age = "all", pop_sex = "both", pop_edu = "four",
-              version = "wcde-v2")
+              version = "wcde-v3")
 w
 
 w <- w %>%

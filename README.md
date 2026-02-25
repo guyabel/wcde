@@ -63,41 +63,41 @@ get_wcde(indicator = "etfr", country_name = "Austria")
 #>  8        2 Austria           40 Incomplete Primary 2025-2030   1.7
 #>  9        2 Austria           40 Primary            2025-2030   1.7
 #> 10        2 Austria           40 Lower Secondary    2025-2030   1.7
-#> # … with 86 more rows
+#> # ℹ 86 more rows
 
 # SSP2 education specific population sizes for Iran and Kenya
 get_wcde(indicator = "pop", country_code = c(364, 404), pop_edu = "four")
-#> # A tibble: 170 × 6
+#> # A tibble: 310 × 6
 #>    scenario name                       country_code  year education         pop
 #>       <dbl> <fct>                             <dbl> <dbl> <fct>           <dbl>
-#>  1        2 Iran (Islamic Republic of)          364  2020 Under 15       20934.
-#>  2        2 Iran (Islamic Republic of)          364  2020 No Education    8397.
-#>  3        2 Iran (Islamic Republic of)          364  2020 Primary        14412.
-#>  4        2 Iran (Islamic Republic of)          364  2020 Secondary      32781.
-#>  5        2 Iran (Islamic Republic of)          364  2020 Post Secondary 10465.
-#>  6        2 Iran (Islamic Republic of)          364  2025 Under 15       20522 
-#>  7        2 Iran (Islamic Republic of)          364  2025 No Education    7559.
-#>  8        2 Iran (Islamic Republic of)          364  2025 Primary        14236.
-#>  9        2 Iran (Islamic Republic of)          364  2025 Secondary      36161.
-#> 10        2 Iran (Islamic Republic of)          364  2025 Post Secondary 12214.
-#> # … with 160 more rows
+#>  1        2 Iran (Islamic Republic of)          364  1950 Under 15       6086. 
+#>  2        2 Iran (Islamic Republic of)          364  1950 No Education   8854. 
+#>  3        2 Iran (Islamic Republic of)          364  1950 Primary        1444. 
+#>  4        2 Iran (Islamic Republic of)          364  1950 Secondary       236. 
+#>  5        2 Iran (Islamic Republic of)          364  1950 Post Secondary   21.5
+#>  6        2 Iran (Islamic Republic of)          364  1955 Under 15       7289. 
+#>  7        2 Iran (Islamic Republic of)          364  1955 No Education   9328  
+#>  8        2 Iran (Islamic Republic of)          364  1955 Primary        1620  
+#>  9        2 Iran (Islamic Republic of)          364  1955 Secondary       368. 
+#> 10        2 Iran (Islamic Republic of)          364  1955 Post Secondary   44.5
+#> # ℹ 300 more rows
 
 # SSP1, 2 and 3 gender gaps in educational attainment (15+) for all countries
 get_wcde(indicator = "ggapedu15", scenario = 1:3)
-#> # A tibble: 69,768 × 6
-#>    scenario name                     country_code  year education    ggapedu15
-#>       <int> <chr>                           <dbl> <dbl> <chr>            <dbl>
-#>  1        1 Bulgaria                          100  2020 No Education      -0.4
-#>  2        1 Myanmar                           104  2020 No Education      -3.4
-#>  3        1 Burundi                           108  2020 No Education      12.2
-#>  4        1 Belarus                           112  2020 No Education      -0.1
-#>  5        1 Cambodia                          116  2020 No Education      -9.2
-#>  6        1 Algeria                            12  2020 No Education     -14.1
-#>  7        1 Cameroon                          120  2020 No Education      -9.2
-#>  8        1 Canada                            124  2020 No Education       0  
-#>  9        1 Cape Verde                        132  2020 No Education       1.8
-#> 10        1 Central African Republic          140  2020 No Education     -26  
-#> # … with 69,758 more rows
+#> # A tibble: 167,274 × 6
+#>    scenario name                     country_code  year education ggapedu15
+#>       <int> <chr>                           <dbl> <dbl> <chr>         <dbl>
+#>  1        1 Bulgaria                          100  1950 Under 15        0.8
+#>  2        1 Myanmar                           104  1950 Under 15        1.1
+#>  3        1 Burundi                           108  1950 Under 15        1.8
+#>  4        1 Belarus                           112  1950 Under 15        6.1
+#>  5        1 Cambodia                          116  1950 Under 15        0.7
+#>  6        1 Algeria                            12  1950 Under 15        0  
+#>  7        1 Cameroon                          120  1950 Under 15        1  
+#>  8        1 Canada                            124  1950 Under 15        0.2
+#>  9        1 Cape Verde                        132  1950 Under 15        5.9
+#> 10        1 Central African Republic          140  1950 Under 15        0.8
+#> # ℹ 167,264 more rows
 ```
 
 ## Vignette

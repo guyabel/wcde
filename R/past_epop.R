@@ -1,8 +1,8 @@
 #' Past population sizes for all countries by education
 #'
-#' A data set containing population sizes for all countries by education between 1950 and 2020
+#' A data set containing population sizes for all countries by education between 1950 and 2020 from Version 3.
 #'
-#' @format A data frame with 840,126 rows and 7 variables, including:
+#' @format A data frame with 574,968 rows and 7 variables, including:
 #' \describe{
 #'   \item{name}{Area name}
 #'   \item{country_code}{ISO 3 digit country code}

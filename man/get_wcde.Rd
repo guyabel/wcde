@@ -34,7 +34,7 @@ get_wcde(
 
 \item{include_scenario_names}{Logical vector of length one to indicate if to include additional columns for scenario names and short names. \code{FALSE} by default.}
 
-\item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} or \code{1&1} if IIASA server is down. Can check availability by setting to \code{search-available}.}
+\item{server}{Character string for server to download from. Defaults to \code{iiasa}, but can use \code{github} or \code{1&1} if IIASA server is down. Can check availability by setting to \code{search-available}. Note, \code{1&1} only hosts batch files (i.e. measures for all countries)}
 
 \item{version}{Character string for version of projections to obtain. Defaults to \code{wcde-v3}, but can use \code{wcde-v2} or \code{wcde-v1}. Scenario and indicator availability vary between versions.}
 }
