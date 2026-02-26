@@ -411,7 +411,8 @@ mi %>%
 ### Previous versions
 
 Previous versions of projections from the Wittgenstein Centre for
-Demography are available using the `version` argument in `get_wdce()`.
+Demography are available using the `version` argument in
+[`get_wcde()`](https://guyabel.github.io/wcde/reference/get_wcde.md).
 Set `version` to
 [`"wcde-v1"`](https://dataexplorer.wittgensteincentre.org/wcde-v1/) or
 [`"wcde-v2"`](https://dataexplorer.wittgensteincentre.org/wcde-v2/) or
@@ -451,22 +452,22 @@ which can be set to `"iiasa"` (default) `"github"` and `"1&1"`.
 
 ``` r
 get_wcde(indicator = "etfr",
-         country_name = c("Brazil", "Albania"), 
-         version = "wcde-v2", server = "github")
-#> # A tibble: 204 × 6
+         country_name = c("Brazil", "Albania"),
+         server = "github")
+#> # A tibble: 192 × 6
 #>    scenario name    country_code education          period     etfr
 #>       <dbl> <chr>          <dbl> <chr>              <chr>     <dbl>
-#>  1        2 Brazil            76 No Education       2015-2020  2.47
-#>  2        2 Albania            8 No Education       2015-2020  1.88
-#>  3        2 Brazil            76 Incomplete Primary 2015-2020  2.47
-#>  4        2 Albania            8 Incomplete Primary 2015-2020  1.88
-#>  5        2 Brazil            76 Primary            2015-2020  2.47
-#>  6        2 Albania            8 Primary            2015-2020  1.88
-#>  7        2 Brazil            76 Lower Secondary    2015-2020  1.89
-#>  8        2 Albania            8 Lower Secondary    2015-2020  1.9 
-#>  9        2 Brazil            76 Upper Secondary    2015-2020  1.37
-#> 10        2 Albania            8 Upper Secondary    2015-2020  1.57
-#> # ℹ 194 more rows
+#>  1        2 Brazil            76 No Education       2020-2025  2.24
+#>  2        2 Albania            8 No Education       2020-2025  2.31
+#>  3        2 Brazil            76 Incomplete Primary 2020-2025  2.24
+#>  4        2 Albania            8 Incomplete Primary 2020-2025  2.51
+#>  5        2 Brazil            76 Primary            2020-2025  2.24
+#>  6        2 Albania            8 Primary            2020-2025  2.17
+#>  7        2 Brazil            76 Lower Secondary    2020-2025  1.78
+#>  8        2 Albania            8 Lower Secondary    2020-2025  1.88
+#>  9        2 Brazil            76 Upper Secondary    2020-2025  1.35
+#> 10        2 Albania            8 Upper Secondary    2020-2025  1.61
+#> # ℹ 182 more rows
 ```
 
 You may also set `server = "search-available"` to search through the

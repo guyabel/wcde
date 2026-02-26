@@ -451,7 +451,7 @@ times to download multiple indicators. This can be done using the
 </h3>
 <p>Previous versions of projections from the Wittgenstein Centre for
 Demography are available using the <code>version</code> argument in
-<code>get_wdce()</code>. Set <code>version</code> to <a href="https://dataexplorer.wittgensteincentre.org/wcde-v1/" class="external-link"><code>"wcde-v1"</code></a>
+<code><a href="../reference/get_wcde.html">get_wcde()</a></code>. Set <code>version</code> to <a href="https://dataexplorer.wittgensteincentre.org/wcde-v1/" class="external-link"><code>"wcde-v1"</code></a>
 or <a href="https://dataexplorer.wittgensteincentre.org/wcde-v2/" class="external-link"><code>"wcde-v2"</code></a>
 or <a href="https://dataexplorer.wittgensteincentre.org" class="external-link"><code>"wcde-v3"</code></a>
 (the default since 2024).</p>
@@ -486,22 +486,22 @@ alternative hosts using the <code>server</code> option in
 (default) <code>"github"</code> and <code>"1&amp;1"</code>.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/get_wcde.html">get_wcde</a></span><span class="op">(</span>indicator <span class="op">=</span> <span class="st">"etfr"</span>,</span>
-<span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span>, </span>
-<span>         version <span class="op">=</span> <span class="st">"wcde-v2"</span>, server <span class="op">=</span> <span class="st">"github"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 204 × 6</span></span></span>
+<span>         country_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Brazil"</span>, <span class="st">"Albania"</span><span class="op">)</span>,</span>
+<span>         server <span class="op">=</span> <span class="st">"github"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 192 × 6</span></span></span>
 <span><span class="co">#&gt;    scenario name    country_code education          period     etfr</span></span>
 <span><span class="co">#&gt;       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2015-2020  2.47</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2015-2020  1.88</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2015-2020  2.47</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2015-2020  1.88</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2015-2020  2.47</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2015-2020  1.88</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2015-2020  1.89</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2015-2020  1.9 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2015-2020  1.37</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2015-2020  1.57</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 194 more rows</span></span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>        2 Brazil            76 No Education       2020-2025  2.24</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>        2 Albania            8 No Education       2020-2025  2.31</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>        2 Brazil            76 Incomplete Primary 2020-2025  2.24</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>        2 Albania            8 Incomplete Primary 2020-2025  2.51</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>        2 Brazil            76 Primary            2020-2025  2.24</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>        2 Albania            8 Primary            2020-2025  2.17</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>        2 Brazil            76 Lower Secondary    2020-2025  1.78</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>        2 Albania            8 Lower Secondary    2020-2025  1.88</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>        2 Brazil            76 Upper Secondary    2020-2025  1.35</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>        2 Albania            8 Upper Secondary    2020-2025  1.61</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 182 more rows</span></span></span></code></pre></div>
 <p>You may also set <code>server = "search-available"</code> to search
 through the three possible data location to download the data wherever
 it is available.</p>
