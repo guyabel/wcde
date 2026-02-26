@@ -2,6 +2,8 @@
 
 ## wcde 0.0.8
 
+CRAN release: 2026-02-25
+
 - Added `closeConnections()` to
   [`get_wcde_single()`](https://guyabel.github.io/wcde/reference/get_wcde_single.md)
   to prevent open connections on server when downloading data

@@ -2,7 +2,7 @@
 
 The `wcde` package allows for R users to easily download data from the
 [Wittgenstein Centre for Demography and Human Capital Data
-Explorer](http://dataexplorer.wittgensteincentre.org/) as well as
+Explorer](https://dataexplorer.wittgensteincentre.org/) as well as
 containing a number of helpful functions for working with education
 specific demographic data.
 
@@ -291,7 +291,7 @@ get_wcde(indicator = "tfr",
 Additional details of the pathways for each scenario numeric code can be
 found in the `wic_scenarios` object. Further background and links to the
 corresponding literature are provided in the [Data
-Explorer](http://dataexplorer.wittgensteincentre.org/)
+Explorer](https://dataexplorer.wittgensteincentre.org/)
 
 ``` r
 wic_scenarios
