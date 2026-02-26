@@ -3,6 +3,7 @@
 * Added `closeConnections()` to `get_wcde_single()` to prevent open connections on server when downloading data
 * Updated for past data in `past_epop` and `wic_indicators` for back projections added to v3.
 
+
 # wcde 0.0.7
 
 * Expanded `wic_locations`, `wic_indicators` and `wic_scenarios` data frames to cover V1, V2 and V3
