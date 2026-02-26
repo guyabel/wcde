@@ -16,7 +16,7 @@ A data frame with 9 rows and 6 variables, including:
 }
 }
 \source{
-\url{http://dataexplorer.wittgensteincentre.org/}
+\url{https://dataexplorer.wittgensteincentre.org/}
 }
 \usage{
 wic_scenarios

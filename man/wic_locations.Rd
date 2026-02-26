@@ -18,7 +18,7 @@ A data frame with 232 rows and 8 variables, including:
 }
 }
 \source{
-\url{http://dataexplorer.wittgensteincentre.org/}
+\url{https://dataexplorer.wittgensteincentre.org/}
 }
 \usage{
 wic_locations

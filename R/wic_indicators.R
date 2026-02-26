@@ -17,5 +17,5 @@
 #'   \item{period}{Indicator is a period (flow)}
 #'   \item{definition_latest}{Full definition for indicator based on latest available version}
 #' }
-#' @source \url{http://dataexplorer.wittgensteincentre.org/}
+#' @source \url{https://dataexplorer.wittgensteincentre.org/}
 "wic_indicators"

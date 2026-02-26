@@ -22,7 +22,7 @@ A data frame with 37 rows and 11 variables, including:
 }
 }
 \source{
-\url{http://dataexplorer.wittgensteincentre.org/}
+\url{https://dataexplorer.wittgensteincentre.org/}
 }
 \usage{
 wic_indicators

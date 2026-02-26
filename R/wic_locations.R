@@ -13,5 +13,5 @@
 #'   \item{wcde-v2}{Availability of area in Version 2}
 #'   \item{wcde-v1}{Availability of area in Version 1}
 #' }
-#' @source \url{http://dataexplorer.wittgensteincentre.org/}
+#' @source \url{https://dataexplorer.wittgensteincentre.org/}
 "wic_locations"
