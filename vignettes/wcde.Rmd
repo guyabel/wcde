@@ -188,7 +188,7 @@ mi %>%
 
 ## Previous versions
 
-Previous versions of projections from the Wittgenstein Centre for Demography are available using the `version` argument in `get_wdce()`. Set `version` to [`"wcde-v1"`](https://dataexplorer.wittgensteincentre.org/wcde-v1/) or [`"wcde-v2"`](https://dataexplorer.wittgensteincentre.org/wcde-v2/) or  [`"wcde-v3"`](https://dataexplorer.wittgensteincentre.org) (the default since 2024). 
+Previous versions of projections from the Wittgenstein Centre for Demography are available using the `version` argument in `get_wcde()`. Set `version` to [`"wcde-v1"`](https://dataexplorer.wittgensteincentre.org/wcde-v1/) or [`"wcde-v2"`](https://dataexplorer.wittgensteincentre.org/wcde-v2/) or  [`"wcde-v3"`](https://dataexplorer.wittgensteincentre.org) (the default since 2024). 
 ```{r}
 get_wcde(indicator = "etfr",
          country_name = c("Brazil", "Albania"),
@@ -202,8 +202,8 @@ If you have trouble with connecting to the IIASA server you can try alternative 
 
 ```{r}
 get_wcde(indicator = "etfr",
-         country_name = c("Brazil", "Albania"), 
-         version = "wcde-v2", server = "github")
+         country_name = c("Brazil", "Albania"),
+         server = "github")
 ```
 
 You may also set `server = "search-available"` to search through the three possible data location to download the data wherever it is available.
