@@ -12,12 +12,14 @@ You can install the released version of `wcde` from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 install.packages("wcde")
 ```
 
 Install the developmental version with:
 
 ``` r
+
 library(devtools)
 install_github("guyabel/wcde", ref = "main")
 ```
@@ -35,6 +37,7 @@ Capital Data Explorer. It requires three user inputs
   interest
 
 ``` r
+
 library(wcde)
 # download education specific tfr data
 get_wcde(indicator = "etfr",
@@ -82,6 +85,7 @@ function can be used to look up short codes (given in the first column)
 from the `wic_indicators` data frame:
 
 ``` r
+
 find_indicator(x = "tfr")
 #> # A tibble: 2 × 6
 #>   indicator description          `wcde-v3` `wcde-v2` `wcde-v1` definition_latest
@@ -99,6 +103,7 @@ in [dplyr](https://cran.r-project.org/package=dplyr/index.html) can be
 used to filter data for specific years or periods, for example:
 
 ``` r
+
 library(tidyverse)
 get_wcde(indicator = "e0",
          country_name = c("Japan", "Australia")) %>%
@@ -134,6 +139,7 @@ Past data is only available for selected indicators. These can be viewed
 using the version column:
 
 ``` r
+
 wic_indicators %>%
   filter(`wcde-v3` == "past-available") %>%
   select(1:2)
@@ -158,6 +164,7 @@ function can also be used to filter specific indicators to specific age,
 sex or education groups
 
 ``` r
+
 get_wcde(indicator = "sexratio",
          country_name = c("China", "South Korea")) %>%
   filter(year == 2020,
@@ -176,6 +183,7 @@ Country names are guessed using the
 package.
 
 ``` r
+
 get_wcde(indicator = "tfr",
          country_name = c("U.A.E", "Espania", "Österreich"))
 #> # A tibble: 90 × 5
@@ -199,6 +207,7 @@ functions accepts ISO alpha numeric codes for countries via the
 `country_code` argument:
 
 ``` r
+
 get_wcde(indicator = "etfr", country_code = c(44, 100))
 #> # A tibble: 192 × 6
 #>    scenario name     country_code education          period     etfr
@@ -220,6 +229,7 @@ A full list of available countries and region aggregates, and their
 codes, can be found in the `wic_locations` data frame.
 
 ``` r
+
 wic_locations
 #> # A tibble: 232 × 8
 #>    name               isono continent region dim   `wcde-v3` `wcde-v2` `wcde-v1`
@@ -246,6 +256,7 @@ scenarios can be returned by passing a different (or multiple) scenario
 values to the `scenario` argument in `get_data()`.
 
 ``` r
+
 get_wcde(indicator = "growth",
          country_name = c("India", "China"),
          scenario = c(1:3, 22, 23)) %>%
@@ -269,6 +280,7 @@ Set `include_scenario_names = TRUE` to include a columns with the full
 names of the scenarios
 
 ``` r
+
 get_wcde(indicator = "tfr",
          country_name = c("Kenya", "Nigeria", "Algeria"),
          scenario = 1:3,
@@ -294,6 +306,7 @@ corresponding literature are provided in the [Data
 Explorer](https://dataexplorer.wittgensteincentre.org/)
 
 ``` r
+
 wic_scenarios
 #> # A tibble: 9 × 6
 #>   scenario_name              scenario scenario_abb `wcde-v3` `wcde-v2` `wcde-v1`
@@ -315,6 +328,7 @@ Data for all countries can be obtained by not setting `country_name` or
 `country_code`
 
 ``` r
+
 get_wcde(indicator = "mage")
 #> # A tibble: 6,858 × 5
 #>    scenario name                     country_code  year  mage
@@ -340,6 +354,7 @@ multiple indicators. This can be done using the
 [`purrr`](https://cran.r-project.org/package=purrr/index.html)
 
 ``` r
+
 mi <- tibble(ind = c("odr", "nirate", "ggapedu25")) %>%
   mutate(d = map(.x = ind, .f = ~get_wcde(indicator = .x)))
 mi
@@ -420,6 +435,7 @@ Set `version` to
 since 2024).
 
 ``` r
+
 get_wcde(indicator = "etfr",
          country_name = c("Brazil", "Albania"),
          version = "wcde-v2")
@@ -451,6 +467,7 @@ alternative hosts using the `server` option in
 which can be set to `"iiasa"` (default) `"github"` and `"1&1"`.
 
 ``` r
+
 get_wcde(indicator = "etfr",
          country_name = c("Brazil", "Albania"),
          server = "github")
@@ -483,6 +500,7 @@ specifying a `pop_age`, `pop_sex` and `pop_edu` arguments. By default
 each of the three population breakdown arguments are set to “total”
 
 ``` r
+
 get_wcde(indicator = "pop", country_name = "India")
 #> # A tibble: 31 × 5
 #>    scenario name  country_code  year     pop
@@ -508,6 +526,7 @@ population data broken down into education categorizations with
 different levels of detail.
 
 ``` r
+
 get_wcde(indicator = "pop", country_code = 900, pop_edu = "four")
 #> # A tibble: 155 × 6
 #>    scenario name  country_code  year education          pop
@@ -530,6 +549,7 @@ further breakdowns, for example sex and education specific population
 totals
 
 ``` r
+
 get_wcde(indicator = "pop", country_code = 900, pop_edu = "six", pop_sex = "both")
 #> # A tibble: 434 × 7
 #>    scenario name  country_code  year sex    education              pop
@@ -557,6 +577,7 @@ Create population pyramids by setting male population values to negative
 equivalent to allow for divergent columns from the y axis.
 
 ``` r
+
 w <- get_wcde(indicator = "pop", country_code = 900,
               pop_age = "all", pop_sex = "both", pop_edu = "four",
               version = "wcde-v3")
@@ -613,6 +634,7 @@ of population data objects with corresponding numbers of categories of
 education.
 
 ``` r
+
 library(lemon)
 
 w %>%
@@ -642,6 +664,7 @@ Add male and female labels on the x-axis by
   columns.
 
 ``` r
+
 w <- w %>%
   mutate(pop_max = ifelse(sex == "Male", -max(pop/1e3), max(pop/1e3)))
 
@@ -671,6 +694,7 @@ the `transition_time()` function in the
 package
 
 ``` r
+
 library(gganimate)
 
 ggplot(data = w,

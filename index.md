@@ -13,12 +13,14 @@ You can install the released version of `wcde` from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 install.packages("wcde")
 ```
 
 Install the developmental version with:
 
 ``` r
+
 library(devtools)
 install_github("guyabel/wcde", ref = "main")
 ```
@@ -28,6 +30,7 @@ install_github("guyabel/wcde", ref = "main")
 Download data based on a indicator, scenario and country code:
 
 ``` r
+
 library(wcde)
 #> Suggested citation for data:
 #> Wittgenstein Centre for Demography and Global Human Capital (WIC) Wittgenstein Centre Data Explorer. Version 3.0 (Beta), 2023

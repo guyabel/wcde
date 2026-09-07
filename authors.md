@@ -23,13 +23,13 @@ Source:
 [`DESCRIPTION`](https://github.com/guyabel/wcde/blob/main/DESCRIPTION)
 
 Abel GJ (2026). *wcde: Download Data from the Wittgenstein Centre Human
-Capital Data Explorer*. R package version 0.0.8,
+Capital Data Explorer*. R package version 0.0.8.1,
 <https://guyabel.github.io/wcde/>.
 
     @Manual{,
       title = {wcde: Download Data from the Wittgenstein Centre Human Capital Data Explorer},
       author = {Guy J. Abel},
       year = {2026},
-      note = {R package version 0.0.8},
+      note = {R package version 0.0.8.1},
       url = {https://guyabel.github.io/wcde/},
     }

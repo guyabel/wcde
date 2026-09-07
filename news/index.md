@@ -1,5 +1,9 @@
 # Changelog
 
+## wcde 0.0.8.1
+
+- No change. Kicked off CRAN for nothing reason.
+
 ## wcde 0.0.8
 
 CRAN release: 2026-02-25

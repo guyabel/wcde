@@ -92,44 +92,44 @@ and regions can be found in the `wic_locations` data frame.
 `indicator` must be set to a value in the first column in the table
 below of available demographic indicators:
 
-|             |                                                                          |
-|-------------|--------------------------------------------------------------------------|
-| `indicator` | Indicator Description                                                    |
-| `pop`       | Population Size (000's)                                                  |
-| `bpop`      | Population Size by Broad Age (000's)                                     |
-| `epop`      | Population Size by Education (000's)                                     |
-| `prop`      | Educational Attainment Distribution                                      |
-| `bprop`     | Educational Attainment Distribution by Broad Age                         |
-| `growth`    | Average Annual Growth Rate                                               |
-| `nirate`    | Average Annual Rate of Natural Increase                                  |
-| `sexratio`  | Sex Ratio                                                                |
-| `mage`      | Population Median Age                                                    |
-| `tdr`       | Total Dependency Ratio                                                   |
-| `ydr`       | Youth Dependency Ratio                                                   |
-| `odr`       | Old-age Dependency Ratio                                                 |
-| `ryl15`     | Age When Remaining Life Expectancy is Below 15 years                     |
-| `pryl15`    | Proportion of Population with a Remaining Life Expectancy below 15 Years |
-| `mys`       | Mean Years of Schooling by Age                                           |
-| `bmys`      | Mean Years of Schooling by Broad Age                                     |
-| `ggapmys15` | Gender Gap in Mean Years Schooling (15+)                                 |
-| `ggapmys25` | Gender Gap in Mean Years Schooling (25+)                                 |
-| `ggapedu15` | Gender Gap in Educational Attainment (15+)                               |
-| `ggapedu25` | Gender Gap in Educational Attainment (25+)                               |
-| `tfr`       | Total Fertility Rate                                                     |
-| `etfr`      | Total Fertility Rate by Education                                        |
-| `asfr`      | Age-Specific Fertility Rate                                              |
-| `easfr`     | Age-Specific Fertility Rate by Education                                 |
-| `cbr`       | Crude Birth Rate                                                         |
-| `macb`      | Mean Age at Childbearing                                                 |
-| `emacb`     | Mean Age at Childbearing by Education                                    |
-| `e0`        | Life Expectancy at Birth                                                 |
-| `cdr`       | Crude Death Rate                                                         |
-| `assr`      | Age-Specific Survival Ratio                                              |
-| `eassr`     | Age-Specific Survival Ratio by Education                                 |
-| `net`       | Net Migration                                                            |
-| `netedu`    | Net Migration Flows by Education                                         |
-| `emi`       | Emigration Flows                                                         |
-| `imm`       | Immigration Flows                                                        |
+|  |  |
+|----|----|
+| `indicator` | Indicator Description |
+| `pop` | Population Size (000's) |
+| `bpop` | Population Size by Broad Age (000's) |
+| `epop` | Population Size by Education (000's) |
+| `prop` | Educational Attainment Distribution |
+| `bprop` | Educational Attainment Distribution by Broad Age |
+| `growth` | Average Annual Growth Rate |
+| `nirate` | Average Annual Rate of Natural Increase |
+| `sexratio` | Sex Ratio |
+| `mage` | Population Median Age |
+| `tdr` | Total Dependency Ratio |
+| `ydr` | Youth Dependency Ratio |
+| `odr` | Old-age Dependency Ratio |
+| `ryl15` | Age When Remaining Life Expectancy is Below 15 years |
+| `pryl15` | Proportion of Population with a Remaining Life Expectancy below 15 Years |
+| `mys` | Mean Years of Schooling by Age |
+| `bmys` | Mean Years of Schooling by Broad Age |
+| `ggapmys15` | Gender Gap in Mean Years Schooling (15+) |
+| `ggapmys25` | Gender Gap in Mean Years Schooling (25+) |
+| `ggapedu15` | Gender Gap in Educational Attainment (15+) |
+| `ggapedu25` | Gender Gap in Educational Attainment (25+) |
+| `tfr` | Total Fertility Rate |
+| `etfr` | Total Fertility Rate by Education |
+| `asfr` | Age-Specific Fertility Rate |
+| `easfr` | Age-Specific Fertility Rate by Education |
+| `cbr` | Crude Birth Rate |
+| `macb` | Mean Age at Childbearing |
+| `emacb` | Mean Age at Childbearing by Education |
+| `e0` | Life Expectancy at Birth |
+| `cdr` | Crude Death Rate |
+| `assr` | Age-Specific Survival Ratio |
+| `eassr` | Age-Specific Survival Ratio by Education |
+| `net` | Net Migration |
+| `netedu` | Net Migration Flows by Education |
+| `emi` | Emigration Flows |
+| `imm` | Immigration Flows |
 
 See `wic_indicators` data frame for more details.
 
