@@ -1,3 +1,7 @@
+# wcde 0.0.8.1
+
+* No change. Kicked off CRAN for nothing reason.
+
 # wcde 0.0.8
 
 * Added `closeConnections()` to `get_wcde_single()` to prevent open connections on server when downloading data
